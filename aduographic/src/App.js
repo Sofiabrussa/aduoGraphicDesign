@@ -1,12 +1,17 @@
-import './App.css';
+import { Routes } from 'react-router-dom';
 import Navbar from './components/NavBar/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar/>
-
-    </div>
+    <>
+      <Navbar />
+      <div className='container text-center'>
+        <Routes>
+          {/*   <Route path='/' element={<Inicio></Inicio>} />
+          <Route path='/albumes' element={<Albumes></Albumes>} /> */}
+        </Routes>
+      </div>
+    </>
   );
 }
 

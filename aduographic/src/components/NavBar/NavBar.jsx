@@ -1,38 +1,34 @@
 import { Link } from "react-router-dom";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function Navbar() {
     return (
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
             <div class="container-fluid">
-                <Link className="navbar-brand">Navbar</Link>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <Link className="navbar-brand lacquer-regular" to="#">
+                    <img src="/imgsInicio/recursos-03.png" alt="Logo" style={{ height: '60px' }} />
+                </Link>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ms-auto nav-underline">
                         <li class="nav-item">
-                            <Link class="nav-link active" aria-current="page" href="#">Servicios</Link>
+                            <Link class="nav-link" aria-current="page" to="#">Servicios</Link>
                         </li>
                         <li class="nav-item">
-                            <Link class="nav-link" href="#">Nosotras</Link>
+                            <Link class="nav-link" to="#">Nosotras</Link>
                         </li>
                         <li class="nav-item">
-                            <Link class="nav-link" href="#">Portafolio</Link>
+                            <Link class="nav-link" to="#">Portafolio</Link>
                         </li>
-                        <li class="nav-item">
-                            <Link class="nav-link" href="#">Contacto</Link>
+                        <li class="nav-item navbar-item ">
+                            <Link class="nav-link" to="#">Contacto</Link>
                         </li>
-                        <nav class="navbar bg-body-tertiary">
-                            <form class="container-fluid justify-content-start">
-                                <button class="btn btn-sm btn-outline-secondary" type="button">Trabajemos juntos↗</button>
-                            </form>
-                        </nav>
+
                     </ul>
                 </div>
             </div>
         </nav>
-
-
     );
 
 }

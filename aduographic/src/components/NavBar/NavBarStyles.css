@@ -1,0 +1,10 @@
+.buttom-aduo {
+    color: black !important; /* Cambia el color del texto a negro */
+    border-color: rgb(117,81,150)!important; /* Cambia el borde a violeta */
+    padding: 3px 8px !important;
+    margin-top: 0.3rem !important; 
+}
+
+.flecha-navbar  {
+    color:  rgb(117,81,150);
+}

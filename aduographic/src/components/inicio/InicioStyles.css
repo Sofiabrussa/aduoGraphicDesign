@@ -1,0 +1,6 @@
+#carouselExample {
+    height: calc(100vh - 12vh); /* Restamos la altura del navbar */
+    overflow: hidden;
+}
+
+

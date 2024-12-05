@@ -1,6 +1,52 @@
+/* CARROUSEL */
 #carouselExample {
     height: calc(100vh - 12vh); /* Restamos la altura del navbar */
     overflow: hidden;
 }
 
+.carousel-item img {
+    height: 100%;
+    object-fit: cover; 
+}
 
+/* CARROUSEL TEXT */
+.carousel-fixed-text {
+    position: absolute; /*Usas absolute para ignorar el flujo normal*/
+    width: 100%;
+    text-align: left;
+    top: 20%; 
+    left: 15vw;
+    padding: 0 10px;
+    z-index: 10; /* controla la "profundidad" visual de los elementos, posiicion al texo por encima de las imagenes */
+    color: white; 
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 20; /* Asegura que las flechas estén encima del texto */
+}
+
+.carousel-h1  {
+    font-size: 4vw;
+}
+
+.carousel-fixed-text p  {
+    font-size: 1.5vw;
+}
+
+
+/* CARROUSEL BOTON */
+.carousel-fixed-text button  {
+    color: white !important;
+    border-color: white !important;
+    margin-top: 2.5em !important;
+    font-size: 1.5vw;
+
+}
+
+.carousel-fixed-text button:hover {
+    color: white !important;
+    border-color: white !important;
+    background-color: transparent !important; /* Mantiene el fondo transparente al hacer hover */
+    box-shadow: none !important; /* Elimina el efecto de sombra */
+}

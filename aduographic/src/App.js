@@ -1,6 +1,6 @@
 import { Routes } from 'react-router-dom';
 import Navbar from './components/NavBar/NavBar';
-import Inicio from './components/inicio/Inicio';
+import Inicio from './components/Inicio/Inicio';
 
 function App() {
   return (

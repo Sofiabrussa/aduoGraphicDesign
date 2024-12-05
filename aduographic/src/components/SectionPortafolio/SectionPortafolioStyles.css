@@ -1,0 +1,8 @@
+.component {
+    width: 100vw;  /* vw ancho responsive de la ventana */
+    height: 80vh;  /* vh alto responsive de la ventana */
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+  }
+

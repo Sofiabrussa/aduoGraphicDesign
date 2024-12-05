@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lacquer&family=Permanent+Marker&family=Unbounded:wght@200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 /* CARROUSEL */
 #carouselExample {
     height: calc(100vh - 12vh); /* Restamos la altura del navbar */
@@ -27,20 +31,29 @@
 }
 
 .carousel-h1  {
-    font-size: 3.7vw;
+    font-size: 3vw;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 250; 
+
 }
 
-.carousel-fixed-text p  {
+.carousel-fixed-text  p  {
     font-size: 1.2vw;
+    font-family: "Urbanist", sans-serif; /* Aplica la fuente Urbanist */
+    font-size: 1.5vw;
+    font-weight: 200; 
+
 }
 
 
 /* CARROUSEL BOTON */
 .carousel-fixed-text button  {
+    font-family: "Urbanist", sans-serif; /* Aplica la fuente Urbanist */
     color: white !important;
     border-color: white !important;
     margin-top: 2.5em !important;
     font-size: 1.5vw;
+    font-weight: 200;
 
 }
 
@@ -50,3 +63,4 @@
     background-color: transparent !important; /* Mantiene el fondo transparente al hacer hover */
     box-shadow: none !important; /* Elimina el efecto de sombra */
 }
+

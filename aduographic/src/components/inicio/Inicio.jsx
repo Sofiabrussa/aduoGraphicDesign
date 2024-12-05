@@ -3,6 +3,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+
+
 function Inicio() {
     return (
         <div id="carouselExample" className="carousel slide position-relative">

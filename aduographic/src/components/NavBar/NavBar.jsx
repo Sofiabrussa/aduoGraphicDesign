@@ -10,7 +10,7 @@ function Navbar() {
         <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
             <div class="container-fluid mx-5">
                 <Link className="navbar-brand lacquer-regular " to="#">
-                    <img src="/imgsInicio/recursos-03.png" alt="Logo" style={{ height: '30px' }} />
+                    <img src="/imgsInicio/recursos-03.png" alt="Logo" style={{ height: '40px' }} />
                 </Link>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto nav-underline">

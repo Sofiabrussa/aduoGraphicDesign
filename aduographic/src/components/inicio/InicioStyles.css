@@ -4,11 +4,11 @@
 
 /* CARROUSEL */
 #carouselExample {
-    height: calc(100vh - 12vh); /* Restamos la altura del navbar */
+    height: 90vh; /* Se ajusta al 90% de la altura de la ventana */
     overflow: hidden;
 }
 
-.carousel-item img {
+.carousel-inner .carousel-item img {
     height: 100%;
     object-fit: cover; 
 }
@@ -23,11 +23,6 @@
     padding: 0 10px;
     z-index: 10; /* controla la "profundidad" visual de los elementos, posiicion al texo por encima de las imagenes */
     color: white; 
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    z-index: 20; /* Asegura que las flechas estén encima del texto */
 }
 
 .carousel-h1  {
@@ -62,5 +57,25 @@
     border-color: white !important;
     background-color: transparent !important; /* Mantiene el fondo transparente al hacer hover */
     box-shadow: none !important; /* Elimina el efecto de sombra */
+}
+
+/* ICONOS */
+
+.carousel-iconos {
+    position: absolute; /* Permite posicionarlo de forma personalizada */
+    bottom: 5%; /* Lo acerca al margen inferior (ajusta según sea necesario) */
+    right: 5%; /* Lo acerca al margen derecho (ajusta según sea necesario) */
+    z-index: 10; /* Asegura que los íconos estén encima del contenido */
+    display: flex; /* Permite alinear los íconos horizontalmente */
+    gap: 0;
+    max-width: 100%;
+}
+
+.carousel-iconos img {
+    width: 9vw; /* Ajusta el tamaño de los íconos */
+    height: auto; /* Mantiene la proporción del aspecto */
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+    margin: 0;
+    margin-right: -2vw;
 }
 

@@ -4,7 +4,7 @@
 
 /* CARROUSEL */
 #carouselExample {
-    height: 90vh; /* Se ajusta al 90% de la altura de la ventana */
+    max-height: 90vh; /* Se ajusta al 90% de la altura de la ventana */
     overflow: hidden;
 }
 

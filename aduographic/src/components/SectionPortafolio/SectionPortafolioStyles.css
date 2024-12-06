@@ -1,8 +1,134 @@
-.component {
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lacquer&family=Permanent+Marker&family=Unbounded:wght@200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*TITULO*/
+.portfolio-component {
     width: 100vw;  /* vw ancho responsive de la ventana */
-    height: 80vh;  /* vh alto responsive de la ventana */
-    background-color: lightblue;
+    height: 100vh;  /* vh alto responsive de la ventana */
+    background-color: white;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column
   }
+
+.portfolio-titulo  {
+  width: 100vw;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.portfolio-titulo h1  {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 100; 
+  font-size: 1.5vw;
+}
+
+.portfolio-titulo-negrita  {
+  font-weight: 400; 
+}
+
+.portfolio-titulo-color  {
+  color: RGB(117 81 150)
+  ;
+}
+
+/*PORTFOLIO IMAGENES*/
+
+.portolio-servicios  {
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.portolio-servicios-img  {
+  width: 100%;
+}
+
+.portolio-servicios-img img  {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* PORTFOLIO SERVICIOS */
+
+.portolio-servicios-lista  {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.list-group {
+  width: 100%;         /* La lista ocupa el 100% del ancho disponible */
+  height: 100%; 
+  display: flex;    
+}
+
+.list-group-item {
+  display: flex;
+  flex-grow: 1;   
+  text-align: start;    
+  align-items: center;  
+  padding-left: 10%;  
+  font-family: "Unbounded", sans-serif;
+  font-weight: 100; 
+  font-size: 2em;     
+  border: 0.13rem solid black;      
+}
+
+/*BOTON PORTFOLIO*/
+
+.portfolio-boton {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-boton-estilo {
+  padding: 5px 15px;
+  font-family: "Urbanist", sans-serif; 
+  font-weight: 400; 
+  font-size: 1.2vw;
+  max-width: 250px;
+  width: auto;
+  border-radius: 15px; 
+  border: 2px solid #333; 
+  color: black;
+  text-decoration: none; 
+  
+}
+
+
+
+
+
+/* Media Query*/
+@media (max-width: 768px) {
+  .portfolio-titulo h1 {
+    font-size: 2.5vw; 
+  }
+  .portfolio-titulo  {
+    height: 12vh;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .portfolio-titulo h1 {
+    font-size: 2.5vw;  
+  }
+
+  .portfolio-titulo  {
+    height: 10vh;
+  }
+}
 

@@ -15,7 +15,6 @@ function SectionPortafolio() {
             {/* Servicios */}
             <div className="portfolio-servicios" style={{ flex: "6" }}>
                 <div className="portfolio-servicios-img ">
-         
                 </div>
                 {/* Lista de servicios */}
                 <div className="portfolio-servicios-lista">

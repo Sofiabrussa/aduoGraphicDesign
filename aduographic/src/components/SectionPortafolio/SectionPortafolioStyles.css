@@ -35,12 +35,15 @@
 }
 
 .portfolio-servicios-img {
-  width: 100%;  
-  background-color: aqua;
+  width: 50%;  
+  background-image: url("C:\Users\Usuario\Documents\GitHub\aduoGraphicDesign\aduographic\public\imgsInicio\IMG_4228.png");
+  background-size: cover; /* Esto hace que la imagen cubra todo el área */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  height: auto;
 }
 
 .portfolio-servicios-lista {
-  width: 100%;
+  width: 50%;
   height: 100%;
 }
 

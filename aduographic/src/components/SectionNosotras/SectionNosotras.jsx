@@ -18,7 +18,6 @@ function SectionNosotras() {
                         desafío de crear marcas que sean 
                         tan auténticas como vos.</p>
                     <Button> Trabajemos juntos↗ </Button>
-
                 </div>
                 <div className="section-img-nosotras">
                     <img src="/imgsInicio/IMG_4228.png" class="d-block w-100" alt="IMAGEN1" />

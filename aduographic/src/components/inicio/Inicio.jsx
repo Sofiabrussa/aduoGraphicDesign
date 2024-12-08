@@ -1,27 +1,19 @@
 import "./InicioStyles.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { useEffect } from 'react';
-import { Carousel } from 'bootstrap';
-
+import Carousel from "../Carrousel/Carrousel";
 
 
 
 function Inicio() {
 
-    useEffect(() => { /*ejecuta un bloque de código después de que el componente se haya montado*/
-        const carouselElement = document.getElementById('carouselExample');
-        if (carouselElement && !carouselElement.classList.contains('carousel-initialized')) { /*Esto evita que el carrusel se inicialice varias veces*/
-            new Carousel(carouselElement, {
-                interval: 6000, // Intervalo de 6 segundos
-                ride: 'carousel', // Comienza automáticamente
-            });
-            carouselElement.classList.add('carousel-initialized'); // Marca como inicializado
-        }
-    }, []); /*[] indica q el código se ejecutará solo una vez*/ 
+    const imagesCarouselInicio = [
+        { src: "/imgsInicio/IMG_4228.png", alt: "IMAGEN1" },
+        { src: "/imgsInicio/IMG_4253(1).png", alt: "IMAGEN2" },
+      ];
 
     return (
-        <div id="carouselExample" className="carousel slide position-relative">
+        <div id="carouselExample" className="carousel slide">
             <div className="carousel-fixed-text">
                 <h1 className="carousel-h1">NO <span style={{ color: 'rgb(206, 181, 216)' }}> hay </span> DOS <br /> SIN <span style={{ color: 'rgb(206, 181, 216)' }}>tres</span></h1>
                 <p>Hacemos que tu marca <br /> sea lo que siempre soñaste </p>
@@ -30,14 +22,8 @@ function Inicio() {
                 </button>
             </div>
 
-            <div className="carousel-inner">
-                <div className="carousel-item active">
-                    <img src="/imgsInicio/IMG_4228.png" className="d-block w-100" alt="..." style={{ height: '100%', objectFit: 'contain' }} />
-                </div>
-                <div className="carousel-item">
-                    <img src="/imgsInicio/IMG_4253(1).png" className="d-block w-100" alt="..." style={{ height: '100%', objectFit: 'contain' }} />
-                </div>
-            </div>
+            <Carousel images={imagesCarouselInicio} > </Carousel>
+
             <div className="carousel-iconos">
                 <div>
                     <a href="https://walink.co/9f29a0" target="_blank" rel="noopener noreferrer">
@@ -54,6 +40,5 @@ function Inicio() {
     );
 
 }
-
 
 export default Inicio;

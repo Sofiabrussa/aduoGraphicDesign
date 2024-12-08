@@ -6,13 +6,14 @@ import { Carousel } from 'bootstrap';
 
 
 
+
 function Inicio() {
 
     useEffect(() => { /*ejecuta un bloque de código después de que el componente se haya montado*/
         const carouselElement = document.getElementById('carouselExample');
         if (carouselElement && !carouselElement.classList.contains('carousel-initialized')) { /*Esto evita que el carrusel se inicialice varias veces*/
             new Carousel(carouselElement, {
-                interval: 5000, // Intervalo de 5 segundos
+                interval: 6000, // Intervalo de 6 segundos
                 ride: 'carousel', // Comienza automáticamente
             });
             carouselElement.classList.add('carousel-initialized'); // Marca como inicializado

@@ -28,7 +28,7 @@
 .carousel-h1  {
     font-size: 3vw;
     font-family: "Unbounded", sans-serif;
-    font-weight: 250; 
+    font-weight: 300; 
 
 }
 
@@ -36,7 +36,7 @@
     font-size: 1.2vw;
     font-family: "Urbanist", sans-serif; /* Aplica la fuente Urbanist */
     font-size: 1.5vw;
-    font-weight: 200; 
+    font-weight: 300; 
 
 }
 
@@ -46,10 +46,11 @@
     font-family: "Urbanist", sans-serif; /* Aplica la fuente Urbanist */
     color: white !important;
     border-color: white !important;
+    border-radius: 8px;
     margin-top: 2.5em !important;
     font-size: 1.5vw;
-    font-weight: 200;
-
+    font-weight: 300;
+    padding: 5px 10px;
 }
 
 .carousel-fixed-text button:hover {
@@ -62,11 +63,11 @@
 /* ICONOS */
 
 .carousel-iconos {
-    position: absolute; /* Permite posicionarlo de forma personalizada */
-    bottom: 5%; /* Lo acerca al margen inferior (ajusta según sea necesario) */
-    right: 5%; /* Lo acerca al margen derecho (ajusta según sea necesario) */
-    z-index: 10; /* Asegura que los íconos estén encima del contenido */
-    display: flex; /* Permite alinear los íconos horizontalmente */
+    position: absolute; 
+    bottom: 5%; 
+    right: 5%; 
+    z-index: 10; 
+    display: flex; 
     gap: 0;
     max-width: 100%;
 }
@@ -79,3 +80,6 @@
     margin-right: -2vw;
 }
 
+
+
+/* Media querys*/ 

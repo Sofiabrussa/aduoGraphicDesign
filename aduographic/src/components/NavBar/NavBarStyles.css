@@ -1,18 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lacquer&family=Permanent+Marker&family=Unbounded:wght@200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
-.buttom-aduo {
-    color: black !important; /* Cambia el color del texto a negro */
-    border-color: rgb(117,81,150)!important; /* Cambia el borde a violeta */
-    padding: 3px 8px !important;
-    margin-top: 0.3rem !important; 
+:root { 
+     /*Colores globales*/
+    --primary-violet: rgb(117, 81, 150);
+    --second-violet: rgb(117 81 150);
+
+    /* Fuentes globales */
+    --font-text: 'Urbanist', sans-serif;
+    --font-title: 'Unbounded', sans-serif;
 }
 
-.flecha-navbar  {
-    color:  rgb(117,81,150);
+.navbar {
+    max-height: 10vh;
 }
 
-li  {
-    font-family: "Unbounded", sans-serif;
-    font-weight: 400; 
+.flecha-navbar {
+    color: var(--primary-violet);
 }
+
+.nav-link{
+    font-family: var(--font-title) ;
+    font-weight: 400 ;
+}
+
+
+

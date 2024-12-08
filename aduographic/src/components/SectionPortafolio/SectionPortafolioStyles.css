@@ -22,18 +22,17 @@
 
 
 .portfolio-titulo h1  {
-  font-family: "Unbounded", sans-serif;
-  font-weight: 100; 
+  font-family: var(--font-title) ;
+  font-weight: 200; 
   font-size: 1.5vw;
 }
 
 .portfolio-titulo-negrita  {
-  font-weight: 400; 
+  font-weight: 450; 
 }
 
 .portfolio-titulo-color  {
-  color: RGB(117 81 150)
-  ;
+  color: var(--second-violet);
 }
 
 /*PORTFOLIO IMAGENES*/

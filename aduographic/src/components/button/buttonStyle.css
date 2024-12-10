@@ -7,6 +7,7 @@
     text-decoration: none;
     font-family: var(--font-title) ;
     font-weight: 350;
+    max-width: 300px;
 }
 
 .buttom-aduo:hover {

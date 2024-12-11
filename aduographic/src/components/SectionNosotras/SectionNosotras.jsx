@@ -13,31 +13,32 @@ function SectionNosotras() {
     ];
 
     return (
-        <div className='section-nosotras'>
-            <div className="sectionSin-Carrousel-nosotras ">
-                <div className="section-texto-nosotras">
-                    <h2 className='section-texto-nosotras-titulo '> Somos un estudio <br /> gráfico que nació <br /> para  <span className='span-nosotras'> romper esquemas. </span> </h2>
-                    <p className='section-texto-nosotras-texto'> En A Dúo, somos dos amigas <br />
-                        apasionadas por transformar ideas  <br />
-                        en experiencias visuales únicas.  <br />
-
-                        Nos mueve la creatividad, la  <br />
-                        conexión con nuestros clientes y el  <br />
-                        desafío de crear marcas que sean  <br />
-                        tan auténticas como vos.</p> <br />
-                    <div className="section-texto-nosotras-button-container">
-                        <Button> Trabajemos juntos↗ </Button>
+        <div className="container-fluid vh-100 d-flex flex-column m-0 p-0">
+            <div className="container-fluid d-flex flex-row m-0 p-0 flex-grow-1" style={{ height: "70%" }}>
+                <div className="sectionNosotrasText container-fluid m-0 p-0 d-flex flex-column justify-content-center align-items-center">
+                    <h1 className="m-3 p-0 w-50 fs-2">Somos un estudio gráfico que nació para <span> romper esquemas. </span></h1>
+                    <p className="m-3 p-0 w-50 fs-5 ">En A Dúo, somos dos amigas apasionadas por transformar ideas en experiencias visuales únicas.</p>
+                    <p className="m-3 p-0 w-50 fs-5">Nos mueve la creatividad, la conexión con nuestros clientes y el desafío de crear marcas que sean tan auténticas como vos.</p>
+                    <div className="container-fluid m-5 p-0 w-50 d-flex align-items-center">
+                        <Button>Trabajemos juntos </Button>
                     </div>
                 </div>
-                <div className="section-img-nosotras">
-                    <img src="/imgsInicio/IMG_4228.png" class="d-block w-100" alt="IMAGEN1" />
+                <div className="container-fluid m-0 p-0" style={{ height: "100%" }}>
+                    <img
+                        src="/imgsNosotras/imagennosotras.png"
+                        alt="Imagen de fondo"
+                        className="w-100"
+                        style={{ objectFit: "contain", height: "100%", maxHeight: "70%" }}
+                    />
                 </div>
             </div>
-            <div class="sectionCon-Carrousel-nosotras">
-                <Carousel images={imagesCarouselSectionNosotras} > </Carousel>
+            <div className="container-fluid bg-secondary text-white m-0 p-0" style={{ height: "30%" }}>
+                <div className="sectionCon-Carrousel-nosotras h-100 w-100">
+                    <Carousel images={imagesCarouselSectionNosotras} className="w-100 h-100"></Carousel>
+                </div>
             </div>
         </div>
-    )
+    );
 }
 
 

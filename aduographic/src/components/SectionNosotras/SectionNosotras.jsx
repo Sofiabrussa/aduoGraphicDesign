@@ -7,9 +7,9 @@ import Carousel from '../Carrousel/Carrousel';
 function SectionNosotras() {
 
     const imagesCarouselSectionNosotras = [
-        { src: "/imgsNosotras/0c213a66e075ed30c5e83308f59e3733.jpg", alt: "IMAGEN1" },
-        { src: "/imgsNosotras/a120eb274b817296bd188d7cf446a1b2.jpg", alt: "IMAGEN2" },
-        { src: "/imgsNosotras/ebc9d632e5fd265831f5b2103c4b282e.jpg", alt: "IMAGEN2" },
+        { src: "/imgsNosotras/CARRUSEL1.jpg", alt: "IMAGEN1" },
+        { src: "/imgsNosotras/CARRUSEL2.jpg", alt: "IMAGEN2" },
+        { src: "/imgsNosotras/CARRUSEL3.jpg", alt: "IMAGEN2" },
     ];
 
     return (

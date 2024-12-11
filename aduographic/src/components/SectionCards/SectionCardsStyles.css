@@ -1,0 +1,28 @@
+.sectionCards  {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    flex-wrap: nowrap;
+    overflow: hidden; 
+}
+
+.cardChichas  {
+    width: 30%; /* Ancho relativo al contenedor padre */
+    max-height: 40%;  /* Permite ajustar el tamaño de forma proporcional */
+    max-height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardChichas img {
+    width: 100%;
+    height: 100%; /* La imagen ocupará toda la altura del contenedor */
+    max-height: 100%; /* No permitirá que la imagen exceda el tamaño del contenedor */
+    object-fit: cover; /* Escalará la imagen para cubrir el espacio */
+}

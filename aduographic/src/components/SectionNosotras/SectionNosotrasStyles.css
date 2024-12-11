@@ -1,94 +1,12 @@
-/* Contenedor principal de la sección */
-.section-nosotras {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-}
-
-/* Sección sin carrusel, toma 70% de la altura */
-.sectionSin-Carrousel-nosotras {
-    flex: 7; /* 70% de altura */
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-}
-
-/* TEXTO */
-.section-texto-nosotras  {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra verticalmente */
-    align-items: center; /* Centra horizontalmente */
-    flex: 1; /* Toma todo el espacio disponible */
-    width: 100%; /* Asegura que ocupe todo el ancho */
-    margin-bottom: 2%;
- }
-
-
- .section-texto-nosotras-titulo {
-    font-family: var(--font-title) ;
-    font-weight: 250; 
-    font-size: 1.5vw;
-    line-height: 1.3; /* Espaciado entre líneas */
-    margin-bottom: 1rem; /* Separación con el párrafo */
-    text-align: left; /* Alinea el texto a la izquierda */
-    width: 60%; 
-}
-
-.section-texto-nosotras-titulo span {
-    color: var(--second-violet); /* Coloreado del span */
-}
-
-.section-texto-nosotras-texto {
-    font-family: var(--font-text);
-    font-size: 1.25rem;
-    margin-bottom: 1.5rem; 
-    text-align: left; 
-    width: 60%; 
-}
-
-/*BOTON*/
-.section-texto-nosotras-button-container {
-    text-align: left; 
-    width: 60%; 
-}
-
-.section-texto-nosotras-button-container button  {
-    padding: 1.5%;
-    font-size: 1.3rem;
+.sectionNosotrasText h1 {
     font-family: var(--font-title);
-    font-weight: 300; 
+    font-weight: 300 ;
 }
 
-
-/* Imagen */
-.section-img-nosotras {
-    flex: 1; /* La imagen ocupa el mismo espacio que el texto */
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sectionNosotrasText span  {
+    color: var(--second-violet);
 }
-
-.section-img-nosotras img {
-    width: 100%;
-    height: auto;
-    max-width: 100%; /* Evita que la imagen se desborde */
-    object-fit: cover; /* Asegura que la imagen cubra completamente el espacio */
-}
-
-
-/* Sección CON carrusel*/
-.sectionCon-Carrousel-nosotras {
-    flex: 3; /* Mantén el 30% de altura */
-    display: flex;
-    width: 100%; 
-    overflow: hidden; /* Evita desbordes inesperados */
-}
-
-.sectionCon-Carrousel-nosotras > * {
-    flex: 1; /* Asegura que el contenido interno (el carrusel) se expanda dentro del contenedor */
-    width: 100%; 
-    height: 100%; 
+.sectionNosotrasText p  {
+    font-family: var(--font-text);
+    font-weight: 400 ;
 }

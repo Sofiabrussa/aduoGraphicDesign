@@ -13,7 +13,7 @@ function SectionPortafolio() {
             </div>
 
             {/* Servicios */}
-            <div className="portfolio-servicios" style={{ flex: "6" }}>
+            <div className="portfolio-servicios" style={{ flex: "8" }}>
                 <div className="portfolio-servicios-img ">
                 </div>
                 {/* Lista de servicios */}

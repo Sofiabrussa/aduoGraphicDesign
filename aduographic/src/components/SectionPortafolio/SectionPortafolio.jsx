@@ -1,43 +1,39 @@
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./SectionPortafolioStyles.css"
-import { Link } from 'react-router-dom';
 
 
 function SectionPortafolio() {
     return (
-        <div className="portfolio-component d-flex flex-column container-fluid">
-            {/* Título */}
-            <div className="portfolio-titulo row justify-content-center align-items-center text-center" style={{ flex: "3" }}>
-                <h1> <span className="portfolio-titulo-color">branding</span> y {" "} <span className="portfolio-titulo-color">diseño</span> pensados para que <br /> <span className="portfolio-titulo-negrita">tu esencia explote</span> en cada detalle. </h1>
+        <div className="container-fluid vh-100 d-flex flex-column m-0 p-0" style={{ maxHeight: '100vh' }}>
+            {/* Componente texto */}
+            <div className="d-flex justify-content-center align-items-center sectionPortfolioText" style={{ flex: "1 1 35%" }}>
+                <h1 style={{ fontSize: "clamp(1rem, 4vw, 2rem)" }}> <span style={{ color: "var(--second-violet)" }}>branding </span> y {" "} <span style={{ color: "var(--second-violet)" }} >diseño</span> pensados para que <br /> <span style={{ fontWeight: 400 }}>tu esencia explote</span> en cada detalle. </h1>
             </div>
 
-            {/* Servicios */}
-            <div className="portfolio-servicios" style={{ flex: "8" }}>
-                <div className="portfolio-servicios-img ">
+            {/* Componente img y lista */}
+            <div className="d-flex justify-content-center align-items-center flex-row" style={{ flex: "1 1 35%" }}>
+                <div className='w-50' style={{ height: "100%" , overflow: "hidden"}}>
+                    <img
+                        src="/imgPortfolio/imagenservicios.png"
+                        alt="Imagen de fondo"
+                        className="img-fluid"
+                        style={{
+                            objectFit: "contain",
+                        }}
+                    />
                 </div>
-                {/* Lista de servicios */}
-                <div className="portfolio-servicios-lista">
-                    <ul className="list-group">
-                        <li className="list-group-item">01.&nbsp;&nbsp;&nbsp;&nbsp;Branding</li>
-                        <li className="list-group-item">02.&nbsp;&nbsp;&nbsp;&nbsp;Contenido</li>
-                        <li className="list-group-item">03.&nbsp;&nbsp;&nbsp;&nbsp;Fotografía</li>
-                        <li className="list-group-item">04.&nbsp;&nbsp;&nbsp;&nbsp;Diseño Web</li>
-                    </ul>
+                <div className='bg-primary w-50'>
+                    {/* Contenido del segundo div */}
                 </div>
             </div>
 
-            {/* Botón */}
-            <div className="portfolio-boton row justify-content-center" style={{ flex: "3" }}>
-                <Link to="https://www.behance.net/aduographicdesign" target="_blank" className="portfolio-boton-estilo btn btn-outline-dark">
-                    Ver Portfolio ↗
-                </Link>
+            {/* Componente boton */}
+            <div className="d-flex justify-content-center align-items-center bg-success" style={{ flex: "1 1 30%" }}>
+                <h1 className="text-white">Componente 3 (25%)</h1>
             </div>
         </div>
-
-
-
-    )
-}
+    );
+};
 
 export default SectionPortafolio;

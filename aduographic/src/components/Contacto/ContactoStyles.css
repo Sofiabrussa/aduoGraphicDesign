@@ -1,0 +1,45 @@
+
+.SectionContacto  {
+    background-image: url("C:\Users\Usuario\Documents\GitHub\aduoGraphicDesign\aduographic\public\contacto\imagencontacto.jpg")  ;
+    background-size: cover;
+    
+}
+
+.SectionContacto span  {
+    font-family: var(--font-hand);
+    color: var(--second-violet);
+    font-size: 2.7rem;
+
+}
+
+.SectionContacto h1  {
+    font-family: var(--font-title);
+    font-weight: 230 ;
+    font-size: 2rem;
+    color: grey;
+}
+
+.SectionContacto p {
+    font-family: var(--font-text);
+    font-weight: 250 ;
+    font-size: 1.3rem;
+    color: grey;
+}
+
+.SectionContacto label {
+    font-family: var(--font-text);
+    font-weight: 250 ;
+    font-size: 1.3rem;
+    color: grey;
+}
+
+
+/*BOTON*/
+.SectionContacto button {
+    background-color: var(--second-violet);
+    color: white;
+    font-family: var(--font-text);
+    font-weight: 250 ;
+    font-size: 1.3rem;
+    padding: 0.5rem 0.5rem;
+}

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lacquer&family=Permanent+Marker&family=Unbounded:wght@200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root { 
+     /*Colores globales*/
+    --primary-violet: rgb(117, 81, 150);
+    --second-violet: rgb(117 81 150);
+
+    /* Fuentes globales */
+    --font-text: 'Urbanist', sans-serif;
+    --font-title: 'Unbounded', sans-serif;
+    --font-pastel: "MiFuentePersonalizada";
+    --font-hand: "MiFuentePersonalizada2"
+}
+
+@font-face {
+    font-family: 'MiFuentePersonalizada2';
+    src: url("C:\Users\Usuario\Documents\GitHub\aduoGraphicDesign\aduographic\public\fonts\handodle(1)\Handodle.ttf")
+}
+
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url("C:\Users\Usuario\Documents\GitHub\aduoGraphicDesign\aduographic\public\fonts\pastel_crayon\pastelcrayon.ttf")
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.navbar {
+    max-height: 10vh;
+}
+
+.flecha-navbar {
+    color: var(--primary-violet);
+}
+
+.nav-link{
+    font-family: var(--font-title) ;
+    font-weight: 400 ;
+}
+

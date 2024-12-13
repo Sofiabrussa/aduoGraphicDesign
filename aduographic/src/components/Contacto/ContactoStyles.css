@@ -16,18 +16,21 @@
     font-family: var(--font-title);
     font-weight: 230 ;
     font-size: 2rem;
+    color: grey;
 }
 
 .SectionContacto p {
     font-family: var(--font-text);
     font-weight: 250 ;
     font-size: 1.3rem;
+    color: grey;
 }
 
 .SectionContacto label {
     font-family: var(--font-text);
     font-weight: 250 ;
     font-size: 1.3rem;
+    color: grey;
 }
 
 

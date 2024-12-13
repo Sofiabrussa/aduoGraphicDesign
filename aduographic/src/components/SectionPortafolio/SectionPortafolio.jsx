@@ -50,7 +50,7 @@ function SectionPortafolio() {
             <div className="flex-shrink-1 flex-grow-0 d-flex justify-content-center align-items-center" style={{ minHeight: "200px", maxHeight: "250px" }}>
             <a href="https://www.behance.net/aduographicdesign" target="_blank" rel="noopener noreferrer">
                 <button class="btn btn-outline-dark  buttonSectionPortfolio rounded-4 " style={{ fontSize: "1.5rem", padding: "0.5rem 1.5rem" }}>
-                    Portfolio↗
+                    Ver Portfolio↗
                 </button>
                 </a>
             </div>

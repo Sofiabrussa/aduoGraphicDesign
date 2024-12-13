@@ -4,6 +4,7 @@ import Inicio from './components/Inicio/Inicio';
 import SectionPortafolio from './components/SectionPortafolio/SectionPortafolio';
 import SectionNosotras from './components/SectionNosotras/SectionNosotras';
 import SectionCards from './components/SectionCards/SectionCards';
+import Contacto from './components/Contacto/Contacto';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <SectionPortafolio id="servicios"/>
       <SectionNosotras id="nosotras"/>
       <SectionCards id="cards"/>
+      <Contacto></Contacto>
       <div className='container text-center'>
         <Routes>
           {/*   <Route path='/' element={<Inicio></Inicio>} />

@@ -1,0 +1,24 @@
+
+.SectionContacto  {
+    background-image: url("C:\Users\Usuario\Documents\GitHub\aduoGraphicDesign\aduographic\public\contacto\imagencontacto.jpg")  ;
+    background-size: cover;
+    
+}
+
+.SectionContacto h1  {
+    font-family: var(--font-title);
+    font-weight: 250 ;
+    font-size: 1.7rem;
+}
+
+.SectionContacto p {
+    font-family: var(--font-text);
+    font-weight: 250 ;
+    font-size: 1.2rem;
+}
+
+.SectionContacto label {
+    font-family: var(--font-text);
+    font-weight: 250 ;
+    font-size: 1.2rem;
+}

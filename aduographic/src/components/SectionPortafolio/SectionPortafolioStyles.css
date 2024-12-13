@@ -11,26 +11,13 @@
   font-weight: 300 ;
 }
 
+.portfolio-servicios-lista  {
+  font-family: var(--font-title);
+  font-weight: 300 ;
+  font-size: 1.5rem;
 
-/* .portfolio-servicios-lista {
-  width: 50%;
-  height: 100%;
 }
 
-.list-group {
-  width: 100%;
-  height: 100%;   
+.portfolio-servicios-lista  td  {
+  padding-left: 50px;
 }
-.list-group-item {
-  display: flex;
-  flex-grow: 1;   
-  text-align: start;    
-  align-items: center;  
-  padding-left: 10%;  
-  font-family: "Unbounded", sans-serif;
-  font-weight: 100; 
-  font-size: 2em;     
-  border: 0.13rem solid black;      
-}
- */
-

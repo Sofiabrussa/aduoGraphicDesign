@@ -9,8 +9,8 @@ import Carousel from "../Carrousel/Carrousel";
 function Inicio() {
 
     const imagesCarouselInicio = [
-        { src: "/imgsInicio/IMG_4228.png", alt: "IMAGEN1" },
-        { src: "/imgsInicio/IMG_4253(1).png", alt: "IMAGEN2" },
+        { src: "/imgsInicio/degrade1.png", alt: "IMAGEN1" },
+        { src: "/imgsInicio/degrade2.png", alt: "IMAGEN2" },
       ];
 
     return (

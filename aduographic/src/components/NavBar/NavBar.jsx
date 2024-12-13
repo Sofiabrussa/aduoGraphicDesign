@@ -18,10 +18,10 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item me-4">
-                            <Link className="nav-link" aria-current="page" to="#">Servicios</Link>
+                            <Link className="nav-link" aria-current="page" to="#servicios">Servicios</Link>
                         </li>
                         <li className="nav-item me-4">
-                            <Link className="nav-link" to="#">Nosotrass</Link>
+                            <Link className="nav-link" to="#nosotras">Nosotrass</Link>
                         </li>
                         <li className="nav-item me-4">
                             <Link className="nav-link" to="#">Portfolio</Link>
@@ -30,7 +30,9 @@ function Navbar() {
                             <Link className="nav-link" to="#">Contacto</Link>
                         </li>
                         <li className="nav-item align-self-center button-navBar">
-                           <Button> Trabajemos juntos↗ </Button>
+                            <a href="https://walink.co/9f29a0" target="_blank" rel="noopener noreferrer">
+                                <Button> Trabajemos juntos↗ </Button>
+                            </a>
                         </li>
                     </ul>
                 </div>

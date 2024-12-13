@@ -4,7 +4,7 @@ import "./SectionPortafolioStyles.css"
 
 function SectionPortafolio() {
     return (
-        <div className="container-fluid vh-100 d-flex flex-column m-0 p-0" style={{ maxHeight: '100vh', overflow: "hidden" }}>
+        <div id="servicios" className="container-fluid vh-100 d-flex flex-column m-0 p-0" style={{ maxHeight: '100vh', overflow: "hidden" }}>
             {/* Componente texto */}
             <div className="d-flex justify-content-center align-items-center sectionPortfolioText flex-shrink-1 flex-grow-0" style={{ minHeight: "150px" }}>
                 <h1>

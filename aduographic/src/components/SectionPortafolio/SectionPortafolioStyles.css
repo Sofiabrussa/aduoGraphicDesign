@@ -6,12 +6,9 @@
   font-weight: 300 ;
 }
 
-.sectionNosotrasText span  {
-  color: var(--second-violet);
-}
-.sectionNosotrasText p  {
-  font-family: var(--font-text);
-  font-weight: 400 ;
+.buttonSectionPortfolio  {
+  font-family: var(--font-title);
+  font-weight: 300 ;
 }
 
 

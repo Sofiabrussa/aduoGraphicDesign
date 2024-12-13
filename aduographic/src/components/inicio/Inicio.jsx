@@ -5,6 +5,7 @@ import Carousel from "../Carrousel/Carrousel";
 
 
 
+
 function Inicio() {
 
     const imagesCarouselInicio = [
@@ -13,7 +14,7 @@ function Inicio() {
       ];
 
     return (
-        <div id="carouselExample" className="carousel slide">
+        <div id="carouselExample" className="carousel slide" >
             <div className="carousel-fixed-text">
                 <h1 className="carousel-h1">NO <span style={{ color: 'rgb(206, 181, 216)' }}> hay </span> DOS <br /> SIN <span style={{ color: 'rgb(206, 181, 216)' }}>tres</span></h1>
                 <p>Hacemos que tu marca <br /> sea lo que siempre soñaste </p>

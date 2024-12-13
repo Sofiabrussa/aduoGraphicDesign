@@ -4,6 +4,7 @@
 .sectionPortfolioText h1 {
   font-family: var(--font-title);
   font-weight: 300 ;
+  font-size: 1.5rem
 }
 
 .buttonSectionPortfolio  {
@@ -20,4 +21,23 @@
 
 .portfolio-servicios-lista  td  {
   padding-left: 50px;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 768px)  {  /*tamaño iphone*/
+
+    .sectionPortfolioText h1  {
+      font-size: 0.5rem;
+    }
+
+    .portfolio-servicios-lista  {
+      font-size: 0.5rem;
+    }
+
+    .buttonSectionPortfolio  {
+      font-size: 0.5rem;
+      padding: 0.5rem;
+    }
+
 }

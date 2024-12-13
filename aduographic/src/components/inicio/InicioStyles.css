@@ -63,23 +63,24 @@
 /* ICONOS */
 
 .carousel-iconos {
-    position: absolute; 
+    position: fixed; 
     bottom: 5%; 
     right: 5%; 
     z-index: 10; 
     display: flex; 
-    gap: 0;
-    max-width: 100%;
+   
 }
 
 .carousel-iconos img {
     width: 9vw; /* Ajusta el tamaño de los íconos */
     height: auto; /* Mantiene la proporción del aspecto */
     cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
-    margin: 0;
-    margin-right: -2vw;
+
+   margin-right: -2vw;
 }
 
+.icono{
+    margin-right: -20px;
 
-
+}
 /* Media querys*/ 

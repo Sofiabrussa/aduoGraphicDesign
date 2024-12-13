@@ -25,7 +25,7 @@ function Inicio() {
             <Carousel images={imagesCarouselInicio} > </Carousel>
 
             <div className="carousel-iconos">
-                <div>
+                <div className="icono"> 
                     <a href="https://walink.co/9f29a0" target="_blank" rel="noopener noreferrer">
                         <img src="/imgsInicio/recursos_Mesadetrabajo 1.png" alt="..." />
                     </a>

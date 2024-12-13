@@ -15,12 +15,12 @@
 
 @font-face {
     font-family: 'MiFuentePersonalizada2';
-    src: url("C:\Users\Usuario\Documents\GitHub\aduoGraphicDesign\aduographic\public\fonts\handodle(1)\Handodle.ttf")
+    src: url("C:\Users\Usuario\Documents\GitHub\aduoGraphicDesign\aduographic\frontend\public\fonts\handodle(1)\Handodle.ttf")
 }
 
 @font-face {
     font-family: 'MiFuentePersonalizada';
-    src: url("C:\Users\Usuario\Documents\GitHub\aduoGraphicDesign\aduographic\public\fonts\pastel_crayon\pastelcrayon.ttf")
+    src: url("C:\Users\Usuario\Documents\GitHub\aduoGraphicDesign\aduographic\frontend\public\fonts\pastel_crayon\pastelcrayon.ttf")
 }
 
 html {

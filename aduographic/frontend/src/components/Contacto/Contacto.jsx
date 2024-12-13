@@ -13,7 +13,7 @@ function Contacto() {
                     <p>Queremos trabajar contigo y crear marcas <br/> con las que soñamos. </p>
                 </div>
                 <div>
-                    <form className='mt-4'>
+                    <form className='mt-4' >
                         <div className="mb-3 col-4 	">
                             <label for="exampleNombreapellido" class="form-label">Nombre y apellido*</label>
                             <input type="text" class="form-control" id="exampleNombreapellido" aria-describedby="NombreHelp" />

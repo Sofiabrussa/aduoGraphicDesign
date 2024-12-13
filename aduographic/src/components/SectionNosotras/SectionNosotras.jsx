@@ -13,7 +13,7 @@ function SectionNosotras() {
     ];
 
     return (
-        <div className="container-fluid vh-100 d-flex flex-column m-0 p-0" >
+        <div id='nosotras' className="container-fluid vh-100 d-flex flex-column m-0 p-0" >
             <div className="container-fluid d-flex flex-row m-0 p-0 flex-grow-1" style={{ height: "70%" }}>
                 <div className="sectionNosotrasText container-fluid m-0 p-0 d-flex flex-column justify-content-center align-items-center" >
                     <h1 className="m-3 p-0 w-50" style={{fontSize: "clamp(1rem, 4vw, 2rem)"}}> Somos un estudio gráfico que nació para <span> romper esquemas. </span></h1>

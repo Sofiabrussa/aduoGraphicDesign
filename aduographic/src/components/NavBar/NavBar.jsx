@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-scroll';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavBarStyles.css';
@@ -18,16 +18,16 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item me-4">
-                            <Link className="nav-link" aria-current="page" to="#servicios">Servicios</Link>
+                            <Link className="nav-link" to="servicios" smooth={true} duration={400} >Servicios</Link>
                         </li>
                         <li className="nav-item me-4">
-                            <Link className="nav-link" to="#nosotras">Nosotras</Link>
+                            <Link className="nav-link" to="nosotras" smooth={true} duration={500}>Nosotras</Link>
                         </li>
                         <li className="nav-item me-4">
-                            <Link className="nav-link" to="#">Portfolio</Link>
+                            <Link className="nav-link" to="portfolio" smooth={true} duration={500}>Portfolio</Link>
                         </li>
                         <li className="nav-item me-4">
-                            <Link className="nav-link" to="#">Contacto</Link>
+                            <Link className="nav-link" to="contacto" smooth={true} duration={500}>Contacto</Link>
                         </li>
                         <li className="nav-item align-self-center button-navBar">
                             <a href="https://walink.co/9f29a0" target="_blank" rel="noopener noreferrer">

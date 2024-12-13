@@ -4,7 +4,7 @@ import "./ContactoStyles.css";
 
 function Contacto() {
     return (
-        <div id='Contacto' className="container-fluid vh-100 SectionContacto d-flex justify-content-center flex-column">
+        <div id='contacto' className="container-fluid vh-100 SectionContacto d-flex justify-content-center flex-column">
             <div className='m-5 p-5 '>
                 <div className="container-fluid m-0 p-0">
                     <h1 > Nos inspiran las <span> historias </span> <br /> Contanos la tuya.</h1>

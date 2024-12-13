@@ -14,7 +14,7 @@ function App() {
       <SectionPortafolio id="servicios"/>
       <SectionNosotras id="nosotras"/>
       <SectionCards id="cards"/>
-      <Contacto></Contacto>
+      <Contacto id="contacto"></Contacto>
       <div className='container text-center'>
         <Routes>
           {/*   <Route path='/' element={<Inicio></Inicio>} />

@@ -10,6 +10,12 @@
     --font-text: 'Urbanist', sans-serif;
     --font-title: 'Unbounded', sans-serif;
     --font-pastel: "MiFuentePersonalizada";
+    --font-hand: "MiFuentePersonalizada2"
+}
+
+@font-face {
+    font-family: 'MiFuentePersonalizada2';
+    src: url("C:\Users\Usuario\Documents\GitHub\aduoGraphicDesign\aduographic\public\fonts\handodle(1)\Handodle.ttf")
 }
 
 @font-face {

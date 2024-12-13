@@ -6,10 +6,10 @@ function SectionPortafolio() {
     return (
         <div id="servicios" className="container-fluid vh-100 d-flex flex-column m-0 p-0" style={{ maxHeight: '100vh', overflow: "hidden" }}>
             {/* Componente texto */}
-            <div className="d-flex justify-content-center align-items-center sectionPortfolioText flex-shrink-1 flex-grow-0" style={{ minHeight: "150px" }}>
+            <div className="d-flex justify-content-center align-items-center sectionPortfolioText flex-shrink-1 flex-grow-0" style={{ minHeight: "200px" }}>
                 <h1>
-                    <span style={{ color: "var(--second-violet)" }}>branding </span> y {" "}
-                    <span style={{ color: "var(--second-violet)" }} >diseño</span> pensados para que <br />
+                    <span className="SpanPortfolioHand" style={{ color: "var(--second-violet)" }}>branding </span> y {" "}
+                    <span className="SpanPortfolioHand" style={{ color: "var(--second-violet)" }} >diseño</span> pensados para que <br />
                     <span style={{ fontWeight: 400 }}>tu esencia explote</span> en cada detalle.
                 </h1>
             </div>

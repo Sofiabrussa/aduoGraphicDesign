@@ -21,7 +21,7 @@ function Navbar() {
                             <Link className="nav-link" aria-current="page" to="#servicios">Servicios</Link>
                         </li>
                         <li className="nav-item me-4">
-                            <Link className="nav-link" to="#nosotras">Nosotrass</Link>
+                            <Link className="nav-link" to="#nosotras">Nosotras</Link>
                         </li>
                         <li className="nav-item me-4">
                             <Link className="nav-link" to="#">Portfolio</Link>

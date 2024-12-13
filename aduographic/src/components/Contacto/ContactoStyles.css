@@ -5,20 +5,27 @@
     
 }
 
+.SectionContacto span  {
+    font-family: var(--font-hand);
+    color: var(--second-violet);
+    font-size: 2.7rem;
+
+}
+
 .SectionContacto h1  {
     font-family: var(--font-title);
-    font-weight: 250 ;
-    font-size: 1.7rem;
+    font-weight: 230 ;
+    font-size: 2rem;
 }
 
 .SectionContacto p {
     font-family: var(--font-text);
     font-weight: 250 ;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .SectionContacto label {
     font-family: var(--font-text);
     font-weight: 250 ;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }

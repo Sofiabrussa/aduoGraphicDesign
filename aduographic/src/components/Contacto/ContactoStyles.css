@@ -29,3 +29,14 @@
     font-weight: 250 ;
     font-size: 1.3rem;
 }
+
+
+/*BOTON*/
+.SectionContacto button {
+    background-color: var(--second-violet);
+    color: white;
+    font-family: var(--font-text);
+    font-weight: 250 ;
+    font-size: 1.3rem;
+    padding: 0.5rem 0.5rem;
+}

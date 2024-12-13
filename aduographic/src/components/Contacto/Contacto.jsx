@@ -32,7 +32,7 @@ function Contacto() {
                         </div>
                         <p>Al enviar este formulario, acepta que almacenemos
                             sus datos para gestionar su consulta. </p>
-                        <button type="submit" className="btn btn-primary ">Enviar</button>
+                        <button type="submit" className="btn ">Enviar</button>
                     </form>
                 </div>
             </div>

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lacquer&family=Permanent+Marker&family=Unbounded:wght@200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 /* CARROUSEL */
 #carouselExample {
     max-height: 90vh; /* Se ajusta al 90% de la altura de la ventana */
@@ -27,14 +26,14 @@
 
 .carousel-h1  {
     font-size: 3vw;
-    font-family: "Unbounded", sans-serif;
+    font-family: var( --font-title);
     font-weight: 300; 
 
 }
 
 .carousel-fixed-text  p  {
     font-size: 1.2vw;
-    font-family: "Urbanist", sans-serif; /* Aplica la fuente Urbanist */
+    font-family: var(--font-text);
     font-size: 1.5vw;
     font-weight: 300; 
 

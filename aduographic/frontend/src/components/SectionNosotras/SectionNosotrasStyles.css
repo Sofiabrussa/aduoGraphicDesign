@@ -10,3 +10,17 @@
     font-family: var(--font-text);
     font-weight: 400 ;
 }
+
+.img-container {
+    width: 100%; /* Ocupará todo el ancho del contenedor padre */
+    max-width: 500px; /* Tamaño máximo del contenedor para limitar el diseño */
+    height: auto; 
+}
+
+.featured-image {
+    width: 100%; /* Ajustar al ancho del contenedor padre */
+    height: auto; /* Mantener las proporciones de la imagen */
+    object-fit: cover;
+  }
+
+

@@ -23,12 +23,11 @@ function SectionNosotras() {
                         <Button>Trabajemos juntos </Button>
                     </div>
                 </div>
-                <div className="container-fluid m-0 p-0 d-flex justify-content-center" style={{ height: "100%" }}>
+                <div className="container-fluid m-0 p-0 d-flex justify-content-center img-container">
                     <img
                         src="/imgsNosotras/imagennosotras.png"
                         alt="Imagen de fondo"
-                        className="img-fluid"
-                        style={{ objectFit: "contain", height: "100%" }}
+                        className="featured-image "
                     />
                 </div>
             </div>

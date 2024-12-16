@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lacquer&family=Permanent+Marker&family=Unbounded:wght@200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*Titulo*/
+#servicios  {
+  height: 100vh
+}
+.sectionPortfolioText  {
+  min-height: 20%;
+}
+
 .sectionPortfolioText h1 {
   font-family: var(--font-title);
   font-weight: 250 ;
@@ -35,10 +42,22 @@
 
 
 /* Media Query */
-@media screen and (max-width: 768px)  {  /*tamaño iphone*/
+@media (max-width: 480px)  {  /*tamaño iphone*/
+
+  #servicios  {
+    height: auto;
+  }
+
+  .SpanPortfolioHand  {
+    font-size: 1rem;
+  }
+
+  .sectionPortfolioText  {
+    margin: 3%;
+  }
 
     .sectionPortfolioText h1  {
-      font-size: 0.5rem;
+      font-size: 0.7rem;
     }
 
     .portfolio-servicios-lista  {
@@ -47,7 +66,9 @@
 
     .buttonSectionPortfolio  {
       font-size: 0.5rem;
-      padding: 0.5rem;
     }
 
+    .sectionButtonPortoflio  {
+      margin: 3%;
+    }
 }

@@ -23,7 +23,7 @@ function Inicio() {
                 </button>
             </div>
 
-            <Carousel images={imagesCarouselInicio} > </Carousel>
+            <Carousel images={imagesCarouselInicio} className="h-100 w-100" > </Carousel>
 
             <div className="carousel-iconos">
                 <div className="icono"> 

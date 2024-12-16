@@ -3,11 +3,12 @@
 
 /* CARROUSEL */
 #carouselExample {
-    max-height: 90vh; /* Se ajusta al 90% de la altura de la ventana */
+    max-height: 95vh; /* Se ajusta al 90% de la altura de la ventana */
     overflow: hidden;
 }
 
 .carousel-inner .carousel-item img {
+    width: 100%;
     height: 100%;
     object-fit: cover; 
 }
@@ -18,7 +19,8 @@
     width: 100%;
     text-align: left;
     top: 20%; 
-    left: 15vw;
+    left: 60%;
+    transform: translateX(-50%);
     padding: 0 10px;
     z-index: 10; /* controla la "profundidad" visual de los elementos, posiicion al texo por encima de las imagenes */
     color: white; 
@@ -33,7 +35,7 @@
 
 .carousel-h1 span {
     font-family: var(--font-pastel);  /* Aplica la fuente correcta al span */
-    font-size: 5rem;
+    font-size: 4.5rem;
     word-spacing: 0em;
 }
 
@@ -47,14 +49,17 @@
 
 /* CARROUSEL BOTON */
 .carousel-fixed-text button  {
-    font-family: "Urbanist", sans-serif; /* Aplica la fuente Urbanist */
+    font-family: var(--font-text);
+    font-size: 2rem;
+    font-weight: 300; 
     color: white !important;
     border-color: white !important;
-    border-radius: 8px;
-    margin-top: 2.5em !important;
+    border-radius: 7px;
     font-size: 2rem;
+    margin-top: 5% !important;
     font-weight: 300;
     padding: 5px 10px;
+    min-width: 13%;
 }
 
 .carousel-fixed-text button:hover {
@@ -65,14 +70,12 @@
 }
 
 /* ICONOS */
-
 .carousel-iconos {
     position: fixed; 
     bottom: 5%; 
     right: 5%; 
     z-index: 10; 
-    display: flex; 
-   
+    display: flex;
 }
 
 .carousel-iconos img {
@@ -87,4 +90,47 @@
     margin-right: -20px;
 
 }
-/* Media querys*/ 
+
+
+/* Media querys iphone*/ 
+@media (max-width: 768px) {
+    .carousel-fixed-text {
+        top: 5%; /* Reduce el margen superior */
+        padding: 0 5%; }
+
+    .carousel-h1 {
+        font-size: 1.8rem; /* Texto más pequeño */ }
+
+    .carousel-h1 .highlight-text {
+        font-size: 2rem; /* Reduce el tamaño de los spans */ }
+
+    .carousel-fixed-text p {
+        font-size: 0.9rem; }
+
+    .carousel-fixed-text button {
+        font-size: 0.9rem; /* Botón más pequeño */}
+
+    .carousel-iconos img {
+        width: 40px; /* Iconos más pequeños */
+}
+}
+
+@media (max-width: 576px) {
+    .carousel-h1 {
+        font-size: 1rem; }
+
+    .carousel-h1 span {
+        font-size: 1.5rem;}
+
+    .carousel-fixed-text p {
+        font-size: 0.6rem; }
+
+    .carousel-fixed-text button {
+        font-size: 0.6rem;
+        padding: 3px 8px;
+        width: 23%;
+    }
+
+    .carousel-iconos img {
+        width: 50px; /* Iconos más pequeños para pantallas muy pequeñas */ }
+}

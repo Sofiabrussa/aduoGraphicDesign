@@ -28,7 +28,18 @@ html {
   }
 
 .navbar {
-    max-height: 10vh;
+    position: relative;
+    max-height: 80px;
+    z-index: 1000;
+}
+
+.navbar-toggler {
+    padding: 0; /* Ajusta el espacio del ícono del menú */
+}
+
+.navbar-logo {
+    width: 160px; 
+    height: auto;
 }
 
 .flecha-navbar {
@@ -38,5 +49,40 @@ html {
 .nav-link{
     font-family: var(--font-title) ;
     font-weight: 400 ;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
+.button-navBar {
+    font-size: 0.875rem; /* Botón más pequeño para pantallas pequeñas */
+}
+
+
+/*Media querys iphone */
+@media (max-width: 576px) {
+    .navbar  {
+        max-height: 40px;
+    }
+    .navbar-logo {
+        max-width: 40px;
+     }
+
+    .nav-link {
+        font-size: 0.875rem; /* Reduce el tamaño de la fuente de los enlaces en pantallas pequeñas */}
+
+    .navbar-toggler-icon {
+        border-color: transparent;
+        
+    }
+
+    .button-navBar button {
+        font-size: 0.75rem; /* Reducir el tamaño del botón en pantallas pequeñas */
+        padding: 5px 10px;}
+    
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;}
+
+    .navbar-nav .nav-item {
+        margin-bottom: 1rem; /* Espacio entre los elementos del navbar en pantallas pequeñas */}
+}

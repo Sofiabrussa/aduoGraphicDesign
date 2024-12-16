@@ -1,15 +1,29 @@
+#nosotras  {
+    height: 100vh
+}
+
+/* Texto */
 .sectionNosotrasText h1 {
     font-family: var(--font-title);
     font-weight: 300 ;
+    font-size: 2rem;
 }
 
 .sectionNosotrasText span  {
     color: var(--second-violet);
+    font-size: 2rem;
 }
 .sectionNosotrasText p  {
     font-family: var(--font-text);
     font-weight: 400 ;
+    font-size: 1.2rem;
 }
+
+.sectionNosotrasText button  {
+    font-size: 1.2rem;
+}
+
+/* Imagen */
 
 .img-container {
     width: 100%; /* Ocupará todo el ancho del contenedor padre */
@@ -23,4 +37,29 @@
     object-fit: cover;
   }
 
+  @media (max-width: 480px)  {  /*tamaño iphone*/
 
+    #servicios  {
+      height: auto;
+    } 
+
+    .sectionNosotrasText h1  {
+        font-size: 0.8rem;
+    }
+
+    .sectionNosotrasText span  {
+        font-size: 0.8rem;
+    }
+
+    .sectionNosotrasText p  {
+        font-size: 0.5rem;
+    }
+
+    .sectionNosotrasText button  {
+        font-size: 0.5rem;
+    }
+
+
+
+
+}

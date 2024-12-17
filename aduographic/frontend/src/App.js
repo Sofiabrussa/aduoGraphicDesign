@@ -5,6 +5,7 @@ import SectionPortafolio from './components/SectionPortafolio/SectionPortafolio'
 import SectionNosotras from './components/SectionNosotras/SectionNosotras';
 import SectionCards from './components/SectionCards/SectionCards';
 import Contacto from './components/Contacto/Contacto';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <SectionNosotras id="nosotras"/>
       <SectionCards id="cards"/>
       <Contacto id="contacto"></Contacto>
+      <Footer/>
       <div className='container text-center'>
         <Routes>
           {/*   <Route path='/' element={<Inicio></Inicio>} />

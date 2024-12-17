@@ -1,6 +1,9 @@
 
 .SectionContacto  {
     background-image: url("C:\Users\Usuario\Documents\GitHub\aduoGraphicDesign\aduographic\frontend\public\contacto\imagencontacto.jpg")  ;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     
 }

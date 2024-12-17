@@ -47,28 +47,23 @@
   #servicios  {
     height: auto;
   }
-
   .SpanPortfolioHand  {
     font-size: 1rem;
   }
-
   .sectionPortfolioText  {
     margin: 3%;
   }
-
     .sectionPortfolioText h1  {
       font-size: 0.7rem;
     }
-
     .portfolio-servicios-lista  {
       font-size: 0.5rem;
     }
-
     .buttonSectionPortfolio  {
       font-size: 0.5rem;
     }
-
     .sectionButtonPortoflio  {
       margin: 3%;
     }
 }
+

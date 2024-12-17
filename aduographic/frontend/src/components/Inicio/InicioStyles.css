@@ -58,8 +58,8 @@
     font-size: 2rem;
     margin-top: 5% !important;
     font-weight: 300;
-    padding: 5px 10px;
-    min-width: 13%;
+    padding: 3px 8px;
+    min-width: 5%;
 }
 
 .carousel-fixed-text button:hover {

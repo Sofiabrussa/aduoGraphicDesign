@@ -16,13 +16,15 @@ function SectionPortafolio() {
 
             {/* Componente img y lista */}
             <div className="d-flex justify-content-center align-items-center flex-row" style={{ overflow: "hidden" }}>
-                <div className='w-50 mx-auto d-block' style={{maxWidth:"1000px", minWidth:"250px" }}>
+                <div className='w-50 mx-auto d-block' style={{maxWidth:"1000px", minWidth:"100px" }}>
                     <img
                         src="/imgPortfolio/imagenservicios.png"
                         alt="Imagen de fondo"
                         className="img-fluid"
                         style={{
                             objectFit: "contain",
+                            maxHeight: "100%", 
+                            width: "100%", 
                         }}
                     />
                 </div>

@@ -6,12 +6,12 @@ import Carousel from '../Carrousel/Carrousel';
 
 function SectionNosotras() {
 
-    const imagesCarouselSectionNosotras = [
-        { src: "/imgsNosotras/CARRUSEL1.jpg", alt: "IMAGEN1" },
-        { src: "/imgsNosotras/CARRUSEL2.jpg", alt: "IMAGEN2" },
-        { src: "/imgsNosotras/CARRUSEL3.jpg", alt: "IMAGEN2" },
-    ];
-
+        const imagesCarouselSectionNosotras = [
+            { src: "/imgsNosotras/pedidos-06.png", alt: "IMAGEN1", text: "DISEÑAR con PASIÓN = <br> CONECTAR con el MUNDO</br>" },
+            { src: "/imgsNosotras/pedidos-07.png", alt: "IMAGEN2", text: "CREEMOS que la MEJOR IDEA <br/> siempre NACE desde el DISFRUTE" },
+            { src: "/imgsNosotras/pedidos-08.png", alt: "IMAGEN3", text: "No HAY dos sin TRES <br/> Somos tu mejor TEAM!" },
+        ];
+        
     return (
         <div id='nosotras' className="container-fluid vh-100 d-flex flex-column m-0 p-0" style= {{maxHeight: "100vh"}} >
             <div className="container-fluid d-flex flex-row m-0 p-0 flex-grow-1" style={{ height: "75%" }}>

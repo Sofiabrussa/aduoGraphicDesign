@@ -37,10 +37,13 @@ function Footer() {
                 </div>
             </div>
             <div>
-                <div className="footer-text text-white">
-                    <h1>
-                        <span>A DÚO ESTUDIO CREATIVO  A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO</span> {/* Texto original */}
-                    </h1>
+                <div className="marquee mb-3">
+                    <div className="track">
+                        <div className="content text-white">
+                            <span>A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO</span>
+                            <span> A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO A DÚO ESTUDIO CREATIVO</span>                 
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

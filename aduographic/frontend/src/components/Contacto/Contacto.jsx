@@ -22,6 +22,13 @@ function Contacto() {
             const response = await axios.post('http://localhost:5000/send-email', formData); //URL de la ruta en tu backend donde se recibe la solicitud para enviar el correo.
             alert('Formulario enviado correctamente');
             console.log(response.data);
+            // Limpiar los campos después de enviar el formulario
+            setFormData({
+                nombre: '',
+                email: '',
+                celular: '',
+                conociste: ''
+            });
         } catch (error) {
             console.error('Error al enviar el formulario:', error);
             alert('Error al enviar el formulario');

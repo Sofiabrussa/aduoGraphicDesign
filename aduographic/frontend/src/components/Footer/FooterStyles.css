@@ -1,0 +1,27 @@
+.footer-text {
+    display: flex;
+    justify-content: flex-start; /* Alinea el contenido al principio */
+    align-items: center; /* Alinea verticalmente */
+    overflow: hidden; /* Esconde lo que se desborda */
+    width: 100%;
+}
+
+.footer-text h1 {
+    font-size: 2rem; /* Ajusta el tamaño del texto */
+    color: white; /* Color del texto */
+    white-space: nowrap; /* Evita el salto de línea */
+    display: inline-block;
+    animation: move-text 10s linear infinite; /* Animación de desplazamiento */
+}
+
+@keyframes move-text {
+    0% {
+        transform: translateX(100%); /* Comienza fuera de la pantalla por la derecha */
+    }
+    100% {
+        transform: translateX(-100%); /* Termina fuera de la pantalla por la izquierda */
+    }
+}
+
+
+

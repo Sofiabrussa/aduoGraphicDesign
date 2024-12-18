@@ -5,7 +5,6 @@
      /*Colores globales*/
     --primary-violet: rgb(117, 81, 150);
     --second-violet: rgb(117 81 150);
-
     /* Fuentes globales */
     --font-text: 'Urbanist', sans-serif;
     --font-title: 'Unbounded', sans-serif;
@@ -15,16 +14,17 @@
 
 @font-face {
     font-family: 'MiFuentePersonalizada2';
-    src: url("C:\Users\Usuario\Documents\GitHub\aduoGraphicDesign\aduographic\frontend\public\fonts\handodle(1)\Handodle.ttf")
+    src: url("D:\Usuario\Documents\GitHub\aduoGraphicDesign\aduographic\frontend\public\fonts\handodle(1)\Handodle.ttf")
 }
 
 @font-face {
     font-family: 'MiFuentePersonalizada';
-    src: url("C:\Users\Usuario\Documents\GitHub\aduoGraphicDesign\aduographic\frontend\public\fonts\pastel_crayon\pastelcrayon.ttf")
+    src: url("D:\Usuario\Documents\GitHub\aduoGraphicDesign\aduographic\frontend\public\fonts\pastel_crayon\pastelcrayon.ttf")
 }
 
 html {
     scroll-behavior: smooth;
+
   }
 
 .navbar {
@@ -64,25 +64,49 @@ html {
         max-height: 40px;
     }
     .navbar-logo {
-        max-width: 40px;
+        max-width: 80px;
+        position: relative;
+        left: 10px;
+        bottom:35px;
      }
 
     .nav-link {
         font-size: 0.875rem; /* Reduce el tamaño de la fuente de los enlaces en pantallas pequeñas */}
 
-    .navbar-toggler-icon {
-        border-color: transparent;
-        
+    .navbar-toggler{
+        position: relative;
+        bottom:35px;
+        margin-right:10px;
+        max-width: 30px;
+      
     }
+    .navbar-toggler-icon{
+        max-width:30px;
 
+    }
     .button-navBar button {
         font-size: 0.75rem; /* Reducir el tamaño del botón en pantallas pequeñas */
-        padding: 5px 10px;}
+        padding: 5px 10px;
+        position: relative;
+        bottom:35px;
+    
+    }
     
     .navbar-nav {
         flex-direction: column;
-        text-align: center;}
+        text-align: center;
+        background-color:white;
+        position:relative;
+        bottom:61px;
+    }
+    
 
     .navbar-nav .nav-item {
-        margin-bottom: 1rem; /* Espacio entre los elementos del navbar en pantallas pequeñas */}
+        margin-bottom: 1rem;
+ }
+
+    .button-navBar{
+        position: relative;
+        top: 30px;
+    }
 }

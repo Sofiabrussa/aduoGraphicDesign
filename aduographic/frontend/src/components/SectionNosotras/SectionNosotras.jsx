@@ -31,7 +31,7 @@ function SectionNosotras() {
                     />
                 </div>
             </div>
-            <div className="container-fluid m-0 p-0" style={{ height: "25%" }}>
+            <div className="carousel-nosotras container-fluid m-0 p-0" style={{ height: "25%" }}>
                 <div className=" h-100 w-100" style={{ overflow: "hidden" }}>
                     <Carousel images={imagesCarouselSectionNosotras}/>
                 </div>

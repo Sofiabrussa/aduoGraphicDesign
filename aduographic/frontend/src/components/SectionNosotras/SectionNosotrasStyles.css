@@ -37,29 +37,43 @@
     object-fit: cover;
   }
 
-  @media (max-width: 480px)  {  /*tamaño iphone*/
+    @media (max-width: 576px) {  /*tamaño iphone*/
 
-    #servicios  {
+    #servicios{
       height: auto;
+      
     } 
-
+   
+    .sectionNosotrasText {
+        position: relative;
+        
+    }
+    
+    
     .sectionNosotrasText h1  {
-        font-size: 0.8rem;
+        font-size: 0.9em;
     }
 
     .sectionNosotrasText span  {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .sectionNosotrasText p  {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
 
     .sectionNosotrasText button  {
-        font-size: 0.5rem;
+        font-size: 0.55rem;
+        position: relative;
+        bottom:45px;
+        
     }
-
-
-
+    
+    .featured-image{
+        position: relative;
+        top: 30px;
+        background-color:gray;
+        height: 530px;
+    };
 
 }

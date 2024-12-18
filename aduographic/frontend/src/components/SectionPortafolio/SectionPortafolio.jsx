@@ -6,8 +6,8 @@ function SectionPortafolio() {
     return (
         <div id="servicios" className="container-fluid d-flex flex-column m-0 p-0">
             {/* Componente texto */}
-            <div className="d-flex justify-content-center align-items-center sectionPortfolioText" >
-                <h1>
+            <div className="d-flex justify-content-center align-items-center sectionPortfolioText">
+                <h1 className="text-center">
                     <span className="SpanPortfolioHand" style={{ color: "var(--second-violet)" }}>branding </span> y {" "}
                     <span className="SpanPortfolioHand" style={{ color: "var(--second-violet)" }} >diseño</span> pensados para que <br />
                     <span style={{ fontWeight: 400 }}>tu esencia explote</span> en cada detalle.
@@ -15,45 +15,42 @@ function SectionPortafolio() {
             </div>
 
             {/* Componente img y lista */}
-            <div className="d-flex justify-content-center align-items-center flex-row" style={{ overflow: "hidden" }}>
-                <div className='w-50 mx-auto d-block' style={{maxWidth:"1000px", minWidth:"100px" }}>
-                    <img
-                        src="/imgPortfolio/imagenservicios.png"
-                        alt="Imagen de fondo"
-                        className="img-fluid"
-                        style={{
-                            objectFit: "contain",
-                            maxHeight: "100%", 
-                            width: "100%", 
-                        }}
-                    />
+            <div className="row ">
+                {/* Componente de imagen */}
+                <div className="col-6 d-flex justify-content-center align-items-center img-table-component  h-100"
+                    style={{ backgroundImage: 'url("/imgPortfolio/imagenservicios.png")', backgroundSize: 'cover' }}>
                 </div>
-                <div className="w-50 h-100">
-                    <table className="table table-bordered portfolio-servicios-lista h-100 " style={{ borderWidth: '0.5px', borderColor: 'black', borderStyle: 'solid' }}>
-                        <tbody className="d-flex flex-column h-100 ">
-                            <tr className="flex-grow-1 d-flex ">
-                                <td className="d-flex align-items-center border-0" >01. Branding</td>
-                            </tr>
-                            <tr className="flex-grow-1 d-flex">
-                                <td className="d-flex align-items-center border-0" >02. Contenido</td>
-                            </tr>
-                            <tr className="flex-grow-1 d-flex">
-                                <td className="d-flex align-items-center border-0">03. Fotografía</td>
-                            </tr>
-                            <tr className="flex-grow-1 d-flex">
-                                <td className="d-flex align-items-center border-0">04. Diseño Web</td>
-                            </tr>
-                        </tbody>
-                    </table>
+
+                {/* Componente de tabla */}
+                <div className="col-6 d-flex justify-content-center align-items-center m-0 p-0">
+                    <div className="w-100 d-flex flex-column h-100">
+                        <table className="table table-bordered portfolio-servicios-lista w-100 p-0 m-0" style={{ borderWidth: '0.5px', borderColor: 'black', borderStyle: 'solid', height: '100%' }}>
+                            <tbody className="d-flex flex-column h-100 p-0 m-0">
+                                <tr className="d-flex flex-grow-1 w-100">
+                                    <td className="d-flex align-items-center border-0 w-100">01. Branding</td>
+                                </tr>
+                                <tr className="d-flex flex-grow-1 w-100">
+                                    <td className="d-flex align-items-center border-0 w-100">02. Contenido</td>
+                                </tr>
+                                <tr className="d-flex flex-grow-1 w-100">
+                                    <td className="d-flex align-items-center border-0 w-100">03. Fotografía</td>
+                                </tr>
+                                <tr className="d-flex flex-grow-1 w-100">
+                                    <td className="d-flex align-items-center border-0 w-100">04. Diseño Web</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
 
+
             {/* Componente boton */}
-            <div className="d-flex justify-content-center align-items-center sectionButtonPortoflio" style={{ height: "20%"}}>
-            <a href="https://www.behance.net/aduographicdesign" target="_blank" rel="noopener noreferrer">
-                <button class="btn btn-outline-dark buttonSectionPortfolio rounded-4 ">
-                    Ver Portfolio↗
-                </button>
+            <div className="d-flex justify-content-center align-items-center sectionButtonPortoflio">
+                <a href="https://www.behance.net/aduographicdesign" target="_blank" rel="noopener noreferrer">
+                    <button className="btn btn-outline-dark buttonSectionPortfolio rounded-4">
+                        Ver Portfolio↗
+                    </button>
                 </a>
             </div>
         </div>

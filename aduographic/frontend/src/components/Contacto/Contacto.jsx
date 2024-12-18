@@ -36,7 +36,7 @@ function Contacto() {
     };
 
     return (
-        <div id='contacto' className="container-fluid SectionContacto d-flex justify-content-center flex-column"  style={{ backgroundImage: "url('/contacto/imagencontacto.jpg')" }}>
+        <div id='contacto' className="container-fluid SectionContacto d-flex justify-content-center flex-column" style={{ backgroundImage: "url('/contacto/imagencontacto.jpg')" }}>
             <div className='m-4 p-5 '>
                 <div className="text-start">
                     <h1>Nos inspiran las <span>historias</span> <br /> Contanos la tuya.</h1>
@@ -91,7 +91,9 @@ function Contacto() {
                             />
                         </div>
                         <p className="text-start">Al enviar este formulario, acepta que almacenemos sus datos para gestionar su consulta.</p>
-                        <button type="submit" className="btn">Enviar</button> {/* El tipo submit en el botón indica que este botón está relacionado con el envío del formulario. */}
+                        <div className='mb-2 pb-2' >
+                            <button type="submit" className="btn">Enviar</button> {/* El tipo submit en el botón indica que este botón está relacionado con el envío del formulario. */}
+                        </div>
                     </form>
                 </div>
             </div>

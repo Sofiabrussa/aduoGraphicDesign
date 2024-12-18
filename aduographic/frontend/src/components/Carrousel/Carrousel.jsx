@@ -1,4 +1,5 @@
 import React from "react";
+import "./CarrouselStyles.css";
 
 const Carousel = ({ images }) => {
 
@@ -14,7 +15,7 @@ const Carousel = ({ images }) => {
               <div
                 className="carousel-caption"
                 style={{
-                  top: "18%",
+                  top: "10%",
                   fontFamily: fontFamily,
                   fontWeight: "300",
                   fontSize: "2rem",

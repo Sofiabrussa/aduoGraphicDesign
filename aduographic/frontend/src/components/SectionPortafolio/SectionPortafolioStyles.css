@@ -1,14 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lacquer&family=Permanent+Marker&family=Unbounded:wght@200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
-/*Titulo*/
+
 #servicios  {
-  height: 100vh
-}
-.sectionPortfolioText  {
-  min-height: 20%;
+  min-height: 100vh;
 }
 
+.sectionPortfolioText {
+  min-height: 20vh; /* Usa vh para que sea relativo a la altura de la pantalla */
+}
+
+.img-table-component  {
+  min-height: 60vh;
+}
+
+.sectionButtonPortoflio  {
+  min-height: 20vh; 
+}
+
+
+
+/* Textos */
 .sectionPortfolioText h1 {
   font-family: var(--font-title);
   font-weight: 250 ;

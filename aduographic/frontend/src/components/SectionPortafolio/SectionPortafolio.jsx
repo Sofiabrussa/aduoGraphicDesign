@@ -4,7 +4,7 @@ import "./SectionPortafolioStyles.css"
 
 function SectionPortafolio() {
     return (
-        <div id="servicios" className="container-fluid d-flex flex-column m-0 p-0">
+        <div id="servicios" className="container-fluid d-flex flex-column m-0 p-0 w-100">
             {/* Componente texto */}
             <div className="d-flex justify-content-center align-items-center sectionPortfolioText">
                 <h1 className="text-center">
@@ -15,9 +15,9 @@ function SectionPortafolio() {
             </div>
 
             {/* Componente img y lista */}
-            <div className="row ">
+            <div className="row img-table-component  ">
                 {/* Componente de imagen */}
-                <div className="col-6 d-flex justify-content-center align-items-center img-table-component  h-100"
+                <div className="col-6 d-flex justify-content-center align-items-center"
                     style={{ backgroundImage: 'url("/imgPortfolio/imagenservicios.png")', backgroundSize: 'cover' }}>
                 </div>
 

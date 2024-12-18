@@ -1,23 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lacquer&family=Permanent+Marker&family=Unbounded:wght@200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-#servicios  {
+#servicios {
   min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  gap: 0.5rem;
 }
 
 .sectionPortfolioText {
-  min-height: 20vh; /* Usa vh para que sea relativo a la altura de la pantalla */
+  display: flex;
 }
 
-.img-table-component  {
+.img-table-component {
   min-height: 60vh;
+  width: 100%;
 }
 
-.sectionButtonPortoflio  {
-  min-height: 20vh; 
-}
+.sectionButtonPortoflio {
+  display: flex;
 
+}
 
 
 /* Textos */

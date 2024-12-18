@@ -48,7 +48,7 @@
 
 
 /* CARROUSEL BOTON */
-.carousel-fixed-text button  {
+.carousel-fixed-text .buttom-aduo {
     font-family: var(--font-text);
     font-size: 2rem;
     font-weight: 300; 
@@ -62,10 +62,10 @@
     min-width: 5%;
 }
 
-.carousel-fixed-text button:hover {
+.carousel-fixed-text .buttom-aduo:hover {
     color: white !important;
     border-color: white !important;
-    background-color: transparent !important; /* Mantiene el fondo transparente al hacer hover */
+    background-color: grey !important; /* Mantiene el fondo transparente al hacer hover */
     box-shadow: none !important; /* Elimina el efecto de sombra */
 }
 

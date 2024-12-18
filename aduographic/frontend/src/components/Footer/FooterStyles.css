@@ -1,27 +1,44 @@
-.footer-text {
-    display: flex;
-    justify-content: flex-start; /* Alinea el contenido al principio */
-    align-items: center; /* Alinea verticalmente */
-    overflow: hidden; /* Esconde lo que se desborda */
+#Footer  {
+    font-family: var(--font-text);
+    font-weight: 250 ;
+    font-size: 1rem;
+}
+
+.marquee {
+    position: relative;
+    overflow: hidden;
     width: 100%;
+    background-color: rgb(117 81 150);
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);  /* Sombra hacia arriba */
+    transform: rotate(-1deg);  /* Inclina el div hacia la izquierda */
+    z-index: 1;
 }
 
-.footer-text h1 {
-    font-size: 2rem; /* Ajusta el tamaño del texto */
-    color: white; /* Color del texto */
-    white-space: nowrap; /* Evita el salto de línea */
-    display: inline-block;
-    animation: move-text 10s linear infinite; /* Animación de desplazamiento */
+.track {
+    display: flex;
+    animation: marquee-animation 15s linear infinite;
 }
 
-@keyframes move-text {
+.content {
+    display: flex;
+    white-space: nowrap;
+}
+
+.content span {
+    padding-right: 2rem;
+    /* Espacio entre los textos */
+    font-size: 18px;
+    /* Ajusta el tamaño del texto */
+}
+
+@keyframes marquee-animation {
     0% {
-        transform: translateX(100%); /* Comienza fuera de la pantalla por la derecha */
+        transform: translateX(100%);
+        /* Comienza desde el borde derecho */
     }
+
     100% {
-        transform: translateX(-100%); /* Termina fuera de la pantalla por la izquierda */
+        transform: translateX(-100%);
+        /* Termina en el borde izquierdo */
     }
 }
-
-
-

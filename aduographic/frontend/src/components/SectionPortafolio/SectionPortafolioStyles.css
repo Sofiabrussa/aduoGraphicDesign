@@ -10,6 +10,8 @@
 
 .sectionPortfolioText {
   display: flex;
+  position:relative;
+  top:10px
 }
 
 .img-table-component {
@@ -40,7 +42,9 @@
 .buttonSectionPortfolio  {
   font-family: var(--font-title);
   font-weight: 250 ;
-  font-size: 1.5rem
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 15px;
 }
 
 /*Servicios*/

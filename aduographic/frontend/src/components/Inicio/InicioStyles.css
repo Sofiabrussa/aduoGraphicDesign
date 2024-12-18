@@ -19,11 +19,12 @@
     width: 100%;
     text-align: left;
     top: 20%; 
-    left: 60%;
+    left: 55%;
     transform: translateX(-50%);
     padding: 0 10px;
     z-index: 10; /* controla la "profundidad" visual de los elementos, posiicion al texo por encima de las imagenes */
     color: white; 
+
 }
 
 .carousel-h1  {
@@ -31,6 +32,7 @@
     font-family: var( --font-title);
     font-weight: 320; 
     word-spacing: 0em;
+    line-height: 0.8;
 }
 
 .carousel-h1 span {
@@ -43,7 +45,7 @@
     font-family: var(--font-text);
     font-size: 2rem;
     font-weight: 300; 
-
+    line-height: 1.2;
 }
 
 

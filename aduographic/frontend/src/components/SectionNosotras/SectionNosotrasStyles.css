@@ -1,5 +1,6 @@
 #nosotras  {
     min-height: 100vh; 
+    background-color: #ededed;
 }
 
 /* Texto */
@@ -38,8 +39,19 @@
     height: auto; /* Mantener las proporciones de la imagen */
     object-fit: cover;
   }
+  
 
-    @media (max-width: 576px) {  /*tamaño iphone*/
+.imagen-nosotras{
+    background-image: url('D:\Usuario\Documents\GitHub\aduoGraphicDesign\aduographic\frontend\public\imgsNosotras\imagennosotras.png');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover
+    
+};
+  
+
+@media (max-width: 576px) {  /*tamaño iphone*/
 
     #servicios{
       height: auto;

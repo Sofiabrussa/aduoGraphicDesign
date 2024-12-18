@@ -8,18 +8,6 @@
     /* Fuentes globales */
     --font-text: 'Urbanist', sans-serif;
     --font-title: 'Unbounded', sans-serif;
-    --font-pastel: "MiFuentePersonalizada";
-    --font-hand: "MiFuentePersonalizada2"
-}
-
-@font-face {
-    font-family: 'MiFuentePersonalizada2';
-    src: url("D:\Usuario\Documents\GitHub\aduoGraphicDesign\aduographic\frontend\public\fonts\handodle(1)\Handodle.ttf")
-}
-
-@font-face {
-    font-family: 'MiFuentePersonalizada';
-    src: url("D:\Usuario\Documents\GitHub\aduoGraphicDesign\aduographic\frontend\public\fonts\pastel_crayon\pastelcrayon.ttf")
 }
 
 html {

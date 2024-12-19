@@ -14,8 +14,8 @@ function SectionCards() {
                     style={{ objectFit: "cover" }}
                 />
                 <div className="overlay d-flex justify-content-end align-items-center flex-column p-5">
-                    <h5 className="card-title fs-5">Valentina Tajchman</h5>
-                    <p className="card-text fs-5">Diseñadora gráfica</p>
+                    <h5 className="card-title"><b>Valentina Tajchman</b></h5>
+                    <p className="card-text">Diseñadora gráfica</p>
                 </div>
             </div>
             <div className="card rounded-5 position-relative overflow-hidden">
@@ -26,8 +26,8 @@ function SectionCards() {
                     style={{ objectFit: "cover" }}
                 />
                 <div className="overlay d-flex justify-content-end align-items-center flex-column p-5">
-                    <h5 className="card-title fs-5">María Josefina Bas</h5>
-                    <p className="card-text fs-5">Diseñadora gráfica</p>
+                    <h5 className="card-title"><b>María Josefina Bas</b></h5>
+                    <p className="card-text">Diseñadora gráfica</p>
                 </div>
             </div>
         </div>

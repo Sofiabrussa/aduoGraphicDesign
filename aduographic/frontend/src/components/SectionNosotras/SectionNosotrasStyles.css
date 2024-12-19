@@ -7,7 +7,7 @@
 .sectionNosotrasText h1 {
     font-family: var(--font-title);
     font-weight: 300 ;
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 .sectionNosotrasText span  {
@@ -17,11 +17,11 @@
 .sectionNosotrasText p  {
     font-family: var(--font-text);
     font-weight: 400 ;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .sectionNosotrasText .button-Nosotras  {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: var(--font-text);
     font-weight: 400 ;
 }
@@ -49,16 +49,29 @@
 };
   
 
-@media (max-width: 709px) {  /*tamaño iphone*/
+/*Media query */
+@media (max-width: 700px) {
+    .sectionNosotrasText h1 {
+        font-size: 0.1rem;
+    }
+    .sectionNosotrasText p  {
+        font-size: 0.5rem;
+    }
+}
 
-    #nosotras {
-      height: auto;
-      padding: 1;
-    } 
-    .sectionNosotrasText h1  {
+
+@media (min-width: 710px) and (max-width: 1024px)  {
+    .sectionNosotrasText h1 {
+        font-size: 1.3rem;
+    }
+    .sectionNosotrasText p  {
         font-size: 1rem;
     }
-   
- 
-
+    .sectionNosotrasText span  {
+        color: var(--second-violet);
+        font-size: 1.5rem;
+    }
+    .sectionNosotrasText .button-Nosotras  {
+        font-size: 1rem;
+    }
 }

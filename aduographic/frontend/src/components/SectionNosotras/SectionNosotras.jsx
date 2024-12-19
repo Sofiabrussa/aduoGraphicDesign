@@ -13,11 +13,11 @@ function SectionNosotras() {
 
     return (
         <div id='nosotras' className="d-flex flex-column" >
-            <div className="container-fluid d-flex flex-row m-0 p-0 flex-grow-1" style={{ height: "75%" }}>
+            <div className="container-fluid d-flex flex-row m-0 p-0 flex-grow-1" style={{ maxHeight: "75%" }}>
                 <div className="sectionNosotrasText container-fluid p-0 d-flex mt-5 flex-column justify-content-center align-items-center" >
-                    <h1 className="m-3 text-start w-50"> Somos un estudio gráfico que nació para <span> romper esquemas. </span></h1>
-                    <p className="m-3 text-start w-50">En A Dúo, somos dos amigas apasionadas por transformar ideas en experiencias visuales únicas.</p>
-                    <p className="m-3 text-start w-50">Nos mueve la creatividad, la conexión con nuestros clientes y el desafío de crear marcas que sean tan auténticas como vos.</p>
+                    <h1 className="text-start w-50"> Somos un estudio gráfico que nació para <span> romper esquemas. </span></h1>
+                    <p className="mt-4 text-start w-50">En A Dúo, somos dos amigas apasionadas por transformar ideas en experiencias visuales únicas.</p>
+                    <p className="mt-3 text-start w-50">Nos mueve la creatividad, la conexión con nuestros clientes y el desafío de crear marcas que sean tan auténticas como vos.</p>
                     <div className="container-fluid m-5 p-0 w-50 d-flex align-items-center">
                         <a href='https://walink.co/9f29a0' className="buttom-aduo button-Nosotras">Trabajemos juntos </a>
                     </div>

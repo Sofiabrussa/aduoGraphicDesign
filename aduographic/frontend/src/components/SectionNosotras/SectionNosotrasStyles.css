@@ -40,7 +40,6 @@
     object-fit: cover;
   }
   
-
 .imagen-nosotras{
     background-size:cover;
     background-position: center;
@@ -50,43 +49,16 @@
 };
   
 
-@media (max-width: 576px) {  /*tamaño iphone*/
+@media (max-width: 709px) {  /*tamaño iphone*/
 
-    #servicios{
+    #nosotras {
       height: auto;
       padding: 1;
-      
     } 
-   
-    .sectionNosotrasText {
-        position: relative;
-        
-    }
-    
     .sectionNosotrasText h1  {
-        font-size: 0.9em;
+        font-size: 1rem;
     }
-
-    .sectionNosotrasText span  {
-        font-size: 0.9rem;
-    }
-
-    .sectionNosotrasText p  {
-        font-size: 0.8rem;
-    }
-
-    .sectionNosotrasText button  {
-        font-size: 0.55rem;
-        position: relative;
-        bottom:45px;
-        
-    }
-    
-    .featured-image{
-        position: relative;
-        top: 30px;
-        background-color:gray;
-        height: 530px;
-    };
+   
+ 
 
 }

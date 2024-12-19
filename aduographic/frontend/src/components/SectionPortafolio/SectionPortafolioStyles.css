@@ -2,27 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lacquer&family=Permanent+Marker&family=Unbounded:wght@200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 #servicios {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: space-around;
-  gap: 0.5rem;
-}
-
-.sectionPortfolioText {
-  display: flex;
-  position:relative;
-  top:10px
+  gap: 0.1rem;
 }
 
 .img-table-component {
-  min-height: 60vh;
+  height: 55vh;
   width: 100%;
   margin: 0;
-}
-
-.sectionButtonPortoflio {
-  display: flex;
-
 }
 
 
@@ -30,12 +19,12 @@
 .sectionPortfolioText h1 {
   font-family: var(--font-title);
   font-weight: 250 ;
-  font-size: 1.7rem
+  font-size: 1.8rem
 }
 
 .SpanPortfolioHand  {
   font-family: var(--font-hand);
-  font-size: 2.2rem;
+  font-size: 2.4rem;
 }
 
 /*Boton*/
@@ -43,8 +32,6 @@
   font-family: var(--font-title);
   font-weight: 250 ;
   font-size: 1.5rem;
-  position: relative;
-  bottom: 15px;
 }
 
 /*Servicios*/
@@ -56,43 +43,74 @@
 }
 
 .portfolio-servicios-lista  td  {
-  padding-left: 50px;
+  padding-left: 5em;
 }
 
 
 
 /* Media Query */
 @media (max-width: 480px)  {  /*tamaño iphone*/
-
   #servicios  {
     height: auto;
-    position: relative;
-    top:10px;
   }
   .SpanPortfolioHand  {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .sectionPortfolioText  {
     margin: 3%;
   }
-    .sectionPortfolioText h1  {
-      font-size: 0.9rem;
+  .sectionPortfolioText h1  {
+      font-size: 0.7rem;
     }
-    .portfolio-servicios-lista  {
-      font-size: 0.75rem;
+  .portfolio-servicios-lista  {
+      font-size: 0.7rem;
     }
-    .buttonSectionPortfolio  {
-      font-size: 0.8rem;
-      position: relative;
-      top:10px
+  .buttonSectionPortfolio  {
+      font-size: 0.6rem;
     }
     .sectionButtonPortoflio  {
-      margin: 4%;
+      margin: 5%;
     }
-    .img-fluid{
-      position: relative;
-      bottom:9px;
-      
+    .img-table-component {
+      height: 20vh;
+      width: 100%;
+      margin: 0;
+    }
+    .portfolio-servicios-lista  td  {
+      padding-left: 2em;
+    }
+}
+
+
+@media (max-width: 1024px)  {  /*tamaño iphone*/
+  #servicios  {
+    height: auto;
+  }
+  .SpanPortfolioHand  {
+    font-size: 1.4rem;
+  }
+  .sectionPortfolioText  {
+    margin: 3%;
+  }
+  .sectionPortfolioText h1  {
+      font-size: 1.1rem;
+    }
+  .portfolio-servicios-lista  {
+      font-size: 0.8rem;
+    }
+  .buttonSectionPortfolio  {
+      font-size: 0.8rem;
+    }
+    .sectionButtonPortoflio  {
+      margin: 5%;
+    }
+    .img-table-component {
+      min-height: 40vh;
+      width: 100%;
+      margin: 0;
+    }
+    .portfolio-servicios-lista  td  {
+      padding-left: 2em;
     }
 }
 

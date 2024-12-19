@@ -17,13 +17,13 @@ function SectionPortafolio() {
             {/* Componente img y lista */}
             <div className="row img-table-component row img-table-component m-0 p-0 d-flex flex-wrap">
                 {/* Componente de imagen */}
-                <div className="col-6 d-flex justify-content-center align-items-center"
-                    style={{ backgroundImage: 'url("/imgPortfolio/imagenservicios.png")', backgroundSize: 'cover' }}>
+                <div className="col-6 d-flex justify-content-center align-items-center img-component"
+                    style={{ backgroundImage: 'url("/imgPortfolio/imagenservicios.png")', backgroundSize: 'cover',  backgroundPosition: 'center' }}>
                 </div>
 
                 {/* Componente de tabla */}
                 <div className="col-6 d-flex justify-content-center align-items-center m-0 p-0">
-                    <div className="w-100 d-flex flex-column h-100">
+                    <div className="w-100 h-100">
                         <table className="table table-bordered portfolio-servicios-lista w-100 p-0 m-0" style={{ borderWidth: '0.5px', borderColor: 'black', borderStyle: 'solid', height: '100%' }}>
                             <tbody className="d-flex flex-column h-100 p-0 m-0">
                                 <tr className="d-flex flex-grow-1 w-100">

@@ -22,7 +22,7 @@ function SectionNosotras() {
                         <a href='https://walink.co/9f29a0' className="buttom-aduo button-Nosotras">Trabajemos juntos </a>
                     </div>
                 </div>
-                <div className="imagen-nosotras container-fluid " alt="100%">
+                <div className="imagen-nosotras container-fluid " alt="100%"  style={{ backgroundImage: 'url("/imgsNosotras/imagennosotras.png")'}}>
                     
                 </div>
             </div>

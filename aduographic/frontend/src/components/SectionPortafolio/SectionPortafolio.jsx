@@ -15,7 +15,7 @@ function SectionPortafolio() {
             </div>
 
             {/* Componente img y lista */}
-            <div className="row img-table-component  ">
+            <div className="row img-table-component row img-table-component m-0 p-0 d-flex flex-wrap">
                 {/* Componente de imagen */}
                 <div className="col-6 d-flex justify-content-center align-items-center"
                     style={{ backgroundImage: 'url("/imgPortfolio/imagenservicios.png")', backgroundSize: 'cover' }}>

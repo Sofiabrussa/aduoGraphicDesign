@@ -47,7 +47,7 @@ html {
 
 
 /*Media querys iphone */
-@media (max-width: 576px) {
+@media (max-width: 700px) {
     .navbar  {
         max-height: 40px;
     }
@@ -59,7 +59,7 @@ html {
      }
 
     .nav-link {
-        font-size: 0.875rem; /* Reduce el tamaño de la fuente de los enlaces en pantallas pequeñas */}
+        font-size: 0.8rem; /* Reduce el tamaño de la fuente de los enlaces en pantallas pequeñas */}
 
     .navbar-toggler{
         position: relative;
@@ -73,7 +73,7 @@ html {
 
     }
     .button-navBar button {
-        font-size: 0.75rem; /* Reducir el tamaño del botón en pantallas pequeñas */
+        font-size: 0.7rem; /* Reducir el tamaño del botón en pantallas pequeñas */
         padding: 5px 10px;
         position: relative;
         bottom:35px;
@@ -88,7 +88,59 @@ html {
         bottom:61px;
     }
     
+    .navbar-nav .nav-item {
+        margin-bottom: 1rem;
+ }
 
+    .button-navBar{
+        position: relative;
+        top: 30px;
+    }
+}
+
+
+
+@media (min-width: 710px) and (max-width: 1000px)  {
+    .navbar  {
+        max-height: 40px;
+    }
+    .navbar-logo {
+        max-width: 80px;
+        position: relative;
+        left: 10px;
+        bottom:35px;
+     }
+
+    .nav-link {
+        font-size: 0.8rem; /* Reduce el tamaño de la fuente de los enlaces en pantallas pequeñas */}
+
+    .navbar-toggler{
+        position: relative;
+        bottom:35px;
+        margin-right:10px;
+        max-width: 30px;
+      
+    }
+    .navbar-toggler-icon{
+        max-width:30px;
+
+    }
+    .button-navBar button {
+        font-size: 0.7rem; /* Reducir el tamaño del botón en pantallas pequeñas */
+        padding: 5px 10px;
+        position: relative;
+        bottom:35px;
+    
+    }
+    
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+        background-color:white;
+        position:relative;
+        bottom:61px;
+    }
+    
     .navbar-nav .nav-item {
         margin-bottom: 1rem;
  }

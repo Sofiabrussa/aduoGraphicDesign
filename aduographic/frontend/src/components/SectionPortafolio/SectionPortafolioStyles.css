@@ -49,7 +49,7 @@
 
 
 /* Media Query */
-@media (max-width: 480px)  {  /*tamaño iphone*/
+@media (max-width: 700px)  {  /*tamaño iphone*/
   #servicios  {
     height: auto;
   }
@@ -82,7 +82,7 @@
 }
 
 
-@media (min-width: 768px) and (max-width: 1024px) {  /*tamaño iphone*/
+@media (min-width: 710px) and (max-width: 1024px) {  /*tamaño iphone*/
   #servicios  {
     height: auto;
   }

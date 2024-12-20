@@ -42,7 +42,8 @@ html {
 }
 
 .button-navBar {
-    font-size: 0.875rem; /* Botón más pequeño para pantallas pequeñas */
+    font-size: 0.875rem;/* Botón más pequeño para pantallas pequeñas */
+    margin-right: 20px;
 }
 
 

@@ -2,27 +2,16 @@ import React from "react";
 import "./CarrouselStyles.css";
 
 const Carousel = ({ images }) => {
-
-  const fontFamily = getComputedStyle(document.documentElement).getPropertyValue('--font-title');
   return (
-    <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
       <div className="carousel-inner">
         {images.map((image, index) => (
           <div className={`carousel-item ${index === 0 ? "active" : ""}`} key={index}>
             <img src={image.src} className="d-block w-100" alt={image.alt} />
             {/* Verificamos si hay texto antes de mostrar la sección */}
             {image.text && (
-              <div
+              <div 
                 className="carousel-caption"
-                style={{
-                  top: "10%",
-                  fontFamily: fontFamily,
-                  fontWeight: "300",
-                  fontSize: "2rem",
-                  color: "white",
-                  padding: "10px",
-                  borderRadius: "5px",
-                }}
               >
                 <p
                   className="m-0"

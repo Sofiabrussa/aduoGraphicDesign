@@ -7,7 +7,7 @@ function Footer() {
         <div id='Footer' className="container-fluid w-100 bg-dark d-flex flex-column">
             <div className="row g-2 d-flex align-items-center mb-4 mt-3 ">
                 <div className="col">
-                    <img src="/imgsInicio/recursos-03.png" alt="Logo de mi empresa" className="navbar-logo" />
+                    <img src="/footer/Identidad2024.png" alt="Logo de mi empresa" className="navbar-logo" />
                 </div>
                 <div className="col">
                     <i className="fab fa-instagram text-white" style={{ fontSize: '3rem' }}></i>

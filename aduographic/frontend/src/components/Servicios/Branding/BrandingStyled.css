@@ -1,5 +1,6 @@
 #sectionBranding  {
     min-height: auto;
+    width: 100%;
 }
 .rectangle {
     background-color: #f8f9fa; /* Color de fondo, puedes cambiarlo */

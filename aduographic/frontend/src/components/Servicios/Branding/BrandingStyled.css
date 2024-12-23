@@ -1,0 +1,24 @@
+.section-izq {
+    background-color: aliceblue;
+}
+
+.section-der {
+    background-color: aqua;
+    min-height: 70vh; /* Mantener esto para que la columna derecha tenga una altura mínima */
+    display: flex; /* Usar flexbox para asegurar que el contenido se organice bien */
+    justify-content: center; /* Centrar contenido horizontalmente si es necesario */
+    align-items: center; /* Centrar contenido verticalmente */
+}
+
+.component-img-branding {
+    height: 40%;
+    width: 100%;
+}
+
+.component-img-branding-der {
+    background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100%; /* Hace que el contenedor ocupe el 100% del ancho disponible */
+    height: 100%; /* Asegura que el contenedor tenga la altura completa para mostrar la imagen */
+}

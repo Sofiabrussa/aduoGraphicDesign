@@ -2,6 +2,8 @@ import "./SectionBarraStyled.css";
 import Branding from '../Branding/Branding';
 import Fotografia from "../Fotografia/Fotografia";
 import Redes from "../Redes/Redes";
+import Contacto from "../../Contacto/Contacto.jsx"
+import Desarrollo from "../Desarrollo/Desarrollo.jsx";
 
 
 function SectionBarra() { 
@@ -16,6 +18,8 @@ function SectionBarra() {
     <Branding/>
     <Fotografia/>
     <Redes/>
+    <Desarrollo/>
+    <Contacto/>
     </>
     )
 }

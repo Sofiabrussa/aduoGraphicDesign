@@ -1,24 +1,47 @@
-.section-izq {
-    background-color: aliceblue;
+#sectionBranding  {
+    min-height: auto;
+}
+.rectangle {
+    background-color: #f8f9fa; /* Color de fondo, puedes cambiarlo */
+    border-radius: 5%;        /* Bordes redondeados */
+    width: 100%;          
+    height: 100%;
+    box-sizing: border-box;
 }
 
-.section-der {
-    background-color: aqua;
-    min-height: 70vh; /* Mantener esto para que la columna derecha tenga una altura mínima */
-    display: flex; /* Usar flexbox para asegurar que el contenido se organice bien */
-    justify-content: center; /* Centrar contenido horizontalmente si es necesario */
-    align-items: center; /* Centrar contenido verticalmente */
+/* Columna izquierda */
+.rectangle h1  {
+    font-family: var(--font-title);
+    color: var(--primary-violet);
+    font-size: 2.5rem;
 }
 
-.component-img-branding {
-    height: 40%;
-    width: 100%;
+.rectangle p {
+    font-family: var(--font-text);
+    font-weight: 400;
+    font-size: 1.3rem;
 }
 
-.component-img-branding-der {
-    background-size: cover; /* Hace que la imagen cubra todo el contenedor */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    width: 100%; /* Hace que el contenedor ocupe el 100% del ancho disponible */
-    height: 100%; /* Asegura que el contenedor tenga la altura completa para mostrar la imagen */
+/* boton */
+.rectangle button  {
+    font-family: var(--font-text);
+    font-size: 1.3rem;
+    width: auto; 
+    padding: 0.4rem 0.8rem; 
+    margin: 0 auto; 
+    display: inline-block; 
+    border-radius: 10%;
+    background-color: transparent;
 }
+
+/* Columna derecha img*/
+  .image-container {
+    display: inline-block; 
+  }
+  
+  .responsive-image {
+    display: block; 
+    max-width: 100%; 
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 5%
+  }

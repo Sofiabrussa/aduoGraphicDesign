@@ -1,5 +1,6 @@
 import "./SectionBarraStyled.css";
 import Branding from '../Branding/Branding';
+import Fotografia from "../Fotografia/Fotografia";
 
 
 function SectionBarra() { 
@@ -12,6 +13,7 @@ function SectionBarra() {
         <h1> Diseño y Desarrollo Web </h1>
     </div>
     <Branding/>
+    <Fotografia/>
     </>
     )
 }

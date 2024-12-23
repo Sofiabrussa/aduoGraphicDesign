@@ -1,4 +1,4 @@
-import { Routes } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/NavBar/NavBar';
 import Inicio from './components/Inicio/Inicio';
 import SectionPortafolio from './components/SectionPortafolio/SectionPortafolio';
@@ -7,6 +7,8 @@ import SectionCards from './components/SectionCards/SectionCards';
 import Contacto from './components/Contacto/Contacto';
 import Footer from './components/Footer/Footer';
 import { createGlobalStyle } from 'styled-components';
+import SectionBarra from './components/Servicios/SectionBarra/SectionBarra';
+
 
 
 const GlobalStyle = createGlobalStyle`
@@ -28,22 +30,30 @@ const GlobalStyle = createGlobalStyle`
 
 
 function App() {
+  const location = useLocation(); // Obtiene la ruta actual
+
   return (
     <>
       <GlobalStyle />
-      <Navbar />
-      <Inicio id="inicio"/>
-      <SectionPortafolio id="servicios"/>
-      <SectionNosotras id="nosotras"/>
-      <SectionCards id="cards"/>
-      <Contacto id="contacto"></Contacto>
-      <Footer/>
-      <div className='container text-center'>
+      <div className="">
+        {/* Renderizar todos los componentes solo en "/" */}
+        {location.pathname === "/" && (
+          <>
+            <Navbar />
+            <Inicio id="inicio" />
+            <SectionPortafolio id="servicios" />
+            <SectionNosotras id="nosotras" />
+            <SectionCards id="cards" />
+            <Contacto id="contacto" />
+          </>
+        )}
+
+        {/* Configurar las rutas */}
         <Routes>
-          {/*   <Route path='/' element={<Inicio></Inicio>} />
-          <Route path='/albumes' element={<Albumes></Albumes>} /> */}
+          <Route path="/servicios" element={<SectionBarra />} />
         </Routes>
       </div>
+      <Footer />
     </>
   );
 }

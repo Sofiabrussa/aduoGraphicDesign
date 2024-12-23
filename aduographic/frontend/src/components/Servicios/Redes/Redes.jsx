@@ -16,12 +16,17 @@ function Redes() {
                     <button> quiero + info  </button>
                 </div>
                 <div className="img-redes col m-5">
-                <div className="image-container-redes" style={{backgroundImage: 'url("/servicios/servicio2.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}} >
-
+                    <div className="image-container-redes" style={{ backgroundImage: 'url("/servicios/servicio2.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }} >
                     </div>
                 </div>
             </div>
-
+            <div className="image-container-web" >
+                <img
+                    src={`/servicios/servicio3.jpg`}
+                    alt="Descripción de la imagen"
+                    className="responsive-image-web"
+                />
+            </div>
         </div>
     )
 }

@@ -43,3 +43,15 @@
     background-size: cover;
     background-position: center;
 }
+
+
+/* img */
+.image-container-web {
+    width: 100%; 
+  }
+  
+.responsive-image-web {
+    width: 100%;  
+    height: auto; 
+  }
+

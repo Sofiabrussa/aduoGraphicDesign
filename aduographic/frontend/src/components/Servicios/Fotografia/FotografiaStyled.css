@@ -1,0 +1,50 @@
+#section-fotografia {
+    min-height: auto;
+    width: 100%;
+}
+
+/* Texto */
+#section-fotografia h1  {
+    font-family: var(--font-title);
+    font-size: 2.5rem;
+}
+
+#section-fotografia span  {
+    color: var(--primary-violet);
+    font-family: var(--font-hand);
+    font-size: 3.3rem;
+}
+
+#section-fotografia p {
+    font-family: var(--font-text);
+    font-weight: 450;
+    font-size: 1.5rem;
+    padding: 1% 30%;
+}
+
+/* Button */
+#section-fotografia button  {
+    font-family: var(--font-text);
+    font-size: 1.5rem;
+    width: auto; 
+    padding: 0.4rem 0.8rem; 
+    margin: 0 auto; 
+    display: inline-block; 
+    border-radius: 10%;
+    background-color: transparent;
+}
+
+/* img */
+.container-img-fotografia {
+    width: 100%; 
+    overflow: hidden; 
+  }
+  
+  .image-container-fotografia {
+    width: 100%; 
+  }
+  
+  .responsive-image-fotografia {
+    width: 100%;  
+    height: auto; 
+  }

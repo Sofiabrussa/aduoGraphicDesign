@@ -1,0 +1,11 @@
+#sectionBarra {
+    background-color: var(--second-violet); 
+}
+
+#sectionBarra h1  {
+    color: white;
+    font-family: var(--font-title);
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0.7rem;
+}

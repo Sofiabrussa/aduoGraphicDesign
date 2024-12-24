@@ -36,17 +36,17 @@ function Contacto() {
     };
 
     return (
-        <div id='contacto' className="container-fluid vh-100 SectionContacto d-flex justify-content-center flex-column">
-            <div className='m-5 p-5 '>
-                <div className="container-fluid m-0 p-0">
-                    <h1>Nos inspiran las <span>historias</span><br /> Contanos la tuya.</h1>
+        <div id='contacto' className="container-fluid SectionContacto d-flex justify-content-center flex-column" style={{ backgroundImage: "url('/contacto/imagencontacto.jpg')" }}>
+            <div className='m-4 p-5 '>
+                <div className="text-start">
+                    <h1>Nos inspiran las <span>historias</span> <br /> Contanos la tuya.</h1>
                 </div>
-                <div className="container-fluid m-0 p-0 mt-4">
+                <div className="text-start mt-4">
                     <p>Queremos trabajar contigo y crear marcas<br />con las que soñamos.</p>
                 </div>
                 <div>
                     <form className='mt-4' onSubmit={handleSubmit}>
-                        <div className="mb-3 col-4">
+                        <div className="mb-3 col-4 container-form-label">
                             <label htmlFor="nombre" className="form-label">Nombre y apellido*</label>
                             <input
                                 type="text"
@@ -57,7 +57,7 @@ function Contacto() {
                                 onChange={handleChange}
                             />
                         </div>
-                        <div className="mb-3 col-4">
+                        <div className="mb-3 col-4 container-form-label">
                             <label htmlFor="email" className="form-label">Email*</label>
                             <input
                                 type="email"
@@ -68,7 +68,7 @@ function Contacto() {
                                 onChange={handleChange}
                             />
                         </div>
-                        <div className="mb-3 col-4">
+                        <div className="mb-3 col-4 container-form-label">
                             <label htmlFor="celular" className="form-label">Celular*</label>
                             <input
                                 type="tel"
@@ -79,7 +79,7 @@ function Contacto() {
                                 onChange={handleChange}
                             />
                         </div>
-                        <div className="mb-3 col-4">
+                        <div className="mb-3 col-4 container-form-label">
                             <label htmlFor="conociste" className="form-label">¿Dónde nos conociste?*</label>
                             <input
                                 type="text"
@@ -90,8 +90,10 @@ function Contacto() {
                                 onChange={handleChange}
                             />
                         </div>
-                        <p>Al enviar este formulario, acepta que almacenemos sus datos para gestionar su consulta.</p>
-                        <button type="submit" className="btn">Enviar</button> {/* El tipo submit en el botón indica que este botón está relacionado con el envío del formulario. */}
+                        <p className="text-start">Al enviar este formulario, acepta que almacenemos sus datos para gestionar su consulta.</p>
+                        <div className='mb-2 pb-2' >
+                            <button type="submit" className="btn">Enviar</button> {/* El tipo submit en el botón indica que este botón está relacionado con el envío del formulario. */}
+                        </div>
                     </form>
                 </div>
             </div>

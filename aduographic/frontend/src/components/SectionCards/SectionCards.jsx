@@ -5,8 +5,8 @@ import "./SectionCardsStyles.css";
 
 function SectionCards() {
     return (
-        <div id='SectionCards' className="container-fluid vh-100 d-flex justify-content-center align-items-center text-center gap-5">
-            <div className="card rounded-5 position-relative overflow-hidden" style={{ width: "100%", maxWidth: "23rem" }}>
+        <div id='SectionCards' className="container-fluid d-flex justify-content-center align-items-center text-center">
+            <div className="card rounded-5 position-relative overflow-hidden">
                 <img
                     src="/imgCards/valu.png"
                     className="card-img-top w-100 h-auto"
@@ -14,11 +14,11 @@ function SectionCards() {
                     style={{ objectFit: "cover" }}
                 />
                 <div className="overlay d-flex justify-content-end align-items-center flex-column p-5">
-                    <h5 className="card-title fs-5 fs-sm-5 fs-md-6">Valentina Tajchman</h5>
-                    <p className="card-text fs-5">Diseñadora gráfica</p>
+                    <h5 className="card-title"><b>Valentina Tajchman</b></h5>
+                    <p className="card-text">Diseñadora gráfica</p>
                 </div>
             </div>
-            <div className="card rounded-5 position-relative overflow-hidden" style={{ width: "100%", maxWidth: "23rem" }}>
+            <div className="card rounded-5 position-relative overflow-hidden">
                 <img
                     src="/imgCards/jose.png"
                     className="card-img-top w-100 h-auto"
@@ -26,8 +26,8 @@ function SectionCards() {
                     style={{ objectFit: "cover" }}
                 />
                 <div className="overlay d-flex justify-content-end align-items-center flex-column p-5">
-                    <h5 className="card-title fs-5 fs-sm-5 fs-md-6">María Josefina Bas</h5>
-                    <p className="card-text fs-5">Diseñadora gráfica</p>
+                    <h5 className="card-title"><b>María Josefina Bas</b></h5>
+                    <p className="card-text">Diseñadora gráfica</p>
                 </div>
             </div>
         </div>

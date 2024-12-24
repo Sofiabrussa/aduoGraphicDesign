@@ -1,0 +1,57 @@
+.sectionRedes  {
+    min-height: auto;
+    width: 100%;
+}
+
+/* TEXTO */
+.text-redes {
+    background-color:  #f8f9fa;
+    border-radius: 5%
+}
+
+.text-redes h1  {
+    font-family: var(--font-title);
+    color: var(--primary-violet);
+    font-size: 2.5rem;
+}
+
+.text-redes p  {
+    font-family: var(--font-text);
+    font-weight: 450;
+    font-size: 1.4rem;
+    padding: 3% 15%;
+    text-align: center;
+}
+
+/* Button */
+#sectionRedes button  {
+    font-family: var(--font-text);
+    font-size: 1.2rem;
+    width: auto; 
+    padding: 0.4rem 0.8rem; 
+    margin: 0 auto; 
+    display: inline-block; 
+    border-radius: 8%;
+    background-color: transparent;
+}
+
+/* img*/
+.image-container-redes  {
+    width: 100%;
+    min-height: 50vh;
+    border-radius: 5%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* img */
+.image-container-web {
+    width: 100%; 
+  }
+  
+.responsive-image-web {
+    width: 100%;  
+    height: auto; 
+  }
+

@@ -1,8 +1,23 @@
 #nosotras  {
-    height: 100vh
+    min-height: 100vh; 
 }
 
+
 /* Texto */
+.contenedor-nosotras{
+    display: flex;
+
+    
+}
+.sectionNosotrasText  {
+    padding: 0 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 1rem;
+}
+
 .sectionNosotrasText h1 {
     font-family: var(--font-title);
     font-weight: 300 ;
@@ -19,9 +34,14 @@
     font-size: 1.2rem;
 }
 
-.sectionNosotrasText button  {
+.sectionNosotrasText .button-Nosotras  {
     font-size: 1.2rem;
+    font-family: var(--font-text);
+    font-weight: 400 ;
+    padding: 0.5%;
 }
+
+
 
 /* Imagen */
 
@@ -36,44 +56,45 @@
     height: auto; /* Mantener las proporciones de la imagen */
     object-fit: cover;
   }
+  
+.imagen-nosotras{
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+};
+  
 
-    @media (max-width: 576px) {  /*tamaño iphone*/
-
-    #servicios{
-      height: auto;
-      
-    } 
-   
-    .sectionNosotrasText {
-        position: relative;
-        
-    }
+/*Media query */
+@media (max-width: 700px) {
     
-    
-    .sectionNosotrasText h1  {
-        font-size: 0.9em;
-    }
-
-    .sectionNosotrasText span  {
-        font-size: 0.9rem;
-    }
-
-    .sectionNosotrasText p  {
-        font-size: 0.8rem;
-    }
-
-    .sectionNosotrasText button  {
-        font-size: 0.55rem;
-        position: relative;
-        bottom:45px;
-        
-    }
-    
-    .featured-image{
-        position: relative;
-        top: 30px;
-        background-color:gray;
-        height: 530px;
-    };
 
 }
+
+@media (max-width: 700px) {
+    
+    .contenedor-nosotras{
+        flex-wrap: wrap;
+        width: 100%;
+        
+    }
+    .imagen-nosotras{
+        width: 100%;
+        min-height: 40vh;     
+    }
+    .sectionNosotrasText p  {
+        font-size: 1rem;
+    }
+
+    .sectionNosotrasText h1 {
+        font-size: 1.5rem;
+    }
+    .botton{
+        text-align: center;
+        align-items: center;
+        position: relative;
+        bottom: 20px;
+        }
+}
+

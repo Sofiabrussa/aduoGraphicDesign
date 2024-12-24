@@ -8,6 +8,7 @@
     font-family: var(--font-title) ;
     font-weight: 350;
     max-width: 300px;
+    color: black;
 }
 
 .buttom-aduo:hover {

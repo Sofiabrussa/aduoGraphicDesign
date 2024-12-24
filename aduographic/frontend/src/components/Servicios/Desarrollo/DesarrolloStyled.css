@@ -1,0 +1,38 @@
+#section-desarrollo  {
+    min-height: 50vh;
+    width: 100%;
+}
+
+
+/* TEXTO */
+#section-desarrollo h1  {
+    font-family: var(--font-title);
+    font-size: 2.5rem;
+}
+
+#section-desarrollo span  {
+    color: var(--primary-violet);
+    font-family: var(--font-hand);
+    font-size: 3.5rem;
+}
+
+
+#section-desarrollo p  {
+    font-family: var(--font-text);
+    font-weight: 450;
+    font-size: 1.4rem;
+    padding: 1% 30%;
+    text-align: center;
+}
+
+/* Button */
+#section-desarrollo button  {
+    font-family: var(--font-text);
+    font-size: 1.4rem;
+    width: auto; 
+    padding: 0.4rem 0.8rem; 
+    margin: 0 auto; 
+    display: inline-block; 
+    border-radius: 8%;
+    background-color: transparent;
+}

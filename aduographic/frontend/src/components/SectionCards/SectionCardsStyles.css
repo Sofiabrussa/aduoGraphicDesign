@@ -61,6 +61,10 @@
   #SectionCards {
       height: auto; 
       padding: 1rem; 
+      flex-wrap: nowrap;
+      position: relative;
+      top:50px;
+      bottom: 60px
   }
   .card {
     width: 40%;

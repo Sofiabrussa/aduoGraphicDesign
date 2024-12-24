@@ -1,11 +1,14 @@
 #nosotras  {
     min-height: 100vh; 
-    background-color: #ededed;
 }
 
 
 /* Texto */
+.contenedor-nosotras{
+    display: flex;
 
+    
+}
 .sectionNosotrasText  {
     padding: 0 6%;
     display: flex;
@@ -65,30 +68,33 @@
 
 /*Media query */
 @media (max-width: 700px) {
-    .sectionNosotrasText h1 {
-        font-size: 1rem;
-    }
-    .sectionNosotrasText p  {
-        font-size: 0.5rem;
-    }
+    
+
 }
 
-@media (min-width: 701px) and (max-width: 1024px) {
-    .sectionNosotrasText h1 {
-        font-size: 1.3rem;
+@media (max-width: 700px) {
+    
+    .contenedor-nosotras{
+        flex-wrap: wrap;
+        width: 100%;
+        
+    }
+    .imagen-nosotras{
+        width: 100%;
+        min-height: 40vh;     
     }
     .sectionNosotrasText p  {
         font-size: 1rem;
     }
-    .sectionNosotrasText span  {
-        color: var(--second-violet);
+
+    .sectionNosotrasText h1 {
         font-size: 1.5rem;
     }
-    .sectionNosotrasText .button-Nosotras  {
-        font-size: 1rem;
-    }
+    .botton{
+        text-align: center;
+        align-items: center;
+        position: relative;
+        bottom: 20px;
+        }
 }
-
-
-
 

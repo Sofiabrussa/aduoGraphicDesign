@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; 
-    gap: 1rem;
+ 
 }
 
 .sectionNosotrasText h1 {
@@ -38,7 +38,9 @@
     font-size: 1.2rem;
     font-family: var(--font-text);
     font-weight: 400 ;
-    padding: 0.5%;
+    padding: 0.9%;
+    position: relative;
+    left: 150px;
 }
 
 
@@ -64,6 +66,7 @@
     object-fit: cover;
     background-position: center;
 };
+
   
 
 /*Media query */
@@ -81,20 +84,28 @@
     }
     .imagen-nosotras{
         width: 100%;
-        min-height: 40vh;     
+        min-height: 35vh;
+        position:relative;
+        bottom:0.1px
     }
     .sectionNosotrasText p  {
-        font-size: 1rem;
+        font-size: 1.2rem;
+    }
+    .sectionNosotrasText span{
+        font-size: 1.2rem;
     }
 
     .sectionNosotrasText h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .botton{
         text-align: center;
         align-items: center;
         position: relative;
         bottom: 20px;
+        right: 160px;
+        
+        
         }
 }
 

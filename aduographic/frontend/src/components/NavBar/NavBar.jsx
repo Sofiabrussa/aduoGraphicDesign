@@ -1,4 +1,5 @@
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom'; // Cambiar esto para navegación
+import { Link as ScrollLink } from 'react-scroll'; // Usar ScrollLink para desplazamiento suave
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavBarStyles.css';
@@ -6,6 +7,14 @@ import Button from "../button/button";
 
 
 function Navbar() {
+
+    const handleLinkClick = () => {
+        // Esperar a que la navegación se complete antes de hacer scroll
+        setTimeout(() => {
+          window.scrollTo(0, 0); // Esto hace un scroll a la parte superior
+        }, 100); // Retraso para permitir que la navegación ocurra primero
+      };
+
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <Link className="navbar-brand lacquer-regular" to="#">
@@ -17,16 +26,16 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item me-4">
-                            <Link className="nav-link" to="servicios" smooth={true} duration={600}>Servicios</Link>
+                            <Link className="nav-link" to="/servicios" onClick={handleLinkClick} >Servicios</Link>
                         </li>
                         <li className="nav-item me-4">
-                            <Link className="nav-link" to="nosotras" smooth={true} duration={600}>Nosotras</Link>
+                            <ScrollLink  className="nav-link" to="nosotras" smooth={true} duration={600}>Nosotras</ScrollLink>
                         </li>
                         <li className="nav-item me-4">
-                            <Link className="nav-link" to="portfolio" smooth={true} duration={600}>Portfolio</Link>
+                            <ScrollLink  className="nav-link" to="portfolio" smooth={true} duration={600}>Portfolio</ScrollLink>
                         </li>
                         <li className="nav-item me-4">
-                            <Link className="nav-link" to="contacto" smooth={true} duration={600}>Contacto</Link>
+                            <ScrollLink className="nav-link" to="contacto" smooth={true} duration={600}>Contacto </ScrollLink>
                         </li>
                         <li className="nav-item align-self-center button-navBar">
                             <a href="https://walink.co/9f29a0" target="_blank" rel="noopener noreferrer">

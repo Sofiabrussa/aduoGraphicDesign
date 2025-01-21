@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lacquer&family=Permanent+Marker&family=Unbounded:wght@200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
-#servicios {
+#portfolio {
   height: 100vh;
   display: flex;
   justify-content: space-around;

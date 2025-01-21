@@ -4,7 +4,7 @@ import "./SectionPortafolioStyles.css"
 
 function SectionPortafolio() {
     return (
-        <div id="servicios" className="container-fluid d-flex flex-column m-0 p-0 w-100">
+        <div id="portfolio" className="container-fluid d-flex flex-column m-0 p-0 w-100">
             {/* Componente texto */}
             <div className="d-flex justify-content-center align-items-center sectionPortfolioText">
                 <h1 className="text-center">

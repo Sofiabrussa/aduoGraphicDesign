@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/NavBar/NavBar';
 import Inicio from './components/Inicio/Inicio';
 import SectionPortafolio from './components/SectionPortafolio/SectionPortafolio';
@@ -30,27 +30,23 @@ const GlobalStyle = createGlobalStyle`
 
 
 function App() {
-  const location = useLocation(); // Obtiene la ruta actual
-
   return (
     <>
       <GlobalStyle />
       <div className="">
-        {/* Renderizar todos los componentes solo en "/" */}
-        {location.pathname === "/" && (
-          <>
-            <Navbar />
-            <Inicio id="inicio" />
-            <SectionPortafolio id="servicios" />
-            <SectionNosotras id="nosotras" />
-            <SectionCards id="cards" />
-            <Contacto id="contacto" />
-          </>
-        )}
-
-        {/* Configurar las rutas */}
+        {/* Renderizar los componentes solo en "/" */}
         <Routes>
-          <Route path="/servicios" element={<SectionBarra />} />
+          <Route path="/" element={
+            <>
+              <Navbar />
+              <Inicio id="inicio" />
+              <SectionPortafolio id="portfolio" />
+              <SectionNosotras id="nosotras" />
+              <SectionCards id="cards" />
+              <Contacto id="contacto" />
+            </>
+          } />
+          <Route path="/servicios" element={<SectionBarra id="sectionBarra" />} />
         </Routes>
       </div>
       <Footer />

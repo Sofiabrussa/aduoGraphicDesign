@@ -42,7 +42,8 @@
   
   .responsive-image {
     display: block; 
-    max-width: 100%; 
+    max-width: 80%; 
     height: auto; /* Mantiene la proporción de la imagen */
+    min-height: 70vh;
     border-radius: 5%
   }

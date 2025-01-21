@@ -6,7 +6,9 @@
 /* TEXTO */
 .text-redes {
     background-color:  #f8f9fa;
-    border-radius: 5%
+    border-radius: 5%;
+    height: auto; /* Aumenta dinámicamente según el contenido */
+    min-height: 60vh;
 }
 
 .text-redes h1  {
@@ -35,16 +37,6 @@
     background-color: transparent;
 }
 
-/* img*/
-.image-container-redes  {
-    width: 100%;
-    min-height: 50vh;
-    border-radius: 5%;
-    background-size: cover;
-    background-position: center;
-}
-
-
 /* img */
 .image-container-web {
     width: 100%; 
@@ -52,6 +44,6 @@
   
 .responsive-image-web {
     width: 100%;  
-    height: auto; 
+    max-height: 50vh; 
   }
 

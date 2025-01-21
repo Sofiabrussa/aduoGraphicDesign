@@ -6,7 +6,7 @@ function Branding() {
         <div id="sectionBranding">
             <div className="container d-flex justify-content-center align-items-stretch">
                 {/* Columna izquierda */}
-                <div className="container-fluid d-flex flex-column align-items-center w-100 m-5 ">
+                <div className="container-fluid d-flex flex-column align-items-center w-100 mb-5 mt-5 ">
                     <div className="rectangle d-flex flex-column mb-3 text-center justify-content-center flex-grow-0 flex-shrink-0" style={{ flexBasis: "60%" }}>
                         <h1> Branding </h1>
                         <p className="p-4" >
@@ -19,16 +19,16 @@ function Branding() {
                     </div>
 
                     {/* Contenedor de la imagen de la izquierda */}
-                    <div className="rectangle flex-grow-0" style={{ flexBasis: "40%", backgroundImage: 'url("/servicios/servicio2.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+                    <div className="rectangle flex-grow-0" style={{ flexBasis: "40%", backgroundImage: 'url("/brading/23.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
 
                     </div>
                 </div>
 
                 {/* Columna derecha */}
                 <div className="d-flex justify-content-center align-items-center w-100">
-                    <div className="image-container m-5" >
+                    <div className="image-container mb-5 mt-5" >
                         <img
-                            src={`/servicios/servicio1.jpg`}
+                            src={`/brading/24.jpg`}
                             alt="Descripción de la imagen"
                             className="responsive-image"
                         />

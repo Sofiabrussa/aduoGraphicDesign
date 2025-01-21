@@ -1,50 +1,83 @@
 #section-fotografia {
     min-height: auto;
     width: 100%;
-}
-
-/* Texto */
-#section-fotografia h1  {
+    background-color: var(--background-color, #fff);
+    padding: 2rem 0;
+  }
+  /* Typography */
+  #section-fotografia h1 {
     font-family: var(--font-title);
-    font-size: 2.5rem;
-}
-
-#section-fotografia span  {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    margin-bottom: 1rem;
+  }
+  #section-fotografia span {
     color: var(--primary-violet);
     font-family: var(--font-hand);
-    font-size: 3.3rem;
-}
-
-#section-fotografia p {
+    font-size: clamp(2.5rem, 5vw, 3.3rem);
+    display: inline-block;
+  }
+  #section-fotografia p {
     font-family: var(--font-text);
     font-weight: 450;
-    font-size: 1.5rem;
-    padding: 1% 30%;
-}
-
-/* Button */
-#section-fotografia button  {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    line-height: 1.6;
+  }
+  /* Button */
+  .btn-custom {
     font-family: var(--font-text);
-    font-size: 1.5rem;
-    width: auto; 
-    padding: 0.4rem 0.8rem; 
-    margin: 0 auto; 
-    display: inline-block; 
-    border-radius: 10%;
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    padding: 0.4rem 1.2rem;
+    border-radius: 10px;
     background-color: transparent;
-}
+    border: 1px solid black;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .btn-custom:hover {
+    background-color: var(--primary-violet);
+    color: white;
+    transform: translateY(-2px);
+  }
 
-/* img */
-.container-img-fotografia {
-    width: 100%; 
-    overflow: hidden; 
+
+  /* Image Container */
+  .image-wrapper {
+    position: relative;
+    width: 100vw; /* Utiliza el ancho completo de la pantalla */
+    height: auto;
+    margin: 0; /* Asegura que no haya márgenes */
+    padding: 0; /* Asegura que no haya padding */
   }
-  
-  .image-container-fotografia {
-    width: 100%; 
+
+  .img-fluid {
+    width: 100vw; /* Asegura que la imagen ocupe todo el ancho de la pantalla */
+    height: auto;
+    object-fit: cover; /* La imagen se ajustará para cubrir el área sin perder proporciones */
   }
-  
-  .responsive-image-fotografia {
-    width: 100%;  
-    height: auto; 
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    #section-fotografia p {
+      padding: 1rem 2rem;
+    }
+    
+    .image-wrapper {
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 576px) {
+    #section-fotografia h1 {
+      font-size: 1.8rem;
+    }
+    
+    #section-fotografia span {
+      font-size: 2.5rem;
+    }
+    
+    .btn-custom {
+      padding: 0.5rem 1rem;
+    }
   }

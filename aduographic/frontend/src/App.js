@@ -8,6 +8,7 @@ import Contacto from './components/Contacto/Contacto';
 import Footer from './components/Footer/Footer';
 import { createGlobalStyle } from 'styled-components';
 import SectionBarra from './components/Servicios/SectionBarra/SectionBarra';
+import SectionCarrousel from './components/SectionCarrousel/sectionCarrousel';
 
 
 
@@ -43,6 +44,7 @@ function App() {
               <SectionPortafolio id="portfolio" />
               <SectionNosotras id="nosotras" />
               <SectionCards id="cards" />
+              <SectionCarrousel/>
               <Contacto id="contacto" />
             </>
           } />

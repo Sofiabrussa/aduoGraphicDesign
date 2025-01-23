@@ -12,27 +12,52 @@ function SectionNosotras() {
     ];
 
     return (
-        <div id='nosotras' className="d-flex flex-column min-vh-100" >
-            <div className=" contenedor-nosotras container-fluid flex-row m-0 p-0 flex-grow-1" style={{ maxHeight: "75%" }}>
-                <div className="sectionNosotrasText container-fluid" >
-                    <h1 className=""> Somos un estudio gráfico que nació para <span> romper esquemas. </span></h1>
-                    <p className="mt-3">En A Dúo, somos dos amigas apasionadas por transformar ideas en experiencias visuales únicas.</p>
-                    <p className="mt-4 ">Nos mueve la creatividad, la conexión con nuestros clientes y el desafío de crear marcas que sean tan auténticas como vos.</p>
-                    <div className=" botton container-fluid mt-4 p-0">
-                        <a href='https://walink.co/9f29a0' className="buttom-aduo button-Nosotras">Trabajemos juntos </a>
-                    </div>
-                </div>
-                <div className="imagen-nosotras container-fluid " alt="100%"  style={{ backgroundImage: 'url("/imgsNosotras/imagennosotras.png")'}}>
-                    
-                </div>
+        <section id="nosotras" className="d-flex flex-column min-vh-100">
+        <div className="d-flex flex-column flex-md-row flex-grow-1">
+          {/* Text Content */}
+          <div className="w-100 w-md-50 p-4 p-md-5 d-flex flex-column justify-content-center">
+            <h1 className="fw-light fs-2 fs-md-1 mb-4">
+              Somos un estudio gráfico que nació para{" "}
+              <span className="text-violet">romper esquemas.</span>
+            </h1>
+            
+            <p className="fs-5 mb-4">
+              En A Dúo, somos dos amigas apasionadas por transformar ideas en experiencias visuales únicas.
+            </p>
+            
+            <p className="fs-5 mb-4">
+              Nos mueve la creatividad, la conexión con nuestros clientes y el desafío de crear marcas que sean tan auténticas como vos.
+            </p>
+            
+            <div className="text-center text-md-start">
+              <a 
+                href="https://walink.co/9f29a0"
+                className="btn btn-primary btn-lg px-3"
+                style={{ backgroundColor: "white", borderColor: "var(--second-violet)", color: "black" }}
+              >
+                Trabajemos juntos
+              </a>
             </div>
-            <div className="carousel-nosotras container-fluid m-0 p-0" style={{ maxHeight: "100vh" }}>
-                <div className="h-100 w-100  p-0" style={{ maxHeight: "20vh", overflow: "hidden" }}>
-                    <Carousel images={imagesCarouselSectionNosotras} />
-                </div>
-            </div>
+          </div>
+  
+          {/* Image Section */}
+          <div 
+            className="w-100 w-md-50 min-vh-40 bg-image"
+            style={{ 
+              backgroundImage: 'url("/imgsNosotras/imagennosotras.png")',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              minHeight: '40vh'
+            }}
+          />
         </div>
-
+  
+        {/* Carousel Section */}
+        <div className="w-100" style={{ height: '20vh', overflow: 'hidden' }}>
+          <Carousel images={imagesCarouselSectionNosotras} />
+        </div>
+      </section>
     );
 }
 

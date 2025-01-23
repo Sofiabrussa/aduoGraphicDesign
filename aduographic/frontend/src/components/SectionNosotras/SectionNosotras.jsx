@@ -12,7 +12,7 @@ function SectionNosotras() {
     ];
 
     return (
-        <div id='nosotras' className="d-flex flex-column" >
+        <div id='nosotras' className="d-flex flex-column min-vh-100" >
             <div className=" contenedor-nosotras container-fluid flex-row m-0 p-0 flex-grow-1" style={{ maxHeight: "75%" }}>
                 <div className="sectionNosotrasText container-fluid" >
                     <h1 className=""> Somos un estudio gráfico que nació para <span> romper esquemas. </span></h1>

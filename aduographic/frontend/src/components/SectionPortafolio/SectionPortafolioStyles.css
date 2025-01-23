@@ -1,116 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lacquer&family=Permanent+Marker&family=Unbounded:wght@200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-
 #portfolio {
-  height: 100vh;
+  max-height: 100vh;
   display: flex;
   justify-content: space-around;
   gap: 0.1rem;
 }
 
 .img-table-component {
-  height: 55vh;
+  min-height: 55vh;
   width: 100%;
   margin: 0;
 }
 
-
 /* Textos */
+.sectionPortfolioText {
+  padding: 2rem 1rem;
+}
 .sectionPortfolioText h1 {
   font-family: var(--font-title);
-  font-weight: 250 ;
-  font-size: 1.8rem
+  font-weight: 250;
+  font-size: clamp(1rem, 2.5vw, 1.8rem);
 }
-
-.SpanPortfolioHand  {
+.SpanPortfolioHand {
   font-family: var(--font-hand);
-  font-size: 2.4rem;
+  font-size: clamp(1.2rem, 3vw, 2.4rem);
+  transition: color 0.3s ease;
 }
 
-/*Boton*/
-.buttonSectionPortfolio  {
+/* Boton */
+.buttonSectionPortfolio {
   font-family: var(--font-title);
-  font-weight: 250 ;
-  font-size: 1.5rem;
+  font-weight: 250;
+  font-size: clamp(0.8rem, 2vw, 1.5rem);
+  transition: transform 0.3s ease;
+}
+.portfolio-link:hover .buttonSectionPortfolio {
+  transform: translateY(-2px);
 }
 
-/*Servicios*/
-.portfolio-servicios-lista  {
+/* Servicios */
+.portfolio-servicios-lista {
   font-family: var(--font-title);
-  font-weight: 250 ;
-  font-size: 1.5rem;
-
+  font-weight: 250;
+  font-size: clamp(0.8rem, 2vw, 1.5rem);
+}
+.portfolio-servicios-lista td {
+  padding-left: clamp(1em, 5vw, 5em);
+}
+.service-item {
+  transition: background-color 0.3s ease;
+}
+.service-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
-.portfolio-servicios-lista  td  {
-  padding-left: 5em;
-}
-
-
-
-/* Media Query */
-@media (max-width: 700px)  {  /*tamaño iphone*/
-  #servicios  {
-    height: auto;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .img-table-component {
+    min-height: 30vh;
   }
-  .SpanPortfolioHand  {
-    font-size: 1rem;
+  
+  .sectionPortfolioText, 
+  .sectionButtonPortoflio {
+    margin: 1rem 0;
   }
-  .sectionPortfolioText  {
-    margin: 3%;
-  }
-  .sectionPortfolioText h1  {
-      font-size: 0.7rem;
-    }
-  .portfolio-servicios-lista  {
-      font-size: 0.7rem;
-    }
-  .buttonSectionPortfolio  {
-      font-size: 0.6rem;
-    }
-    .sectionButtonPortoflio  {
-      margin: 5%;
-    }
-    .img-table-component {
-      height: 20vh;
-      width: 100%;
-      margin: 0;
-    }
-    .portfolio-servicios-lista  td  {
-      padding-left: 2em;
-    }
 }
 
 
-@media (min-width: 710px) and (max-width: 1024px) {  /*tamaño iphone*/
-  #servicios  {
-    height: auto;
+@media (min-width: 769px) and (max-width: 1024px) {
+  .img-table-component {
+    min-height: 40vh;
   }
-  .SpanPortfolioHand  {
-    font-size: 1.4rem;
-  }
-  .sectionPortfolioText  {
-    margin: 3%;
-  }
-  .sectionPortfolioText h1  {
-      font-size: 1.1rem;
-    }
-  .portfolio-servicios-lista  {
-      font-size: 0.8rem;
-    }
-  .buttonSectionPortfolio  {
-      font-size: 0.8rem;
-    }
-    .sectionButtonPortoflio  {
-      margin: 5%;
-    }
-    .img-table-component {
-      min-height: 40vh;
-      width: 100%;
-      margin: 0;
-    }
-    .portfolio-servicios-lista  td  {
-      padding-left: 2em;
-    }
 }
-

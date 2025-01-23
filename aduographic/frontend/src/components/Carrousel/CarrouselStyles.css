@@ -1,24 +1,35 @@
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+}
+
 .carousel-caption {
-    position: absolute;  
-    text-align: center;
-    font-family: var(--font-title);
-    font-weight: 300;
-    font-size: 1.2rem;
-    color: white;
-    z-index: 10; 
-    top: 12%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 1rem;
 }
 
-
-@media (max-width: 700px) {
-    .carousel-caption {
-        font-size: 1rem;
-    }
-
+.text-container {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
-@media (min-width: 701px) and (max-width: 1024px) {
-    .carousel-caption {
-        font-size: 1.2rem;
-    }
+.carousel-text {
+  font-family: var(--font-title);
+  font-weight: 300;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  color: white;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Aseguramos que las imágenes cubran todo el espacio */
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }

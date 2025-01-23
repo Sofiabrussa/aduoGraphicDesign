@@ -20,7 +20,7 @@ const Branding = () => {
                     <br />
                     Mirá todo lo que incluye:
                   </p>
-                  <button className="info-button">quiero + info</button>
+                  <button className="btn-custom">quiero + info</button>
                 </div>
                 
                 {/* Image Card */}

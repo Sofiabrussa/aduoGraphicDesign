@@ -25,6 +25,7 @@
     padding: 1rem;
     line-height: 1.6;
   }
+  
   /* Button */
   .btn-custom {
     font-family: var(--font-text);

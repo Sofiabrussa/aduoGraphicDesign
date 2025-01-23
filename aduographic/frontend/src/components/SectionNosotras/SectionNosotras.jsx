@@ -42,7 +42,7 @@ function SectionNosotras() {
   
           {/* Image Section */}
           <div 
-            className="w-100 w-md-50 min-vh-40 bg-image"
+            className="w-100 w-md-50 min-vh-40 bg-image rounded"
             style={{ 
               backgroundImage: 'url("/imgsNosotras/imagennosotras.png")',
               backgroundSize: 'cover',

@@ -9,7 +9,7 @@ function Desarrollo() {
                 tu medida. Ya sea que estés buscando una
                 landing page, una web sencilla o un e-commerce.
                 Diseñar webs se nos da reee cool!</p>
-            <button> lo necesito </button>
+            <button className="btn-custom "> lo necesito </button>
 
 
         </div>

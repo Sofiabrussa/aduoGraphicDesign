@@ -13,7 +13,7 @@ function Redes() {
                         landing page, una web sencilla o
                         un e-commerce.
                         Diseñar webs se nos da genial!</p>
-                    <button> quiero + info  </button>
+                    <button className="btn-custom">quiero + info</button>
                 </div>
                 <div className="text-redes col-6 m-5 justify-content-center d-flex flex-column align-items-center" style={{backgroundImage: 'url("/redesSociales/redessociales.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}} >
                 </div>

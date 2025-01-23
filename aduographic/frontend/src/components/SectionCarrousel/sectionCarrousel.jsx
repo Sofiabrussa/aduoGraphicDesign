@@ -83,7 +83,7 @@ const SectionCarrousel = () => {
   const secondCarouselImages = images.slice(10); // Últimas 10 imágenes
 
   return (
-    <div className="container section-carousel py-4 my-4 ">
+    <div className="container section-carousel py-4 my-4">
       <div className="d-flex flex-column gap-4">
         {/* Carrusel hacia la izquierda */}
         <div className="overflow-hidden ">

@@ -27,19 +27,22 @@
   margin: 0 auto;
 }
 /* Button Styles */
-.info-button {
-  font-family: var(--font-text);
-  font-size: clamp(1.1rem, 2vw, 1.3rem);
-  padding: 0.4rem 1.2rem;
-  border-radius: 10px;
-  background-color: transparent;
-  border: 1px solid black;
-  transition: all 0.3s ease;
-}
-.info-button:hover {
-  background-color: var(--primary-violet);
-  color: white;
-}
+.btn-custom {
+    font-family: var(--font-text);
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    padding: 0.4rem 1.2rem;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+.btn-custom:hover {
+    background-color: var(--primary-violet);
+    color: white;
+    transform: translateY(-2px);
+  }
+
 /* Image Card Styles */
 .image-card {
   background-size: cover;

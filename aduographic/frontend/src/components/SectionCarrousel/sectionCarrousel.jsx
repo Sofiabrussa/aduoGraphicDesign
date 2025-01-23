@@ -1,17 +1,9 @@
 import { useEffect, useRef, useState } from "react";
+import './sectionCarrouselStyles.css';
 
-const AutoCarousel = ({ direction }) => {
+const AutoCarousel = ({ images, direction }) => {
   const scrollRef = useRef(null);
-  const [images] = useState([
-    "/CarrouselImgs/1.png",
-    "/CarrouselImgs/2.png",
-    "/CarrouselImgs/3.png",
-    "/CarrouselImgs/4.png",
-    "/CarrouselImgs/5.png",
-    "/CarrouselImgs/6.png",
-    "/CarrouselImgs/7.png",
-    "/CarrouselImgs/8.png",
-  ]);
+
 
   useEffect(() => {
     const scrollContainer = scrollRef.current;
@@ -47,7 +39,7 @@ const AutoCarousel = ({ direction }) => {
   return (
     <div
       ref={scrollRef}
-      className="d-flex flex-nowrap gap-3 py-4"
+      className="d-flex flex-nowrap gap-3 py-4 auto-carousel"
       style={{ overflowX: "hidden" }}
     >
       {images.map((image, index) => (
@@ -55,7 +47,7 @@ const AutoCarousel = ({ direction }) => {
           key={index}
           src={image}
           alt={`Slide ${index + 1}`}
-          className="img-fluid rounded shadow"
+          className="img-fluid rounded shadow carousel-img"
         />
       ))}
     </div>
@@ -63,17 +55,44 @@ const AutoCarousel = ({ direction }) => {
 };
 
 const SectionCarrousel = () => {
+
+  const [images] = useState([
+    "/CarrouselImgs/1.png",
+    "/CarrouselImgs/2.png",
+    "/CarrouselImgs/3.png",
+    "/CarrouselImgs/4.png",
+    "/CarrouselImgs/5.png",
+    "/CarrouselImgs/6.png",
+    "/CarrouselImgs/7.png",
+    "/CarrouselImgs/8.png",
+    "/CarrouselImgs/9.png",
+    "/CarrouselImgs/10.png",
+    "/CarrouselImgs/11.png",
+    "/CarrouselImgs/12.png",
+    "/CarrouselImgs/13.png",
+    "/CarrouselImgs/14.png",
+    "/CarrouselImgs/15.png",
+    "/CarrouselImgs/16.jpg",
+    "/CarrouselImgs/17.jpg",
+    "/CarrouselImgs/18.png",
+    "/CarrouselImgs/19.jpg",
+    "/CarrouselImgs/20.jpg",
+  ]);
+
+  const firstCarouselImages = images.slice(0, 10); // Primeras 10 imágenes
+  const secondCarouselImages = images.slice(10); // Últimas 10 imágenes
+
   return (
-    <div className="container py-4">
+    <div className="container section-carousel py-4 my-4 ">
       <div className="d-flex flex-column gap-4">
         {/* Carrusel hacia la izquierda */}
         <div className="overflow-hidden ">
-          <AutoCarousel direction="left" />
+          <AutoCarousel images={firstCarouselImages} direction="left" />
         </div>
 
         {/* Carrusel hacia la derecha */}
         <div className="overflow-hidden">
-          <AutoCarousel direction="right" />
+          <AutoCarousel images={secondCarouselImages}  direction="right" />
         </div>
       </div>
     </div>

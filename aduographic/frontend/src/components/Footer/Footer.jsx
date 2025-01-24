@@ -18,7 +18,7 @@ function Footer() {
                 <div className="col">
                     <i className="fab fa-whatsapp" style={{ fontSize: '3rem', color: 'white' }}></i>
                 </div>
-                <div className="col">
+                <div className="col footer-links">
                     <ul className="list-unstyled text-white">
                         <li>Inicio</li>
                         <li>Servicios</li>
@@ -27,7 +27,7 @@ function Footer() {
                         <li>Contacto</li>
                     </ul>
                 </div>
-                <div className="col">
+                <div className="col footer-links">
                     <ul className="list-unstyled text-white">
                         <li>Branding</li>
                         <li>Contenido</li>

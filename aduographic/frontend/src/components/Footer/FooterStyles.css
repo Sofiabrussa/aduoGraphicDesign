@@ -31,6 +31,10 @@
     /* Ajusta el tamaño del texto */
 }
 
+.footer-links li:hover {
+      color: rgb(117, 81, 150);
+    }
+
 @keyframes marquee-animation {
     0% {
         transform: translateX(100%);

@@ -86,17 +86,17 @@
   .branding-section {
     margin: 3rem 0;
   }
-  
   .content-card {
     padding: 2rem !important;
   }
-  
   .right-image-container {
     padding: 0.5rem;
   }
-  
   .rounded-custom {
     width: 100%;
+  }
+  .btn-custom  {
+    font-size: 1rem
   }
 }
 @media (max-width: 575.98px) {

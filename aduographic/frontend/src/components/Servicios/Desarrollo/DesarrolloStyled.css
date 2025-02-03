@@ -7,20 +7,20 @@
 /* TEXTO */
 #section-desarrollo h1  {
     font-family: var(--font-title);
-    font-size: 2.5rem;
+    font-size: 2.7rem;
 }
 
 #section-desarrollo span  {
     color: var(--primary-violet);
     font-family: var(--font-hand);
-    font-size: 3.5rem;
+    font-size: 3.7rem;
 }
 
 
 #section-desarrollo p  {
     font-family: var(--font-text);
     font-weight: 450;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     padding: 1% 30%;
     text-align: center;
 }
@@ -28,7 +28,7 @@
   /* Button */
   .btn-custom {
     font-family: var(--font-text);
-    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    font-size: clamp(1.6rem, 2vw, 1.3rem);
     padding: 0.4rem 1.2rem;
     border-radius: 10px;
     background-color: transparent;
@@ -40,4 +40,27 @@
     background-color: var(--primary-violet);
     color: white;
     transform: translateY(-2px);
+  }
+
+
+  @media (max-width: 768px) {
+    #section-desarrollo p {
+      padding: 0rem 2rem;
+      font-size: 1.1rem;
+    }
+    
+  }
+  @media (max-width: 576px) {
+    #section-desarrollo h1 {
+      font-size: 1.8rem;
+      padding: 1.2rem 1rem;
+    }
+    
+    #section-desarrollo span {
+      font-size: 2.5rem;
+    }
+    
+    .btn-custom {
+      padding: 0.5rem 1rem;
+    }
   }

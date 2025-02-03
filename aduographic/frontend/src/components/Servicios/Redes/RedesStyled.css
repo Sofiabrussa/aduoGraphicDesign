@@ -39,15 +39,17 @@
 }
 
 .text-content h1 {
-  font-size: 2.5rem;
+  font-family: var(--font-title);
+  font-size: clamp(2rem, 4vw, 2.5rem);
   font-weight: bold;
   margin-bottom: 1.5rem;
   color: #6E59A5;
 }
 
 .text-content p {
-  font-size: 1.25rem;
-  line-height: 1.75;
+  font-family: var(--font-text);
+  font-weight: 450;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   max-width: 36rem;
   margin-bottom: 2rem;
   color: #4a5568;

@@ -2,6 +2,13 @@
   min-height: auto;
   width: 100%;
   margin: 5rem 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.branding-section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 /* Content Card Styles */
 .content-card {
@@ -13,11 +20,19 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(155, 135, 245, 0.1);
 }
 .content-card h1 {
   font-family: var(--font-title);
   color: var(--primary-violet);
   font-size: clamp(2rem, 4vw, 2.5rem);
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: slideIn 0.6s ease-out forwards;
 }
 .content-card p {
   font-family: var(--font-text);
@@ -25,24 +40,38 @@
   font-size: clamp(1.1rem, 2vw, 1.4rem);
   max-width: 90%;
   margin: 0 auto;
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out 0.3s forwards;
 }
 /* Button Styles */
 .btn-custom {
-    font-family: var(--font-text);
-    font-size: clamp(1.1rem, 2vw, 1.3rem);
-    padding: 0.4rem 1.2rem;
-    border-radius: 10px;
-    background-color: transparent;
-    border: 1px solid black;
-    transition: all 0.3s ease;
-    cursor: pointer;
-  }
+  font-family: var(--font-text);
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  padding: 0.4rem 1.2rem;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid black;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
 .btn-custom:hover {
-    background-color: var(--primary-violet);
-    color: white;
-    transform: translateY(-2px);
-  }
-
+  background-color: var(--primary-violet);
+  color: white;
+  transform: translateY(-2px);
+}
+.pulse-on-hover {
+  position: relative;
+}
+.pulse-on-hover:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  animation: pulse 1.5s infinite;
+}
 /* Image Card Styles */
 .image-card {
   background-size: cover;
@@ -50,6 +79,10 @@
   border-radius: 20px;
   min-height: 300px;
   width: 100%;
+  transition: transform 0.3s ease-out;
+}
+.hover-scale:hover {
+  transform: scale(1.02);
 }
 /* Right Column Image */
 .right-image-container {
@@ -63,9 +96,53 @@
   width: 80%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease-out;
 }
-
-
+/* Animation Keyframes */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(155, 135, 245, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(155, 135, 245, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(155, 135, 245, 0);
+  }
+}
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* Responsive */
 @media (max-width: 991.98px) {
   .content-card {
@@ -80,6 +157,9 @@
     margin-top: 1rem;
     min-height: 500px;
   }
+  .rounded-custom {
+    width: 100%;
+  }
 }
 @media (max-width: 767.98px) {
   .branding-section {
@@ -89,8 +169,19 @@
   .content-card p {
     max-width: 100%;
   }
-
   .right-image-container {
     min-height: 400px;
+    padding: 0;
+  }
+  .content-card {
+    padding: 1.5rem !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .right-image-container {
+    min-height: 300px;
+  }
+  .image-card {
+    min-height: 200px;
   }
 }

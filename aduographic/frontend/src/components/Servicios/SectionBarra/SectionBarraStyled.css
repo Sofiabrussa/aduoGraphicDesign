@@ -1,11 +1,34 @@
 #sectionBarra {
-    background-color: var(--second-violet); 
+    background-color: var(--second-violet);
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
 }
-
-#sectionBarra h1  {
+#sectionBarra .section-title {
     color: white;
     font-family: var(--font-title);
-    font-size: 2rem;
     font-weight: 400;
-    margin: 0.7rem;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+/* Responsive  */
+@media (max-width: 576px) {
+    #sectionBarra .section-title {
+        font-size: 1.4rem;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+    #sectionBarra .section-title {
+        font-size: 1.75rem;
+    }
+}
+@media (min-width: 769px) {
+    #sectionBarra .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* Hover effect */
+#sectionBarra .section-title:hover {
+    transform: scale(1.05);
 }

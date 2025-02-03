@@ -5,26 +5,28 @@ import Redes from "../Redes/Redes";
 import Contacto from "../../Contacto/Contacto.jsx"
 import Desarrollo from "../Desarrollo/Desarrollo.jsx";
 import Imgdesa from "../ImgDesa/Imgdesa.jsx";
-
-
 function SectionBarra() { 
     return (
     <>
-    <div id="sectionBarra" className="container-fluid d-flex flex-column justify-content-between align-items-center" >
-        <h1> Branding </h1>
-        <h1> Gestión de Redes </h1>
-        <h1> Contenido y Fotografía </h1>
-        <h1> Diseño y Desarrollo Web </h1>
-    </div>
-    <Branding/>
-    <Fotografia/>
-    <Redes/>
-    <Imgdesa/>
-    <Desarrollo/>
-    <Contacto/>
+        <div id="sectionBarra" className="container-fluid">
+            <div className="row justify-content-center w-100">
+                <div className="col-12 col-md-10 col-lg-8">
+                    <div className="d-flex flex-column justify-content-center align-items-center text-center">
+                        <h1 className="section-title mb-3 mb-md-4"> Branding </h1>
+                        <h1 className="section-title mb-3 mb-md-4"> Gestión de Redes </h1>
+                        <h1 className="section-title mb-3 mb-md-4"> Contenido y Fotografía </h1>
+                        <h1 className="section-title mb-3 mb-md-4"> Diseño y Desarrollo Web </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <Branding/>
+        <Fotografia/>
+        <Redes/>
+        <Imgdesa/>
+        <Desarrollo/>
+        <Contacto/>
     </>
     )
 }
-
-
 export default SectionBarra

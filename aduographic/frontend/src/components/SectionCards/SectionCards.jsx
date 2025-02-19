@@ -29,7 +29,7 @@ function SectionCards() {
                             loading="lazy"
                         />
                         <div className="overlay d-flex justify-content-end align-items-center flex-column p-4">
-                            <h5 className="card-title mb-2"><b>María Josefina Bas</b></h5>
+                            <h5 className="card-title mb-2"><b>Josefina Bas</b></h5>
                             <p className="card-text">Diseñadora gráfica</p>
                         </div>
                     </div>

@@ -48,7 +48,7 @@ function Inicio() {
           Hacemos que tu marca <br /> sea lo que siempre soñaste
         </p>
         <a href="#contacto" className="btn btn-outline-primary buttom-aduo">
-          Contáctanos ↗
+          Contactanos ↗
         </a>
       </div>
 

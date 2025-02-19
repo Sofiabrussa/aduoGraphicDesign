@@ -8,8 +8,7 @@ const Fotografia = () => {
           <div className="row justify-content-center w-100">
             <div className="col-12 col-md-8 text-center mb-5">
               <h1 className="mb-3">
-                Contenido <br /> 
-                <span className="d-block">y fotografía</span>
+                Contenido <span className="d-block"> y fotografía</span>
               </h1>
               <p className="mb-4">
                 Todo pensado con una estrategia visual que no solo

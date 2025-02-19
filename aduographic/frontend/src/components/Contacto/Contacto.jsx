@@ -42,7 +42,7 @@ function Contacto() {
                     <h1>Nos inspiran las <span>historias</span> <br /> Contanos la tuya.</h1>
                 </div>
                 <div className="text-start mt-4">
-                    <p>Queremos trabajar contigo y crear marcas<br />con las que soñamos.</p>
+                    <p>Queremos trabajar en conjunto con vos y crear marcas <br />con las que soñamos.</p>
                 </div>
                 <div>
                     <form className='mt-4' onSubmit={handleSubmit}>

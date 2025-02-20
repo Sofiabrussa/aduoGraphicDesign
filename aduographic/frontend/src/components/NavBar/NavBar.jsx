@@ -32,7 +32,7 @@ function Navbar() {
                             <ScrollLink  className="nav-link" to="nosotras" smooth={true} duration={600}>Nosotras</ScrollLink>
                         </li>
                         <li className="nav-item me-4">
-                            <ScrollLink  className="nav-link" to="portfolio" smooth={true} duration={600}>Portfolio</ScrollLink>
+                            <a className="nav-link" href="https://www.behance.net/aduographicdesign" target="_blank" rel="noopener noreferrer"> Portfolio </a>
                         </li>
                         <li className="nav-item me-4">
                             <ScrollLink className="nav-link" to="contacto" smooth={true} duration={600}>Contacto </ScrollLink>

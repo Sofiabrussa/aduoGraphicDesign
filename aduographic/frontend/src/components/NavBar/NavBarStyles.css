@@ -1,18 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lacquer&family=Permanent+Marker&family=Unbounded:wght@200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-
-:root { 
-     /*Colores globales*/
-    --primary-violet: rgb(117, 81, 150);
-    --second-violet: rgb(117 81 150);
-    /* Fuentes globales */
-    --font-text: 'Urbanist', sans-serif;
-    --font-title: 'Unbounded', sans-serif;
-}
 
 html {
     scroll-behavior: smooth;
-
   }
 
 .navbar {
@@ -42,7 +30,7 @@ html {
 }
 
 .button-navBar {
-    font-size: 0.875rem;/* Botón más pequeño para pantallas pequeñas */
+    font-size: 0.875rem;
     margin-right: 20px;
 }
 

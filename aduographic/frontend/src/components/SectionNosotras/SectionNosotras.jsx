@@ -2,8 +2,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./SectionNosotrasStyles.css";
 import Carousel from '../Carrousel/Carrousel';
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, Card } from 'react-bootstrap'
 import Button from '../button/button';
+import '../../App.css';
 
 function SectionNosotras() {
   const imagesCarouselSectionNosotras = [
@@ -16,26 +17,23 @@ function SectionNosotras() {
       <Row className="mx-0" style={{ height: '80vh' }}>
         {/* Text Content */}
         <Col md={6} xs={6} className="d-flex flex-column justify-content-center align-items-center text-center px-4">
-          <h1 className="m-2">
+          <Card.Title className="m-2">
             Somos un estudio gráfico que nació para{" "}
             <span className="text-violet">romper esquemas.</span>
-          </h1>
+          </Card.Title>
 
-          <p className="mb-3 mx-4">
+          <Card.Text className="mb-3 mx-4">
             En A Dúo, somos dos amigas apasionadas por transformar ideas en experiencias visuales únicas.
-          </p>
+          </Card.Text>
 
-          <p className="mb-4 mx-4">
+          <Card.Text className="mb-4 mx-4">
             Nos mueve la creatividad, la conexión con nuestros clientes y el desafío de crear marcas que sean tan auténticas como vos.
-          </p>
+          </Card.Text>
 
-          <Button >
-            <a
-              href="https://walink.co/9f29a0"
-            >
-              Trabajemos juntos
-            </a>
-          </Button>
+          <a href="https://walink.co/9f29a0" target="_blank" rel="noopener noreferrer">
+            <Button>Trabajemos juntos</Button>
+          </a>
+          
         </Col>
 
         {/* Image Section */}

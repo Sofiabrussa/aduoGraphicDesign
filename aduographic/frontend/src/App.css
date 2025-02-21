@@ -1,0 +1,30 @@
+:root {
+    --font-title-size-min-cards: 1rem;
+    --font-title-size-preferred-cards: 1.9rem;
+    --font-title-size-max-cards: 3rem;
+  
+    --font-text-size-min-cards: 1rem;
+    --font-text-size-preferred-cards: 1.3rem;
+    --font-text-size-max-cards: 1.8rem;
+  }
+
+:root { 
+    /*Colores globales*/
+   --primary-violet: rgb(117, 81, 150);
+   --second-violet: rgb(117 81 150);
+   /* Fuentes globales */
+   --font-text: 'Urbanist', sans-serif;
+   --font-title: 'Unbounded', sans-serif;
+}
+
+/* clamp(min, preferred, max); */
+.card-title {
+    font-size: clamp(var(--font-title-size-min-cards), var(--font-title-size-preferred-cards), var(--font-title-size-max-cards));
+    font-family: var(--font-title);
+    font-weight: 500;
+  }
+.card-text {
+    font-size: clamp(var(--font-text-size-min-cards), var(--font-text-size-preferred-cards), var(--font-text-size-max-cards));
+    font-family: var(--font-text);
+    font-weight: 500;
+  }

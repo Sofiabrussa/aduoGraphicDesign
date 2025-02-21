@@ -21,7 +21,7 @@
 .carousel-text {
   font-family: var(--font-title);
   font-weight: 300;
-  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-size: 1.4rem;
   color: white;
   text-align: center;
   line-height: 1.4;

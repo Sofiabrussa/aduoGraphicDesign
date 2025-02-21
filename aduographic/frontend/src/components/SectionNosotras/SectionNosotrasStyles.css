@@ -1,46 +1,64 @@
+#nosotras  {
+    max-height: 100vh;
+}
+
 
 #nosotras h1 {
     font-family: var(--font-title);
+    font-size: 2.5rem;
 }
 
-#nosotras span  {
+#nosotras span {
     color: var(--second-violet);
     font-family: var(--font-pastel);
-    font-size: 2.8rem;
+    font-size: 3rem;
 }
 
 #nosotras p {
     font-family: var(--font-text);
+    font-size: 1.4rem;
 }
 
 #nosotras a {
     font-family: var(--font-text);
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: black;
 }
 
 
-@media (max-width: 700px) {
-    
-    .contenedor-nosotras{
+@media (max-width: 768px) {
+#nosotras h1 {
+        font-size: 1rem; 
+}
+}
+
+
+@media (max-width: 1300px) {
+
+    .contenedor-nosotras {
         flex-wrap: wrap;
         width: 100%;
-        
+
     }
-    .imagen-nosotras{
+    .imagen-nosotras {
         width: 100%;
-        min-height: 40vh;     
+        min-height: 40vh;
     }
-    .sectionNosotrasText p  {
-        font-size: 0.8rem;
+    #nosotras p {
+        font-size: 1.4rem;
+    }
+    #nosotras h1 {
+        font-size: 1.9rem;
+    }
+    #nosotras span {
+        font-size: 2.4rem;
     }
 
-    .sectionNosotrasText h1 {
-        font-size: 1.3rem;
-    }
-    .botton{
+    .botton {
         text-align: center;
         align-items: center;
         position: relative;
         bottom: 20px;
-        }
+    }
 }
-

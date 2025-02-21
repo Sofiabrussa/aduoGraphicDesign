@@ -3,34 +3,35 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./SectionPortafolioStyles.css"
 import PortfolioTitle from './PortfolioTitle';
 import ServicesList from './ServicesList';
+import { Col, Container, Row } from 'react-bootstrap'
+import Button from "../button/button";
 
 function SectionPortafolio() {
-    return (
-      <div id="portfolio" className="container-fluid d-flex flex-column m-0 p-0 w-100">
-        <PortfolioTitle />
-        
-        <div className="row img-table-component my-4 p-0">
-          <div 
-            className="col-12 col-md-6 d-flex justify-content-center align-items-center img-component"
-            style={{ 
-              backgroundImage: 'url("/imgPortfolio/imagenservicios.png")', 
-              backgroundSize: 'cover',
-              backgroundPosition: 'center' 
-            }}
-          />
-          <ServicesList />
-        </div>
-        {/* Componente boton */}
-        <div className="d-flex justify-content-center align-items-center sectionButtonPortoflio m-4 p-4">
-                <a href="https://www.behance.net/aduographicdesign" target="_blank" rel="noopener noreferrer">
-                    <button className="btn btn-outline-dark buttonSectionPortfolio rounded-4">
-                        Ver Portfolio↗
-                    </button>
-                </a>
-            </div>
-      </div>
-    );
-  }
- 
+  return (
+    <Container fluid id="portfolio" className="d-flex flex-column m-0 p-0">
+      <PortfolioTitle />
+
+      <Row className="img-table-component my-4 p-0">
+        <Col
+          className="col-12 col-md-6 d-flex justify-content-center align-items-center img-component"
+          style={{
+            backgroundImage: 'url("/imgPortfolio/imagenservicios.png")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        />
+        <ServicesList />
+      </Row>
+      <Row className="text-center mt-2 mb-5 buttonSectionPortfolio">
+        <Col>
+          <a href="https://walink.co/9f29a0" target="_blank" rel="noopener noreferrer">
+            <Button> Portfolio </Button>
+          </a>
+        </Col>
+      </Row>
+    </Container>
+  );
+}
+
 
 export default SectionPortafolio;

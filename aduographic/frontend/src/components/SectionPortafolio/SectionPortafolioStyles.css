@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lacquer&family=Permanent+Marker&family=Unbounded:wght@200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 #portfolio {
   max-height: 100vh;
   display: flex;
   justify-content: space-around;
-  gap: 0.1rem;
 }
 
 .img-table-component {
@@ -17,26 +15,27 @@
 .sectionPortfolioText {
   padding: 2rem 1rem;
 }
-.sectionPortfolioText h1 {
-  font-family: var(--font-title);
-  font-weight: 250;
-  font-size: clamp(1rem, 2.5vw, 1.8rem);
-}
 .SpanPortfolioHand {
   font-family: var(--font-hand);
-  font-size: clamp(1.2rem, 3vw, 2.4rem);
+  font-weight: 500;
+  font-size: clamp(1.2rem, 3rem, 5rem);
   transition: color 0.3s ease;
 }
 
 /* Boton */
 .buttonSectionPortfolio {
-  font-family: var(--font-title);
-  font-weight: 250;
-  font-size: clamp(0.8rem, 2vw, 1.5rem);
-  transition: transform 0.3s ease;
+  font-family: var(--font-text);
+  font-weight: 600;
+  font-size: clamp(1rem, 2.5vw, 1.8rem);
+  padding: 1rem;
 }
-.portfolio-link:hover .buttonSectionPortfolio {
-  transform: translateY(-2px);
+.buttonSectionPortfolio button {
+  border: 2px solid black !important; /* Sobrescribe el borde */
+  padding: 0.7rem;
+  border-radius: 38px;
+}.buttonSectionPortfolio button:hover {
+  color: white;
+  background-color: black;
 }
 
 /* Servicios */
@@ -56,20 +55,45 @@
 }
 
 /* Responsive adjustments */
+
 @media (max-width: 768px) {
-  .img-table-component {
-    min-height: 30vh;
+  #portfolio {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .sectionPortfolioText, 
-  .sectionButtonPortoflio {
-    margin: 1rem 0;
+
+  .img-table-component {
+    min-height: auto;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .sectionPortfolioText {
+    text-align: center;
+    padding: 1.5rem;  }
+
+  /* Ajuste del botón */
+  .buttonSectionPortfolio button {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  /* Ajuste de listas de servicios */
+  .portfolio-servicios-lista td {
+    padding-left: 1em;
   }
 }
 
 
-@media (min-width: 769px) and (max-width: 1024px) {
+
+@media (min-width: 769px) and (max-width: 1300px) {
   .img-table-component {
-    min-height: 40vh;
+    min-height: 50vh;
+  }
+  .buttonSectionPortfolio button  {
+    padding: 0.5rem;
+    font-size: 1.5rem;
   }
 }

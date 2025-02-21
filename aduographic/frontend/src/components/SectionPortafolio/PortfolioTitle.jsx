@@ -1,7 +1,9 @@
+import { Card } from 'react-bootstrap'
+
 const PortfolioTitle = () => {
     return (
-      <div className="my-3 d-flex justify-content-center align-items-center sectionPortfolioText">
-        <h1 className="text-center">
+      <Card className="my-3 d-flex justify-content-center align-items-center sectionPortfolioText" style={{ border: "1px solid white" }}>
+        <Card.Title className="text-center">
           <span className="SpanPortfolioHand" style={{ color: "var(--second-violet)" }}>
             branding{" "}
           </span>{" "}
@@ -10,9 +12,9 @@ const PortfolioTitle = () => {
             diseño
           </span>{" "}
           pensados para que <br />
-          <span style={{ fontWeight: 400 }}>tu esencia explote</span> en cada detalle.
-        </h1>
-      </div>
+          <span style={{ fontWeight: 500 }}>tu esencia explote</span> en cada detalle.
+        </Card.Title>
+      </Card>
     );
   };
   export default PortfolioTitle;

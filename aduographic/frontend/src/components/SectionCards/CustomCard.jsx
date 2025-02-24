@@ -30,6 +30,7 @@ function CustomCard({ image, title, text }) {
                         style={{
                             opacity: hovered ? 1 : 0,
                             transition: 'opacity 0.3s ease-in-out',
+                            boxShadow: "0 8px 12px rgba(0, 0, 0, 0.15)"
                         }}
                     >
                         <motion.div

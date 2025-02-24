@@ -23,16 +23,10 @@
 }
 
 /* Boton */
-.buttonSectionPortfolio {
-  font-family: var(--font-text);
-  font-weight: 600;
-  font-size: clamp(1rem, 2.5vw, 1.8rem);
-  padding: 1rem;
-}
+
 .buttonSectionPortfolio button {
   border: 2px solid black !important; /* Sobrescribe el borde */
-  padding: 0.7rem;
-  border-radius: 38px;
+  font-size: clamp(1.2rem, 1.8rem, 5rem);
 }.buttonSectionPortfolio button:hover {
   color: white;
   background-color: black;

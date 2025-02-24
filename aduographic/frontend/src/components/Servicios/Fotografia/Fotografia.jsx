@@ -1,4 +1,7 @@
 import "./FotografiaStyled.css";
+import { Card } from "react-bootstrap";
+import Button from "../../button/button";
+import { motion } from "framer-motion";
 
 const Fotografia = () => {
     
@@ -7,16 +10,24 @@ const Fotografia = () => {
         <div className="container-fluid m-0 p-0">
           <div className="row justify-content-center w-100">
             <div className="col-12 col-md-8 text-center mb-5">
-              <h1 className="mb-3">
-                Contenido <span className="d-block"> y fotografía</span>
-              </h1>
-              <p className="mb-4">
+              <Card.Title className="mb-3 tm-titulo">
+                Contenido <span > y fotografía</span>
+              </Card.Title>
+              <Card.Text className="mb-4">
                 Todo pensado con una estrategia visual que no solo
                 se ve bien, sino que tiene propósito. Lo adaptamos a
                 cualquier plataforma que necesites, ¡sin vueltas!
+                <br></br>
                 ¿Lo hacemos realidad?
-              </p>
-              <button className="btn-custom">lo necesito</button>
+              </Card.Text>
+              <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <a href="https://walink.co/9f29a0" target="_blank" rel="noopener noreferrer">
+                    <Button >lo necesito! </Button>
+                  </a>
+                </motion.div>
             </div>
           </div>
           

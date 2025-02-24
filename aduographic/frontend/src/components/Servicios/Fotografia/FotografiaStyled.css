@@ -2,45 +2,17 @@
     min-height: auto;
     width: 100%;
     background-color: var(--background-color, #fff);
-    padding: 2rem 0;
   }
   /* Typography */
-  #section-fotografia h1 {
-    font-family: var(--font-title);
-    font-size: clamp(2rem, 4vw, 2.5rem);
-    margin-bottom: 1rem;
+  .tm-titulo{
+    font-size: clamp(2rem, 3rem, 2.5rem);
   }
   #section-fotografia span {
     color: var(--primary-violet);
     font-family: var(--font-hand);
-    font-size: clamp(2.5rem, 5vw, 3.3rem);
-    display: inline-block;
-  }
-  #section-fotografia p {
-    font-family: var(--font-text);
-    font-weight: 450;
-    font-size: clamp(1rem, 2vw, 1.5rem);
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1rem;
-    line-height: 1.6;
-  }
-  
-  /* Button */
-  .btn-custom {
-    font-family: var(--font-text);
-    font-size: clamp(1.1rem, 2vw, 1.3rem);
-    padding: 0.4rem 1.2rem;
-    border-radius: 10px;
-    background-color: transparent;
-    border: 1px solid black;
-    transition: all 0.3s ease;
-    cursor: pointer;
-  }
-  .btn-custom:hover {
-    background-color: var(--primary-violet);
-    color: white;
-    transform: translateY(-2px);
+    font-weight: 500;
+    font-size: clamp(2.5rem, 3.9rem, 4.6rem);
+    display: inline;
   }
 
 

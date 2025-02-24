@@ -18,7 +18,7 @@ const Branding = () => {
                 transition={{ duration: 0.6 }}
                 whileHover={{ scale: 1.02 }}
               >
-                <Card.Title className="mb-4 mt-2">Branding</Card.Title>
+                <Card.Title className="mb-4 mt-2 title-span" >Branding</Card.Title>
                 <Card.Text className="mb-4">
                   En A Dúo no creamos solo un logo lindo, diseñamos marcas completas
                   que cuentan historias, inspiran y conectan con su audiencia. Lo mejor

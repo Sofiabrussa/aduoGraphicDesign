@@ -1,5 +1,7 @@
 import "./RedesStyled.css";
 import { motion } from "framer-motion";
+import { Card } from "react-bootstrap";
+import Button from "../../button/button";
 
 function Redes() {
     return (
@@ -13,15 +15,20 @@ function Redes() {
                         transition={{ duration: 0.5 }}
                         className="text-content"
                     >
-                        <h1>Redes soc.</h1>
-                        <p>
+                        <Card.Title className="title-span">Redes soc.</Card.Title>
+                        <Card.Text>
                             Diseñamos y desarrollamos tu página web a tu medida.
                             Ya sea que estés buscando una landing page, una web sencilla o
                             un e-commerce. Diseñar webs se nos da genial!
-                        </p>
-                        <button className="btn-custom">
-                            quiero + info
-                        </button>
+                        </Card.Text>
+                        <motion.div
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                        >
+                            <a href="https://walink.co/9f29a0" target="_blank" rel="noopener noreferrer">
+                                <Button >quiero + info </Button>
+                            </a>
+                        </motion.div>
                     </motion.div>
 
                     {/* Image Content */}
@@ -33,9 +40,9 @@ function Redes() {
                         style={{ backgroundImage: 'url("/redesSociales/redessociales.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}
                     />
                 </div>
-                
+
             </div>
-        </section>
+        </section >
 
     )
 }

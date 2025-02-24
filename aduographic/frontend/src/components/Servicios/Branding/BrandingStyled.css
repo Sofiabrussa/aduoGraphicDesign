@@ -1,7 +1,7 @@
 .branding-section {
   min-height: auto;
   width: 100%;
-  margin: 5rem 0;
+  margin: 5rem 0 2rem 0;
   overflow-x: hidden;
 }
 /* Content Card Styles */
@@ -21,19 +21,9 @@
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
-.card-title {
-  font-family: var(--font-title);
-  font-weight: 500;
-  font-size: clamp(1rem, 1.9rem, 3rem);
-  margin-bottom: 1rem;
+.title-span  {
+  color: var(--primary-violet);
 }
-.card-text {
-  font-family: var(--font-text);
-  font-weight: 500;
-  font-size: clamp(1.1rem, 1.3rem, 1.8rem);
-  max-width: 90%;
-}
-
 
 /* Image Card Styles */
 .image-card {

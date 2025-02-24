@@ -1,36 +1,50 @@
 import { useState } from "react";
 import { Card } from "react-bootstrap";
-import "./SectionCardsStyles.css";  // Asegúrate de que los estilos estén aquí
-import '../../App.css'; 
-
+import { motion } from "framer-motion";
+import "./SectionCardsStyles.css";
+import '../../App.css';
 
 function CustomCard({ image, title, text }) {
     const [hovered, setHovered] = useState(false);
 
     return (
-        <Card
-            className="text-white"
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
-            style={{ width: '25rem', border: 'none'  }}
-        >
-            <Card.Img
-                src={image}
-                alt="Card image"
-            />
-            <Card.ImgOverlay
-                className="d-flex custom-card flex-column justify-content-end align-items-center"
-                style={{
-                    opacity: hovered ? 1 : 0,
-                    transition: 'opacity 0.3s ease-in-out',
-                }}
+        <div className="card-wrapper">
+            <motion.div
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+                className="motion-card"
             >
-                <Card.Title>{title}</Card.Title>
-                <Card.Text>{text}</Card.Text>
-            </Card.ImgOverlay>
-        </Card>
+                <Card
+                    className="text-white"
+                    onMouseEnter={() => setHovered(true)}
+                    onMouseLeave={() => setHovered(false)}
+                    style={{ width: '25rem', border: 'none' }}
+                >
+                    <Card.Img
+                        src={image}
+                        alt="Card image"
+                        className="card-img-custom"
+                    />
+                    <Card.ImgOverlay
+                        className="d-flex custom-card flex-column justify-content-end align-items-center"
+                        style={{
+                            opacity: hovered ? 1 : 0,
+                            transition: 'opacity 0.3s ease-in-out',
+                        }}
+                    >
+                        <motion.div
+                            initial={{ y: 20 }}
+                            animate={{ y: hovered ? 0 : 20 }}
+                            transition={{ duration: 0.3 }}
+                        >
+                            <Card.Title className="text-center">{title}</Card.Title>
+                            <Card.Text className="text-center">{text}</Card.Text>
+                        </motion.div>
+                    </Card.ImgOverlay>
+                </Card>
+            </motion.div>
+        </div>
     );
 }
 
 export default CustomCard;
-

@@ -2,6 +2,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./SectionCardsStyles.css";
 import { Container, Row, Col } from "react-bootstrap";
+import { motion } from "framer-motion";
 import CustomCard from "./CustomCard";
 
 function SectionCards() {
@@ -9,10 +10,24 @@ function SectionCards() {
         <Container fluid id="SectionCards" className="d-flex justify-content-center align-items-center min-vh-100">
             <Row className="d-flex justify-content-center gap-4">
                 <Col md="auto">
-                    <CustomCard image="/imgCards/valu.png" title="Valentina Tajchman" text="Diseñadora gráfica" />
+                    <motion.div
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <CustomCard image="/imgCards/valu.png" title="Valentina Tajchman" text="Diseñadora gráfica" />
+                    </motion.div>
                 </Col>
                 <Col md="auto">
-                    <CustomCard image="/imgCards/jose.png" title="Josefina Bas" text="Diseñadora gráfica" />
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: 0.3 }}
+                    >
+                        <CustomCard image="/imgCards/jose.png" title="Josefina Bas" text="Diseñadora gráfica" />
+                    </motion.div>
                 </Col>
             </Row>
         </Container>

@@ -1,5 +1,5 @@
 #section-fotografia {
-    min-height: auto;
+    min-height: 80vw;
     width: 100%;
     background-color: var(--background-color, #fff);
   }

@@ -18,8 +18,8 @@ const Branding = () => {
                 transition={{ duration: 0.6 }}
                 whileHover={{ scale: 1.02 }}
               >
-                <Card.Title className="mb-4 mt-2 title-span" >Branding</Card.Title>
-                <Card.Text className="mb-4">
+                <Card.Title className=" mt-2 title-span" >Branding</Card.Title>
+                <Card.Text className="p-2">
                   En A Dúo no creamos solo un logo lindo, diseñamos marcas completas
                   que cuentan historias, inspiran y conectan con su audiencia. Lo mejor
                   que sabemos hacer.
@@ -29,6 +29,7 @@ const Branding = () => {
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  className="pb-4"
                 >
                   <a href="https://walink.co/9f29a0" target="_blank" rel="noopener noreferrer">
                     <Button >quiero + info </Button>

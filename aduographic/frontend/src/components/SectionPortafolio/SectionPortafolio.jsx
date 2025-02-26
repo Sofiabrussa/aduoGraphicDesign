@@ -24,7 +24,7 @@ function SectionPortafolio() {
       </Row>
       <Row className="text-center mt-2 mb-5 buttonSectionPortfolio">
         <Col>
-          <a href="https://walink.co/9f29a0" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.behance.net/aduoestudiocreativo" target="_blank" rel="noopener noreferrer">
             <Button> Portfolio </Button>
           </a>
         </Col>

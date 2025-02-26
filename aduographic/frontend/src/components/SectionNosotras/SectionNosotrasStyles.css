@@ -1,43 +1,94 @@
-#nosotras  {
-    max-height: 100vh;
-}
-
-#nosotras span {
+#nosotras {
+    min-height: auto;
+    padding: 2rem 0;
+  }
+  
+  #nosotras span {
     color: var(--second-violet);
     font-family: var(--font-pastel);
-    font-size: 3rem;
-}
-
-#nosotras a {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+  
+  #nosotras Card.Title {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+  }
+  
+  #nosotras Card.Text {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+  }
+  
+  #nosotras a {
     font-family: var(--font-text);
-    font-size: 1.3rem;
-}
-
-@media (max-width: 768px) {
-#nosotras h1 {
-        font-size: 1rem; 
-}
-}
-
-@media (max-width: 1300px) {
-
+    font-size: clamp(1rem, 2vw, 1.3rem);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    #nosotras {
+      padding: 1rem 0;
+    }
+  
+    #nosotras .row {
+      min-height: auto !important;
+      height: auto !important;
+    }
+  
+    #nosotras .col-xs-6 {
+      width: 100% !important;
+      padding: 1rem !important;
+    }
+  
+    #nosotras .overflow-hidden {
+      min-height: 300px;
+      margin: 1rem 0;
+    }
+  
+    #nosotras .card-title {
+      margin: 1rem 0 !important;
+    }
+  
+    #nosotras Card.Text {
+      margin: 0.5rem 0 !important;
+    }
+  
+    #nosotras button {
+      width: auto;
+      min-width: 200px;
+      padding: 0.5rem 0.5rem;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1300px) {
+    #nosotras {
+      padding: 2rem 0;
+    }
+  
     .contenedor-nosotras {
-        flex-wrap: wrap;
-        width: 100%;
-
+      flex-wrap: wrap;
+      width: 100%;
     }
+  
     .imagen-nosotras {
-        width: 100%;
-        min-height: 40vh;
+      width: 100%;
+      min-height: 40vh;
     }
-    #nosotras p {
-        font-size: 1.4rem;
+  
+    #nosotras Card.Text {
+      font-size: clamp(1rem, 1.5vw, 1.4rem);
     }
-    #nosotras h1 {
-        font-size: 1.9rem;
+  
+    #nosotras button {
+      padding: 0.5rem 2rem;
     }
-    #nosotras span {
-        font-size: 2.4rem;
-    }
-
-}
+  }
+  
+  /* Carousel section */
+  #nosotras .row:last-child {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #nosotras .row:last-child .col {
+    margin: 0;
+    padding: 0;
+  }

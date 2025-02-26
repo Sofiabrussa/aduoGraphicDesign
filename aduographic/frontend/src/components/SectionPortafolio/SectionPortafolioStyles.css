@@ -1,16 +1,14 @@
-
 #portfolio {
-  max-height: 100vh;
+  min-height: auto;
   display: flex;
   justify-content: space-around;
+  padding: 2rem 0;
 }
-
 .img-table-component {
-  min-height: 55vh;
+  min-height: auto;
   width: 100%;
   margin: 0;
 }
-
 /* Textos */
 .sectionPortfolioText {
   padding: 2rem 1rem;
@@ -18,28 +16,26 @@
 .SpanPortfolioHand {
   font-family: var(--font-hand);
   font-weight: 500;
-  font-size: clamp(1.2rem, 3rem, 5rem);
+  font-size: clamp(1.2rem, 5vw, 3rem);
   transition: color 0.3s ease;
 }
-
 /* Boton */
-
 .buttonSectionPortfolio button {
-  border: 2px solid black !important; /* Sobrescribe el borde */
-  font-size: clamp(1.2rem, 1.8rem, 5rem);
-}.buttonSectionPortfolio button:hover {
+  border: 2px solid black !important;
+  font-size: clamp(0.8rem, 2vw, 1.5rem);
+}
+.buttonSectionPortfolio button:hover {
   color: white;
   background-color: black;
 }
-
 /* Servicios */
 .portfolio-servicios-lista {
-  font-family: var(--font-title);
-  font-weight: 250;
-  font-size: clamp(0.8rem, 2vw, 1.5rem);
+  font-family: var(--font-text);
+  font-weight: 500;
+  font-size: clamp(1rem, 1.5rem, 1.8rem);
 }
 .portfolio-servicios-lista td {
-  padding-left: clamp(1em, 5vw, 5em);
+  padding-left: clamp(1em, 3vw, 5em);
 }
 .service-item {
   transition: background-color 0.3s ease;
@@ -47,47 +43,42 @@
 .service-item:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
-
 /* Responsive adjustments */
-
 @media (max-width: 768px) {
   #portfolio {
     flex-direction: column;
     align-items: center;
   }
-
   .img-table-component {
-    min-height: auto;
     flex-direction: column;
     display: flex;
   }
-
+  .img-component {
+    min-height: 250px;
+  }
   .sectionPortfolioText {
     text-align: center;
-    padding: 1.5rem;  }
-
-  /* Ajuste del botón */
-  .buttonSectionPortfolio button {
-    font-size: 1rem;
-    padding: 0.6rem 1rem;
-    width: 100%;
-    max-width: 250px;
+    padding: 1rem;
   }
-
-  /* Ajuste de listas de servicios */
+  .buttonSectionPortfolio button {
+    padding: 0.6rem 1rem;
+    width: auto;
+    min-width: 150px;
+  }
   .portfolio-servicios-lista td {
-    padding-left: 1em;
+    padding: 0.75rem 1em;
+  }
+  
+  .portfolio-servicios-lista {
+    margin-top: 1rem;
   }
 }
-
-
-
-@media (min-width: 769px) and (max-width: 1300px) {
-  .img-table-component {
-    min-height: 50vh;
+@media (min-width: 769px) {
+  .img-component {
+    min-height: 400px;
   }
-  .buttonSectionPortfolio button  {
-    padding: 0.5rem;
-    font-size: 1.5rem;
+  
+  .buttonSectionPortfolio button {
+    padding: 0.5rem 1.3rem;
   }
 }

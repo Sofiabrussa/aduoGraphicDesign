@@ -1,56 +1,63 @@
 #section-fotografia {
-    min-height: 80vw;
-    width: 100%;
-    background-color: var(--background-color, #fff);
+  width: 100%;
+  background-color: var(--background-color, #fff);
+  padding: 4rem 0 0;
+}
+/* Typography */
+.tm-titulo {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+#section-fotografia span {
+  color: var(--primary-violet);
+  font-family: var(--font-hand);
+  font-weight: 500;
+  font-size: 3.5rem;
+  display: inline;
+}
+/* Image Container */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 2rem;
+}
+.img-fluid {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #section-fotografia {
+      padding: 3rem 0 0;
   }
-  /* Typography */
-  .tm-titulo{
-    font-size: clamp(2rem, 3rem, 2.5rem);
+  .tm-titulo {
+      font-size: 1.5rem;
   }
   #section-fotografia span {
-    color: var(--primary-violet);
-    font-family: var(--font-hand);
-    font-weight: 500;
-    font-size: clamp(2.5rem, 3.9rem, 4.6rem);
-    display: inline;
+      font-size: 3rem;
   }
-
-
-  /* Image Container */
-  .image-wrapper {
-    position: relative;
-    width: 100vw; /* Utiliza el ancho completo de la pantalla */
-    height: auto;
-    margin: 0; /* Asegura que no haya márgenes */
-    padding: 0; /* Asegura que no haya padding */
+  #section-fotografia p {
+      padding: 0 1rem;
+      margin-bottom: 2rem;
   }
-
-  .img-fluid {
-    width: 100vw; /* Asegura que la imagen ocupe todo el ancho de la pantalla */
-    height: auto;
-    object-fit: cover; /* La imagen se ajustará para cubrir el área sin perder proporciones */
+}
+@media (max-width: 576px) {
+  #section-fotografia {
+      padding: 2rem 0 0;
   }
-
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    #section-fotografia p {
-      padding: 1rem 2rem;
-    }
-    
-    .image-wrapper {
-      max-width: 100%;
-    }
+  .tm-titulo {
+      font-size: 1.5rem;
   }
-  @media (max-width: 576px) {
-    #section-fotografia h1 {
-      font-size: 1.8rem;
-    }
-    
-    #section-fotografia span {
+  #section-fotografia span {
       font-size: 2.5rem;
-    }
-    
-    .btn-custom {
-      padding: 0.5rem 1rem;
-    }
   }
+  .btn-custom {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+  }
+  .image-wrapper {
+      margin-top: 1.5rem;
+  }
+}

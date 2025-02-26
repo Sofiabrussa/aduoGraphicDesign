@@ -1,6 +1,7 @@
+
 #sectionBarra {
     background-color: var(--second-violet);
-    min-height: 35vh;
+    padding: 4rem 0;
     display: flex;
     align-items: center;
 }
@@ -11,24 +12,31 @@
     margin: 0;
     transition: all 0.3s ease;
 }
-/* Responsive  */
+/* Responsive */
 @media (max-width: 576px) {
+    #sectionBarra {
+        padding: 3rem 0;
+    }
     #sectionBarra .section-title {
         font-size: 1.4rem;
+        margin-bottom: 0.5rem;
     }
 }
 @media (min-width: 577px) and (max-width: 768px) {
+    #sectionBarra {
+        padding: 3.5rem 0;
+    }
     #sectionBarra .section-title {
         font-size: 1.75rem;
+        margin-bottom: 0.75rem;
     }
 }
 @media (min-width: 769px) {
     #sectionBarra .section-title {
         font-size: 2rem;
+        margin-bottom: 1rem;
     }
 }
-
 /* Hover effect */
 #sectionBarra .section-title:hover {
-    transform: scale(1.05);
-}
+    transform: scale(1.05); }

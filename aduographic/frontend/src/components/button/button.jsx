@@ -1,4 +1,4 @@
-import "./buttonStyle.css" 
+import "./ButtonStyled.css" 
 
 function Button({ children }) {
     return (

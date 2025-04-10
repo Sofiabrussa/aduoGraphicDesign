@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import "./BrandingStyled.css";
 import { Card } from "react-bootstrap";
 import '../../../App.css';
-import Button from "../../button/button";
+import Button from "../../Button/Button";
 
 const Branding = () => {
   return (

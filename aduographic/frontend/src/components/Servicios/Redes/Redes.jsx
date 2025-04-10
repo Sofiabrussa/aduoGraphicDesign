@@ -1,7 +1,7 @@
 import "./RedesStyled.css";
 import { motion } from "framer-motion";
 import { Card } from "react-bootstrap";
-import Button from "../../button/button";
+import Button from "../../Button/Button";
 
 function Redes() {
     return (

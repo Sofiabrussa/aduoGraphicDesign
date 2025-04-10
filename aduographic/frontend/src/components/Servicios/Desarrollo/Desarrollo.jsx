@@ -1,6 +1,6 @@
 import "./DesarrolloStyled.css";
 import { Card } from "react-bootstrap";
-import Button from "../../button/button";
+import Button from "../../Button/Button";
 import { motion } from "framer-motion";
 function Desarrollo() {
     return (

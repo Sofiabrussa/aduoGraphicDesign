@@ -4,7 +4,7 @@ import "./SectionPortafolioStyles.css"
 import PortfolioTitle from './PortfolioTitle';
 import ServicesList from './ServicesList';
 import { Col, Container, Row } from 'react-bootstrap'
-import Button from "../button/button";
+import Button from "../Button/Button";
 
 function SectionPortafolio() {
   return (

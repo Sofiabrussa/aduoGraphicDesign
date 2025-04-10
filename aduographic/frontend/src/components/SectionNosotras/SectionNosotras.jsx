@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./SectionNosotrasStyles.css";
 import Carousel from '../Carrousel/Carrousel';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import Button from '../button/button';
+import Button from '../Button/Button';
 import '../../App.css';
 
 function SectionNosotras() {

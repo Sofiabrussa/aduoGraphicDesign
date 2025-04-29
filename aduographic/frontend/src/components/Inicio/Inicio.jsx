@@ -58,7 +58,7 @@ function Inicio() {
       </div>
 
       {/* Carrusel de imágenes */}
-      <Carousel images={imagesCarouselInicio} className="h-100 w-100" />
+      <Carousel images={imagesCarouselInicio} customClass="carousel-home" className="h-100 w-100" />
 
       {/* Iconos con visibilidad controlada */}
       {showIcons && (

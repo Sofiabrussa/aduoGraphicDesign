@@ -1,35 +1,130 @@
-.carousel,
-.carousel-inner,
+.carousel {
+  width: 100%;
+  height: 90vh; 
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel.carousel-nosotras {
+  height: 25vh; 
+}
+
+.carousel.carousel-home {
+  height: 90vh; 
+}
+
+.carousel-inner {
+  height: 100%;
+  width: 100%;
+}
+
 .carousel-item {
   height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .carousel-caption {
   position: absolute;
+  top: 0;
   left: 0;
   right: 0;
-  top: 0;
   bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 1rem;
+  z-index: 2;
 }
 
 .text-container {
   max-width: 80%;
   margin: 0 auto;
+  padding: 0.8rem;
+  border-radius: 10px;
 }
 
 .carousel-text {
   font-family: var(--font-title);
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   color: white;
   text-align: center;
-  line-height: 1.4;
+  line-height: 1.5;
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* Aseguramos que las imágenes cubran todo el espacio */
-.carousel-item img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+/* Responsive styles */
+@media (max-width: 991px) {
+  .carousel {
+    height: 50vh; 
+  }
+  
+  .carousel.carousel-nosotras {
+    height: 20vh;
+  }
+  
+  .carousel.carousel-home {
+    height: 60vh;
+  }
+
+  .text-container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 40vh; 
+  }
+
+  .carousel.carousel-nosotras {
+    height: 15vh;
+  }
+  
+  .carousel.carousel-home {
+    height: 60vh;
+  }
+
+  .carousel-text {
+    font-size: clamp(0.9rem, 4vw, 1.3rem); /* Reducido */
+    line-height: 1.3;
+  }
+  
+  .text-container {
+    max-width: 95%;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel {
+    height: 30vh; 
+  }
+  
+  .carousel.carousel-nosotras {
+    height: 15vh;
+  }
+  
+  .carousel.carousel-home {
+    height: 40vh;
+  }
+  
+  .carousel-text {
+    font-size: clamp(0.8rem, 4vw, 1.1rem); 
+  }
+  
+  .carousel-caption {
+    padding: 0.3rem;
+  }
 }

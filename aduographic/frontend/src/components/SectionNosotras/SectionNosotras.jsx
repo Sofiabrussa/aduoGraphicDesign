@@ -82,7 +82,7 @@ function SectionNosotras() {
       {/* Carousel Section */}
       <Row className="mx-0 carousel-row">
         <Col className="p-0">
-          <Carousel images={imagesCarouselSectionNosotras} />
+          <Carousel images={imagesCarouselSectionNosotras} customClass="carousel-nosotras" />
         </Col>
       </Row>
     </Container>

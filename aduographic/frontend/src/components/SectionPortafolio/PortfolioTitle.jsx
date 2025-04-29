@@ -12,7 +12,7 @@ const PortfolioTitle = () => {
             diseño
           </span>{" "}
           pensados para que <br />
-          <span style={{ fontWeight: 500 }}>tu esencia explote</span> en cada detalle.
+          <span style={{ fontWeight: 500 }} >tu esencia explote </span> en cada detalle.
         </Card.Title>
       </Card>
     );

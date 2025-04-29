@@ -24,40 +24,42 @@
     background-color: var(--primary-violet);
     color: white;
 }
-
 .buttom-aduo:hover {
     background-color: var(--primary-violet);
     color: white;
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-
-  .buttom-aduo:active {
+.buttom-aduo:active {
     transform: translateY(-1px);
   }
   
 
 /* Boton Inicio */
 .button-inicio {
-    font-family: var(--font-text);
+    margin-top: 2%;
     font-size: 2rem;
     font-weight: 300; 
-    color: white !important;
-    border-color: white !important;
-    border-radius: 7px;
-    font-size: 2rem;
-    margin-top: 2% !important;
+    color: white;
+    border-color: white;
     font-weight: 300;
-    padding: 3px 8px;
-    min-width: 5%;
+    padding: 0.3rem 1.1rem;
 }
 
 .button-inicio:hover  {
-    color: white;
-    border-color: white; 
     background-color: grey;
     box-shadow: none;
+}
 
+/* Boton portfolio */ 
+.button-portfolio  {
+    border-color: black;
+    font-size: 1.4rem;
+}
+
+.button-portfolio:hover  {
+    color: white;
+    background-color: black;
 }
 
 /* Responsive */   

@@ -19,15 +19,8 @@
   font-size: clamp(1.2rem, 5vw, 3rem);
   transition: color 0.3s ease;
 }
-/* Boton */
-.buttonSectionPortfolio button {
-  border: 2px solid black !important;
-  font-size: clamp(0.8rem, 2vw, 1.5rem);
-}
-.buttonSectionPortfolio button:hover {
-  color: white;
-  background-color: black;
-}
+
+
 /* Servicios */
 .portfolio-servicios-lista {
   font-family: var(--font-text);

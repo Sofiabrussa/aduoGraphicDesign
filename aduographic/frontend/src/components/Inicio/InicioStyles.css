@@ -3,7 +3,7 @@
 
 /* CARROUSEL */
 #carouselExample {
-    max-height: 95vh; /* Se ajusta al 90% de la altura de la ventana */
+    max-height: 95vh;
     overflow: hidden;
 }
 
@@ -24,7 +24,6 @@
     padding: 0 10px;
     z-index: 10; /* controla la "profundidad" visual de los elementos, posiicion al texo por encima de las imagenes */
     color: white; 
-
 }
 
 .carousel-h1  {
@@ -58,16 +57,14 @@
 }
 
 .carousel-iconos img {
-    width: 9vw; /* Ajusta el tamaño de los íconos */
+    width: 9vw; 
     height: auto; /* Mantiene la proporción del aspecto */
-    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
-
-   margin-right: -2vw;
+    cursor: pointer; 
+    margin-right: -2vw;
 }
 
 .icono{
     margin-right: -20px;
-
 }
 
 

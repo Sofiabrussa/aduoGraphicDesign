@@ -48,29 +48,6 @@
     line-height: 1.2;
 }
 
-
-/* CARROUSEL BOTON */
-.carousel-fixed-text .buttom-aduo {
-    font-family: var(--font-text);
-    font-size: 2rem;
-    font-weight: 300; 
-    color: white !important;
-    border-color: white !important;
-    border-radius: 7px;
-    font-size: 2rem;
-    margin-top: 2% !important;
-    font-weight: 300;
-    padding: 3px 8px;
-    min-width: 5%;
-}
-
-.carousel-fixed-text .buttom-aduo:hover {
-    color: white !important;
-    border-color: white !important;
-    background-color: grey !important; /* Mantiene el fondo transparente al hacer hover */
-    box-shadow: none !important; /* Elimina el efecto de sombra */
-}
-
 /* ICONOS */
 .carousel-iconos {
     position: fixed; 

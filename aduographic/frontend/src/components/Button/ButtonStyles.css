@@ -1,0 +1,80 @@
+.buttom-aduo {
+    background-color: transparent;
+    border: 2px solid var(--primary-violet);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    padding: 0.4rem 1.2rem;
+    text-decoration: none;
+    font-family: var(--font-text) ;
+    font-weight: 500;
+    max-width: 300px;
+    color: black;
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    min-width: 150px;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.buttom-aduo:hover {
+    background-color: var(--primary-violet);
+    color: white;
+}
+
+.buttom-aduo:hover {
+    background-color: var(--primary-violet);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .buttom-aduo:active {
+    transform: translateY(-1px);
+  }
+  
+
+/* Boton Inicio */
+.button-inicio {
+    font-family: var(--font-text);
+    font-size: 2rem;
+    font-weight: 300; 
+    color: white !important;
+    border-color: white !important;
+    border-radius: 7px;
+    font-size: 2rem;
+    margin-top: 2% !important;
+    font-weight: 300;
+    padding: 3px 8px;
+    min-width: 5%;
+}
+
+.button-inicio:hover  {
+    color: white;
+    border-color: white; 
+    background-color: grey;
+    box-shadow: none;
+
+}
+
+/* Responsive */   
+@media (max-width: 768px) {
+    .buttom-aduo {
+      padding: 0.4rem 1.2rem;
+      min-width: 120px;
+      font-size: clamp(0.8rem, 4vw, 1rem);
+    }
+  }
+  
+@media (max-width: 576px) {
+    .buttom-aduo {
+      padding: 0.3rem 1rem;
+      min-width: 100px;
+    }
+  }
+
+
+

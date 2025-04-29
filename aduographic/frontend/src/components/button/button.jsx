@@ -1,8 +1,8 @@
-import "./ButtonStyled.css" 
+import "./ButtonStyles.css" 
 
-function Button({ children }) {
+function Button({ children, className = "" }) {
     return (
-        <button type="button" className="buttom-aduo">
+        <button type="button" className={`buttom-aduo ${className}`}>
             {children} 
         </button>
     )

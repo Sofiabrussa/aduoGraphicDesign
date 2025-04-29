@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
-import { motion, useInView } from "framer-motion";
 import "./InicioStyles.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "../Carrousel/Carrousel";
+import Button from "../Button/Button";
 
 function Inicio() {
   const imagesCarouselInicio = [
@@ -15,7 +15,6 @@ function Inicio() {
   
   // Referencia a la sección Inicio
   const inicioRef = useRef(null);
-  const isInView = useInView(inicioRef, { triggerOnce: false, threshold: 0.3 });
 
   useEffect(() => {
     let observer;
@@ -53,16 +52,9 @@ function Inicio() {
           Hacemos que tu marca <br /> sea lo que siempre soñaste
         </p>
         
-        {/* Botón con animación al volver a la sección */}
-        <motion.a
-          href="#contacto"
-          className="btn btn-outline-primary buttom-aduo"
-          initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          Contactanos ↗
-        </motion.a>
+        {/* Botón */}
+        <Button className="button-inicio"> Contactanos ↗ </Button>
+     
       </div>
 
       {/* Carrusel de imágenes */}

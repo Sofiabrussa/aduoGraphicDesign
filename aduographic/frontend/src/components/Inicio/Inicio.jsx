@@ -7,8 +7,8 @@ import Button from "../Button/Button";
 
 function Inicio() {
   const imagesCarouselInicio = [
-    { src: "/imgsInicio/degrade1.png", alt: "IMAGEN1" },
-    { src: "/imgsInicio/degrade2.png", alt: "IMAGEN2" },
+    { src: "/imgsInicio/degrade1.webp", alt: "IMAGEN1" },
+    { src: "/imgsInicio/degrade2.webp", alt: "IMAGEN2" },
   ];
 
   const [showIcons, setShowIcons] = useState(true);
@@ -70,7 +70,7 @@ function Inicio() {
               rel="noopener noreferrer"
             >
               <img
-                src="/imgsInicio/recursos_Mesadetrabajo 1.png"
+                src="/imgsInicio/recursos_Mesadetrabajo-1.webp"
                 alt="WhatsApp"
               />
             </a>
@@ -81,7 +81,7 @@ function Inicio() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/imgsInicio/recursos-02.png" alt="Instagram" />
+              <img src="/imgsInicio/recursos-02.webp" alt="Instagram" />
             </a>
           </div>
         </div>

@@ -28,7 +28,7 @@ function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <Link className="navbar-brand lacquer-regular" to="/">
-                <img src="/imgsInicio/recursos-03.png" alt="Logo de mi empresa" className="navbar-logo" />
+                <img src="/imgsInicio/recursos-03.webp" alt="Logo de mi empresa" className="navbar-logo" />
             </Link>
             <button 
                 className="navbar-toggler" 

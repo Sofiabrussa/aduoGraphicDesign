@@ -4,10 +4,36 @@
   justify-content: space-around;
   padding: 2rem 0;
 }
-.img-table-component {
-  min-height: auto;
+
+/* Image and table container */
+.img-table-container {
+  display: flex;
   width: 100%;
   margin: 0;
+  height: 500px; /* Set a specific fixed height for the container */
+}
+
+.img-wrapper {
+  height: 100%;
+  padding: 0;
+}
+
+.img-component {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.services-list-column {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+
+.table-container {
+  width: 100%;
+  height: 100%;
 }
 
 /* Textos */
@@ -41,15 +67,16 @@
 .service-item:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   #portfolio {
     flex-direction: column;
     align-items: center;
   }
-  .img-table-component {
+  .img-table-container {
     flex-direction: column;
-    display: flex;
+    height: auto;
   }
   .img-component {
     min-height: 250px;
@@ -70,14 +97,21 @@
   .portfolio-servicios-lista {
     margin-top: 1rem;
   }
-}
-@media (min-width: 769px) {
-  .img-component {
-    min-height: 400px;
-  }
   
-  .buttonSectionPortfolio button {
-    padding: 0.5rem 1.3rem;
+  .services-list-column {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .img-table-container {
+    height: 450px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .img-table-container {
+    height: 500px;
   }
 }
 
@@ -99,4 +133,3 @@
     font-size: 1.2rem; 
   }
 }
-

@@ -11,15 +11,20 @@ function SectionPortafolio() {
     <Container fluid id="portfolio" className="d-flex flex-column m-0 p-0">
       <PortfolioTitle />
 
-      <Row className="img-table-component my-4 p-0">
+      <Row className="img-table-container my-4 p-0">
         <Col
-          className="col-12 col-md-6 d-flex justify-content-center align-items-center img-component"
-          style={{
-            backgroundImage: 'url("/imgPortfolio/imagenservicios.png")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}
-        />
+          md={6}
+          className="p-0 img-wrapper"
+        >
+          <div 
+            className="img-component"
+            style={{
+              backgroundImage: 'url("/imgPortfolio/imagenservicios.png")',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          />
+        </Col>
         <ServicesList />
       </Row>
       <Row className="text-center mt-2 mb-5 buttonSectionPortfolio">
@@ -32,6 +37,5 @@ function SectionPortafolio() {
     </Container>
   );
 }
-
 
 export default SectionPortafolio;

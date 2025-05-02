@@ -26,10 +26,10 @@ function Contacto() {
         };
 
         emailjs.send(
-            'TU_SERVICE_ID',       // 🔁 Reemplazá con tu Service ID
-            'TU_TEMPLATE_ID',      // 🔁 Reemplazá con tu Template ID
+            process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
             templateParams,
-            'TU_PUBLIC_KEY'        // 🔁 Reemplazá con tu Public Key (User ID)
+            process.env.REACT_APP_EMAILJS_PUBLIC_KEY
         ).then(
             (response) => {
                 console.log('Correo enviado:', response.text);

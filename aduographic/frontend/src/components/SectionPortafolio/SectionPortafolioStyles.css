@@ -20,8 +20,9 @@
   font-size: clamp(1rem, 3.5vw, 2.5rem);
   transition: color 0.3s ease;
 }
-.SpanPortfolioStrong {
-  font-size: clamp(1rem, 4vw, 2rem);
+.OtherText {
+  font-size: clamp(1rem, 3.5vw, 2.1rem);
+  transition: color 0.3s ease;
 }
 
 
@@ -82,13 +83,20 @@
 
 @media screen and (max-width: 480px) {
   .SpanPortfolioHand {
-    font-size: 1.2rem; /* o lo que te parezca más chico */
+    font-size: 1.4rem; 
+  }
+  .OtherText {
+    font-size: 1rem; 
   }
 }
 
 /* iPad vertical: entre 481px y 768px */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .SpanPortfolioHand {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+  }
+  .OtherText {
+    font-size: 1.2rem; 
   }
 }
+

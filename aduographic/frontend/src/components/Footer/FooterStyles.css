@@ -1,7 +1,8 @@
-#Footer  {
+#Footer {
     font-family: var(--font-text);
-    font-weight: 250 ;
-    font-size: 1rem;
+    font-weight: 250;
+    font-size: 0.9rem;
+    border-bottom: 0px solid #000 !important;
 }
 
 .marquee {
@@ -9,9 +10,11 @@
     overflow: hidden;
     width: 100%;
     background-color: rgb(117 81 150);
-    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);  /* Sombra hacia arriba */
-    transform: rotate(-1deg);  /* Inclina el div hacia la izquierda */
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+    transform: rotate(-1deg);
     z-index: 1;
+    border: none;
+    margin-top: 0.5rem;
 }
 
 .track {
@@ -26,23 +29,39 @@
 
 .content span {
     padding-right: 2rem;
-    /* Espacio entre los textos */
-    font-size: 18px;
-    /* Ajusta el tamaño del texto */
+    font-size: 16px;
 }
 
-.footer-links li:hover {
-      color: rgb(117, 81, 150);
-    }
+.footer-links .list-group-item:hover {
+    color: rgb(117, 81, 150) !important;
+    cursor: pointer;
+}
+
+.navbar-logo {
+    max-height: 100px;
+}
 
 @keyframes marquee-animation {
     0% {
         transform: translateX(100%);
-        /* Comienza desde el borde derecho */
     }
-
     100% {
         transform: translateX(-100%);
-        /* Termina en el borde izquierdo */
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content span {
+        font-size: 14px;
+    }
+    #Footer {
+        font-size: 0.8rem;
+    }
+    #Footer i {
+        font-size: 1.2rem !important;
+    }
+    .navbar-logo {
+        max-height: 35px;
     }
 }

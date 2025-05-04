@@ -1,86 +1,81 @@
-
-.SectionContacto  {
+.section-contacto {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     min-height: 100vh;
-}
-
-.SectionContacto span  {
+  }
+  
+  /* Estilos de texto específicos */
+  .section-contacto h1 {
+    font-family: var(--font-title);
+    font-weight: 230;
+    font-size: 2rem;
+    color: grey;
+  }
+  
+  .section-contacto .text-accent {
     font-family: var(--font-hand);
     color: var(--second-violet);
     font-size: 2.7rem;
-}
-
-.SectionContacto h1  {
-    font-family: var(--font-title);
-    font-weight: 230 ;
-    font-size: 2rem;
-    color: grey;
-}
-
-.SectionContacto p {
+  }
+  
+  .section-contacto p {
     font-family: var(--font-text);
-    font-weight: 250 ;
+    font-weight: 250;
     font-size: 1.3rem;
     color: grey;
-}
-
-.SectionContacto label {
+  }
+  
+  .section-contacto .form-label {
     font-family: var(--font-text);
-    font-weight: 250 ;
+    font-weight: 250;
     font-size: 1.3rem;
     color: grey;
-}
-
-
-/*BOTON*/
-.SectionContacto button {
-    background-color: var(--second-violet);
-    color: white;
-    font-family: var(--font-text);
-    font-weight: 250 ;
-    font-size: 1.3rem;
-    padding: 0.3rem 0.7rem;
-}
-
-.SectionContacto button:hover  {
-    border-color: var(--second-violet);
-    background-color: transparent;
-    color: var(--second-violet);
-}
-
-
-/* Media query*/
-@media (max-width: 430px) {
-    .SectionContacto h1 {
-        font-size: 1.2rem; 
-    }
-
-    .SectionContacto span  {
-        font-size: 1.3rem; 
-    }
-
-    .SectionContacto p {
-        font-size: 1rem; 
-    }
-
-    .SectionContacto label  {
-        font-size: 1rem; 
-    }
-
-    .SectionContacto button {
-        font-size: 1rem;
-        padding: 0.5rem 1rem; 
-    }
-
-    .container-form-label  {
-        width: 70%;
+  }
+  
+  /* Adaptaciones para móviles y tablets */
+  @media (max-width: 768px) {
+    .section-contacto h1 {
+      font-size: 1.8rem;
     }
     
-    .SectionContacto  {
-        height: auto;
-        padding: 1;
+    .section-contacto .text-accent {
+      font-size: 2.2rem;
     }
-}
+    
+    .section-contacto p {
+      font-size: 1.1rem;
+    }
+    
+    .section-contacto .form-label {
+      font-size: 1.1rem;
+    }
+    
+    .custom-button {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 430px) {
+    .section-contacto h1 {
+      font-size: 1.2rem;
+    }
+    
+    .section-contacto .text-accent {
+      font-size: 1.3rem;
+    }
+    
+    .section-contacto p {
+      font-size: 1rem;
+    }
+    
+    .section-contacto .form-label {
+      font-size: 1rem;
+    }
+    
+    .custom-button {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  }

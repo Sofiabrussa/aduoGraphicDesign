@@ -62,6 +62,22 @@
     background-color: black;
 }
 
+/* Boton contacto */
+.button-formulario {
+  background-color: var(--second-violet) !important;
+  border-color: var(--second-violet) !important;
+  color: white !important;
+  padding: 0.3rem 0.1rem;
+  font-weight: 250;
+  transition: all 0.3s ease;
+}
+
+.button-formulario:hover {
+  background-color: transparent !important;
+  color: var(--second-violet) !important;
+  border-color: var(--second-violet) !important;
+}
+
 /* Responsive */   
 @media (max-width: 768px) {
     .buttom-aduo {

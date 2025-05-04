@@ -1,4 +1,6 @@
+import Button from '../Button/Button';
 import React, { useState } from 'react';
+import { Container, Row, Col, Form, Alert } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
 import './ContactoStyles.css';
 
@@ -9,6 +11,11 @@ function Contacto() {
         celular: '',
         conociste: '',
     });
+    
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [showAlert, setShowAlert] = useState(false);
+    const [alertVariant, setAlertVariant] = useState('success');
+    const [alertMessage, setAlertMessage] = useState('');
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -17,6 +24,7 @@ function Contacto() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setIsSubmitting(true);
 
         const templateParams = {
             nombre: formData.nombre,
@@ -33,48 +41,111 @@ function Contacto() {
         ).then(
             (response) => {
                 console.log('Correo enviado:', response.text);
-                alert('Formulario enviado correctamente');
+                setAlertVariant('success');
+                setAlertMessage('Formulario enviado correctamente');
+                setShowAlert(true);
                 setFormData({ nombre: '', email: '', celular: '', conociste: '' });
+                setIsSubmitting(false);
             },
             (error) => {
                 console.error('Error al enviar:', error.text);
-                alert('Error al enviar el formulario');
+                setAlertVariant('danger');
+                setAlertMessage('Error al enviar el formulario');
+                setShowAlert(true);
+                setIsSubmitting(false);
             }
         );
     };
 
     return (
-        <div id='contacto' className="container-fluid SectionContacto d-flex justify-content-center flex-column" style={{ backgroundImage: "url('/contacto/imagencontacto.jpg')" }}>
-            <div className='m-4 p-5 '>
-                <div className="text-start">
-                    <h1>Nos inspiran las <span>historias</span> <br /> Contanos la tuya.</h1>
-                </div>
-                <div className="text-start mt-4">
-                    <p>Queremos trabajar en conjunto con vos y crear marcas <br />con las que soñamos.</p>
-                </div>
-                <form className='mt-4' onSubmit={handleSubmit}>
-                    <div className="mb-3 col-4 container-form-label">
-                        <label htmlFor="nombre" className="form-label">Nombre y apellido*</label>
-                        <input type="text" className="form-control" id="nombre" name="nombre" value={formData.nombre} onChange={handleChange} required />
-                    </div>
-                    <div className="mb-3 col-4 container-form-label">
-                        <label htmlFor="email" className="form-label">Email*</label>
-                        <input type="email" className="form-control" id="email" name="email" value={formData.email} onChange={handleChange} required />
-                    </div>
-                    <div className="mb-3 col-4 container-form-label">
-                        <label htmlFor="celular" className="form-label">Celular*</label>
-                        <input type="tel" className="form-control" id="celular" name="celular" value={formData.celular} onChange={handleChange} required />
-                    </div>
-                    <div className="mb-3 col-4 container-form-label">
-                        <label htmlFor="conociste" className="form-label">¿Dónde nos conociste?*</label>
-                        <input type="text" className="form-control" id="conociste" name="conociste" value={formData.conociste} onChange={handleChange} required />
-                    </div>
-                    <p className="text-start">Al enviar este formulario, acepta que almacenemos sus datos para gestionar su consulta.</p>
-                    <div className='mb-2 pb-2'>
-                        <button type="submit" className="btn">Enviar</button>
-                    </div>
-                </form>
-            </div>
+        <div id='contacto' className="section-contacto" style={{ backgroundImage: "url('/contacto/imagencontacto.jpg')" }}>
+            <Container fluid className="py-5">
+                <Row className="justify-content-start mx-md-4">
+                    <Col xs={12} md={8} lg={6} xl={5} className="px-4 py-3">
+                        <div className="mb-4">
+                            <h1 className="text-start">
+                                Nos inspiran las <span className="text-accent">historias</span> <br className="d-none d-sm-block" /> Contanos la tuya.
+                            </h1>
+                        </div>
+                        <div className="text-start mb-4">
+                            <p>
+                                Queremos trabajar en conjunto con vos y crear marcas con las que soñamos.
+                            </p>
+                        </div>
+                        
+                        {showAlert && (
+                            <Alert 
+                                variant={alertVariant} 
+                                className="mb-3" 
+                                onClose={() => setShowAlert(false)} 
+                                dismissible
+                            >
+                                {alertMessage}
+                            </Alert>
+                        )}
+                        
+                        <Form onSubmit={handleSubmit}>
+                            <Form.Group className="mb-3" controlId="nombre">
+                                <Form.Label>Nombre y apellido*</Form.Label>
+                                <Form.Control
+                                    type="text"
+                                    name="nombre"
+                                    value={formData.nombre}
+                                    onChange={handleChange}
+                                    required
+                                />
+                            </Form.Group>
+                            
+                            <Form.Group className="mb-3" controlId="email">
+                                <Form.Label>Email*</Form.Label>
+                                <Form.Control
+                                    type="email"
+                                    name="email"
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    required
+                                />
+                            </Form.Group>
+                            
+                            <Form.Group className="mb-3" controlId="celular">
+                                <Form.Label>Celular*</Form.Label>
+                                <Form.Control
+                                    type="tel"
+                                    name="celular"
+                                    value={formData.celular}
+                                    onChange={handleChange}
+                                    required
+                                />
+                            </Form.Group>
+                            
+                            <Form.Group className="mb-3" controlId="conociste">
+                                <Form.Label>¿Dónde nos conociste?*</Form.Label>
+                                <Form.Control
+                                    type="text"
+                                    name="conociste"
+                                    value={formData.conociste}
+                                    onChange={handleChange}
+                                    required
+                                />
+                            </Form.Group>
+                            
+                            <p className="text-start small text-muted">
+                                Al enviar este formulario, acepta que almacenemos sus datos para gestionar su consulta.
+                            </p>
+                            
+                            <div className="mb-4 text-start">
+                                <Button 
+                                    type="submit" 
+                                    className="button-formulario" 
+                                    disabled={isSubmitting}
+                                >
+                                    {isSubmitting ? 'Enviando...' : 'Enviar'}
+                                </Button>
+                            </div>
+                        </Form>
+                    </Col>
+                </Row>
+            </Container>
         </div>
     );
 }

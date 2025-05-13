@@ -19,7 +19,7 @@ function SectionPortafolio() {
           <div 
             className="img-component"
             style={{
-              backgroundImage: 'url("/imgPortfolio/imagenservicios.png")',
+              backgroundImage: 'url("/imgPortfolio/imagenservicios.webp")',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}

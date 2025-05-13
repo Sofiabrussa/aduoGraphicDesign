@@ -16,7 +16,7 @@ function SectionCards() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <CustomCard image="/imgCards/valu.png" title="Valentina Tajchman" text="Diseñadora gráfica" />
+                        <CustomCard image="/imgCards/valu.webp" title="Valentina Tajchman" text="Diseñadora gráfica" />
                     </motion.div>
                 </Col>
                 <Col md="auto">
@@ -26,7 +26,7 @@ function SectionCards() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.3 }}
                     >
-                        <CustomCard image="/imgCards/jose.png" title="Josefina Bas" text="Diseñadora gráfica" />
+                        <CustomCard image="/imgCards/jose.webp" title="Josefina Bas" text="Diseñadora gráfica" />
                     </motion.div>
                 </Col>
             </Row>

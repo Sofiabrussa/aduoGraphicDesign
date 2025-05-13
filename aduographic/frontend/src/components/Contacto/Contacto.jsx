@@ -33,6 +33,7 @@ function Contacto() {
             conociste: formData.conociste,
         };
 
+        console.log('Enviando email con:', templateParams);
         emailjs.send(
             process.env.REACT_APP_EMAILJS_SERVICE_ID,
             process.env.REACT_APP_EMAILJS_TEMPLATE_ID,

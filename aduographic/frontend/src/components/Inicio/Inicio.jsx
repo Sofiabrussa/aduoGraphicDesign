@@ -53,8 +53,10 @@ function Inicio() {
         </p>
         
         {/* Botón */}
-        <Button className="button-inicio"> Contactanos ↗ </Button>
-     
+        <a href="https://api.whatsapp.com/send/?phone=5493515295012&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+          <Button className="button-inicio"> Contactanos ↗ </Button>
+        </a>
+
       </div>
 
       {/* Carrusel de imágenes */}

@@ -74,6 +74,7 @@ function SectionNosotras() {
               src="/imgsNosotras/imagennosotras.png" 
               alt="Nosotras" 
               className="nosotras-image" 
+              loading="lazy"
             />
           </div>
         </Col>

@@ -24,6 +24,7 @@ function CustomCard({ image, title, text }) {
                         src={image}
                         alt="Card image"
                         className="card-img-custom"
+                        loading="lazy"
                     />
                     <Card.ImgOverlay
                         className="d-flex custom-card flex-column justify-content-end align-items-center"

@@ -13,7 +13,7 @@ function SectionNosotras() {
     { 
       src: "/imgsNosotras/pedidos-06.png", 
       alt: "IMAGEN1", 
-      text: "DISEÑAR con PASIÓN = <br> CONECTAR con el MUNDO</br>" 
+      text: "DISEÑAR con PASIÓN = <br> CONECTAR con el MUNDO" 
     },
     { 
       src: "/imgsNosotras/pedidos-07.png", 

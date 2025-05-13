@@ -71,7 +71,7 @@ function SectionNosotras() {
         <Col lg={6} md={12} className="image-column p-0">
           <div className="image-container">
             <img 
-              src="/imgsNosotras/imagennosotras.png" 
+              src="/imgsNosotras/imagennosotras.webp" 
               alt="Nosotras" 
               className="nosotras-image" 
               loading="lazy"

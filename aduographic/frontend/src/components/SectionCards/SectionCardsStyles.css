@@ -26,12 +26,17 @@
 
 .custom-card {
   background-color: rgba(0, 0, 0, 0.6); 
+  padding-bottom: 5rem; 
 }
 
 .card-wrapper .card,
 .card-wrapper .card .card-img-overlay {
   border-radius: 1rem; 
   overflow: hidden; 
+}
+
+.custom-card-title  {
+  font-size: 1.5rem;
 }
 
 /* Responsive */

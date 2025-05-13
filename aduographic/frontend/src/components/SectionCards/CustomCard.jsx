@@ -39,7 +39,7 @@ function CustomCard({ image, title, text }) {
                             animate={{ y: hovered ? 0 : 20 }}
                             transition={{ duration: 0.3 }}
                         >
-                            <Card.Title className="text-center mb-0">{title}</Card.Title>
+                            <Card.Title className="text-center mb-0 custom-card-title">{title}</Card.Title>
                             <Card.Text className="text-center  mt-0">{text}</Card.Text>
                         </motion.div>
                     </Card.ImgOverlay>

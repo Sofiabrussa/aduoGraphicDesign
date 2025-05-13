@@ -23,8 +23,11 @@
   opacity: 0.9;
 }
 
+.custom-card {
+  background-color: rgba(0, 0, 0, 0.6); 
+}
+
 /* Responsive */
-/* Media Queries */
 @media (max-width: 1200px) {
   .custom-card {
     max-width: 20rem;

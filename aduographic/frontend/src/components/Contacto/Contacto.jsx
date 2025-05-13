@@ -68,7 +68,7 @@ function Contacto() {
                             </h1>
                         </div>
                         <div className="text-start mb-4">
-                            <p>
+                            <p className="text-start small text-muted lh-sm">
                                 Queremos trabajar en conjunto con vos y crear marcas con las que soñamos.
                             </p>
                         </div>
@@ -129,7 +129,7 @@ function Contacto() {
                                 />
                             </Form.Group>
                             
-                            <p className="text-start small text-muted">
+                            <p className="text-start small text-muted lh-sm">
                                 Al enviar este formulario, acepta que almacenemos sus datos para gestionar su consulta.
                             </p>
                             

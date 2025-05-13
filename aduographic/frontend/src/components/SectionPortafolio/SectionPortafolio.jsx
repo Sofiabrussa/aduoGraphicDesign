@@ -30,7 +30,7 @@ function SectionPortafolio() {
       <Row className="text-center mt-2 mb-5 buttonSectionPortfolio">
         <Col>
           <a href="https://www.behance.net/aduoestudiocreativo" target="_blank" rel="noopener noreferrer">
-            <Button className='button-portfolio' > Portfolio </Button>
+            <Button className='button-portfolio' > Portfolio↗ </Button>
           </a>
         </Col>
       </Row>

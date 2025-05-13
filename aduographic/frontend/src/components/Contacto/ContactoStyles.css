@@ -34,7 +34,7 @@
     color: grey;
   }
   
-  /* Adaptaciones para móviles y tablets */
+  /* Responsive */
   @media (max-width: 768px) {
     .section-contacto h1 {
       font-size: 1.8rem;

@@ -16,19 +16,19 @@
   font-size: clamp(1.5rem, 3vw, 2.5rem);
   font-weight: 600;
   margin-bottom: 1.5rem;
+  line-height: 0.9; 
+  text-align: left; 
+}
+
+.content-column {
+  padding: 4rem;
+  text-align: left; 
 }
 
 .text-violet {
   color: var(--second-violet);
   font-family: var(--font-pastel);
   font-size: clamp(2rem, 4vw, 3rem);
-}
-
-.description-text {
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
-  line-height: 1.6;
-  max-width: 90%;
-  margin: 0 auto 1.5rem;
 }
 
 .button-container {

@@ -10,7 +10,6 @@ function Navbar() {
     const [isCollapsed, setIsCollapsed] = useState(true);
 
     const handleLinkClick = () => {
-        // Esperar a que la navegación se complete antes de hacer scroll
         setTimeout(() => {
           window.scrollTo(0, 0);
         }, 100);
@@ -28,7 +27,7 @@ function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <Link className="navbar-brand lacquer-regular" to="/">
-                <img src="/imgsInicio/recursos-03.webp" alt="Logo de mi empresa" className="navbar-logo" />
+                <img src="/imgsInicio/recursos-03.svg" alt="Logo de mi empresa" className="navbar-logo" />
             </Link>
             <button 
                 className="navbar-toggler" 

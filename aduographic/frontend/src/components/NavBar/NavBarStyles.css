@@ -10,12 +10,14 @@ html {
 }
 
 .navbar-toggler {
-    padding: 0; /* Ajusta el espacio del ícono del menú */
+    padding: 0; 
 }
 
 .navbar-logo {
-    width: 160px; 
-    height: auto;
+    max-width: 200px; 
+    height: auto; 
+    object-fit: contain; 
+    margin-left: 2rem;
 }
 
 .flecha-navbar {
@@ -35,7 +37,7 @@ html {
 }
 
 
-/*Media querys iphone */
+/*Media querys */
 @media (max-width: 700px) {
     .navbar  {
         max-height: 40px;
@@ -48,7 +50,7 @@ html {
      }
 
     .nav-link {
-        font-size: 0.8rem; /* Reduce el tamaño de la fuente de los enlaces en pantallas pequeñas */}
+        font-size: 0.8rem; }
 
     .navbar-toggler{
         position: relative;
@@ -62,7 +64,7 @@ html {
 
     }
     .button-navBar button {
-        font-size: 0.7rem; /* Reducir el tamaño del botón en pantallas pequeñas */
+        font-size: 0.7rem; 
         padding: 5px 10px;
         position: relative;
         bottom:35px;
@@ -101,7 +103,7 @@ html {
      }
 
     .nav-link {
-        font-size: 0.8rem; /* Reduce el tamaño de la fuente de los enlaces en pantallas pequeñas */}
+        font-size: 0.8rem; 
 
     .navbar-toggler{
         position: relative;
@@ -115,7 +117,7 @@ html {
 
     }
     .button-navBar button {
-        font-size: 0.7rem; /* Reducir el tamaño del botón en pantallas pequeñas */
+        font-size: 0.7rem; 
         padding: 5px 10px;
         position: relative;
         bottom:35px;
@@ -138,4 +140,4 @@ html {
         position: relative;
         top: 30px;
     }
-}
+} }

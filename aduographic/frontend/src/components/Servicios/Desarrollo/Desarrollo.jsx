@@ -17,6 +17,7 @@ function Desarrollo() {
                     <Card.Text className="mb-4">
                         Diseñamos y desarrollamos tu página web a tu medida. <br/>
                         Ya sea que estés buscando una landing page, una web sencilla o un e-commerce.
+                        <br/>
                         <strong>¡Diseñar webs se nos da reee cool!</strong>
                     </Card.Text>
                     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>

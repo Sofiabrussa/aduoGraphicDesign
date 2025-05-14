@@ -31,7 +31,7 @@ function SectionNosotras() {
 
   return (
     <Container fluid id="nosotras" className="p-0" ref={nosotrasRef}>
-      <Row className="mx-0 section-row">
+      <Row className="mx-0 section-row align-items-stretch">
         {/* Text Content */}
         <Col lg={6} md={12} className="content-column d-flex flex-column justify-content-center ">
           <Card.Title className="title-text mb-4">

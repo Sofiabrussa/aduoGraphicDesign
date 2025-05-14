@@ -23,6 +23,12 @@
   flex: 1;
 }
 
+.narrow-text {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .title-text {
   font-size: clamp(1.5rem, 3vw, 2.5rem);
   font-weight: 600;
@@ -49,7 +55,7 @@
 /* IMAGE COLUMN */
 .image-column {
   flex: 1;
-  max-height: 700px;
+  max-height: 800px;
   overflow: hidden;
   display: flex;
 }

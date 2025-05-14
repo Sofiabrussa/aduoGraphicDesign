@@ -33,31 +33,19 @@ function SectionNosotras() {
     <Container fluid id="nosotras" className="p-0" ref={nosotrasRef}>
       <Row className="mx-0 section-row align-items-stretch">
         {/* Text Content */}
-        <Col lg={6} md={12} className="content-column d-flex flex-column justify-content-center ">
-          <Card.Title className="title-text mb-4">
-            Somos un estudio gráfico que nació para{" "}
-            <span className="text-violet">romper esquemas.</span>
-          </Card.Title>
+        <Col lg={6} md={12} className="content-column d-flex flex-column justify-content-center align-items-center">
+          <div className="narrow-text">
+            <Card.Title className="title-text mb-4">
+              Somos un estudio gráfico que nació para <br></br> <span className="text-violet">romper esquemas.</span>
+            </Card.Title>
+            <Card.Text>En A Dúo, somos dos amigas apasionadas por transformar ideas en experiencias visuales únicas.</Card.Text>
+            <Card.Text>Nos mueve la creatividad, la conexión con nuestros clientes y el desafío de crear marcas que sean tan auténticas como vos.</Card.Text>
 
-          <Card.Text>
-            En A Dúo, somos dos amigas apasionadas por transformar ideas en experiencias visuales únicas.
-          </Card.Text>
-
-          <Card.Text>
-            Nos mueve la creatividad, la conexión con nuestros clientes y el desafío de crear marcas que sean tan auténticas como vos.
-          </Card.Text>
-
-          {/* Botón con animación */}
-            <a
-              href="https://walink.co/9f29a0"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="button-link"
-            >
+            <a href="https://walink.co/9f29a0" target="_blank" rel="noopener noreferrer" className="button-link">
               <Button>Trabajemos juntos</Button>
             </a>
+          </div>
         </Col>
-
         {/* Image Section */}
         <Col lg={6} md={12} className="image-column p-0">
           <div className="image-container">

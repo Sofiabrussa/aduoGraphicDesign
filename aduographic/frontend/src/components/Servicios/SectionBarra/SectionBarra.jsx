@@ -5,9 +5,12 @@ import Redes from "../Redes/Redes";
 import Contacto from "../../Contacto/Contacto.jsx"
 import Desarrollo from "../Desarrollo/Desarrollo.jsx";
 import Imgdesa from "../ImgDesa/Imgdesa.jsx";
+import NavBar from "../../NavBar/NavBar.jsx"
+
 function SectionBarra() { 
     return (
     <>
+        <NavBar/>
         <div id="sectionBarra" className="container-fluid">
             <div className="row justify-content-center w-100">
                 <div className="col-12 col-md-10 col-lg-8">

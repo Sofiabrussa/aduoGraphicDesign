@@ -15,10 +15,10 @@ const Fotografia = () => {
               </Card.Title>
               <Card.Text className="mb-4">
                 Todo pensado con una estrategia visual que no solo
-                se ve bien, sino que tiene propósito. Lo adaptamos a
+                se ve bien, sino que tiene propósito. <br></br>Lo adaptamos a
                 cualquier plataforma que necesites, ¡sin vueltas!
                 <br></br>
-                ¿Lo hacemos realidad?
+                <strong>¿Lo hacemos realidad? </strong>
               </Card.Text>
               <motion.div
                   whileHover={{ scale: 1.05 }}

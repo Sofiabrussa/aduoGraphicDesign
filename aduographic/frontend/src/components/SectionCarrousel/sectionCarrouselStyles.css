@@ -30,29 +30,24 @@
 
   --radius: 0.5rem;
 
-  /* Propiedades de fondo y color de texto */
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
 }
 
-
-/* Estilo de bordes */
 .section-carousel * {
   border: 1px solid hsl(var(--border));
 }
 
-/* Estilo para las tarjetas dentro del carrusel */
 .section-carousel .carousel-slide {
   transition: transform 0.3s ease;
 }
 
-/* Personalización de bordes con el radio de borde */
 .auto-carousel {
-  width: 100vw; /* Hace que el carrusel ocupe todo el ancho de la ventana */
+  width: 100vw; 
   display: flex;
-  justify-content: flex-start; /* Asegura que las imágenes estén alineadas horizontalmente */
-  overflow: hidden; /* Oculta el contenido extra */
-  padding: 1rem 0; /* Espaciado vertical */
+  justify-content: flex-start; 
+  overflow: hidden; 
+  padding: 1rem 0; 
 }
 
 .section-carousel {
@@ -68,11 +63,13 @@
 
 /* Reducir el tamaño de las imágenes */
 .auto-carousel .carousel-img {
-  max-height: 30vh; /* Ajusta este valor según el tamaño deseado */
+  max-height: 30vh; 
   width: 100%;
-  width: auto; /* Mantiene la proporción de las imágenes */
-  object-fit: contain; /* Asegura que las imágenes no se deformen */
+  width: auto;
+  object-fit: contain;
 }
+
+
 
 
 

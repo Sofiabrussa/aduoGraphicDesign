@@ -1,9 +1,50 @@
 import "./FotografiaStyled.css";
+import { useEffect, useRef, useState } from "react";
 import { Card } from "react-bootstrap";
 import Button from "../../Button/Button";
 import { motion } from "framer-motion";
 
 const Fotografia = () => {
+  
+  const scrollRef = useRef(null);
+  const [images] = useState([
+    "/fotografia/_CIT6759.jpg",
+    "/fotografia/_CIT6933.jpg",
+    "/fotografia/_DSC9874-Enhanced-NR.jpg",
+    "/fotografia/_CIT7464.jpg",
+    "/fotografia/_DSC0430-Enhanced-NR.jpg",
+    "/fotografia/_CIT6759.jpg",
+    "/fotografia/_DSC0313-Enhanced-NR (1).jpg",
+    "/fotografia/manu rojas-54.jpg",
+    "/fotografia/_DSC0394.jpg",
+    "/fotografia/_CIT6664.jpg",
+    "/fotografia/_DSC0465-Enhanced-NR.webp",
+    "/fotografia/_CIT7582.jpg",
+    "/fotografia/_DSC9901-Enhanced-NR.jpg",
+    "/fotografia/_CIT6512.jpg",
+    "/fotografia/_DSC9979-Enhanced-NR.jpg",
+    "/fotografia/_CIT6502.jpg",
+  ]);
+
+  useEffect(() => {
+    const scrollContainer = scrollRef.current;
+    if (!scrollContainer) return;
+
+    const content = scrollContainer.innerHTML;
+    scrollContainer.innerHTML = content + content;
+
+    const scroll = () => {
+      if (!scrollContainer) return;
+      const maxScroll = scrollContainer.scrollWidth / 2;
+      scrollContainer.scrollLeft -= 1;
+      if (scrollContainer.scrollLeft <= 0) {
+        scrollContainer.scrollLeft = maxScroll;
+      }
+    };
+
+    const intervalId = setInterval(scroll, 30);
+    return () => clearInterval(intervalId);
+  }, []);
     
     return (
       <section id="section-fotografia" className="py-5">
@@ -30,19 +71,31 @@ const Fotografia = () => {
                 </motion.div>
             </div>
           </div>
-          
-          <div className="row m-0">
-            <div className="col-12 p-0">
-              <div className="image-wrapper">
-                <img
-                  src="/servicios/servicio3.jpg"
-                  alt="Servicio de fotografía"
-                  className="img-fluid rounded"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
+
+      <div className="w-100 mt-5">
+        <div
+          ref={scrollRef}
+          className="d-flex flex-nowrap gap-3 auto-carousel"
+          style={{
+            overflowX: "hidden",
+            width: "100vw",
+          }}
+        >
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Slide ${index + 1}`}
+              className="img-fluid rounded shadow carousel-img"
+              style={{
+                height: "200px",
+                objectFit: "cover",
+                flex: "0 0 auto",
+              }}
+            />
+          ))}
+        </div>
+      </div>
         </div>
       </section>
     );

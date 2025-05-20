@@ -4,7 +4,7 @@ import Button from "../../Button/Button";
 import { motion } from "framer-motion";
 function Desarrollo() {
     return (
-        <div
+        <div 
             id="section-desarrollo"
             className="container-fluid d-flex flex-column align-items-center justify-content-center text-center min-vh-60"
         >

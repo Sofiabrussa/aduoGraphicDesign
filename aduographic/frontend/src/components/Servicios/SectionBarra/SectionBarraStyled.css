@@ -5,6 +5,11 @@
     display: flex;
     align-items: center;
 }
+
+#sectionBarra .section-title {
+  cursor: pointer;
+}
+
 #sectionBarra .section-title {
     color: white;
     font-family: var(--font-title);
@@ -12,6 +17,24 @@
     margin: 0;
     transition: all 0.3s ease;
 }
+
+.section-link {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.section-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+#sectionBarra .section-title:hover {
+  transform: scale(1.05);
+}
+
 /* Responsive */
 @media (max-width: 576px) {
     #sectionBarra {

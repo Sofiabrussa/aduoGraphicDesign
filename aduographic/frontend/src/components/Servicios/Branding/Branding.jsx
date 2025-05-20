@@ -6,7 +6,7 @@ import Button from "../../Button/Button";
 
 const Branding = () => {
   return (
-    <section className="branding-section py-5">
+    <section className="branding-section py-5" id="branding">
       <div className="container">
         <div className="row g-4 align-items-stretch">
           <div className="col-12 col-lg-6">

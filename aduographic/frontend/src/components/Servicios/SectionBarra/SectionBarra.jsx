@@ -6,30 +6,69 @@ import Contacto from "../../Contacto/Contacto.jsx"
 import Desarrollo from "../Desarrollo/Desarrollo.jsx";
 import Imgdesa from "../ImgDesa/Imgdesa.jsx";
 import NavBar from "../../NavBar/NavBar.jsx"
+import { Link } from "react-scroll";
 
-function SectionBarra() { 
+function SectionBarra() {
     return (
-    <>
-        <NavBar/>
-        <div id="sectionBarra" className="container-fluid">
-            <div className="row justify-content-center w-100">
-                <div className="col-12 col-md-10 col-lg-8">
-                    <div className="d-flex flex-column justify-content-center align-items-center text-center">
-                        <h1 className="section-title mb-3 mb-md-4"> Branding </h1>
-                        <h1 className="section-title mb-3 mb-md-4"> Gestión de Redes </h1>
-                        <h1 className="section-title mb-3 mb-md-4"> Contenido y Fotografía </h1>
-                        <h1 className="section-title mb-3 mb-md-4"> Diseño y Desarrollo Web </h1>
+        <>
+            <NavBar />
+            <div id="sectionBarra" className="container-fluid">
+                <div className="row justify-content-center w-100">
+                    <div className="col-12 col-md-10 col-lg-8">
+                        <div className="d-flex flex-column justify-content-center align-items-center text-center">
+                            <h1 className="section-title mb-3 mb-md-4">
+                                <Link
+                                    to="branding"
+                                    smooth={true}
+                                    duration={500}
+                                    className="section-link"
+                                >
+                                    Branding
+                                </Link>
+                            </h1>
+                            <h1 className="section-title mb-3 mb-md-4">
+                                <Link
+                                    to="sectionRedes"
+                                    smooth={true}
+                                    duration={500}
+                                    className="section-link"
+                                >
+                                    Gestión de Redes
+                                </Link>
+                            </h1>
+                            <h1 className="section-title mb-3 mb-md-4">
+                                <Link
+                                    to="section-fotografia"
+                                    smooth={true}
+                                    duration={500}
+                                    className="section-link"
+                                >
+                                    Contenido y Fotografía
+                                </Link>
+                            </h1>
+                            <h1 className="section-title mb-3 mb-md-4">
+                                <Link
+                                    to="section-desarrollo"
+                                    smooth={true}
+                                    duration={500}
+                                    className="section-link"
+                                >
+                                    Diseño y Desarrollo Web
+                                </Link>
+                            </h1>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <Branding/>
-        <Fotografia/>
-        <Redes/>
-        <Imgdesa/>
-        <Desarrollo/>
-        <Contacto/>
-    </>
-    )
+
+            <Branding />
+            <Redes />
+            <Fotografia />
+            <Imgdesa />
+            <Desarrollo />
+            <Contacto />
+        </>
+    );
 }
-export default SectionBarra
+
+export default SectionBarra;

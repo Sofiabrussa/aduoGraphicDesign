@@ -10,8 +10,7 @@ function SectionPortafolio() {
   return (
     <Container fluid id="portfolio" className="d-flex flex-column m-0 p-0">
       <PortfolioTitle />
-
-      <Row className="img-table-container my-4 p-0">
+      <Row className="img-table-container p-0">
         <Col
           md={6}
           className="p-0 img-wrapper"
@@ -27,7 +26,7 @@ function SectionPortafolio() {
         </Col>
         <ServicesList />
       </Row>
-      <Row className="text-center mt-2 mb-5 buttonSectionPortfolio">
+      <Row className="text-center buttonSectionPortfolio align-items-center" style={{ height: '100px' }}>
         <Col>
           <a href="https://www.behance.net/aduoestudiocreativo" target="_blank" rel="noopener noreferrer">
             <Button className='button-portfolio' > Portfolio  &#8599;</Button>

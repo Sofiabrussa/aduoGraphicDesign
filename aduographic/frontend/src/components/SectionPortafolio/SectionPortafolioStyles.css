@@ -5,12 +5,12 @@
   padding: 2rem 0;
 }
 
-/* Image and table container */
+
 .img-table-container {
   display: flex;
   width: 100%;
   margin: 0;
-  height: 500px; /* Set a specific fixed height for the container */
+  height: 500px; 
 }
 
 .img-wrapper {
@@ -68,7 +68,7 @@
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 768px) {
   #portfolio {
     flex-direction: column;
@@ -117,19 +117,38 @@
 
 @media screen and (max-width: 480px) {
   .SpanPortfolioHand {
-    font-size: 1.4rem; 
+    font-size: 1.2rem;
   }
   .OtherText {
     font-size: 1rem; 
   }
+  .sectionPortfolioText {
+    padding: 0.5rem;
+    margin: 0 auto; 
+    width: 100%;
+    box-sizing: border-box; 
+  }
+  .sectionPortfolioText br {
+    display: none; 
+  }
+
+  .img-component {
+      display: block;
+      margin: 0;
+      padding: 0;
+      height: auto; 
+    }
+
+    .text-center.card-title.h5 {
+    font-size: 1.2rem;
+    line-height: 1.1; 
+    margin-bottom: 0.5rem;  
+    }
+
+    .portfolio-title {
+      margin-bottom: 0 !important;
+      padding-bottom: 0 !important;
+    }
+
 }
 
-/* iPad vertical: entre 481px y 768px */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .SpanPortfolioHand {
-    font-size: 1.8rem;
-  }
-  .OtherText {
-    font-size: 1.2rem; 
-  }
-}

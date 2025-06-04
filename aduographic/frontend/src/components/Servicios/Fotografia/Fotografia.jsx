@@ -79,6 +79,7 @@ const Fotografia = () => {
           style={{
             overflowX: "hidden",
             width: "100vw",
+            minHeight: "320px"
           }}
         >
           {images.map((image, index) => (
@@ -88,7 +89,7 @@ const Fotografia = () => {
               alt={`Slide ${index + 1}`}
               className="img-fluid rounded shadow carousel-img"
               style={{
-                height: "200px",
+                height: "300px",
                 objectFit: "cover",
                 flex: "0 0 auto",
               }}

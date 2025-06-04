@@ -2,6 +2,7 @@
   width: 100%;
   background-color: var(--background-color, #fff);
   padding: 4rem 0 0;
+  min-height: 80vh;
 }
 
 .tm-titulo {
@@ -96,7 +97,7 @@
 
 /* Reducir el tamaño de las imágenes */
 .auto-carousel .carousel-img {
-  max-height: 30vh; 
+  max-height: 40vh; 
   width: auto;
   object-fit: contain;
 }

@@ -85,17 +85,14 @@
   .section-row {
     flex-direction: column;
   }
-
   .content-column {
     order: 2;
     padding: 2rem 1rem;
   }
-
   .image-column {
     order: 1;
     height: 400px;
   }
-
   .description-text {
     max-width: 100%;
   }
@@ -106,18 +103,30 @@
     font-size: clamp(1rem, 3vw, 1rem);
     margin: 1rem 0;
   }
-
   .text-violet {
     font-size: clamp(1.8rem, 6vw, 2.5rem);
   }
-
   .description-text {
     font-size: clamp(0.9rem, 2vw, 1rem);
     margin-bottom: 1rem;
   }
-
   .image-column {
     height: 300px;
   }
 }
+
+
+@media (max-width: 480px)  {
+  .card-text {
+    line-height: 1.1;
+  }
+
+  .narrow-text  {
+    margin: 2rem;
+  }
+
+}
+
+
+
 

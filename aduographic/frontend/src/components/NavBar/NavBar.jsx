@@ -26,23 +26,25 @@ function Navbar() {
 
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
-            <Link className="navbar-brand lacquer-regular" to="/">
-                <img src="/imgsInicio/recursos-03.svg" alt="Logo de mi empresa" className="navbar-logo" />
-            </Link>
-            <button 
-                className="navbar-toggler" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navbarNavDropdown" 
-                aria-controls="navbarNavDropdown" 
-                aria-expanded={!isCollapsed} 
-                aria-label="Toggle navigation"
-                onClick={toggleMenu}
-            >
-                <span className="navbar-toggler-icon"></span>
-            </button>
+            <div className="container-fluid d-flex justify-content-between align-items-center px-3">
+                <Link className="navbar-brand lacquer-regular m-0" to="/">
+                    <img src="/imgsInicio/recursos-03.svg" alt="Logo de mi empresa" className="navbar-logo" />
+                </Link>
+                <button 
+                    className="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNavDropdown" 
+                    aria-controls="navbarNavDropdown" 
+                    aria-expanded={!isCollapsed} 
+                    aria-label="Toggle navigation"
+                    onClick={toggleMenu}
+                >
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div className={`collapse navbar-collapse ${!isCollapsed ? 'show' : ''}`} id="navbarNavDropdown">
-                <ul className="navbar-nav ms-auto">
+                <ul className="navbar-nav ms-auto align-items-center">
                     <NavItem>
                         <Link className="nav-link" to="/servicios" onClick={handleLinkClick}>
                             Servicios

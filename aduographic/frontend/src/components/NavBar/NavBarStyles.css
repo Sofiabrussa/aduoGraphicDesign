@@ -1,8 +1,4 @@
 
-html {
-    scroll-behavior: smooth;
-  }
-
 .navbar {
     position: relative;
     max-height: 80px;
@@ -31,113 +27,78 @@ html {
     cursor: pointer;
 }
 
-.button-navBar {
-    font-size: 0.875rem;
-    margin-right: 20px;
-}
 
-
-/*Media querys */
+/* media query */ 
 @media (max-width: 700px) {
-    .navbar  {
-        max-height: 40px;
+    .navbar {
+        padding: 0.25rem 1rem;
     }
+
     .navbar-logo {
-        max-width: 80px;
-        position: relative;
-        left: 10px;
-        bottom:35px;
-     }
+        max-width: 100px;
+    }
 
     .nav-link {
-        font-size: 0.8rem; }
-
-    .navbar-toggler{
-        position: relative;
-        bottom:35px;
-        margin-right:10px;
-        max-width: 30px;
-      
+        font-size: 0.8rem;
     }
-    .navbar-toggler-icon{
-        max-width:30px;
 
-    }
     .button-navBar button {
-        font-size: 0.7rem; 
+        font-size: 0.7rem;
         padding: 5px 10px;
-        position: relative;
-        bottom:35px;
-    
     }
-    
+
     .navbar-nav {
         flex-direction: column;
         text-align: center;
-        background-color:white;
-        position:relative;
-        bottom:61px;
+        background-color: white;
+        padding-top: 1rem;
     }
-    
+
     .navbar-nav .nav-item {
         margin-bottom: 1rem;
- }
+    }
 
-    .button-navBar{
-        position: relative;
-        top: 30px;
+    .button-navBar {
+        margin-top: 1rem;
+        text-align: center;
     }
 }
 
-
-
-@media (min-width: 710px) and (max-width: 1000px)  {
-    .navbar  {
-        max-height: 40px;
+@media (min-width: 710px) and (max-width: 1000px) {
+    .navbar {
+        padding: 0.25rem 1rem;
     }
+
     .navbar-logo {
-        max-width: 80px;
-        position: relative;
-        left: 10px;
-        bottom:35px;
-     }
+        max-width: 120px;
+    }
 
     .nav-link {
-        font-size: 0.8rem; 
-
-    .navbar-toggler{
-        position: relative;
-        bottom:35px;
-        margin-right:10px;
-        max-width: 30px;
-      
+        font-size: 0.8rem;
     }
-    .navbar-toggler-icon{
-        max-width:30px;
 
+    .navbar-toggler {
+        max-width: 35px;
     }
+
     .button-navBar button {
-        font-size: 0.7rem; 
+        font-size: 0.7rem;
         padding: 5px 10px;
-        position: relative;
-        bottom:35px;
-    
     }
-    
+
     .navbar-nav {
         flex-direction: column;
         text-align: center;
-        background-color:white;
-        position:relative;
-        bottom:61px;
+        background-color: white;
+        padding-top: 1rem;
     }
-    
+
     .navbar-nav .nav-item {
         margin-bottom: 1rem;
- }
-
-    .button-navBar{
-        position: relative;
-        top: 30px;
     }
-} }
+
+    .button-navBar {
+        margin-top: 1rem;
+        text-align: center;
+    }
+}

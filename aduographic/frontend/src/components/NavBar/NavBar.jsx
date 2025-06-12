@@ -26,9 +26,9 @@ function Navbar() {
 
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
-            <div className="container-fluid d-flex justify-content-between align-items-center px-3">
+            <div className="container-fluid d-flex justify-content-between align-items-center">
                 <Link className="navbar-brand lacquer-regular m-0" to="/">
-                    <img src="/imgsInicio/recursos-03.svg" alt="Logo de mi empresa" className="navbar-logo" />
+                    <img src="/imgsInicio/recursos-03.svg" alt="Logo de mi empresa" className={`navbar-logo ${!isCollapsed ? 'hide-logo' : ''}`} />
                 </Link>
                 <button 
                     className="navbar-toggler" 

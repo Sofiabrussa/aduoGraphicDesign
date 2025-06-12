@@ -6,7 +6,8 @@
 }
 
 .navbar-toggler {
-    padding: 0; 
+    border: none;
+    background: transparent; 
 }
 
 .navbar-logo {
@@ -27,50 +28,44 @@
     cursor: pointer;
 }
 
+.hide-logo {
+  display: none;
+}
+
 
 /* media query */ 
 @media (max-width: 700px) {
-    .navbar {
-        padding: 0.25rem 1rem;
-    }
+  .navbar-collapse.show {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    padding: 1rem 0;
+    border-radius: 0 0 10px 10px;
+  }
 
-    .navbar-logo {
-        max-width: 100px;
-    }
+  .navbar-nav {
+    padding: 0;
+  }
 
-    .nav-link {
-        font-size: 0.8rem;
-    }
+  .navbar-nav .nav-item {
+    margin: 0.5rem 0;
+  }
 
-    .button-navBar button {
-        font-size: 0.7rem;
-        padding: 5px 10px;
-    }
-
-    .navbar-nav {
-        flex-direction: column;
-        text-align: center;
-        background-color: white;
-        padding-top: 1rem;
-    }
-
-    .navbar-nav .nav-item {
-        margin-bottom: 1rem;
-    }
-
-    .button-navBar {
-        margin-top: 1rem;
-        text-align: center;
-    }
+  .button-navBar {
+    margin-top: 1rem;
+  }
 }
 
 @media (min-width: 710px) and (max-width: 1000px) {
     .navbar {
         padding: 0.25rem 1rem;
     }
-
     .navbar-logo {
-        max-width: 120px;
+     display: none;
     }
 
     .nav-link {

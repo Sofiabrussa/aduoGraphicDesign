@@ -99,16 +99,8 @@
 }
 
 @media (max-width: 768px) {
-  .title-text {
-    font-size: clamp(1rem, 3vw, 1rem);
-    margin: 1rem 0;
-  }
-  .text-violet {
-    font-size: clamp(1.8rem, 6vw, 2.5rem);
-  }
-  .description-text {
-    font-size: clamp(0.9rem, 2vw, 1rem);
-    margin-bottom: 1rem;
+  .title-text  {
+     font-size: clamp(1rem, 2vw, 1rem);
   }
   .image-column {
     height: 300px;
@@ -118,7 +110,10 @@
   }
   .narrow-text  {
     margin: 3rem;
-    width: 85%;
+    width: 75%;
+  }
+  p.card-text  {
+     font-size: clamp(1rem, 2vw, 1rem);
   }
 }
 

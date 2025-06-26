@@ -29,7 +29,7 @@ function SectionPortafolio() {
       <Row className="text-center buttonSectionPortfolio align-items-center" style={{ height: '100px' }}>
         <Col>
           <a href="https://www.behance.net/aduoestudiocreativo" target="_blank" rel="noopener noreferrer">
-            <Button className='button-portfolio' > Portfolio  &#8599;</Button>
+            <Button className='button-portfolio' > Portfolio &#8599;</Button>
           </a>
         </Col>
       </Row>

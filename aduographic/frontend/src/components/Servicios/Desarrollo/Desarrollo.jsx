@@ -10,9 +10,9 @@ function Desarrollo() {
         >
             <div className="row w-100 d-flex justify-content-center">
                 <div className="col-12 col-md-8 mb-5">
-                    <Card.Title className="mb-3 tm-titulo">
+                    <Card.Title className="mb-3">
                         Diseño y <br className="d-md-none" />
-                        <span className="title-span">desarrollo web</span>
+                        <span className="span-violeta">desarrollo web</span>
                     </Card.Title>
                     <Card.Text className="mb-4">
                         Diseñamos y desarrollamos tu página web a tu medida. <br/>

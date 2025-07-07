@@ -4,7 +4,7 @@
     --font-title-size-max-cards: 2.5rem;
   
     --font-text-size-min-cards: 1rem;
-    --font-text-size-preferred-cards: 1.3rem;
+    --font-text-size-preferred-cards: 1.2rem;
     --font-text-size-max-cards: 1.8rem;
   }
 
@@ -28,6 +28,15 @@
     font-family: var(--font-text);
     font-weight: 500;
   }
+
+/* SPANS */
+.span-violeta {
+    color: var(--primary-violet);
+    font-family: var(--font-hand);
+    font-weight: 500;
+    font-size: 2.8rem;
+    display: inline;
+}
 
 html, body {
   margin: 0;

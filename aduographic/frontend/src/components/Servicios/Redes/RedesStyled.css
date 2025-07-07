@@ -23,12 +23,6 @@
   flex-direction: column;
 }
 
-@media (min-width: 1024px) {
-  .content-wrapper {
-    flex-direction: row;
-  }
-}
-
 .text-content {
   flex: 1;
   background-color: #f8f9fa;
@@ -52,21 +46,14 @@
   min-height: 500px; 
 }
 
-
-@media (max-width: 768px) {
-    .text-content h1 {
-      font-size: 2rem;
-    }
-  
-    .text-content p {
-      font-size: 1.125rem;
-      padding: 0 1rem;
-    }
-  
+@media (min-width: 768px) {
+  .content-wrapper {
+    flex-direction: row;
+  }
     .image-content {
       min-height: 400px;
     }
-  }
+}
 
 
   /* img */

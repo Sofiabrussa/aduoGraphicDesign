@@ -9,7 +9,7 @@
   /* Estilos de texto específicos */
   .section-contacto h1 {
     font-family: var(--font-title);
-    font-weight: 230;
+    font-weight: 500;
     font-size: 2rem;
     color: grey;
   }
@@ -17,19 +17,20 @@
   .section-contacto .text-accent {
     font-family: var(--font-hand);
     color: var(--second-violet);
-    font-size: 2.7rem;
+    font-size: 3rem;
+    font-weight: 500;
   }
   
   .section-contacto p {
     font-family: var(--font-text);
-    font-weight: 250;
+    font-weight: 500;
     font-size: 1.3rem;
     color: grey;
   }
   
   .section-contacto .form-label {
     font-family: var(--font-text);
-    font-weight: 250;
+    font-weight: 500;
     font-size: 1.3rem;
     color: grey;
   }
@@ -41,7 +42,7 @@
     }
     
     .section-contacto .text-accent {
-      font-size: 2.2rem;
+      font-size: 2.8rem;
     }
     
     .section-contacto p {
@@ -63,7 +64,7 @@
     }
     
     .section-contacto .text-accent {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
     }
     
     .section-contacto p {

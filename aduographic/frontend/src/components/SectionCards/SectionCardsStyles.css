@@ -39,10 +39,18 @@
   font-size: 1.5rem;
 }
 
+.responsive-card {
+   width: 25rem;
+  border: none;
+}
+
 /* Responsive */
 @media (max-width: 1200px) {
   .custom-card {
     max-width: 20rem;
+  }
+  .responsive-card {
+    width: 22rem;
   }
 }
 
@@ -57,15 +65,10 @@
     padding: 3rem 1rem;
     min-height: auto;
   }
-}
 
-@media (max-width: 576px) {
-  .custom-card {
-    width: 90%;
-    max-width: 14rem;
-    margin: 0 auto; }
-
-  #SectionCards {
-    padding: 2rem 1rem;
+  .responsive-card {
+    width: 16rem;
+    margin: 0 auto;
   }
 }
+

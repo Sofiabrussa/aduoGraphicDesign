@@ -15,10 +15,10 @@ function CustomCard({ image, title, text }) {
                 className="motion-card"
             >
                 <Card
-                    className="text-white"
+                    className="text-white responsive-card"
                     onMouseEnter={() => setHovered(true)}
                     onMouseLeave={() => setHovered(false)}
-                    style={{ width: '25rem', border: 'none' }}
+                
                 >
                     <Card.Img
                         src={image}

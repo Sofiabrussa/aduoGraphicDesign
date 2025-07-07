@@ -17,15 +17,11 @@
     font-size: 2.5rem;
     font-weight: 500;
   }
-  
-  .section-contacto .card-text{
-    color: grey !important;
-    font-size: 1.4rem;
+  .section-contacto .card-text {
+    color: grey;
   }
-  
   .section-contacto .form-label {
     color: grey;
-    font-size: 1.4rem;
   }
   
   /* Responsive */
@@ -33,39 +29,11 @@
     .section-contacto .text-accent {
       font-size: 2.8rem;
     }
-    
-    .section-contacto p {
-      font-size: 1.1rem;
-    }
-    
-    .section-contacto .form-label {
-      font-size: 1.1rem;
-    }
-    
     .custom-button {
       font-size: 1.1rem;
     }
-  }
-  
-  @media (max-width: 430px) {
-    .section-contacto h1 {
-      font-size: 1.2rem;
-    }
-    
     .section-contacto .text-accent {
       font-size: 1.5rem;
     }
-    
-    .section-contacto p {
-      font-size: 1rem;
-    }
-    
-    .section-contacto .form-label {
-      font-size: 1rem;
-    }
-    
-    .custom-button {
-      font-size: 1rem;
-      padding: 0.5rem 1rem;
-    }
   }
+  

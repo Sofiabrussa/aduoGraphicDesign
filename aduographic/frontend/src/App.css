@@ -12,7 +12,7 @@
     --font-title-size-max-cards: 2.5rem;
   
     --font-text-size-min-cards: 1rem;
-    --font-text-size-preferred-cards: 1.6rem;
+    --font-text-size-preferred-cards: 1.5rem;
     --font-text-size-max-cards: 1.9rem;
   }
 
@@ -42,7 +42,7 @@
     font-size: 1.5rem;
   }
   .card-title  {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .card-text  {
     font-size: 0.9rem;

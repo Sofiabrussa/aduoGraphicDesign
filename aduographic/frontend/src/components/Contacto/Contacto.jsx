@@ -65,11 +65,11 @@ function Contacto() {
                     <Col xs={12} md={8} lg={6} xl={5} className="px-4 py-3">
                         <div className="mb-4">
                             <Card.Title className="text-start">
-                                Nos inspiran las <span className="text-accent">historias </span> <br className="d-none d-sm-block" /> Contanos la tuya.
+                                Nos inspiran las <span className="text-accent">historias </span> <br /> Contanos la tuya.
                             </Card.Title>
                         </div>
                         <div className="text-start mb-4">
-                            <Card.Text className="text-start small text-muted lh-sm">
+                            <Card.Text className="text-start lh-sm">
                                 Queremos trabajar en conjunto con vos y crear marcas con las que soñamos.
                             </Card.Text>
                         </div>
@@ -134,7 +134,7 @@ function Contacto() {
                                 />
                             </Form.Group>
                             
-                            <Card.Text className="text-start small text-muted lh-sm">
+                            <Card.Text className="text-start lh-sm">
                                 Al enviar este formulario, acepta que almacenemos sus datos para gestionar su consulta.
                             </Card.Text>
                             

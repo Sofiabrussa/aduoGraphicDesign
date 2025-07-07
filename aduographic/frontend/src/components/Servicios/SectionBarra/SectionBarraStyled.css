@@ -6,60 +6,34 @@
     align-items: center;
 }
 
-#sectionBarra .section-title {
-  cursor: pointer;
-}
-
-#sectionBarra .section-title {
+#sectionBarra .card-title {
+    cursor: pointer;
     color: white;
-    font-family: var(--font-title);
-    font-weight: 400;
     margin: 0;
-    transition: all 0.3s ease;
 }
 
 .section-link {
   color: inherit;
+  font-size: inherit;
   text-decoration: none;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
 }
 
 .section-link:hover {
   text-decoration: none;
   color: inherit;
+  transition: all 0.3s ease;
 }
 
-#sectionBarra .section-title:hover {
+#sectionBarra .card-title:hover {
   transform: scale(1.05);
 }
 
 /* Responsive */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     #sectionBarra {
         padding: 3rem 0;
     }
-    #sectionBarra .section-title {
+    #sectionBarra .section-link {
         font-size: 1.4rem;
-        margin-bottom: 0.5rem;
     }
 }
-@media (min-width: 577px) and (max-width: 768px) {
-    #sectionBarra {
-        padding: 3.5rem 0;
-    }
-    #sectionBarra .section-title {
-        font-size: 1.75rem;
-        margin-bottom: 0.75rem;
-    }
-}
-@media (min-width: 769px) {
-    #sectionBarra .section-title {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
-}
-/* Hover effect */
-#sectionBarra .section-title:hover {
-    transform: scale(1.05); }

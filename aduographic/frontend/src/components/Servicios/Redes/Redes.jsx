@@ -44,7 +44,7 @@ function Redes() {
                 </div>
 
             </div>
-        </section >
+        </section>
 
     )
 }

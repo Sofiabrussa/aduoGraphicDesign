@@ -7,6 +7,7 @@ import Desarrollo from "../Desarrollo/Desarrollo.jsx";
 import Imgdesa from "../ImgDesa/Imgdesa.jsx";
 import NavBar from "../../NavBar/NavBar.jsx"
 import { Link } from "react-scroll";
+import { Card } from "react-bootstrap";
 
 function SectionBarra() {
     return (
@@ -15,8 +16,8 @@ function SectionBarra() {
             <div id="sectionBarra" className="container-fluid">
                 <div className="row justify-content-center w-100">
                     <div className="col-12 col-md-10 col-lg-8">
-                        <div className="d-flex flex-column justify-content-center align-items-center text-center">
-                            <h1 className="section-title mb-3 mb-md-4">
+                        <div className="d-flex flex-column justify-content-center align-items-center">
+                            <Card.Title className="mb-3 mb-md-4">
                                 <Link
                                     to="branding"
                                     smooth={true}
@@ -25,8 +26,8 @@ function SectionBarra() {
                                 >
                                     Branding
                                 </Link>
-                            </h1>
-                            <h1 className="section-title mb-3 mb-md-4">
+                            </Card.Title>
+                            <Card.Title className="mb-3 mb-md-4">
                                 <Link
                                     to="sectionRedes"
                                     smooth={true}
@@ -35,8 +36,8 @@ function SectionBarra() {
                                 >
                                     Gestión de Redes
                                 </Link>
-                            </h1>
-                            <h1 className="section-title mb-3 mb-md-4">
+                            </Card.Title>
+                            <Card.Title className="mb-3 mb-md-4">
                                 <Link
                                     to="section-fotografia"
                                     smooth={true}
@@ -45,8 +46,8 @@ function SectionBarra() {
                                 >
                                     Contenido y Fotografía
                                 </Link>
-                            </h1>
-                            <h1 className="section-title mb-3 mb-md-4">
+                            </Card.Title>
+                            <Card.Title className="mb-3 mb-md-4">
                                 <Link
                                     to="section-desarrollo"
                                     smooth={true}
@@ -55,12 +56,11 @@ function SectionBarra() {
                                 >
                                     Diseño y Desarrollo Web
                                 </Link>
-                            </h1>
+                            </Card.Title>
                         </div>
                     </div>
                 </div>
             </div>
-
             <Branding />
             <Redes />
             <Fotografia />

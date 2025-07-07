@@ -3,7 +3,7 @@
   width: 100%;
   overflow-x: hidden;
 }
-/* Content Card Styles */
+/* card  */
 .content-card {
   background-color: #f8f9fa;
   border-radius: 20px;
@@ -22,12 +22,13 @@
 .title-span {
   color: var(--primary-violet);
 }
-/* Image Card Styles */
+
+/* Imagen card*/
 .image-card {
   background-size: cover;
   background-position: center;
   border-radius: 20px;
-  padding-top: 75%; /* Aspect ratio 4:3 */
+  padding-top: 75%; 
   width: 100%;
   position: relative;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -36,12 +37,12 @@
 .image-card:hover {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
-/* Right Column Image */
+
+/* Columna derecha */
 .right-image-container {
   height: 100%;
   display: flex;
   align-items: stretch;
-  padding: 1rem;
   justify-content: center;
 }
 .rounded-custom {
@@ -52,40 +53,22 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 /* Responsive */
-@media (max-width: 991.98px) {
+@media (max-width: 768px) {
   .branding-section {
       padding: 3rem 0;
   }
-  
   .content-card {
-      padding: 1.5rem;
+      padding: 1.3rem;
   }
-  
-  .right-image-container {
-      padding: 0.5rem;
-      margin-top: 1rem;
-  }
-  
-  .btn-custom {
-      font-size: 1rem;
-  }
-}
-@media (max-width: 575.98px) {
-  .branding-section {
-      padding: 2rem 0;
-  }
-  
-  .content-card {
-      padding: 1.25rem;
-  }
-  
   .image-card {
-      padding-top: 100%; /* Aspect ratio 1:1 en móviles */
+      padding-top: 100%;
       margin-top: 1rem;
   }
-  
   .right-image-container {
       margin-top: 1rem;
+      padding: 0.5rem;
   }
 }
+

@@ -65,7 +65,7 @@ function Contacto() {
                     <Col xs={12} md={8} lg={6} xl={5} className="px-4 py-3">
                         <div className="mb-4">
                             <h1 className="text-start">
-                                Nos inspiran las <span className="text-accent">historias</span> <br className="d-none d-sm-block" /> Contanos la tuya.
+                                Nos inspiran las <span className="text-accent">historias </span> <br className="d-none d-sm-block" /> Contanos la tuya.
                             </h1>
                         </div>
                         <div className="text-start mb-4">

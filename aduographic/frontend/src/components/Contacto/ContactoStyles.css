@@ -10,14 +10,14 @@
   .section-contacto h1 {
     font-family: var(--font-title);
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: grey;
   }
   
   .section-contacto .text-accent {
     font-family: var(--font-hand);
     color: var(--second-violet);
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 500;
   }
   

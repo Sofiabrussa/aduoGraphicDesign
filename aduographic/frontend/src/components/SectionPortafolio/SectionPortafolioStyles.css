@@ -42,16 +42,8 @@
 }
 
 /* Servicios */
-.portfolio-servicios-lista {
-  font-family: var(--font-text);
-  font-weight: 500;
-  font-size: clamp(1rem, 1.5rem, 1.8rem);
-}
 .portfolio-servicios-lista td {
-  padding-left: clamp(1em, 3vw, 5em);
-}
-.service-item {
-  transition: background-color 0.3s ease;
+  padding-left: 2rem;
 }
 .service-item:hover {
   background-color: rgba(0, 0, 0, 0.05);

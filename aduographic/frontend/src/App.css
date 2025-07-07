@@ -4,7 +4,7 @@
     --font-title-size-max-cards: 2.5rem;
   
     --font-text-size-min-cards: 1rem;
-    --font-text-size-preferred-cards: 1.2rem;
+    --font-text-size-preferred-cards: 2rem;
     --font-text-size-max-cards: 1.8rem;
   }
 
@@ -26,7 +26,7 @@
 .card-text {
     font-size: clamp(var(--font-text-size-min-cards), var(--font-text-size-preferred-cards), var(--font-text-size-max-cards));
     font-family: var(--font-text);
-    font-weight: 500;
+    font-weight: 400;
   }
 
 /* SPANS */
@@ -43,6 +43,9 @@
   }
   .card-title  {
     font-size: 1rem;
+  }
+  .card-text  {
+    font-size: 0.8rem;
   }
 }
 

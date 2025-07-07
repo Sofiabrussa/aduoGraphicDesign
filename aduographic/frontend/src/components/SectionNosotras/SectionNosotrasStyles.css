@@ -112,9 +112,6 @@
     margin: 3rem;
     width: 75%;
   }
-  p.card-text  {
-     font-size: clamp(1rem, 2vw, 1rem);
-  }
 }
 
 

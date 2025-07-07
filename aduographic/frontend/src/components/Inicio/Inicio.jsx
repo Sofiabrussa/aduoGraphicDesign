@@ -4,6 +4,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "../Carrousel/Carrousel";
 import Button from "../Button/Button";
+import { Card } from 'react-bootstrap'
 
 function Inicio() {
   const imagesCarouselInicio = [
@@ -48,9 +49,9 @@ function Inicio() {
           NO <span style={{ color: "rgb(206, 181, 216)" }}>hay</span> DOS <br /> SIN{" "}
           <span style={{ color: "rgb(206, 181, 216)" }}>tres</span>
         </h1>
-        <p>
+        <Card.Text>
           Hacemos que tu marca <br /> sea lo que siempre soñaste
-        </p>
+        </Card.Text>
         
         {/* Botón */}
         <a href="https://api.whatsapp.com/send/?phone=5493515295012&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">

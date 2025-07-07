@@ -20,7 +20,7 @@ const ServicesList = () => {
             {services.map((service, index) => (
               <tr key={index} className="d-flex flex-grow-1 w-100 service-item">
                 <motion.td
-                  className="d-flex align-items-center border-0 w-100"
+                  className="d-flex align-items-center border-0 w-100 card-text"
                   whileHover={{ rotate: 3, fontStyle: "italic" }}
                   transition={{ duration: 0.3 }}
                 >

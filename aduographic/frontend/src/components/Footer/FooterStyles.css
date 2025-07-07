@@ -52,16 +52,24 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-    .content span {
-        font-size: 14px;
-    }
-    #Footer {
-        font-size: 0.8rem;
-    }
-    #Footer i {
-        font-size: 1.2rem !important;
-    }
-    .navbar-logo {
-        max-height: 35px;
-    }
+  .navbar-logo {
+    max-height: 60px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  #Footer .row {
+    justify-content: center;
+    text-align: center;
+  }
+
+  #Footer .col-12,
+  #Footer .col-sm-6 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  #Footer i {
+    font-size: 2rem !important; 
+  }
 }

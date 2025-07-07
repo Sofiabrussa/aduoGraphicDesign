@@ -9,7 +9,7 @@
     font-weight: 500;
     max-width: 300px;
     color: black;
-    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    font-size: clamp(0.9rem, 1.2rem, 1.8rem);
     cursor: pointer;
     outline: none;
     display: inline-block;
@@ -84,16 +84,10 @@
     .buttom-aduo {
       padding: 0.4rem 1.2rem;
       min-width: 120px;
-      font-size: clamp(0.8rem, 4vw, 1rem);
+      font-size: clamp(0.8rem, 1rem, 1.2rem);
     }
   }
   
-@media (max-width: 480px){
-    .buttom-aduo {
-      padding: 0.3rem 1rem;
-      min-width: 100px;
-    }
-  }
 
 
 

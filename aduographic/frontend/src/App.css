@@ -1,21 +1,21 @@
 :root {
+    /*Colores globales*/
+    --primary-violet: rgb(117, 81, 150);
+    --second-violet: rgb(117 81 150);
+    
+    /* Fuentes globales */
+    --font-text: 'Urbanist', sans-serif;
+    --font-title: 'Unbounded', sans-serif;
+
     --font-title-size-min-cards: 1rem;
     --font-title-size-preferred-cards: 1.9rem;
     --font-title-size-max-cards: 2.5rem;
   
     --font-text-size-min-cards: 1rem;
-    --font-text-size-preferred-cards: 2rem;
-    --font-text-size-max-cards: 1.8rem;
+    --font-text-size-preferred-cards: 1.8rem;
+    --font-text-size-max-cards: 1.9rem;
   }
 
-:root { 
-    /*Colores globales*/
-   --primary-violet: rgb(117, 81, 150);
-   --second-violet: rgb(117 81 150);
-   /* Fuentes globales */
-   --font-text: 'Urbanist', sans-serif;
-   --font-title: 'Unbounded', sans-serif;
-}
 
 /* clamp(min, preferred, max); */
 .card-title {
@@ -45,11 +45,9 @@
     font-size: 1rem;
   }
   .card-text  {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
-
-
 
 html, body {
   margin: 0;

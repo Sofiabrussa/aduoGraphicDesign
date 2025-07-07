@@ -1,6 +1,6 @@
 import Button from '../Button/Button';
 import React, { useState } from 'react';
-import { Container, Row, Col, Form, Alert } from 'react-bootstrap';
+import { Container, Row, Col, Form, Alert, Card } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
 import './ContactoStyles.css';
 
@@ -64,14 +64,14 @@ function Contacto() {
                 <Row className="justify-content-start mx-md-4">
                     <Col xs={12} md={8} lg={6} xl={5} className="px-4 py-3">
                         <div className="mb-4">
-                            <h1 className="text-start">
+                            <Card.Title className="text-start">
                                 Nos inspiran las <span className="text-accent">historias </span> <br className="d-none d-sm-block" /> Contanos la tuya.
-                            </h1>
+                            </Card.Title>
                         </div>
                         <div className="text-start mb-4">
-                            <p className="text-start small text-muted lh-sm">
+                            <Card.Text className="text-start small text-muted lh-sm">
                                 Queremos trabajar en conjunto con vos y crear marcas con las que soñamos.
-                            </p>
+                            </Card.Text>
                         </div>
                         
                         {showAlert && (
@@ -86,7 +86,7 @@ function Contacto() {
                         )}
                         
                         <Form onSubmit={handleSubmit}>
-                            <Form.Group className="mb-3" controlId="nombre">
+                            <Form.Group className="mb-3 card-text" controlId="nombre">
                                 <Form.Label>Nombre y apellido*</Form.Label>
                                 <Form.Control
                                     type="text"
@@ -94,10 +94,11 @@ function Contacto() {
                                     value={formData.nombre}
                                     onChange={handleChange}
                                     required
+                                    
                                 />
                             </Form.Group>
                             
-                            <Form.Group className="mb-3" controlId="email">
+                            <Form.Group className="mb-3 card-text" controlId="email">
                                 <Form.Label>Email*</Form.Label>
                                 <Form.Control
                                     type="email"
@@ -105,10 +106,11 @@ function Contacto() {
                                     value={formData.email}
                                     onChange={handleChange}
                                     required
+                                    
                                 />
                             </Form.Group>
                             
-                            <Form.Group className="mb-3" controlId="celular">
+                            <Form.Group className="mb-3 card-text" controlId="celular">
                                 <Form.Label>Celular*</Form.Label>
                                 <Form.Control
                                     type="tel"
@@ -116,10 +118,11 @@ function Contacto() {
                                     value={formData.celular}
                                     onChange={handleChange}
                                     required
+                                    
                                 />
                             </Form.Group>
                             
-                            <Form.Group className="mb-3" controlId="conociste">
+                            <Form.Group className="mb-3 card-text" controlId="conociste">
                                 <Form.Label>¿Dónde nos conociste?*</Form.Label>
                                 <Form.Control
                                     type="text"
@@ -127,12 +130,13 @@ function Contacto() {
                                     value={formData.conociste}
                                     onChange={handleChange}
                                     required
+                                    
                                 />
                             </Form.Group>
                             
-                            <p className="text-start small text-muted lh-sm">
+                            <Card.Text className="text-start small text-muted lh-sm">
                                 Al enviar este formulario, acepta que almacenemos sus datos para gestionar su consulta.
-                            </p>
+                            </Card.Text>
                             
                             <div className="mb-4 text-start">
                                 <Button 

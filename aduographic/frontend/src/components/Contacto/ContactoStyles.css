@@ -7,10 +7,7 @@
   }
   
   /* Estilos de texto específicos */
-  .section-contacto h1 {
-    font-family: var(--font-title);
-    font-weight: 500;
-    font-size: 1.8rem;
+  .section-contacto .card-title {
     color: grey;
   }
   
@@ -21,26 +18,18 @@
     font-weight: 500;
   }
   
-  .section-contacto p {
-    font-family: var(--font-text);
-    font-weight: 500;
-    font-size: 1.3rem;
-    color: grey;
+  .section-contacto .card-text{
+    color: grey !important;
+    font-size: 1.4rem;
   }
   
   .section-contacto .form-label {
-    font-family: var(--font-text);
-    font-weight: 500;
-    font-size: 1.3rem;
     color: grey;
+    font-size: 1.4rem;
   }
   
   /* Responsive */
   @media (max-width: 768px) {
-    .section-contacto h1 {
-      font-size: 1.8rem;
-    }
-    
     .section-contacto .text-accent {
       font-size: 2.8rem;
     }

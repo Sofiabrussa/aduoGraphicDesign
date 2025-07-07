@@ -45,15 +45,6 @@
 }
 
 /* Responsive */
-@media (max-width: 1200px) {
-  .custom-card {
-    max-width: 20rem;
-  }
-  .responsive-card {
-    width: 22rem;
-  }
-}
-
 @media (max-width: 768px) {
   .custom-card {
     width: 80%;

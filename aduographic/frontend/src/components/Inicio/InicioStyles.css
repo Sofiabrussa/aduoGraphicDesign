@@ -62,7 +62,7 @@
 
 
 /* Media querys */ 
-@media (max-width: 709px) {
+@media (max-width: 768px) {
     .carousel-fixed-text {
         padding: 0 5%; }
 
@@ -72,34 +72,9 @@
     .carousel-h1 span {
         font-size: 1.8rem; }
 
-    .carousel-fixed-text .buttom-aduo {
-        font-size: 0.5rem; }
-
     .carousel-iconos {
         gap: 1rem; }
-
-    .button-inicio {
-        border-width: 1px;
-        }
 }
 
 
-@media (min-width: 710px) and (max-width: 1024px) {
-    .carousel-fixed-text {
-        padding: 0 5%; }
 
-    .carousel-h1 {
-        font-size: 2rem; }
-
-    .carousel-h1 span {
-        font-size: 2.1rem; }
-
-    .carousel-fixed-text p {
-        font-size: 1.3rem; }
-
-    .carousel-fixed-text .buttom-aduo {
-        font-size: 1.3rem; }
-
-    .carousel-iconos {
-        gap: 0.5rem;
-} }

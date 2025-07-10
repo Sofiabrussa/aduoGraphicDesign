@@ -20,7 +20,7 @@ const Branding = () => {
                 whileHover={{ scale: 1.02 }}
               >
                 <Card.Title className=" mt-2 title-span" >Branding</Card.Title>
-                <Card.Text className="p-2" style={{ maxWidth: "450px" }}>
+                <Card.Text className="p-2 card-text-servicios" style={{ maxWidth: "450px" }}>
                   En A Dúo no creamos solo un logo lindo, diseñamos marcas completas
                   que cuentan historias. Lo mejor
                   que sabemos hacer.

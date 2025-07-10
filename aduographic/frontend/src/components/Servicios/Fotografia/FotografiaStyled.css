@@ -88,14 +88,3 @@
   width: auto;
   object-fit: contain;
 }
-
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  #section-fotografia {
-      padding: 3rem 0 0;
-  }
-  #section-fotografia p {
-      padding: 0 2rem;
-  }
-}

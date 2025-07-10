@@ -16,12 +16,14 @@ function Redes() {
                         className="text-content"
                     >
                         <Card.Title className="title-span">Redes soc.</Card.Title>
-                        <Card.Text style={{ maxWidth: "450px" }}>
-                            No se trata solo de subir <strong>posteos. </strong>
-                            Se trata de crear una <strong>presencia</strong> que te represente, te diferencie y conecte con tu comunidad.
-                            
-                
-                            <br/>En <strong> A Dúo </strong> gestionamos tus redes con estrategia, diseño y contenido pensado para contar lo que hacés de forma <strong> auténtica </strong> y alineada a tu marca.
+                        <Card.Text style={{ maxWidth: "450px" }} className="card-text-servicios">
+                            <p>
+                                No se trata solo de subir <strong>posteos. </strong>
+                                Se trata de crear una <strong>presencia</strong> que te represente, te diferencie y conecte con tu comunidad.
+                            </p>
+                            <p className="mb-1">
+                                En <strong> A Dúo </strong> gestionamos tus redes con estrategia, diseño y contenido pensado para contar lo que hacés de forma <strong> auténtica </strong> y alineada a tu marca.
+                            </p>
                         </Card.Text>
                         <motion.div
                             whileHover={{ scale: 1.05 }}

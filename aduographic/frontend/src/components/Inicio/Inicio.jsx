@@ -49,7 +49,7 @@ function Inicio() {
           NO <span style={{ color: "rgb(206, 181, 216)" }}>hay</span> DOS <br /> SIN{" "}
           <span style={{ color: "rgb(206, 181, 216)" }}>tres</span>
         </h1>
-        <Card.Text>
+        <Card.Text className="lh-sm">
           Hacemos que tu marca <br /> sea lo que siempre soñaste
         </Card.Text>
         

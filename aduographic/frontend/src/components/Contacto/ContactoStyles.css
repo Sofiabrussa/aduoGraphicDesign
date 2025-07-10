@@ -7,21 +7,11 @@
   }
   
   /* Estilos de texto específicos */
-  .section-contacto .card-title {
-    color: grey;
-  }
-  
   .section-contacto .text-accent {
     font-family: var(--font-hand);
     color: var(--second-violet);
     font-size: 2.5rem;
     font-weight: 500;
-  }
-  .section-contacto .card-text {
-    color: grey;
-  }
-  .section-contacto .form-label {
-    color: grey;
   }
   
   /* Responsive */

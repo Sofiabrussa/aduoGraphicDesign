@@ -2,9 +2,3 @@
     min-height: 60vh;
     width: 100%;
 }
-
-@media (max-width: 768px) {
-    #section-desarrollo p {
-      padding: 0rem 2rem;
-    }
-  }

@@ -15,7 +15,7 @@ function Desarrollo() {
                         <span className="span-violeta">desarrollo web</span>
                     </Card.Title>
                     <Card.Text className="card-text-servicios mx-auto">
-                        Diseñamos y desarrollamos <br/> tu página web a tu medida. <br/>
+                        Diseñamos y desarrollamos tu página web a tu medida. 
                         Ya sea que estés buscando una landing page, una web sencilla o un e-commerce.
                         <br/>
                         <strong>¡Diseñar webs se nos da reee cool!</strong>

@@ -47,7 +47,7 @@ const Fotografia = () => {
   }, []);
     
     return (
-      <section id="section-fotografia" className="py-4">
+      <section id="section-fotografia" >
         <div className="container-fluid m-0 p-0">
           <div className="row w-100 m-0">
             <div className="col-12 text-center px-0">

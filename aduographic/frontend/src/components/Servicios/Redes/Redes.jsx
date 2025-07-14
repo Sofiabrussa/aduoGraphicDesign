@@ -15,7 +15,7 @@ function Redes() {
                         transition={{ duration: 0.5 }}
                         className="text-content"
                     >
-                        <Card.Title className="title-span">Redes soc.</Card.Title>
+                        <Card.Title className="title-span mb-3">Redes soc.</Card.Title>
                         <Card.Text style={{ maxWidth: "450px" }} className="card-text-servicios">
                             <p>
                                 No se trata solo de subir <strong>posteos. </strong>

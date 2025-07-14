@@ -43,9 +43,9 @@
 /* ICONOS */
 .carousel-iconos {
     position: fixed; 
-    bottom: 5%; 
+    top: 80vh; 
     right: 5%; 
-    z-index: 10; 
+    z-index: 999;
     display: flex;
 }
 
@@ -71,10 +71,14 @@
 
     .carousel-h1 span {
         font-size: 1.8rem; }
-
     .carousel-iconos {
-        gap: 1rem; }
+        top: 32vh;
+        right: 6%;
+        gap: 1rem;
+    }
+    .carousel-iconos img {
+        width: 10vw;
+    }
 }
-
 
 

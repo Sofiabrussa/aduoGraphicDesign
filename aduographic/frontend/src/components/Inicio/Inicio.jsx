@@ -42,8 +42,8 @@ function Inicio() {
   }, []);
 
   return (
+    <>
     <div id="carouselExample" className="carousel slide" ref={inicioRef}>
-      {/* Texto fijo */}
       <div className="carousel-fixed-text">
         <h1 className="carousel-h1">
           NO <span style={{ color: "rgb(206, 181, 216)" }}>hay</span> DOS <br /> SIN{" "}
@@ -57,11 +57,11 @@ function Inicio() {
         <a href="https://api.whatsapp.com/send/?phone=5493515295012&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
           <Button className="button-inicio"> Contactanos &#8599; </Button>
         </a>
-
       </div>
 
       {/* Carrusel de imágenes */}
       <Carousel images={imagesCarouselInicio} customClass="carousel-home" className="h-100 w-100" />
+      </div>
 
       {/* Iconos con visibilidad controlada */}
       {showIcons && (
@@ -89,7 +89,7 @@ function Inicio() {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
 

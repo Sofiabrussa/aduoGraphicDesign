@@ -8,6 +8,7 @@ import Imgdesa from "../ImgDesa/Imgdesa.jsx";
 import NavBar from "../../NavBar/NavBar.jsx"
 import { Link } from "react-scroll";
 import { Card } from "react-bootstrap";
+import { HashLink } from 'react-router-hash-link';
 
 function SectionBarra() {
     return (
@@ -18,44 +19,24 @@ function SectionBarra() {
                     <div className="col-12 col-md-10 col-lg-8">
                         <div className="d-flex flex-column justify-content-center align-items-center">
                             <Card.Title className="mb-3 mb-md-4">
-                                <Link
-                                    to="branding"
-                                    smooth={true}
-                                    duration={500}
-                                    className="section-link"
-                                >
+                                <HashLink smooth to="#branding" className="section-link" >
                                     Branding
-                                </Link>
+                                </HashLink>
                             </Card.Title>
                             <Card.Title className="mb-3 mb-md-4">
-                                <Link
-                                    to="sectionRedes"
-                                    smooth={true}
-                                    duration={500}
-                                    className="section-link"
-                                >
+                                <HashLink smooth to="#sectionRedes" className="section-link">
                                     Gestión de Redes
-                                </Link>
+                                </HashLink>
                             </Card.Title>
                             <Card.Title className="mb-3 mb-md-4">
-                                <Link
-                                    to="section-fotografia"
-                                    smooth={true}
-                                    duration={500}
-                                    className="section-link"
-                                >
+                                <HashLink smooth to="#section-fotografia" className="section-link">
                                     Contenido y Fotografía
-                                </Link>
+                                </HashLink>
                             </Card.Title>
                             <Card.Title className="mb-3 mb-md-4">
-                                <Link
-                                    to="section-desarrollo"
-                                    smooth={true}
-                                    duration={500}
-                                    className="section-link"
-                                >
+                                <HashLink smooth to="#section-desarrollo" className="section-link">
                                     Diseño y Desarrollo Web
-                                </Link>
+                                </HashLink>
                             </Card.Title>
                         </div>
                     </div>

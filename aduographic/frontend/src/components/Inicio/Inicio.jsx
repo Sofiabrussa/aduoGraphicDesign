@@ -63,7 +63,7 @@ function Inicio() {
       <Carousel images={imagesCarouselInicio} customClass="carousel-home" className="h-100 w-100" />
       </div>
 
-      {/* Iconos con visibilidad controlada */}
+      {/* Iconos */}
       {showIcons && (
         <div className="carousel-iconos">
           <div className="icono">

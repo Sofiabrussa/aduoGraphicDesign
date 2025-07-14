@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { Link } from "react-router-dom";
-import { Link as ScrollLink } from 'react-scroll';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavBarStyles.css';
 import Button from "../Button/Button";
+import { HashLink } from 'react-router-hash-link';
 
 function Navbar() {
     const [isCollapsed, setIsCollapsed] = useState(true);
@@ -14,7 +14,6 @@ function Navbar() {
           window.scrollTo(0, 0);
         }, 100);
         
-        // Cerrar el menú en móvil después de hacer clic
         if (!isCollapsed) {
             setIsCollapsed(true);
         }
@@ -51,9 +50,9 @@ function Navbar() {
                         </Link>
                     </NavItem>
                     <NavItem>
-                        <ScrollLink className="nav-link" to="nosotras" smooth={true} duration={600} onClick={handleLinkClick}>
+                        <HashLink smooth to="/#nosotras" className="nav-link">
                             Nosotras
-                        </ScrollLink>
+                        </HashLink>
                     </NavItem>
                     <NavItem>
                         <a 
@@ -66,9 +65,9 @@ function Navbar() {
                         </a>
                     </NavItem>
                     <NavItem>
-                        <ScrollLink className="nav-link" to="contacto" smooth={true} duration={600} onClick={handleLinkClick}>
+                        <HashLink smooth to="/#contacto" className="nav-link">
                             Contacto
-                        </ScrollLink>
+                        </HashLink>
                     </NavItem>
                     <li className="nav-item align-self-center button-navBar">
                         <a href="https://walink.co/9f29a0" target="_blank" rel="noopener noreferrer">

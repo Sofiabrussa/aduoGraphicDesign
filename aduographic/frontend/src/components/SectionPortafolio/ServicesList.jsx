@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { Col } from 'react-bootstrap';
+import { HashLink } from 'react-router-hash-link';
 
 const ServicesList = () => {
   const services = [
-    "01. Branding",
-    "02. Contenido",
-    "03. Fotografía",
-    "04. Diseño Web"
+    { label: "01. Branding", anchor: "#branding" },
+    { label: "02. Contenido", anchor: "#sectionRedes" },
+    { label: "03. Fotografía", anchor: "#section-fotografia" },
+    { label: "04. Diseño Web", anchor: "#section-desarrollo" }
   ];
 
   return (
@@ -19,13 +20,20 @@ const ServicesList = () => {
           <tbody className="d-flex flex-column h-100 p-0 m-0">
             {services.map((service, index) => (
               <tr key={index} className="d-flex flex-grow-1 w-100 service-item">
-                <motion.td
-                  className="d-flex align-items-center border-0 w-100 card-text"
-                  whileHover={{ rotate: 3, fontStyle: "italic" }}
-                  transition={{ duration: 0.3 }}
+                <HashLink
+                  smooth
+                  to={`/servicios${service.anchor}`}
+                  className="d-flex align-items-center border-0 w-100 card-text text-decoration-none"
+                  style={{ color: "inherit" }}
                 >
-                  {service}
-                </motion.td>
+                  <motion.td
+                    whileHover={{ rotate: 3, fontStyle: "italic" }}
+                    transition={{ duration: 0.3 }}
+                    className="w-100 d-flex align-items-center"
+                  >
+                    {service.label}
+                  </motion.td>
+                </HashLink>
               </tr>
             ))}
           </tbody>

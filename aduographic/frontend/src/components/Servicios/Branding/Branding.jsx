@@ -41,7 +41,7 @@ const Branding = () => {
               <motion.div
                 className="image-card"
                 style={{
-                  backgroundImage: 'url("/brading/23.jpg")',
+                  backgroundImage: 'url("/brading/23.webp")',
                 }}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -59,7 +59,7 @@ const Branding = () => {
               whileHover={{ scale: 1.02 }}
             >
               <img
-                src="/brading/24.jpg"
+                src="/brading/24.webp"
                 alt="Branding showcase"
                 className="img-fluid rounded-custom"
               />

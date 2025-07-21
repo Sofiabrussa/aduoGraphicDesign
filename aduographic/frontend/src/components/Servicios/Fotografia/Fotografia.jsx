@@ -8,23 +8,27 @@ const Fotografia = () => {
   
   const scrollRef = useRef(null);
   const [images] = useState([
-    "/fotografia/_CIT6759.jpg",
-    "/fotografia/_CIT6933.jpg",
-    "/fotografia/_DSC9874-Enhanced-NR.jpg",
-    "/fotografia/_CIT7464.jpg",
-    "/fotografia/_DSC0430-Enhanced-NR.jpg",
-    "/fotografia/_CIT6759.jpg",
-    "/fotografia/_DSC0313-Enhanced-NR (1).jpg",
-    "/fotografia/manu rojas-54.jpg",
-    "/fotografia/_DSC0394.jpg",
-    "/fotografia/_CIT6664.jpg",
+    "/fotografia/_DSC9874-Enhanced-NR.webp",
+    "/fotografia/_CIT6933.webp",
+    "/fotografia/DSC0313.webp",
+    "/fotografia/_CIT7429.webp",
+    "/fotografia/_CIT7464.webp",
+    "/fotografia/_DSC0430-Enhanced-NR.webp",
+    "/fotografia/_CIT7693.webp",
+    "/fotografia/CIT6759.webp",
+    "/fotografia/manu rojas-54.webp",
+    "/fotografia/_DSC0394.webp",
+    "/fotografia/CIT6664.webp",
     "/fotografia/_DSC0465-Enhanced-NR.webp",
-    "/fotografia/_CIT7582.jpg",
-    "/fotografia/_DSC9901-Enhanced-NR.jpg",
-    "/fotografia/_CIT6512.jpg",
-    "/fotografia/_DSC9979-Enhanced-NR.jpg",
-    "/fotografia/_CIT6502.jpg",
-  ]);
+    "/fotografia/_CIT7582.webp",
+    "/fotografia/_DSC9901-Enhanced-NR.webp",
+    "/fotografia/CIT7689.webp",
+    "/fotografia/CIT6512.webp",
+    "/fotografia/_DSC9979-Enhanced-NR.webp",
+    "/fotografia/_CIT7671.webp",
+    "/fotografia/CIT6502.webp",
+    "/fotografia/_DSC9805-Enhanced-NR.webp",
+  ])
 
   useEffect(() => {
     const scrollContainer = scrollRef.current;

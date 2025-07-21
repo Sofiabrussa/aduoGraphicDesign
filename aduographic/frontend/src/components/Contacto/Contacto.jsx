@@ -59,7 +59,7 @@ function Contacto() {
     };
 
     return (
-        <div id='contacto' className="section-contacto" style={{ backgroundImage: "url('/contacto/imagencontacto.jpg')" }}>
+        <div id='contacto' className="section-contacto" style={{ backgroundImage: "url('/contacto/imagencontacto.webp')" }}>
             <Container fluid className="py-5">
                 <Row className="justify-content-start mx-md-4">
                     <Col xs={12} md={8} lg={6} xl={5} className="px-4 py-3">

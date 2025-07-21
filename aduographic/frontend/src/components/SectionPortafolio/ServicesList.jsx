@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link';
 const ServicesList = () => {
   const services = [
     { label: "01. Branding", anchor: "#branding" },
-    { label: "02. Contenido", anchor: "#sectionRedes" },
+    { label: "02. Redes", anchor: "#sectionRedes" },
     { label: "03. Fotografía", anchor: "#section-fotografia" },
     { label: "04. Diseño Web", anchor: "#section-desarrollo" }
   ];

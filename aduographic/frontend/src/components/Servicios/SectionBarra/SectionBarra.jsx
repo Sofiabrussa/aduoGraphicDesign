@@ -6,7 +6,6 @@ import Contacto from "../../Contacto/Contacto.jsx"
 import Desarrollo from "../Desarrollo/Desarrollo.jsx";
 import Imgdesa from "../ImgDesa/Imgdesa.jsx";
 import NavBar from "../../NavBar/NavBar.jsx"
-import { Link } from "react-scroll";
 import { Card } from "react-bootstrap";
 import { HashLink } from 'react-router-hash-link';
 

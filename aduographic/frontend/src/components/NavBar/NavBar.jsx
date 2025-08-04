@@ -43,7 +43,7 @@ function Navbar() {
                 </button>
             </div>
             <div className={`collapse navbar-collapse ${!isCollapsed ? 'show' : ''}`} id="navbarNavDropdown">
-                <ul className="navbar-nav ms-auto align-items-center">
+                <ul className="navbar-nav ms-auto align-items-center pe-4">
                     <NavItem>
                         <Link className="nav-link" to="/servicios" onClick={handleLinkClick}>
                             Servicios
@@ -69,9 +69,9 @@ function Navbar() {
                             Contacto
                         </HashLink>
                     </NavItem>
-                    <li className="nav-item align-self-center button-navBar">
+                    <li className="nav-item align-self-center">
                         <a href="https://walink.co/9f29a0" target="_blank" rel="noopener noreferrer">
-                            <Button>Trabajemos juntos↗</Button>
+                            <Button className='button-navBar'>Trabajemos juntos↗</Button>
                         </a>
                     </li>
                 </ul>

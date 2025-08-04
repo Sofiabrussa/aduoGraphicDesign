@@ -5,6 +5,7 @@ import PortfolioTitle from './PortfolioTitle';
 import ServicesList from './ServicesList';
 import { Col, Container, Row } from 'react-bootstrap'
 import Button from "../Button/Button";
+import { BsArrowUpRight } from "react-icons/bs";
 
 function SectionPortafolio() {
   return (
@@ -29,7 +30,7 @@ function SectionPortafolio() {
       <Row className="text-center buttonSectionPortfolio align-items-center" style={{ height: '100px' }}>
         <Col>
           <a href="https://www.behance.net/aduoestudiocreativo" target="_blank" rel="noopener noreferrer">
-            <Button className='button-portfolio' > Portfolio &#8599;</Button>
+            <Button className='button-portfolio' > Portfolio <BsArrowUpRight className="arrow-icon"  style={{ color: "black" }} /> </Button>
           </a>
         </Col>
       </Row>

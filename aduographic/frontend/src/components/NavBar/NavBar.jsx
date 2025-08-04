@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavBarStyles.css';
 import Button from "../Button/Button";
 import { HashLink } from 'react-router-hash-link';
+import { BsArrowUpRight } from "react-icons/bs";
 
 function Navbar() {
     const [isCollapsed, setIsCollapsed] = useState(true);
@@ -71,7 +72,7 @@ function Navbar() {
                     </NavItem>
                     <li className="nav-item align-self-center">
                         <a href="https://walink.co/9f29a0" target="_blank" rel="noopener noreferrer">
-                            <Button className='button-navBar'>Trabajemos juntos↗</Button>
+                            <Button className='button-navBar'>Trabajemos juntos <BsArrowUpRight className="arrow-icon" style={{ color: "black" }}/> </Button>
                         </a>
                     </li>
                 </ul>

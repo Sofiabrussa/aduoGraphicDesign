@@ -56,7 +56,7 @@ function Inicio() {
         
         {/* Botón */}
         <a href="https://api.whatsapp.com/send/?phone=5493515295012&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
-          <Button className="button-inicio"> Contactanos <BsArrowUpRight style={{ marginLeft: '3px', fontSize: '1.4rem', color: 'white'}} /> </Button>
+          <Button className="button-inicio"> Contactanos <BsArrowUpRight className="arrow-icon" /> </Button>
         </a>
       </div>
 

@@ -3,7 +3,7 @@
     border: 2px solid var(--primary-violet);
     border-radius: 20px;
     transition: all 0.3s ease;
-    padding: 0.3rem 1.2rem;
+    padding: 0.3rem 0.9rem;
     text-decoration: none;
     font-family: var(--font-text) ;
     font-weight: 500;
@@ -39,7 +39,13 @@
   font-weight: 350;
   padding: 0.1rem 1rem;
 }
-  
+
+.arrow-icon {
+  font-size: 1.1rem;
+  margin-left: 3px;
+  color: white;
+}
+
 
 /* Boton Inicio */
 .button-inicio {
@@ -91,6 +97,9 @@
       min-width: 70px;
       font-size: clamp(0.7rem, 0.8rem, 1.1rem);
       border-width: 1.8px;
+    }
+    .arrow-icon {
+        font-size: 0.6rem;
     }
   }
   

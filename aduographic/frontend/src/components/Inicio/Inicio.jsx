@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "../Carrousel/Carrousel";
 import Button from "../Button/Button";
 import { Card } from 'react-bootstrap'
+import { BsArrowUpRight } from "react-icons/bs";
 
 function Inicio() {
   const imagesCarouselInicio = [
@@ -55,7 +56,7 @@ function Inicio() {
         
         {/* Botón */}
         <a href="https://api.whatsapp.com/send/?phone=5493515295012&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
-          <Button className="button-inicio"> Contactanos &#8599; </Button>
+          <Button className="button-inicio"> Contactanos <BsArrowUpRight style={{ marginLeft: '3px', fontSize: '1.4rem', color: 'white'}} /> </Button>
         </a>
       </div>
 

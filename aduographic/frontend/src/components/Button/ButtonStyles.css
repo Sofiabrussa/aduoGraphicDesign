@@ -93,10 +93,10 @@
 /* Responsive */   
 @media (max-width: 768px) {
     .buttom-aduo {
-      /* padding: 0.4rem 1.2rem; */
+      padding: 0.2rem 0.4rem;
       min-width: 70px;
-      font-size: clamp(0.7rem, 0.8rem, 1.1rem);
-      border-width: 1.8px;
+      font-size: 0.7rem;
+      border-width: 1.2px;
     }
     .arrow-icon {
         font-size: 0.6rem;

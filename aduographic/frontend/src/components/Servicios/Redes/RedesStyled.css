@@ -54,8 +54,5 @@
   .content-wrapper {
     flex-direction: row;
   }
-    .image-content {
-      min-height: 400px;
-    }
 }
 

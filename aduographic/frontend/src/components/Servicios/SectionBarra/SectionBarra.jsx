@@ -4,7 +4,6 @@ import Fotografia from "../Fotografia/Fotografia";
 import Redes from "../Redes/Redes";
 import Contacto from "../../Contacto/Contacto.jsx"
 import Desarrollo from "../Desarrollo/Desarrollo.jsx";
-import Imgdesa from "../ImgDesa/Imgdesa.jsx";
 import NavBar from "../../NavBar/NavBar.jsx"
 import { Card } from "react-bootstrap";
 import { HashLink } from 'react-router-hash-link';
@@ -44,7 +43,6 @@ function SectionBarra() {
             <Branding />
             <Redes />
             <Fotografia />
-            <Imgdesa />
             <Desarrollo />
             <Contacto />
         </>

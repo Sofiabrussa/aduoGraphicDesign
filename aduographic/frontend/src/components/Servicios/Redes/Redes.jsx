@@ -44,7 +44,6 @@ function Redes() {
                         style={{ backgroundImage: 'url("/redesSociales/redessociales.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}
                     />
                 </div>
-
             </div>
         </section>
 

@@ -49,6 +49,17 @@
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+/* Highlight interactivo */
+.img-component {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-component:hover .highlight {
+  opacity: 1;
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
   #portfolio {

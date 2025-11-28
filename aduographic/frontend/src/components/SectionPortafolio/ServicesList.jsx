@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 import { Col } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 
-const ServicesList = () => {
+const ServicesList = ({ animateControls }) => {
+
   const services = [
     { label: "01. Branding", anchor: "#branding" },
     { label: "02. Redes", anchor: "#sectionRedes" },
@@ -18,24 +19,35 @@ const ServicesList = () => {
           style={{ borderWidth: "0.5px", borderColor: "black", borderStyle: "solid", height: "100%" }}
         >
           <tbody className="d-flex flex-column h-100 p-0 m-0">
+
             {services.map((service, index) => (
-              <tr key={index} className="d-flex flex-grow-1 w-100 service-item">
+              <motion.tr
+                key={index}
+                className="d-flex flex-grow-1 w-100 service-item"
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { delay: 0.2 + index * 0.15, duration: 0.5 }
+                  }
+                }}
+                initial="hidden"
+                animate={animateControls}
+              >
                 <HashLink
                   smooth
                   to={`/servicios${service.anchor}`}
                   className="d-flex align-items-center border-0 w-100 card-text text-decoration-none"
                   style={{ color: "inherit" }}
                 >
-                  <motion.td
-                    whileHover={{ rotate: 3, fontStyle: "italic" }}
-                    transition={{ duration: 0.3 }}
-                    className="w-100 d-flex align-items-center"
-                  >
+                  <td className="w-100 d-flex align-items-center">
                     {service.label}
-                  </motion.td>
+                  </td>
                 </HashLink>
-              </tr>
+              </motion.tr>
             ))}
+
           </tbody>
         </table>
       </div>

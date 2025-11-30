@@ -56,14 +56,12 @@ function Navbar() {
                         </HashLink>
                     </NavItem>
                     <NavItem>
-                        <a 
+                        <Link 
                             className="nav-link" 
-                            href="https://www.behance.net/aduoestudiocreativo" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
+                            to="/portfolio"
                         >
                             Portfolio
-                        </a>
+                        </Link>
                     </NavItem>
                     <NavItem>
                         <HashLink smooth to="/#contacto" className="nav-link">

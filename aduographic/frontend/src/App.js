@@ -9,8 +9,7 @@ import Footer from './components/Footer/Footer';
 import { createGlobalStyle } from 'styled-components';
 import SectionBarra from './components/Servicios/SectionBarra/SectionBarra';
 import SectionCarrousel from './components/SectionCarrousel/sectionCarrousel';
-
-
+import LandingCreative from './components/LandingPortfolio/LandingCreative';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -27,8 +26,6 @@ const GlobalStyle = createGlobalStyle`
     --font-hand: 'MiFuentePersonalizada';
     --font-pastel: 'MiFuentePersonalizada2';
   }`;
-
-
 
 function App() {
   return (
@@ -49,6 +46,7 @@ function App() {
             </>
           } />
           <Route path="/servicios" element={<SectionBarra id="sectionBarra" />} />
+          <Route path="/portfolio" element={<LandingCreative />} />
         </Routes>
       </div>
       <Footer />

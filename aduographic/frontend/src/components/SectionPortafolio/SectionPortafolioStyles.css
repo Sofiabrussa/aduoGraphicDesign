@@ -35,10 +35,26 @@
   height: 100%;
 }
 
+.portfolio-servicios-lista {
+  transition: border-color 0.2s ease;
+}
+
+.portfolio-servicios-lista:has(tr[style*="opacity: 0"]) {
+  border-color: white !important;
+}
+
+.portfolio-servicios-lista:has(tr[style*="opacity: 1"]) {
+  border-color: black !important;
+}
+
 /* Textos */
 .sectionPortfolioText {
   padding: 3rem 0rem;
-  border: none
+  border: none;
+}
+
+.sectionportfoliotitle {
+  line-height: 1.2
 }
 
 /* Servicios */

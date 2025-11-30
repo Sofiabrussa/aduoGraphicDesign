@@ -34,7 +34,7 @@ function SectionPortafolio() {
   return (
     <Container ref={ref} fluid id="portfolio" className="d-flex flex-column m-0 p-0">
 
-      <PortfolioTitle />
+      <PortfolioTitle animateControls={controls} />
 
       <Row className="img-table-container p-0">
 

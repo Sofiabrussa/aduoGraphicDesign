@@ -6,7 +6,7 @@
 }
 
 .hero-section {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,10 +22,10 @@
 
 .hero-text {
   font-family: var(--font-title);
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
   fill: #000;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   transform-origin: center;
 }
 
@@ -40,7 +40,59 @@
   opacity: 0.9;
 }
 
-/* GALLERY */
+/* OLA INTERMEDIA HACIA ARRIBA */
+.wave-up text {
+  animation: waveUp 7s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* OLA INTERMEDIA HACIA ABAJO */
+.wave-down text {
+  animation: waveDown 7s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* --- OLA SUAVE PERO BIEN MARCADA --- */
+@keyframes waveUp {
+  0%   { transform: scaleY(1) translateY(0); }
+
+  25%  { transform: scaleY(1.18) translateY(-8px); }
+
+  50%  { transform: scaleY(1) translateY(0); }
+
+  75%  { transform: scaleY(0.88) translateY(6px); }
+
+  100% { transform: scaleY(1) translateY(0); }
+}
+
+@keyframes waveDown {
+  0%   { transform: scaleY(1) translateY(0); }
+
+  25%  { transform: scaleY(0.88) translateY(6px); }
+
+  50%  { transform: scaleY(1) translateY(0); }
+
+  75%  { transform: scaleY(1.18) translateY(-8px); }
+
+  100% { transform: scaleY(1) translateY(0); }
+}
+
+/* ============================
+   GLITCH
+   ============================ */
+.glitch-word {
+  display: inline-block;
+  transition: filter 0.15s ease, transform 0.15s ease;
+}
+
+.glitch-active {
+  filter: blur(8px) brightness(60%);
+  transform: scaleY(1.9) skewY(12deg) translateY(-6px);
+}
+
+/* ============================
+   GALLERY
+   ============================ */
 .gallery-section {
   padding: 6rem 3rem;
 }

@@ -1,97 +1,168 @@
+/* Altura fija en desktop */
 .navbar {
-    position: relative;
-    max-height: 80px;
-    z-index: 1000;
+    height: 80px;
+    padding: 0 !important;
 }
 
-.navbar-toggler {
-    border: none;
-    background: transparent; 
+/* Contenedor */
+.navbar .container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    height: 100%;
 }
 
+/* Logo */
 .navbar-logo {
-    max-width: 200px; 
-    height: auto; 
-    object-fit: contain; 
-    margin-left: 2rem;
+    max-width: 160px;
+    height: auto;
 }
 
-.flecha-navbar {
-    color: var(--primary-violet);
-}
-
-.nav-link{
-    font-family: var(--font-title) ;
-    font-weight: 300 ;
-    font-size: 1rem;
-    cursor: pointer;
+.navbar-card-text {
+    font-family: var(--font-text);
+    font-weight: 400;
+    color: black;
+    font-size: clamp(0.9rem, 1.2rem, 1.8rem);
+    line-height: 1.2;
+    letter-spacing: 0.5px;
 }
 
 
-.hide-logo {
-  display: none;
-}
+/* --- MOBILE --- */
+@media (max-width: 768px) {
 
+  /* Navbar con altura REAL y consistente */
+  .navbar {
+      height: 70px !important;
+      display: flex;
+      align-items: center;
+  }
 
-/* media query */ 
-@media (max-width: 700px) {
+  .navbar .container-fluid {
+      height: 100%;
+      padding: 0 12px !important;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .navbar-logo {
+      max-height: 65px;
+      width: auto;
+      margin-left: 0 !important;
+  }
+
+  /* Ícono hamburguesa centrado verticalmente */
+  .navbar-toggler {
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  /* Menú desplegable */
   .navbar-collapse.show {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #f8f9fa;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    z-index: 999;
-    padding: 1rem 0;
-    border-radius: 0 0 10px 10px;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      z-index: 999;
+      padding: 1rem 0;
+      border-radius: 0 0 10px 10px;
   }
+
+  /* Alineación del menú */
   .navbar-nav {
-    padding: 0;
+      text-align: center;
+      width: 100%;
   }
+
+  .navbar-nav {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;   
+      align-items: center;       
+      gap: 1.2rem;               
+      padding-bottom: 1.5rem;
+  }
+
   .navbar-nav .nav-item {
-    margin: 0.5rem 0;
+      margin: 0 !important;
   }
+
+  .navbar-card-text {
+      font-family: var(--font-text);
+      font-weight: 400;
+      color: black;
+      font-size: 0.9rem; 
+      letter-spacing: 0.3px;
+  }
+
   .button-navBar {
-    margin-top: 1rem;
+      display: flex;
+      justify-content: center;
   }
 
 }
 
-@media (min-width: 710px) and (max-width: 1000px) {
-    .navbar {
-        padding: 0.25rem 1rem;
-    }
-    .navbar-logo {
-     display: none;
-    }
 
-    .nav-link {
-        font-size: 0.8rem;
-    }
 
-    .navbar-toggler {
-        max-width: 35px;
-    }
+/* --- TABLET / MEDIUM SCREENS  (768px – 1000px) --- */
+@media (min-width: 768px) and (max-width: 1000px) {
 
-    .button-navBar button {
-        font-size: 0.7rem;
-        padding: 5px 10px;
-    }
+  /* Mantener altura limpia */
+  .navbar {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      padding: 0 1rem !important;
+  }
 
-    .navbar-nav {
-        flex-direction: column;
-        text-align: center;
-        background-color: white;
-        padding-top: 1rem;
-    }
+  .navbar .container-fluid {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1.2rem !important;
+  }
 
-    .navbar-nav .nav-item {
-        margin-bottom: 1rem;
-    }
+  .navbar-logo {
+      max-height: 70px;
+      width: auto;
+      margin-left: 0 !important;
+  }
 
-    .button-navBar {
-        margin-top: 1rem;
-        text-align: center;
-    }
+  .navbar-toggler {
+      height: 36px;
+      width: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 !important;
+  }
+
+  .navbar-collapse.show {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      padding: 1.2rem 0;
+      z-index: 999;
+      border-radius: 0 0 12px 12px;
+  }
+
+  .navbar-nav {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.2rem;
+  }
+
+  .navbar-card-text {
+      font-size: 1rem;
+  }
+
 }

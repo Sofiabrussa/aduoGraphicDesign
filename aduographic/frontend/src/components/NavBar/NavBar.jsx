@@ -44,27 +44,27 @@ function Navbar() {
                 </button>
             </div>
             <div className={`collapse navbar-collapse ${!isCollapsed ? 'show' : ''}`} id="navbarNavDropdown">
-                <ul className="navbar-nav ms-auto align-items-center pe-4">
+                <ul className="navbar-nav pe-0">
                     <NavItem>
-                        <Link className="nav-link" to="/servicios" onClick={handleLinkClick}>
+                        <Link className="nav-link navbar-card-text" to="/servicios" onClick={handleLinkClick}>
                             Servicios
                         </Link>
                     </NavItem>
                     <NavItem>
-                        <HashLink smooth to="/#nosotras" className="nav-link">
+                        <HashLink smooth to="/#nosotras" className="nav-link navbar-card-text">
                             Nosotras
                         </HashLink>
                     </NavItem>
                     <NavItem>
                         <Link 
-                            className="nav-link" 
+                            className="nav-link navbar-card-text" 
                             to="/portfolio"
                         >
                             Portfolio
                         </Link>
                     </NavItem>
                     <NavItem>
-                        <HashLink smooth to="/#contacto" className="nav-link">
+                        <HashLink smooth to="/#contacto" className="nav-link navbar-card-text">
                             Contacto
                         </HashLink>
                     </NavItem>

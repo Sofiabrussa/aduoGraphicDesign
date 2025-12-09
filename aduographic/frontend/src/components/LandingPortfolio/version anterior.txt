@@ -1,0 +1,357 @@
+import "./LandingCreative.css";
+import Navbar from "../NavBar/NavBar";
+import { useEffect } from "react";
+
+export default function LandingCreative() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    const words = document.querySelectorAll(".glitch-word");
+    let glitching = false; // evita que se active otro glitch antes de tiempo
+
+    function startGlitchCycle() {
+      if (glitching) return; // evita superposición
+      glitching = true;
+
+      const randomWord = words[Math.floor(Math.random() * words.length)];
+
+      randomWord.classList.add("glitch-active");
+
+      const glitchDuration = 800; // DURACIÓN DEL GLITCH (más lento)
+      
+      setTimeout(() => {
+        randomWord.classList.remove("glitch-active");
+        
+        glitching = false;
+
+        // PAUSA ENTRE GLITCHES (más lento y suave)
+        const wait = 1500 + Math.random() * 2000; 
+        setTimeout(startGlitchCycle, wait);
+
+      }, glitchDuration);
+    }
+
+    startGlitchCycle();
+  }, []);
+
+  return (
+    <>
+      <Navbar />
+      <div className="creative-page">
+
+        {/* HERO SECTION */}
+        <section className="hero-section">
+          <svg
+            className="hero-svg"
+            viewBox="0 0 1200 400"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <defs>
+              {/* === FILTRO PARA LÍNEA 1 === */}
+              <filter id="wave-1" x="-50%" y="-50%" width="200%" height="200%">
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.004 0.003"
+                  numOctaves="3"
+                  seed="2"
+                  result="noise"
+                >
+                  <animate
+                    attributeName="baseFrequency"
+                    dur="9s"
+                    values="0.004 0.003; 0.006 0.005; 0.003 0.002; 0.004 0.003"
+                    repeatCount="indefinite"
+                  />
+                </feTurbulence>
+
+                <feDisplacementMap
+                  in="SourceGraphic"
+                  in2="noise"
+                  scale="28"
+                  xChannelSelector="R"
+                  yChannelSelector="G"
+                >
+                  <animate
+                    attributeName="scale"
+                    dur="9s"
+                    values="18; 38; 26; 32; 18"
+                    repeatCount="indefinite"
+                  />
+                </feDisplacementMap>
+              </filter>
+
+              {/* === FILTRO PARA LÍNEA 2 === */}
+              <filter id="wave-2" x="-50%" y="-50%" width="200%" height="200%">
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.005 0.004"
+                  numOctaves="3"
+                  seed="3"
+                  result="noise"
+                >
+                  <animate
+                    attributeName="baseFrequency"
+                    dur="9s"
+                    begin="0.3s"
+                    values="0.005 0.004; 0.007 0.006; 0.003 0.002; 0.005 0.004"
+                    repeatCount="indefinite"
+                  />
+                </feTurbulence>
+
+                <feDisplacementMap
+                  in="SourceGraphic"
+                  in2="noise"
+                  scale="34"
+                  xChannelSelector="R"
+                  yChannelSelector="G"
+                >
+                  <animate
+                    attributeName="scale"
+                    dur="9s"
+                    begin="0.3s"
+                    values="22; 44; 30; 38; 22"
+                    repeatCount="indefinite"
+                  />
+                </feDisplacementMap>
+              </filter>
+
+              {/* === FILTRO PARA LÍNEA 3 === */}
+              <filter id="wave-3" x="-50%" y="-50%" width="200%" height="200%">
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.006 0.005"
+                  numOctaves="3"
+                  seed="5"
+                  result="noise"
+                >
+                  <animate
+                    attributeName="baseFrequency"
+                    dur="9s"
+                    begin="0.6s"
+                    values="0.006 0.005; 0.008 0.007; 0.004 0.003; 0.006 0.005"
+                    repeatCount="indefinite"
+                  />
+                </feTurbulence>
+
+                <feDisplacementMap
+                  in="SourceGraphic"
+                  in2="noise"
+                  scale="40"
+                  xChannelSelector="R"
+                  yChannelSelector="G"
+                >
+                  <animate
+                    attributeName="scale"
+                    dur="9s"
+                    begin="0.6s"
+                    values="28; 55; 35; 45; 28"
+                    repeatCount="indefinite"
+                  />
+                </feDisplacementMap>
+              </filter>
+            </defs>
+
+            {/* === TRES LÍNEAS === */}
+            <g>
+
+              {/* LINEA 1 */}
+              <text
+                x="50%"
+                y="110"
+                textAnchor="middle"
+                className="hero-text hero-text-top"
+                filter="url(#wave-1)"
+              >
+                <tspan className="text-big glitch-word">TU </tspan>
+                <tspan className="text-big glitch-word">MITAD </tspan>
+                <tspan className="text-small glitch-word">CREATIVA</tspan>
+              </text>
+
+              {/* LINEA 2 */}
+              <text
+                x="50%"
+                y="210"
+                textAnchor="middle"
+                className="hero-text hero-text-middle"
+                filter="url(#wave-2)"
+              >
+                <tspan className="text-big glitch-word">TU </tspan>
+                <tspan className="text-big glitch-word">MITAD </tspan>
+                <tspan className="text-small glitch-word">CREATIVA</tspan>
+              </text>
+
+              {/* LINEA 3 */}
+              <text
+                x="50%"
+                y="310"
+                textAnchor="middle"
+                className="hero-text hero-text-bottom"
+                filter="url(#wave-3)"
+              >
+                <tspan className="text-big glitch-word">TU </tspan>
+                <tspan className="text-big glitch-word">MITAD </tspan>
+                <tspan className="text-small glitch-word">CREATIVA</tspan>
+              </text>
+
+            </g>
+          </svg>
+        </section>
+
+        {/* GALLERY */}
+        <section className="gallery-section">
+          <div className="gallery-grid">
+            <div className="gallery-item">Proyecto 01</div>
+            <div className="gallery-item">Proyecto 02</div>
+            <div className="gallery-item">Proyecto 03</div>
+            <div className="gallery-item">Proyecto 04</div>
+            <div className="gallery-item">Proyecto 05</div>
+            <div className="gallery-item">Proyecto 06</div>
+          </div>
+        </section>
+
+      </div>
+    </>
+  );
+}
+
+
+
+
+css
+.creative-page {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #ffffff;
+}
+
+.hero-section {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.hero-svg {
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+}
+
+.hero-text {
+  font-family: var(--font-title);
+  font-weight: 600;
+  text-transform: uppercase;
+  fill: #000;
+  letter-spacing: 0.06em;
+  transform-origin: center;
+}
+
+.hero-text-middle {
+  font-size: 95px;
+  opacity: 0.75;
+}
+
+.hero-text-top,
+.hero-text-bottom {
+  font-size: 78px;
+  opacity: 0.9;
+}
+
+/* === ULTRA WAVE MAX — ONDA SUPER-MARCADA === */
+
+.text-big, .text-small {
+  display: inline-block;
+  transform-origin: center;
+  animation: ultraWave 4s cubic-bezier(0.55, 0.03, 0.19, 0.97) infinite;
+}
+
+/* TU MITAD — empieza primero */
+.text-big {
+  animation-delay: 0s;
+}
+
+/* CREATIVA — arranca después para que no lo hagan juntas */
+.text-small {
+  animation-delay: 1s; /* AUMENTAMOS EL DESFASE */
+}
+
+@keyframes ultraWave {
+  0% {
+    transform: scaleY(1) translateY(0) skewY(0deg);
+    letter-spacing: 0px;
+    opacity: 1;
+  }
+
+  /* SUBIDA ULTRA EXAGERADA */
+  18% {
+    transform: scaleY(6.5) translateY(-110px) skewY(14deg);
+    letter-spacing: 5px;
+    opacity: 1;
+  }
+
+  /* VUELTA A NEUTRO */
+  40% {
+    transform: scaleY(1) translateY(0) skewY(0deg);
+    letter-spacing: 0px;
+  }
+
+  /* BAJADA ULTRA EXAGERADA */
+  72% {
+    transform: scaleY(0.07) translateY(80px) skewY(-14deg);
+    letter-spacing: -4px;
+    opacity: 0.92;
+  }
+
+  100% {
+    transform: scaleY(1) translateY(0) skewY(0deg);
+    letter-spacing: 0px;
+    opacity: 1;
+  }
+}
+
+
+.glitch-word {
+  display: inline-block;
+  transition: 
+    filter 0.15s ease, 
+    transform 0.15s ease,
+    letter-spacing 0.15s ease;
+}
+
+.glitch-active {
+  filter: blur(8px) brightness(60%);
+  transform: scaleY(1.9) skewY(12deg) translateY(-6px);
+  letter-spacing: 0px;
+}
+
+/* GALLERY */
+.gallery-section {
+  padding: 6rem 3rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.gallery-item {
+  height: 260px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  filter: brightness(0.85);
+}
+

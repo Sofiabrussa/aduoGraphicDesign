@@ -78,9 +78,10 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  #portfolio {
-    flex-direction: column;
-    align-items: center;
+  .sectionPortfolioText {
+    width: 100% !important;
+    margin: 0 auto;
+    text-align: center !important;
   }
   .img-table-container {
     flex-direction: column;
@@ -102,5 +103,8 @@
   .services-list-column {
     margin-top: 0;
   }
+  #portfolio .sectionPortfolioText {
+    text-align: center !important;
+}
 }
 

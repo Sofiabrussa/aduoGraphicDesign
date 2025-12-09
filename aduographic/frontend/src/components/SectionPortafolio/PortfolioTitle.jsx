@@ -34,7 +34,7 @@ const PortfolioTitle = () => {
       initial="hidden"
       animate={controls}
     >
-      <Card className='sectionPortfolioText text-center'>
+      <Card className='sectionPortfolioText text-center border-0 shadow-0'>
         <Card.Title className='sectionportfoliotitle'>
           <span className="span-violeta">branding</span> y{" "}
           <span className="span-violeta">diseño</span> para <br />

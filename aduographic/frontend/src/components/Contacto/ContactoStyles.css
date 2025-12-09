@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    min-height: 100vh;
+    min-height: auto;
   }
   
   /* Estilos de texto específicos */
@@ -15,15 +15,49 @@
   }
   
   /* Responsive */
-  @media (max-width: 768px) {
-    .section-contacto .text-accent {
-      font-size: 2.8rem;
-    }
-    .custom-button {
-      font-size: 1.1rem;
-    }
-    .section-contacto .text-accent {
-      font-size: 1.5rem;
-    }
+@media (max-width: 768px) {
+
+  /* Padding limpio sin romper layout */
+  #contacto.section-contacto {
+    padding: 2rem 1.2rem;
   }
+
+  /* Container sin padding para evitar overflow */
+  #contacto .container,
+  #contacto .container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Row: sin gutters */
+  #contacto .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Columnas: padding interno fijo */
+  #contacto .col,
+  #contacto [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* PERMITIMOS padding del formulario, SIN exceder */
+  #contacto form {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  #contacto input,
+  #contacto button,
+  #contacto .form-control {
+    max-width: 100% !important;
+  }
+
+}
+
+
   

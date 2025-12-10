@@ -81,4 +81,47 @@
     }
 }
 
+/* TABLETS (770px - 1024px) — mantiene el diseño original */
+@media (min-width: 770px) and (max-width: 1024px) {
 
+  /* Mantener la posición EXACTA del diseño original */
+  .carousel-fixed-text {
+    top: 18%;                /* leve ajuste para que nada se corte */
+    left: 55%;
+    transform: translateX(-50%);
+    width: 90%;              /* asegura que no se desborde */
+    text-align: left;        /* mantiene alineado a la izquierda */
+  }
+
+  /* Ajustes finos de tipografías */
+  .carousel-h1 {
+    font-size: 2.8rem;       /* apenas más chico */
+    line-height: 0.9;
+  }
+
+  .carousel-h1 span {
+    font-size: 4.8rem;       /* bajar un toque el pastel */
+  }
+
+  /* Ajuste del texto descriptivo */
+  .carousel-fixed-text p,
+  .carousel-fixed-text .card-text {
+    font-size: 1.2rem;
+  }
+
+  /* Botón */
+  .button-inicio {
+    transform: scale(0.9);   /* reduce un poco para que no se corte */
+    margin-top: 1rem;
+  }
+
+  /* Iconos flotantes */
+  .carousel-iconos {
+    top: 70vh;               /* baja los iconos para que no invadan texto */
+    right: 4%;
+  }
+
+  .carousel-iconos img {
+    width: 8vw;
+  }
+}

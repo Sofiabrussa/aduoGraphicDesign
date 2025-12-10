@@ -1,5 +1,6 @@
 import "./LandingCreative.css";
 import Navbar from "../NavBar/NavBar";
+import PortfolioCard from "./PortfolioCard"
 import { useEffect } from "react";
 
 export default function LandingCreative() {
@@ -121,18 +122,23 @@ export default function LandingCreative() {
           </svg>
         </section>
 
-        {/* GALLERY */}
-        <section className="gallery-section">
-          <div className="gallery-grid">
-            <div className="gallery-item">Proyecto 01</div>
-            <div className="gallery-item">Proyecto 02</div>
-            <div className="gallery-item">Proyecto 03</div>
-            <div className="gallery-item">Proyecto 04</div>
-            <div className="gallery-item">Proyecto 05</div>
-            <div className="gallery-item">Proyecto 06</div>
-          </div>
-        </section>
+        <section className="portfolio-section">
 
+          {/* FILA 1 — HORIZONTALES */}
+          <div className="grid-row grid-horizontal">
+            <PortfolioCard img="/proyects/aurora/uno.webp" title="Proyecto 01" />
+            <PortfolioCard img="/proyects/efe/efe1.webp" title="Proyecto 02" />
+            <PortfolioCard img="/proyects/esquinas/esquina1.webp" title="Proyecto 03" />
+          </div>
+
+          {/* FILA 2 — VERTICALES */}
+          <div className="grid-row grid-vertical">
+            <PortfolioCard img="/proyects/sonora/sonora2.webp" title="Proyecto 04" orientation="vertical" />
+            <PortfolioCard img="/imgs/proy5.jpg" title="Proyecto 05" orientation="vertical" />
+            <PortfolioCard img="/imgs/proy6.jpg" title="Proyecto 06" orientation="vertical" />
+          </div>
+
+        </section>
       </div>
     </>
   );

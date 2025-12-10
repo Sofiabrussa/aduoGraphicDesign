@@ -89,33 +89,3 @@
   filter: blur(8px) brightness(60%);
   transform: scaleY(1.9) skewY(12deg) translateY(-6px);
 }
-
-/* ============================
-   GALLERY
-   ============================ */
-.gallery-section {
-  padding: 6rem 3rem;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-}
-
-.gallery-item {
-  height: 260px;
-  border: 1px solid #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 600;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.gallery-item:hover {
-  transform: scale(1.05);
-  filter: brightness(0.85);
-}

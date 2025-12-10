@@ -52,12 +52,51 @@
 
 /* SOLO afecta a los títulos dentro de SECTION CARDS */
 #SectionCards .card-title {
-  font-size: 1.1rem !important;
+  font-size: 0.8rem !important;
   font-family: var(--font-title);
   font-weight: 300;
 }
 
 #SectionCards .card-text {
-  font-size: 0.9rem !important;
+  font-size: 0.7rem !important;
   font-family: var(--font-text);
+}
+
+#SectionCards .linkedin-text {
+    font-size: 0.7rem !important;
+    font-family: var(--font-text);
+    margin-top: 0.5rem;
+    display: block;
+    color: white;
+    opacity: 0.9;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+#SectionCards .linkedin-text:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+
+/* responsive */
+@media (max-width: 1024px) {
+  #SectionCards .card-title {
+    font-size: 0.7rem !important;
+  }
+
+  #SectionCards .card-text {
+    font-size: 0.5rem !important;
+  }
+}
+
+/* Tablets chicas / Celulares grandes (≤768px) */
+@media (max-width: 768px) {
+  #SectionCards .card-title {
+    font-size: 0.95rem !important;
+  }
+
+  #SectionCards .card-text {
+    font-size: 0.8rem !important;
+  }
 }

@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 import { motion } from "framer-motion";
 import "./SectionCardsStyles.css";
 
-function CustomCard({ image, title, text }) {
+function CustomCard({ image, title, text, linkedin }) {
     const [hovered, setHovered] = useState(false);
 
     return (
@@ -30,6 +30,18 @@ function CustomCard({ image, title, text }) {
                     <div className="card-text-wrapper">
                         <Card.Title>{title}</Card.Title>
                         <Card.Text>{text}</Card.Text>
+
+                        {linkedin && (
+                            <Card.Text 
+                                as="a"
+                                href={linkedin}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="linkedin-text"
+                            >
+                                LinkedIn
+                            </Card.Text>
+                        )}
                     </div>
                 </Card.ImgOverlay>
             </Card>
@@ -38,4 +50,5 @@ function CustomCard({ image, title, text }) {
 }
 
 export default CustomCard;
+
 

@@ -134,8 +134,8 @@ export default function LandingCreative() {
           {/* FILA 2 — VERTICALES */}
           <div className="grid-row grid-vertical">
             <PortfolioCard img="/proyects/sonora/sonora2.webp" title="Proyecto 04" orientation="vertical" />
-            <PortfolioCard img="/imgs/proy5.jpg" title="Proyecto 05" orientation="vertical" />
-            <PortfolioCard img="/imgs/proy6.jpg" title="Proyecto 06" orientation="vertical" />
+            <PortfolioCard img="/proyects/boris/boris1.webp" title="Proyecto 05" orientation="vertical" />
+            <PortfolioCard img="/proyects/luz/luz1.webp" title="Proyecto 06" orientation="vertical" />
           </div>
 
         </section>

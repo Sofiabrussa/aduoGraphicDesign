@@ -9,7 +9,7 @@ function Footer() {
         <Container fluid className="bg-dark p-0" id="Footer">
             <Row className="g-1 align-items-center py-2 mx-0">
                 <Col xs={12} sm={6} md={2} className="text-center text-md-start logo-col">
-                    <Image src="/footer/Identidad2024.png" alt="Logo de mi empresa" className="footer-logo" height={40} fluid />
+                    <Image src="/footer/Identidad2024.png" alt="Logo de mi empresa" className="footer-logo" fluid />
                 </Col>
                 <Col xs={4} sm={2} md={1} className="text-center py-1">
                     <i className="fab fa-instagram text-white" style={{ fontSize: '3rem' }}></i>

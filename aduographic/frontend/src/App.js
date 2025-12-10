@@ -10,6 +10,7 @@ import { createGlobalStyle } from 'styled-components';
 import SectionBarra from './components/Servicios/SectionBarra/SectionBarra';
 import SectionCarrousel from './components/SectionCarrousel/sectionCarrousel';
 import LandingCreative from './components/LandingPortfolio/LandingCreative';
+import Cursor from './lib/Cursor';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -31,6 +32,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
+      <Cursor />
       <div className="">
         {/* Renderizar los componentes solo en "/" */}
         <Routes>

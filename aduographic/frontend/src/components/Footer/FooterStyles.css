@@ -55,7 +55,6 @@
 /* Responsive */
 @media (max-width: 768px) {
 
-  /* El marquee queda estático y sin rotación */
   .marquee {
     transform: none !important;
     height: auto !important;
@@ -66,12 +65,12 @@
   .track {
     animation: none !important;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     width: 100% !important;
   }
 
   .content {
-    white-space: normal !important; 
+    white-space: normal !important;
     text-align: center !important;
     width: 100% !important;
   }
@@ -82,16 +81,14 @@
     padding-right: 0 !important;
   }
 
+  /* ----- AJUSTE DEL LOGO SOLO EN MOBILE ----- */
   #Footer .footer-logo {
-    margin-left: 0 !important; 
-    margin-right: 0 !important;
+    max-height: 90px !important;  
+    margin: 0 auto !important;    
     display: block;
-    margin: 0 auto !important; 
   }
 
   #Footer .logo-col {
     text-align: center !important;
   }
 }
-
-

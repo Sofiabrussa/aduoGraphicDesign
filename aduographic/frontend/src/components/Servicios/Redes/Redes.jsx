@@ -46,7 +46,7 @@ function Redes() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="image-content"
             style={{
-              backgroundImage: 'url("/redesSociales/redessociales.jpg")',
+              backgroundImage: 'url("/redesSociales/redessociales.webp")',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}

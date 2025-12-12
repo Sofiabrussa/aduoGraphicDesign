@@ -1,76 +1,65 @@
-
 #section-fotografia {
   width: 100%;
-  min-height: 80vh;              
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;        
-  align-items: center;            
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  background-color: var(--background-color, white);
+  background: white;
   overflow: hidden;
+  padding-top: 2rem;
 }
 
-/* El container interno no debe tener márgenes propios */
-#section-fotografia .container-fluid {
-  padding: 0;
-  margin: 0;
-}
-
-/* CARRUSEL CURVO          */
-
-.carousel-curve-container {
-  width: 100%;
-  overflow: hidden;
+/* ===== COVERFLOW BASE ===== */
+.coverflow {
   position: relative;
+  width: 100%;
+  height: 330px;
+  margin-top: 40px;
+  perspective: 1400px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.carousel-curve-track {
-  display: flex;
-  gap: 22px;
-  animation: curveScroll 35s linear infinite;
-  transform-origin: center;
+.coverflow-item {
+  position: absolute;
+  top: 0;
+  left: 50%;
   transform-style: preserve-3d;
+  transition: transform 0.35s ease;
 }
 
-/* Curvatura suave (tu versión mejorada) */
-.carousel-curve-item {
-  flex: 0 0 auto;
-  transform: perspective(700px)
-    rotateY(calc((var(--i) - 5) * 3deg));
-  transition: transform 0.3s ease;
-  filter: brightness(0.95);
-}
-
-/* Imagen */
-.carousel-curve-img {
-  width: 185px;
-  height: 260px;
+.coverflow-item img {
+  width: 240px;
+  height: 330px;
   object-fit: cover;
   border-radius: 22px;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-/* Animación infinita */
-@keyframes curveScroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-
-/* ========================= */
-/* RESPONSIVE               */
-/* ========================= */
-
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-  .carousel-curve-img {
-    width: 130px;
-    height: 180px;
+  .coverflow {
+    height: 240px;
+    perspective: 950px;
   }
 
-  .carousel-curve-track {
-    gap: 14px;
+  .coverflow-item img {
+    width: 150px;
+    height: 210px;
+  }
+}
+
+@media (max-width: 480px) {
+  .coverflow {
+    height: 200px;
+    perspective: 800px;
+  }
+
+  .coverflow-item img {
+    width: 120px;
+    height: 170px;
   }
 }

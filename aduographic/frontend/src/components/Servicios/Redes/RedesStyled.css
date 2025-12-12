@@ -1,28 +1,37 @@
-
 .social-media-section {
   width: 100%;
-  min-height: 80vh;             
+  min-height: 80vh; /* Aseguramos que tenga suficiente altura */
   display: flex;
-  justify-content: center;        
-  align-items: center;           
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
   background-color: #fff;
-  padding: 0;                     
+  padding: 0;
 }
 
 .social-media-section .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1280px; /* Tamaño máximo de la pantalla */
   margin: 0 auto;
   padding: 0 1rem;
 }
 
 .content-wrapper {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  gap: 2rem; /* Espaciado entre los dos divs */
+  flex-direction: row; /* Cambiado de columna a fila */
+  align-items: stretch; /* Alineamos los divs al mismo tamaño */
+  justify-content: center; /* Centrado horizontal */
   width: 100%;
+}
+
+.text-content,
+.image-content {
+  flex: 1; /* Aseguramos que ambos divs ocupen el mismo espacio */
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: center;        
+  border-radius: 1.5rem;
 }
 
 .text-content {
@@ -31,34 +40,35 @@
   border-radius: 1.5rem;
   padding: 2rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;      
-  align-items: center;           
+  flex-direction: column;   
+  justify-content: center; 
+  align-items: center;     
   text-align: center;
-  min-height: 350px;            
+  min-height: 350px;
 }
+
 
 .image-content {
-  flex: 1;
-  border-radius: 1.5rem;
-  overflow: hidden;
   background-size: cover;
   background-position: center;
-  min-height: 350px;              
+  overflow: hidden;
 }
 
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .social-media-section {
+    min-height: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 2rem; /* opcional, sino sacalo */
+  }
 
-/*  RESPONSIVE  */
-@media (min-width: 768px) {
   .content-wrapper {
-    flex-direction: row;   
-    align-items: stretch;
+    flex-direction: column; /* Cambiamos a columna en pantallas pequeñas */
   }
 
-  .text-content,
   .image-content {
-    min-height: 500px; 
+    width: 100%;
+    min-height: 300px; /* Aseguramos que no se colapse */
   }
 }
-
-

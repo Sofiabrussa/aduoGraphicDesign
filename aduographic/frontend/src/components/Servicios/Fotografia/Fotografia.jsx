@@ -26,28 +26,30 @@ const Fotografia = () => {
     "/fotografia/_CIT7671.webp",
     "/fotografia/CIT6502.webp",
     "/fotografia/_DSC9805-Enhanced-NR.webp",
+    "/fotografia/DSC08496.webp",
+    "/fotografia/DSC9804.webp",
+    "/fotografia/DSC9819.webp",
+    "/fotografia/DSC08503.webp",
+    "/fotografia/DSC9885-Enhanced-NR.webp"
   ];
 
-  /* === DUPLICAMOS PARA LOOP PERFECTO === */
   const doubled = [...images, ...images];
   const total = doubled.length;
 
-  /* === ESTADO PARA TRACKEAR LA TARJETA ACTIVA === */
   const [active, setActive] = useState(0);
 
-  /* === AUTO ROTACIÓN CADA 2.2s === */
   useEffect(() => {
     const interval = setInterval(() => {
       setActive((prev) => (prev + 1) % total);
     }, 2200);
-
     return () => clearInterval(interval);
   }, [total]);
 
   return (
     <section id="section-fotografia">
+      <div className="fotografia-content">
 
-      {/* === TITULO === */}
+      {/* ===== TÍTULO ===== */}
       <div className="text-center px-0">
         <Card.Title className="tm-titulo">
           Contenido <span className="span-violeta"> y fotografía</span>
@@ -66,13 +68,19 @@ const Fotografia = () => {
         </motion.div>
       </div>
 
-      {/* === COVERFLOW === */}
+      {/* ===== COVERFLOW ===== */}
       <div className="coverflow">
         {doubled.map((img, i) => {
-          const offset = i - active;
+          // offset REAL basado en la imagen activa
+          let offset = i - active;
+
+          // wrap alrededor (para loop infinito)
+          if (offset > total / 2) offset -= total;
+          if (offset < -total / 2) offset += total;
+
           const abs = Math.abs(offset);
 
-          // === Breakpoints RESPONSIVE ===
+          // ===== Responsive =====
           let translateXBase = 230;
           let translateZBase = 90;
           let rotateBase = 28;
@@ -108,7 +116,7 @@ const Fotografia = () => {
                   rotateY(${rotateY}deg)
                 `,
                 zIndex: 100 - abs,
-                opacity: abs > 4 ? 0 : 1
+                opacity: abs > 6 ? 0 : 1  // podes cambiar el 6 si querés mostrar más
               }}
             >
               <img src={img} alt="" />
@@ -116,6 +124,7 @@ const Fotografia = () => {
           );
         })}
       </div>
+    </div>
     </section>
   );
 };

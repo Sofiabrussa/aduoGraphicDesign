@@ -5,14 +5,14 @@ import CustomCard from "./CustomCard";
 
 function SectionCards() {
     const cards = [
-        { image: "/imgCards/jose.webp", title: "JOSEFINA BAS", text: "Co-creadora & Diseñadora Gráfica", linkedin: "https://www.linkedin.com/in/ad%C3%BAo/" },
-        { image: "/imgCards/valu.webp", title: "VALENTINA TAJCHMAN", text: "Co-creadora & Diseñadora Gráfica", linkedin: "https://www.linkedin.com/in/valentina-tajchman-057011238/ " },
-        { image: "/imgCards/zoe.webp", title: "ZOE MALVAREZ", text: "Estratega & Marketing Digital", linkedin: "https://www.linkedin.com/in/zoe-malvarez-48069921a/ " },
-        { image: "/imgCards/jo.webp", title: "JOSEFINA GRAGLIA", text: "Estratega & Marketing Digital", linkedin: "https://www.linkedin.com/in/josefinagraglia/ " },
-        { image: "/imgCards/chica.webp", title: "JOAQUINA GONZALEZ ", text: "Diseñadora Gráfica &  Diseño de Social Media", linkedin: "https://www.linkedin.com/in/joaquina-gonz%C3%A1lez/ " },
-        { image: "/imgCards/guada.webp", title: "GUADALUPE AYARZA", text: "Diseñadora Gráfica &  Diseño de Social Media", linkedin: " https://www.linkedin.com/in/guadalupe-ayarza-romero-8bbb02233/  " },
-        { image: "/imgCards/caro.webp", title: "CAROLINA HERRERA", text: "Creadora de Contenido & Storytelling", linkedin: "https://www.linkedin.com/in/josefina" },
-        { image: "/imgCards/maria.webp", title: "MARIA FERRONI", text: "Creadora de Contenido & Storytelling", linkedin: "https://www.linkedin.com/in/maria-ferroni-270877252/" },
+        { image: "/imgCards/jose.webp", title: "JOSEFINA BAS", text: "Co-creadora & <br/> Diseñadora Gráfica", linkedin: "https://www.linkedin.com/in/ad%C3%BAo/" },
+        { image: "/imgCards/valu.webp", title: "VALENTINA TAJCHMAN", text: "Co-creadora & <br/> Diseñadora Gráfica", linkedin: "https://www.linkedin.com/in/valentina-tajchman-057011238/ " },
+        { image: "/imgCards/zoe.webp", title: "ZOE MALVAREZ", text: "Estratega & <br/> Marketing Digital", linkedin: "https://www.linkedin.com/in/zoe-malvarez-48069921a/ " },
+        { image: "/imgCards/jo.webp", title: "JOSEFINA GRAGLIA", text: "Estratega & <br/> Marketing Digital", linkedin: "https://www.linkedin.com/in/josefinagraglia/ " },
+        { image: "/imgCards/chica.webp", title: "JOAQUINA GONZALEZ ", text: "Diseñadora Gráfica & <br/> Diseño de Social Media", linkedin: "https://www.linkedin.com/in/joaquina-gonz%C3%A1lez/ " },
+        { image: "/imgCards/guada.webp", title: "GUADALUPE AYARZA", text: "Diseñadora Gráfica & <br/> Diseño de Social Media", linkedin: " https://www.linkedin.com/in/guadalupe-ayarza-romero-8bbb02233/  " },
+        { image: "/imgCards/caro.webp", title: "CAROLINA HERRERA", text: "Creadora de Contenido & <br/> Storytelling", linkedin: "https://www.linkedin.com/in/josefina" },
+        { image: "/imgCards/maria.webp", title: "MARIA FERRONI", text: "Creadora de Contenido & <br/> Storytelling", linkedin: "https://www.linkedin.com/in/maria-ferroni-270877252/" },
     ];
 
     const topRow = cards.slice(0, 5);  

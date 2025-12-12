@@ -29,7 +29,9 @@ function CustomCard({ image, title, text, linkedin }) {
                 >
                     <div className="card-text-wrapper">
                         <Card.Title>{title}</Card.Title>
-                        <Card.Text>{text}</Card.Text>
+                        <Card.Text
+                            dangerouslySetInnerHTML={{ __html: text }}
+                        />
 
                         {linkedin && (
                             <Card.Text 
@@ -50,5 +52,6 @@ function CustomCard({ image, title, text, linkedin }) {
 }
 
 export default CustomCard;
+
 
 

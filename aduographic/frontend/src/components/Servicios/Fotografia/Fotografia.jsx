@@ -1,12 +1,10 @@
 import "./FotografiaStyled.css";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { Card } from "react-bootstrap";
 import Button from "../../Button/Button";
 import { motion } from "framer-motion";
 
 const Fotografia = () => {
-  
-  const scrollRef = useRef(null);
   const [images] = useState([
     "/fotografia/_DSC9874-Enhanced-NR.webp",
     "/fotografia/_CIT6933.webp",
@@ -28,81 +26,54 @@ const Fotografia = () => {
     "/fotografia/_CIT7671.webp",
     "/fotografia/CIT6502.webp",
     "/fotografia/_DSC9805-Enhanced-NR.webp",
-  ])
+  ]);
 
-  useEffect(() => {
-    const scrollContainer = scrollRef.current;
-    if (!scrollContainer) return;
+  return (
+    <section id="section-fotografia">
+      <div className="container-fluid m-0 p-0">
+        
+        {/* ===== TÍTULO ===== */}
+        <div className="row w-100 m-0">
+          <div className="col-12 text-center px-0">
+            <Card.Title className="tm-titulo">
+              Contenido <span className="span-violeta"> y fotografía</span>
+            </Card.Title>
 
-    const content = scrollContainer.innerHTML;
-    scrollContainer.innerHTML = content + content;
+            <Card.Text className="mb-4 px-3 card-text-servicios mx-auto">
+              Todo pensado con una estrategia visual que no solo se ve bien, sino que tiene propósito.
+              <br />
+              Lo adaptamos a cualquier plataforma que necesites, ¡sin vueltas!
+              <br />
+              <strong>¿Lo hacemos realidad?</strong>
+            </Card.Text>
 
-    const scroll = () => {
-      if (!scrollContainer) return;
-      const maxScroll = scrollContainer.scrollWidth / 2;
-      scrollContainer.scrollLeft -= 1;
-      if (scrollContainer.scrollLeft <= 0) {
-        scrollContainer.scrollLeft = maxScroll;
-      }
-    };
-
-    const intervalId = setInterval(scroll, 30);
-    return () => clearInterval(intervalId);
-  }, []);
-    
-    return (
-      <section id="section-fotografia" >
-        <div className="container-fluid m-0 p-0">
-          <div className="row w-100 m-0">
-            <div className="col-12 text-center px-0">
-              <Card.Title className="mb-3 tm-titulo">
-                Contenido <span className="span-violeta" > y fotografía</span>
-              </Card.Title>
-              <Card.Text className="mb-4 px-3 card-text-servicios mx-auto">
-                Todo pensado con una estrategia visual que no solo
-                se ve bien, sino que tiene propósito. <br></br>Lo adaptamos a
-                cualquier plataforma que necesites, ¡sin vueltas!
-                <br></br>
-                <strong>¿Lo hacemos realidad? </strong>
-              </Card.Text>
-              <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <a href="https://walink.co/9f29a0" target="_blank" rel="noopener noreferrer">
-                    <Button >lo necesito! </Button>
-                  </a>
-                </motion.div>
-            </div>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <a
+                href="https://walink.co/9f29a0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button>lo necesito!</Button>
+              </a>
+            </motion.div>
           </div>
+        </div>
 
-      <div className="w-100 mt-5">
-        <div
-          ref={scrollRef}
-          className="d-flex flex-nowrap gap-3 auto-carousel"
-          style={{
-            overflowX: "hidden",
-            width: "100vw",
-            minHeight: "320px"
-          }}
-        >
-          {images.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`Slide ${index + 1}`}
-              className="img-fluid rounded shadow carousel-img"
-              style={{
-                height: "300px",
-                objectFit: "cover",
-                flex: "0 0 auto",
-              }}
-            />
-          ))}
+        {/* ===== CARRUSEL CURVO NUEVO */}
+        <div className="carousel-curve-container mt-4">
+          <div className="carousel-curve-track">
+            {images.map((image, index) => (
+              <div className="carousel-curve-item" key={index} style={{ "--i": index }}>
+                <img src={image} className="carousel-curve-img" alt="" />
+              </div>
+            ))}
+          </div>
         </div>
+
       </div>
-        </div>
-      </section>
-    );
-  };
-  export default Fotografia;
+    </section>
+  );
+};
+
+export default Fotografia;
+

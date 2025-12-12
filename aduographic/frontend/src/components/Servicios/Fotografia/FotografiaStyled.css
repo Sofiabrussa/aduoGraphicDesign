@@ -1,90 +1,76 @@
+
 #section-fotografia {
   width: 100%;
-  background-color: var(--background-color, #fff);
-  padding: 4rem 0 0;
-  min-height: 80vh;
+  min-height: 80vh;              
+  display: flex;
+  flex-direction: column;
+  justify-content: center;        
+  align-items: center;            
+  text-align: center;
+  background-color: var(--background-color, white);
+  overflow: hidden;
+}
+
+/* El container interno no debe tener márgenes propios */
+#section-fotografia .container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+/* CARRUSEL CURVO          */
+
+.carousel-curve-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-curve-track {
+  display: flex;
+  gap: 22px;
+  animation: curveScroll 35s linear infinite;
+  transform-origin: center;
+  transform-style: preserve-3d;
+}
+
+/* Curvatura suave (tu versión mejorada) */
+.carousel-curve-item {
+  flex: 0 0 auto;
+  transform: perspective(700px)
+    rotateY(calc((var(--i) - 5) * 3deg));
+  transition: transform 0.3s ease;
+  filter: brightness(0.95);
 }
 
 /* Imagen */
-.image-wrapper {
-  position: relative;
-  width: 100%;
-  margin-top: 2rem;
-}
-.img-fluid {
-  width: 100%;
-  height: auto;
+.carousel-curve-img {
+  width: 185px;
+  height: 260px;
   object-fit: cover;
-  display: block;
+  border-radius: 22px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
 }
 
-/* Definición de variables para la sección del carrusel */
-.section-carousel {
-  --background: 0 0% 100%;
-  --foreground: 222.2 84% 4.9%;
-
-  --card: 0 0% 100%;
-  --card-foreground: 222.2 84% 4.9%;
-
-  --popover: 0 0% 100%;
-  --popover-foreground: 222.2 84% 4.9%;
-
-  --primary: 222.2 47.4% 11.2%;
-  --primary-foreground: 210 40% 98%;
-
-  --secondary: 210 40% 96.1%;
-  --secondary-foreground: 222.2 47.4% 11.2%;
-
-  --muted: 210 40% 96.1%;
-  --muted-foreground: 215.4 16.3% 46.9%;
-
-  --accent: 210 40% 96.1%;
-  --accent-foreground: 222.2 47.4% 11.2%;
-
-  --destructive: 0 84.2% 60.2%;
-  --destructive-foreground: 210 40% 98%;
-
-  --border: 214.3 31.8% 91.4%;
-  --input: 214.3 31.8% 91.4%;
-  --ring: 222.2 84% 4.9%;
-
-  --radius: 0.5rem;
-
-  /* Propiedades de fondo y color de texto */
-  background-color: hsl(var(--background));
-  color: hsl(var(--foreground));
+/* Animación infinita */
+@keyframes curveScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
 
-.section-carousel * {
-  border: 1px solid hsl(var(--border));
-}
+/* ========================= */
+/* RESPONSIVE               */
+/* ========================= */
 
-.section-carousel .carousel-slide {
-  transition: transform 0.3s ease;
-}
+@media (max-width: 768px) {
+  .carousel-curve-img {
+    width: 130px;
+    height: 180px;
+  }
 
-.auto-carousel {
-  width: 100vw; 
-  display: flex;
-  justify-content: flex-start; 
-  overflow: hidden; 
-  padding: 1rem 0; 
-}
-
-.section-carousel {
-  min-height: 95vh;
-  max-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-
-}
-
-/* Reducir el tamaño de las imágenes */
-.auto-carousel .carousel-img {
-  max-height: 40vh; 
-  width: auto;
-  object-fit: contain;
+  .carousel-curve-track {
+    gap: 14px;
+  }
 }

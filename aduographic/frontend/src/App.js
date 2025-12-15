@@ -28,11 +28,13 @@ const GlobalStyle = createGlobalStyle`
     --font-pastel: 'MiFuentePersonalizada2';
   }`;
 
+const isTouch = typeof window !== "undefined" && ("ontouchstart" in window || navigator.maxTouchPoints > 0);
+
 function App() {
   return (
     <>
       <GlobalStyle />
-      <Cursor />
+      {!isTouch && <Cursor />}
       <Navbar />
       <div className="">
         {/* Renderizar los componentes solo en "/" */}

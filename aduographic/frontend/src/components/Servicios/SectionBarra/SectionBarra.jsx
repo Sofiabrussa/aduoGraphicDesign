@@ -37,10 +37,10 @@ function SectionBarra() {
                     </div>
                 </div>
             </div>
-            <Branding />
+            {/* <Branding />
             <Redes />
             <Fotografia />
-            <Desarrollo />
+            <Desarrollo /> */}
             <Contacto />
         </>
     );

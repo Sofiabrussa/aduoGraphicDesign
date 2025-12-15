@@ -11,14 +11,10 @@ function Navbar() {
     const [isCollapsed, setIsCollapsed] = useState(true);
 
     const handleLinkClick = () => {
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-        }, 100);
-        
         if (!isCollapsed) {
             setIsCollapsed(true);
         }
-    };
+        };
 
     const toggleMenu = () => {
         setIsCollapsed(!isCollapsed);

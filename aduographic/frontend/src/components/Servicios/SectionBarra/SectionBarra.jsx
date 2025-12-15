@@ -4,37 +4,34 @@ import Fotografia from "../Fotografia/Fotografia";
 import Redes from "../Redes/Redes";
 import Contacto from "../../Contacto/Contacto.jsx"
 import Desarrollo from "../Desarrollo/Desarrollo.jsx";
-import NavBar from "../../NavBar/NavBar.jsx"
 import { Card } from "react-bootstrap";
-import { HashLink } from 'react-router-hash-link';
 
 function SectionBarra() {
     return (
         <>
-            <NavBar />
             <div id="sectionBarra" className="container-fluid">
                 <div className="row justify-content-center w-100">
                     <div className="col-12 col-md-10 col-lg-8">
                         <div className="d-flex flex-column justify-content-center align-items-center">
                             <Card.Title className="mb-3 mb-md-4">
-                                <HashLink smooth to="#branding" className="section-link" >
+                                <a href="/servicios#branding" className="section-link">
                                     Branding
-                                </HashLink>
+                                </a>
                             </Card.Title>
                             <Card.Title className="mb-3 mb-md-4">
-                                <HashLink smooth to="#sectionRedes" className="section-link">
+                                <a href="/servicios#sectionRedes" className="section-link">
                                     Gestión de Redes
-                                </HashLink>
+                                </a>
                             </Card.Title>
                             <Card.Title className="mb-3 mb-md-4">
-                                <HashLink smooth to="#section-fotografia" className="section-link">
+                                <a href="/servicios#section-fotografia" className="section-link">
                                     Contenido y Fotografía
-                                </HashLink>
+                                </a>
                             </Card.Title>
                             <Card.Title className="mb-3 mb-md-4">
-                                <HashLink smooth to="#section-desarrollo" className="section-link">
+                                <a href="/servicios#section-desarrollo" className="section-link">
                                     Diseño y Desarrollo Web
-                                </HashLink>
+                                </a>
                             </Card.Title>
                         </div>
                     </div>

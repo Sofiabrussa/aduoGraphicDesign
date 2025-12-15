@@ -1,5 +1,4 @@
 import "./LandingCreative.css";
-import Navbar from "../NavBar/NavBar";
 import PortfolioCard from "./PortfolioCard";
 import { useEffect } from "react";
 
@@ -34,7 +33,6 @@ export default function LandingCreative() {
 
   return (
     <>
-      <Navbar />
       <div className="creative-page">
 
         {/* HERO */}

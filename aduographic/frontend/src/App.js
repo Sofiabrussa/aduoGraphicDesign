@@ -33,12 +33,12 @@ function App() {
     <>
       <GlobalStyle />
       <Cursor />
+      <Navbar />
       <div className="">
         {/* Renderizar los componentes solo en "/" */}
         <Routes>
           <Route path="/" element={
             <>
-              <Navbar />
               <Inicio id="inicio" />
               <SectionPortafolio id="portfolio" />
               <SectionNosotras id="nosotras" />

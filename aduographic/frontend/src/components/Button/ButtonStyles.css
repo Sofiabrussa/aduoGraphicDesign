@@ -49,7 +49,6 @@
 
 /* Boton Inicio */
 .button-inicio {
-    margin-top: 2%;
     font-size: 1.7rem;
     font-weight: 400; 
     color: white;
@@ -93,9 +92,9 @@
 /* Responsive */   
 @media (max-width: 768px) {
     .buttom-aduo {
-      padding: 0.2rem 0.4rem;
+      padding: 0.1rem 0.3rem;
       min-width: 70px;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       border-width: 1.2px;
     }
     .arrow-icon {

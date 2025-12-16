@@ -56,34 +56,37 @@
 @media (max-width: 768px) {
 
   .marquee {
+    width: 100vw;
+    max-width: 100vw;
+    height: 40px;              
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(117 81 150);
     transform: none !important;
-    height: auto !important;
-    overflow: hidden !important;
-    padding: 0.6rem 0 !important;
+    display: flex;
+    align-items: center;
   }
 
   .track {
-    animation: none !important;
     display: flex;
-    justify-content: center;
-    width: 100% !important;
+    width: max-content;
+    animation: marquee-animation 15s linear infinite;
   }
 
   .content {
-    white-space: normal !important;
-    text-align: center !important;
-    width: 100% !important;
+    display: flex;
+    white-space: nowrap;     
   }
 
   .content span {
-    display: block;
-    font-size: 1rem !important;
-    padding-right: 0 !important;
+    display: inline-block;
+    font-size: 0.9rem;
+    padding-right: 2rem;
+    line-height: 40px;         
   }
-
-  /* ----- AJUSTE DEL LOGO SOLO EN MOBILE ----- */
   #Footer .footer-logo {
-    max-height: 90px !important;  
+    max-height: 150px !important;  
     margin: 0 auto !important;    
     display: block;
   }

@@ -96,15 +96,15 @@ export default function LandingCreative() {
         <section className="portfolio-section">
 
           <div className="grid-row grid-horizontal">
-            <PortfolioCard img="/proyects/aurora/uno.webp" title="Proyecto 01" />
-            <PortfolioCard img="/proyects/efe/efe1.webp" title="Proyecto 02" />
-            <PortfolioCard img="/proyects/esquinas/esquina1.webp" title="Proyecto 03" />
+            <PortfolioCard img="/proyects/aurora/uno.webp" title="AURORA" />
+            <PortfolioCard img="/proyects/efe/efe1.webp" title="EFE ELECTRONICA" />
+            <PortfolioCard img="/proyects/esquinas/esquina1.webp" title="4 Esquinas" />
           </div>
 
           <div className="grid-row grid-vertical">
-            <PortfolioCard img="/proyects/sonora/sonora2.webp" title="Proyecto 04" orientation="vertical" />
-            <PortfolioCard img="/proyects/boris/boris1.webp" title="Proyecto 05" orientation="vertical" />
-            <PortfolioCard img="/proyects/luz/luz1.webp" title="Proyecto 06" orientation="vertical" />
+            <PortfolioCard img="/proyects/sonora/sonora2.webp" title="SONORA" orientation="vertical" />
+            <PortfolioCard img="/proyects/boris/boris1.webp" title="BORIS" orientation="vertical" />
+            <PortfolioCard img="/proyects/luz/luz1.webp" title="LUZ ALIGNERS" orientation="vertical" />
           </div>
 
         </section>

@@ -1,28 +1,10 @@
-import { Card } from 'react-bootstrap'
-import { motion, useAnimation } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { Card } from 'react-bootstrap';
+import { motion } from "framer-motion";
 import "./SectionPortafolioStyles.css";
 
-const PortfolioTitle = () => {
-  const controls = useAnimation();
-  const ref = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) controls.start("visible");
-        else controls.start("hidden");
-      },
-      { threshold: 0.4 }
-    );
-
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, [controls]);
-
+const PortfolioTitle = ({ animateControls }) => { // Recibe animateControls
   return (
     <motion.div
-      ref={ref}
       variants={{
         hidden: { opacity: 0, y: -20 },
         visible: {
@@ -32,7 +14,7 @@ const PortfolioTitle = () => {
         }
       }}
       initial="hidden"
-      animate={controls}
+      animate={animateControls} 
     >
       <Card className='sectionPortfolioText text-center border-0 shadow-0'>
         <Card.Title className='sectionportfoliotitle'>
@@ -46,5 +28,6 @@ const PortfolioTitle = () => {
 };
 
 export default PortfolioTitle;
+
 
 

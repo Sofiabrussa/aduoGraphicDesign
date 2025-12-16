@@ -51,6 +51,42 @@
   background: #fff;
 }
 
+/* ===== MOBILE CAROUSEL SIMPLE ===== */
+.fotografia-mobile {
+  display: flex;
+  gap: 1rem;
+  overflow: hidden;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.fotografia-mobile-track {
+  display: flex;
+  gap: 1rem;
+  animation: scroll-mobile 70s linear infinite;
+}
+
+.fotografia-mobile-item {
+  flex: 0 0 auto;
+}
+
+.fotografia-mobile-item img {
+  width: 150px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+}
+
+@keyframes scroll-mobile {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 
 /*   RESPONSIVE                               */
 @media (max-width: 1024px) {
@@ -68,10 +104,17 @@
 
 @media (max-width: 768px) {
   .coverflow {
+    display: none;
     height: 240px;
     max-width: 600px;
     perspective: 1100px;
   }
+
+  #section-fotografia {
+    min-height: auto;
+    margin-top: 4rem;
+
+}
 
   .coverflow-item img {
     width: 150px;

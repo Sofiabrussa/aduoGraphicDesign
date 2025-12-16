@@ -10,19 +10,14 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 
 function SectionPortafolio() {
-
-  // Animación al entrar en pantalla
+  // Un solo controls para todos los componentes
   const controls = useAnimation();
   const ref = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          controls.start("visible");
-        } else {
-          controls.start("hidden");
-        }
+        controls.start(entry.isIntersecting ? "visible" : "hidden");
       },
       { threshold: 0.4 }
     );
@@ -33,11 +28,10 @@ function SectionPortafolio() {
 
   return (
     <Container ref={ref} fluid id="portfolio" className="d-flex flex-column m-0 p-0">
-
+      {/* Pasa el mismo controls al hijo */}
       <PortfolioTitle animateControls={controls} />
 
       <Row className="img-table-container p-0">
-
         {/* FOTO ANIMADA */}
         <Col md={6} className="p-0 img-wrapper">
           <motion.div
@@ -56,13 +50,12 @@ function SectionPortafolio() {
               }
             }}
             initial="hidden"
-            animate={controls}
+            animate={controls} 
           />
         </Col>
 
         {/* LISTA DE SERVICIOS */}
         <ServicesList animateControls={controls} />
-
       </Row>
 
       <Row className="text-center buttonSectionPortfolio align-items-center" style={{ height: '100px' }}>

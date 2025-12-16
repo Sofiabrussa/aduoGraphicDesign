@@ -5,7 +5,7 @@ import CustomCard from "./CustomCard";
 
 function SectionCards() {
     const cards = [
-        { image: "/imgCards/jopi.jpg", title: "JOSEFINA BAS", text: "Co-creadora & <br/> Diseñadora Gráfica", linkedin: "https://www.linkedin.com/in/ad%C3%BAo/" },
+        { image: "/imgCards/jopi.webp", title: "JOSEFINA BAS", text: "Co-creadora & <br/> Diseñadora Gráfica", linkedin: "https://www.linkedin.com/in/ad%C3%BAo/" },
         { image: "/imgCards/valu.webp", title: "VALENTINA TAJCHMAN", text: "Co-creadora & <br/> Diseñadora Gráfica", linkedin: "https://www.linkedin.com/in/valentina-tajchman-057011238/ " },
         { image: "/imgCards/zoe.webp", title: "ZOE MALVAREZ", text: "Estratega & <br/> Marketing Digital", linkedin: "https://www.linkedin.com/in/zoe-malvarez-48069921a/ " },
         { image: "/imgCards/jo.webp", title: "JOSEFINA GRAGLIA", text: "Estratega & <br/> Marketing Digital", linkedin: "https://www.linkedin.com/in/josefinagraglia/ " },

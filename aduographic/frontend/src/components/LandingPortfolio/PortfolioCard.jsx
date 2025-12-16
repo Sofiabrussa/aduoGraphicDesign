@@ -1,7 +1,12 @@
 import { useRef } from "react";
 import "./PortfolioCard.css";
 
-export default function PortfolioCard({ img, title, orientation = "horizontal" }) {
+export default function PortfolioCard({
+  img,
+  title,
+  orientation = "horizontal",
+  onClick
+}) {
   const cardRef = useRef(null);
   const imgRef = useRef(null);
 
@@ -9,6 +14,7 @@ export default function PortfolioCard({ img, title, orientation = "horizontal" }
     const card = cardRef.current;
     const img = imgRef.current;
     if (!card || !img) return;
+
     card.classList.add("is-active");
 
     const rect = card.getBoundingClientRect();
@@ -17,8 +23,6 @@ export default function PortfolioCard({ img, title, orientation = "horizontal" }
 
     const nx = x / rect.width - 0.5;
     const ny = y / rect.height - 0.5;
-
-    // Intensidad no lineal (más fuerte en bordes)
     const intensity = Math.sqrt(nx * nx + ny * ny);
 
     const moveX = nx * 25 * intensity;
@@ -45,6 +49,8 @@ export default function PortfolioCard({ img, title, orientation = "horizontal" }
       className={`portfolio-card ${orientation}`}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
+      onClick={onClick}
+      style={{ cursor: "pointer" }}
     >
       <img ref={imgRef} src={img} alt={title} className="portfolio-img" />
       <span className="portfolio-label">{title}</span>

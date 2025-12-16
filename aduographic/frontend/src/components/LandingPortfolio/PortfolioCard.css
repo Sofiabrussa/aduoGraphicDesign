@@ -29,11 +29,10 @@
   text-shadow: 0 1px 4px rgba(0,0,0,0.6);
 }
 
-/* Aspect ratios */
 .horizontal { aspect-ratio: 16/9; }
 .vertical { aspect-ratio: 4/5; }
 
-/* ==== GRID SYSTEM ==== */
+/* ==== GRID  ==== */
 .portfolio-section {
   padding: 100px 0;
   display: flex;

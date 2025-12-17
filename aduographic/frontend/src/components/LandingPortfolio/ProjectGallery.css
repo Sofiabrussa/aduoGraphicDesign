@@ -1,0 +1,25 @@
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 48px;
+}
+
+.gallery-item {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/*  para q tengan disitnto tamaño 
+.gallery-item:nth-child(2n) {
+  grid-column: span 2;
+}
+ */

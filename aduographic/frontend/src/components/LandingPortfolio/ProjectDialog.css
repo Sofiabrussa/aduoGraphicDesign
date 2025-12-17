@@ -1,0 +1,49 @@
+/* CONTENEDOR GENERAL */
+.modal-wave-wrapper {
+  position: relative;
+  min-height: 100%;
+  background: #fff;
+}
+/* BORDE  */
+.modal-wave-edge {
+  position: absolute;
+  top: -90px;
+  left: -10%;
+  width: 120%;
+  height: 180px;
+  background: #fff;
+  border-radius: 50% 50% 0 0;
+  z-index: 1;
+}
+
+/* CONTENIDO */
+.modal-content {
+  position: relative;
+  padding: 32px;
+  z-index: 2;
+  overflow-y: auto;
+}
+
+@keyframes waveEdge {
+  0% {
+    transform: translateX(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-4%) scaleY(0.85);
+  }
+  100% {
+    transform: translateX(0) scaleY(1);
+  }
+}
+
+/* SOLO dentro del ProjectDialog */
+.modal-content .MuiTypography-root.card-title {
+  font-size: clamp(1.4rem, 2.2vw, 2.4rem);
+  line-height: 1.1;
+}
+
+.modal-content .MuiTypography-root.card-text {
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  line-height: 1.6;
+  max-width: 1000px;
+}

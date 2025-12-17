@@ -18,6 +18,7 @@
   width: 100%;
   max-width: 1400px;
   height: auto;
+  pointer-events: none;
 }
 
 .hero-text {
@@ -42,13 +43,13 @@
 
 /* OLA INTERMEDIA HACIA ARRIBA */
 .wave-up text {
-  animation: waveUp 7s ease-in-out infinite;
+  animation: waveUp 6s ease-in-out infinite;
   transform-origin: center;
 }
 
 /* OLA INTERMEDIA HACIA ABAJO */
 .wave-down text {
-  animation: waveDown 7s ease-in-out infinite;
+  animation: waveDown 6s ease-in-out infinite;
   transform-origin: center;
 }
 
@@ -86,4 +87,16 @@
 .glitch-active {
   filter: blur(8px) brightness(60%);
   transform: scaleY(1.9) skewY(12deg) translateY(-6px);
+}
+
+.card-text {
+  white-space: pre-line;
+}
+
+
+@media (max-width: 780px) {
+  .hero-section  {
+    height: 50vh;
+  }
+  
 }

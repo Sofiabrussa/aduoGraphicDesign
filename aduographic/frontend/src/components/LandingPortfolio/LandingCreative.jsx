@@ -9,8 +9,15 @@ const projects = [
     title: "AURORA",
     img: "/proyects/aurora/uno.webp",
     orientation: "horizontal",
+    gallery: [
+    "/proyects/aurora/dos.webp",
+    "/proyects/aurora/tres.webp",
+    "/proyects/aurora/cuatro.webp",
+    "/proyects/aurora/cinco.webp",
+    "/proyects/aurora/seis.webp"],
+  
     description: `Nace desde un lugar profundamente personal y familiar: un nombre heredado, amado y elegido con convicción. Esa misma conexión emocional se convierte en el corazón de la marca: un espacio pensado para que cada mujer encuentre prendas que resalten su fuerza, su elegancia y su feminidad, sin renunciar a la comodidad ni a su propia esencia.
-    La idea central es posicionar a Aurora como un universo sofisticado, donde cada prenda —desde lo cotidiano hasta lo íntimo— transmite seguridad, estilo y presencia. `
+    \n La idea central es posicionar a Aurora como un universo sofisticado, donde cada prenda —desde lo cotidiano hasta lo íntimo— transmite seguridad, estilo y presencia. `
 
   },
   {
@@ -18,23 +25,39 @@ const projects = [
     title: "EFE ELECTRONICA",
     img: "/proyects/efe/efe1.webp",
     orientation: "horizontal",
+    gallery: [
+    "/proyects/efe/efe2.webp",
+    "/proyects/efe/efe3.webp",
+    "/proyects/efe/efe4.webp",
+    "/proyects/efe/efe5.webp",],
     description: `Efe electrónica se posiciona como un servicio técnico automotriz especializado, liderado por el Ing. Electrónico Federico Navarro, con un enfoque profesional, preciso y totalmente orientado a la confianza del cliente.
-    La marca combina conocimiento técnico, experiencia real en diagnóstico y reparación electrónica automotriz, y una atención cercana que explica, asesora y acompaña en cada caso.`
+    \n La marca combina conocimiento técnico, experiencia real en diagnóstico y reparación electrónica automotriz, y una atención cercana que explica, asesora y acompaña en cada caso.`
   },
   {
     id: "esquinas",
     title: "4 ESQUINAS",
     img: "/proyects/esquinas/esquina1.webp",
     orientation: "horizontal",
+    gallery: [
+    "/proyects/esquinas/esquina2.webp",
+    "/proyects/esquinas/esquina3.webp",
+    "/proyects/esquinas/esquina4.webp",
+    "/proyects/esquinas/esquina5.webp",
+    "/proyects/esquinas/papeleria.webp"],
     description: ` Nace del valor simbólico y estratégico de ubicarse en una de las intersecciones más importantes de Manantiales 2. Su nombre refleja directamente ese punto donde la vida del barrio sucede y se conecta.
     Es un complejo comercial compuesto por 8 locales y 2 oficinas.
-    La marca se imagina colorida, llamativa y vibrante, un espacio que invita a pasar, quedarse y volver. Su esencia combina practicidad y disfrute`
+    \n La marca se imagina colorida, llamativa y vibrante, un espacio que invita a pasar, quedarse y volver. Su esencia combina practicidad y disfrute`
   },
   {
     id: "sonora",
     title: "SONORA",
     img: "/proyects/sonora/sonora2.webp",
     orientation: "vertical",
+    gallery: [
+    "/proyects/sonora/sonora1.webp",
+    "/proyects/sonora/sonora3.webp",
+    "/proyects/sonora/sonora4.webp",
+    "/proyects/sonora/sonora5.webp",],
     description: "Proyecto editorial y visual."
   },
   {
@@ -42,14 +65,24 @@ const projects = [
     title: "BORIS",
     img: "/proyects/boris/boris1.webp",
     orientation: "vertical",
+    gallery: [
+    "/proyects/boris/boris2.webp",
+    "/proyects/boris/boris3.webp",
+    "/proyects/boris/boris4.webp",
+    "/proyects/boris/boris5.webp",],
     description: `Desarrollamos la identidad de BORIS, una marca de café inspirada en un conejo real y en todo lo que representa: lealtad, alegría y autenticidad.
-    El proyecto integra dos mundos bajo una misma esencia: Boris Café de Especialidad, un espacio trendy, minimalista y chill; y Boris Estudio, un centro profesional dedicado a la formación, investigación y cultura del café.`
+    \n El proyecto integra dos mundos bajo una misma esencia: Boris Café de Especialidad, un espacio trendy, minimalista y chill; y Boris Estudio, un centro profesional dedicado a la formación, investigación y cultura del café.`
   },
   {
     id: "luz",
     title: "LUZ ALIGNERS",
     img: "/proyects/luz/luz1.webp",
     orientation: "vertical",
+    gallery: [
+    "/proyects/luz/luz2.webp",
+    "/proyects/luz/luz3.webp",
+    "/proyects/luz/luz4.webp",
+    "/proyects/luz/luz5.webp",],
     description: `Desarrollamos la identidad visual del consultorio particular de Luz González, un espacio odontológico que busca transmitir calidez, humanidad y profesionalismo. La marca representa una atención cercana, empática y moderna, donde el paciente puede atenderse sin miedos y sentirse acompañado en cada paso. `
   }
 ];

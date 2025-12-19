@@ -84,6 +84,38 @@ const projects = [
     "/proyects/luz/luz4.webp",
     "/proyects/luz/luz5.webp",],
     description: `Desarrollamos la identidad visual del consultorio particular de Luz González, un espacio odontológico que busca transmitir calidez, humanidad y profesionalismo. La marca representa una atención cercana, empática y moderna, donde el paciente puede atenderse sin miedos y sentirse acompañado en cada paso. `
+  },
+  {
+    id: "ABC",
+    title: "ABC",
+    img: "/proyects/abc/abc1.webp",
+    orientation: "horizontal",
+    gallery: [
+    "/proyects/abc/abc2.webp",
+    "/proyects/abc/abc3.webp",
+    "/proyects/abc/abc5.webp",
+    "/proyects/abc/abc6.webp",
+    "/proyects/abc/abc7.webp",
+    "/proyects/abc/abc4.webp",],
+    description: `ABC Cripto se construye desde un propósito simple pero poderoso: hacer que el mundo cripto sea comprensible para todos, sin tecnicismos, sin miedos y sin barreras. La marca se posiciona como ese “primer paso” que todos necesitan para entrar a un universo que parece complejo, pero que, explicado con claridad, puede transformar realidades económicas.
+ \n La idea central es convertir a ABC Cripto en el profesor confiable y cercano del mundo cripto, alguien que enseña desde cero, acompaña, traduce lo difícil en simple y crea comunidad. Un espacio donde aprender es fácil, accesible y seguro, y donde cualquier persona —sin importar su nivel— puede sentirse parte.`
+  },
+  {
+    id: "lutz",
+    title: "LUTZ",
+    img: "/proyects/lutz/lutz1.webp",
+    orientation: "horizontal",
+    gallery: [
+    "/proyects/lutz/lutz1.webp",
+    "/proyects/lutz/lutz2.webp",
+    "/proyects/lutz/lutz3.webp",
+    "/proyects/lutz/lutz4.webp",
+    "/proyects/lutz/lutz5.webp",
+    "/proyects/lutz/lutz7.webp",
+    "/proyects/lutz/lutz6.webp",],
+    description: `Lutz Ferrando es la óptica más antigua de Argentina, con un legado que inicia en 1878 cuando inmigrantes alemanes e italianos se unieron para crear el primer instituto óptico del país.   
+    \n Su propuesta se basa en ofrecer soluciones ópticas de excelencia, combinando tecnología, salud visual, moda y una atención personalizada que potencia la autoestima y el estilo de cada cliente.   
+    \n La personalidad de la marca es disciplinada, competitiva, segura y apasionada, transmitiendo tres pilares fundamentales: calidad, estilo y fortaleza.`
   }
 ];
 

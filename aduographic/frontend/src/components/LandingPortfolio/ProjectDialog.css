@@ -36,14 +36,19 @@
   }
 }
 
+
 /* SOLO dentro del ProjectDialog */
 .modal-content .MuiTypography-root.card-title {
+  font-family: var(--font-title);
   font-size: clamp(1.4rem, 2.2vw, 2.4rem);
   line-height: 1.1;
+  font-weight: 300;
 }
 
 .modal-content .MuiTypography-root.card-text {
+  font-family: var(--font-text);
   font-size: clamp(1rem, 1.2vw, 1.15rem);
   line-height: 1.6;
   max-width: 1000px;
 }
+

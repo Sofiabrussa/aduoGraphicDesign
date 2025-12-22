@@ -49,24 +49,38 @@ const projects = [
     \n La marca se imagina colorida, llamativa y vibrante, un espacio que invita a pasar, quedarse y volver. Su esencia combina practicidad y disfrute`
   },
   {
+    id: "LIHUE",
+    title: "LIHUE",
+    img: "/proyects/lalihue/lihue1.webp",
+    orientation: "horizontal",
+    gallery: [
+    "/proyects/lalihue/lihue2.webp",
+    "/proyects/lalihue/lihue3.webp",
+    "/proyects/lalihue/lihue4.webp",
+    "/proyects/lalihue/lihue5.webp",
+    "/proyects/lalihue/lihue6.webp"],
+    description:  ` Partimos del significado profundo de La Lihue —tierra fértil— para construir una identidad que combina origen, tradición y una nueva mirada contemporánea.
+    \n La idea se centra en transformar a La Lihue en un refugio urbano: un espacio tranquilo en medio del movimiento de la ciudad, donde comer algo rico se vuelve una pausa consciente. Un lugar con estética armoniosa, productos diseñados con sensibilidad y un clima que invita a quedarse: trabajar, descansar, compartir, crear.`  
+  },
+  {
     id: "sonora",
     title: "SONORA",
-    img: "/proyects/sonora/sonora2.webp",
+    img: "/proyects/sonora/sonora1.png",
     orientation: "vertical",
     gallery: [
     "/proyects/sonora/sonora1.webp",
     "/proyects/sonora/sonora3.webp",
     "/proyects/sonora/sonora4.webp",
-    "/proyects/sonora/sonora5.webp",],
+    "/proyects/sonora/sonora5.jpg",],
     description: "Proyecto editorial y visual."
   },
   {
     id: "boris",
     title: "BORIS",
-    img: "/proyects/boris/boris1.webp",
+    img: "/proyects/boris/boris2.webp",
     orientation: "vertical",
     gallery: [
-    "/proyects/boris/boris2.webp",
+    "/proyects/boris/boris1.webp",
     "/proyects/boris/boris3.webp",
     "/proyects/boris/boris4.webp",
     "/proyects/boris/boris5.webp",],

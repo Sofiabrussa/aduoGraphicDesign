@@ -72,7 +72,9 @@ const projects = [
     "/proyects/sonora/sonora3.webp",
     "/proyects/sonora/sonora4.webp",
     "/proyects/sonora/sonora5.jpg",],
-    description: "Proyecto editorial y visual."
+    description: ` Es una marca de contenido y comunidad que combina finanzas, tecnología y sonido para explicar el mundo de las inversiones de forma clara, cercana y actual. A través de un podcast y plataformas digitales, transforma temas como bitcoin, cripto, mercados y crecimiento financiero en conversaciones accesibles, humanas y fáciles de entender.
+    \n La esencia de Inversión Sonora está en hacer que el conocimiento suene: bajar lo complejo a un lenguaje simple, conectar ideas con experiencias reales y motivar a tomar acción en el presente. No habla solo de dinero, sino de mentalidad, aprendizaje y nuevas formas de invertir.
+    `
   },
   {
     id: "boris",

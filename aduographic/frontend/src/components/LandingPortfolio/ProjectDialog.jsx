@@ -16,6 +16,7 @@ export default function ProjectDialog({ open, onClose, project }) {
       {open && (
         <Dialog
           fullScreen
+          scroll="paper"
           open={open}
           onClose={onClose}
           PaperProps={{
@@ -27,6 +28,18 @@ export default function ProjectDialog({ open, onClose, project }) {
               duration: 0.75,
               ease: [0.22, 1, 0.36, 1],
             },
+            sx: {
+              margin: 0,
+              borderRadius: 0,
+              padding: 0,
+              width: "100vw",
+              maxWidth: "100vw",
+              height: "100vh",
+              backgroundColor: "#fff",
+              overflowY: "auto",
+              overflowX: "hidden",
+            },
+
           }}
         >
           {/* APP BAR */}

@@ -6,6 +6,7 @@
   pointer-events: none;
   transform: translate(-50%, -50%);
   z-index: 9999;
+  pointer-events: none;
 
   /* Degradado suave como luz difusa */
   background: radial-gradient(

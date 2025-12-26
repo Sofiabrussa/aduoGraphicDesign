@@ -9,8 +9,10 @@ export default function PortfolioCard({
 }) {
   const cardRef = useRef(null);
   const imgRef = useRef(null);
+  const isTouch = "ontouchstart" in window || navigator.maxTouchPoints > 0;
 
   const handleMouseMove = (e) => {
+    if (isTouch) return;
     const card = cardRef.current;
     const img = imgRef.current;
     if (!card || !img) return;
@@ -39,6 +41,7 @@ export default function PortfolioCard({
   };
 
   const handleMouseLeave = () => {
+    if (isTouch) return;
     cardRef.current.classList.remove("is-active");
     imgRef.current.style.transform = "translate(0,0) scale(1)";
   };

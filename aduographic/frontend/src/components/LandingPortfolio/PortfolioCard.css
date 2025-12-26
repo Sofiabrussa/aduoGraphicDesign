@@ -54,10 +54,19 @@
   .grid-row {
     grid-template-columns: repeat(2, 1fr);
   }
+  .portfolio-img {
+    will-change: auto;
+  }
 }
 
 @media (max-width: 650px) {
   .grid-row {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (hover: none) {
+  .portfolio-img {
+    transform: none !important;
   }
 }

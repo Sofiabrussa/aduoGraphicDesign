@@ -8,8 +8,11 @@ import Button from "../Button/Button";
 import { BsArrowUpRight } from "react-icons/bs";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 function SectionPortafolio() {
+  const navigate = useNavigate();
   // Un solo controls para todos los componentes
   const controls = useAnimation();
   const ref = useRef(null);
@@ -58,17 +61,23 @@ function SectionPortafolio() {
         <ServicesList animateControls={controls} />
       </Row>
 
-      <Row className="text-center buttonSectionPortfolio align-items-center" style={{ height: '100px' }}>
+      <Row
+        className="text-center buttonSectionPortfolio align-items-center"
+        style={{ height: "100px" }}
+      >
         <Col>
-          <a
-            href="https://www.behance.net/aduoestudiocreativo"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button className='button-portfolio'>
-              Portfolio <BsArrowUpRight className="arrow-icon" style={{ color: "black" }} />
+          <Button
+              className="button-portfolio"
+              onClick={() => navigate("/portfolio")}
+              aria-label="Ir a la página Portfolio"
+            >
+              Portfolio
+              <BsArrowUpRight
+                className="arrow-icon"
+                aria-hidden="true"
+                style={{ color: "black" }}
+              />
             </Button>
-          </a>
         </Col>
       </Row>
     </Container>

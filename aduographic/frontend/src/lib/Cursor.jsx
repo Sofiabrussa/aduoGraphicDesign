@@ -31,7 +31,7 @@ export default function Cursor() {
       }
 
       const el = document.elementFromPoint(e.clientX, e.clientY);
-      setHidden(!!el?.closest("a, button, input, textarea, select, svg, i"));
+      setHidden(!!el?.closest("a, button, input, textarea, select"));
     };
 
     window.addEventListener("mousemove", move);

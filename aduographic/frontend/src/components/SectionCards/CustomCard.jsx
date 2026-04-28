@@ -7,48 +7,51 @@ function CustomCard({ image, title, text, linkedin }) {
     const [hovered, setHovered] = useState(false);
 
     return (
-        <motion.div 
-            className="card-wrapper"
-            whileHover={{ scale: 1.03 }}
-            transition={{ duration: 0.25 }}
+    <motion.div 
+      className="card-wrapper"
+      
+      initial={{ opacity: 0, y: 50 }}   // empieza oculto
+      whileInView={{ opacity: 1, y: 0 }} // aparece al scrollear
+      viewport={{ once: false, amount: 0.3 }}         // solo una vez
+      
+      whileHover={{ scale: 1.03 }}
+      transition={{ duration: 1.5, ease: "easeOut" }}
+    >
+      <Card
+        className="custom-card-container"
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+      >
+        <Card.Img 
+          src={image} 
+          alt={title}
+          className="card-img-custom"
+        />
+
+        <Card.ImgOverlay 
+          className="card-overlay"
+          style={{ opacity: hovered ? 1 : 0 }}
         >
-            <Card
-                className="custom-card-container"
-                onMouseEnter={() => setHovered(true)}
-                onMouseLeave={() => setHovered(false)}
-            >
-                <Card.Img 
-                    src={image} 
-                    alt={title}
-                    className="card-img-custom"
-                />
+          <div className="card-text-wrapper">
+            <Card.Title>{title}</Card.Title>
+            <Card.Text dangerouslySetInnerHTML={{ __html: text }} />
 
-                <Card.ImgOverlay 
-                    className="card-overlay"
-                    style={{ opacity: hovered ? 1 : 0 }}
-                >
-                    <div className="card-text-wrapper">
-                        <Card.Title>{title}</Card.Title>
-                        <Card.Text
-                            dangerouslySetInnerHTML={{ __html: text }}
-                        />
-
-                        {linkedin && (
-                            <Card.Text 
-                                as="a"
-                                href={linkedin}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="linkedin-text"
-                            >
-                                LinkedIn
-                            </Card.Text>
-                        )}
-                    </div>
-                </Card.ImgOverlay>
-            </Card>
-        </motion.div>
-    );
+            {linkedin && (
+              <Card.Text 
+                as="a"
+                href={linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="linkedin-text"
+              >
+                LinkedIn
+              </Card.Text>
+            )}
+          </div>
+        </Card.ImgOverlay>
+      </Card>
+    </motion.div>
+  );
 }
 
 export default CustomCard;

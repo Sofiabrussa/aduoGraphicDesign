@@ -103,7 +103,11 @@
     font-size: 1.5rem;
   }
 }
-
+.video-bg{
+    pointer-events: none;
+    z-index: -1;
+  }
+    
 
 
 

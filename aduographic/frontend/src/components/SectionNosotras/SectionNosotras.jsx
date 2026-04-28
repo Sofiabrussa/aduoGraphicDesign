@@ -46,15 +46,12 @@ function SectionNosotras() {
             </a>
           </div>
         </Col>
-        {/* Image Section */}
+        {/* video Section */}
         <Col lg={6} md={12} className="image-column p-0">
-          <div className="image-container">
-            <img 
-              src="/imgsNosotras/imagennosotras.webp" 
-              alt="Nosotras" 
-              className="nosotras-image" 
-              loading="lazy"
-            />
+          <div className="video-container">
+            <video width="400" autoPlay muted loop playsInline className="video-bg"
+              src="https://res.cloudinary.com/dbbyng05e/video/upload/f_mp4,q_auto/IMG_0586_etssfa.mov"  type="video/mp4" 
+            />  
           </div>
         </Col>
       </Row>

@@ -18,8 +18,6 @@
     rgba(117, 81, 150, 0) 100%
   );
 
-  backdrop-filter: blur(12px);
-
   transition:
     opacity 0.2s ease,
     transform 0.15s ease;

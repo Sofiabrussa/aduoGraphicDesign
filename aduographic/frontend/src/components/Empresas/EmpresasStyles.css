@@ -1,0 +1,65 @@
+.section-empresas {
+  background: #000000;
+}
+
+.section-label {
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #a78bfa;
+}
+
+.section-title {
+  font-size: clamp(2rem, 2.6vw, 3rem);
+  line-height: 1.05;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: rgba(167, 139, 250, 0.1);
+  border: 2px solid rgba(167, 139, 250, 0.3);
+  transition: all 0.3s ease;
+}
+
+.icon-wrapper:hover {
+  background: rgba(167, 139, 250, 0.2);
+  border-color: rgba(167, 139, 250, 0.6);
+  transform: scale(1.05);
+}
+
+.partner-icon {
+  font-size: 3rem;
+  color: #a78bfa;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-wrapper:hover .partner-icon {
+  color: #d8b4fe;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .section-empresas {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .icon-wrapper {
+    width: 80px;
+    height: 80px;
+  }
+
+  .partner-icon {
+    font-size: 2.5rem;
+  }
+}

@@ -9,8 +9,8 @@ import { BsArrowUpRight } from "react-icons/bs";
 
 function Inicio() {
   const imagesCarouselInicio = [
-    { src: "/imgsInicio/degrade1.webp", alt: "IMAGEN1" },
-    { src: "/imgsInicio/degrade2.webp", alt: "IMAGEN2" },
+    { src: "https://res.cloudinary.com/dbbyng05e/image/upload/v1777306946/DSC04994_xay8fv.jpg", alt: "IMAGEN1" },
+    { src: "https://res.cloudinary.com/dbbyng05e/image/upload/v1777306700/DSC04746_1_vc7cmg.jpg", alt: "IMAGEN2" },
   ];
 
   const [showIcons, setShowIcons] = useState(true);

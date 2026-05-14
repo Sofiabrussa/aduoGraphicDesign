@@ -1,15 +1,16 @@
 #portfolio {
   min-height: auto;
   display: flex;
-  justify-content: space-around;
-  padding: 2rem 0;
+  justify-content: center;
+  background: #f7f8fa;
+  padding: 4rem 0 2rem;
 }
 
 .img-table-container {
   display: flex;
   width: 100%;
   margin: 0;
-  height: 500px; 
+  height: auto;
 }
 
 .img-wrapper {
@@ -49,12 +50,18 @@
 
 /* Textos */
 .sectionPortfolioText {
-  padding: 3rem 0rem;
+  padding: 3rem 0;
+  margin: 0 auto 3rem;
   border: none;
+  max-width: 900px;
 }
 
 .sectionportfoliotitle {
-  line-height: 1.2
+  line-height: 1.2;
+  font-size: clamp(2.6rem, 3.2vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: #111;
 }
 
 /* Servicios */
@@ -108,3 +115,197 @@
 }
 }
 
+.custom-accordion {
+  width: 100%;
+  background: transparent;
+}
+
+.accordion-item-custom {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid rgba(255,255,255,0.12) !important;
+}
+
+.accordion-item-custom .accordion-button {
+  background: transparent !important;
+
+  color: #ffffff !important;
+
+  font-size: clamp(1.6rem, 3vw, 3rem);
+  font-weight: 300;
+
+  padding: 2rem 0;
+
+  box-shadow: none !important;
+  border: none !important;
+
+  transition: all 0.4s ease;
+}
+.accordion-button:not(.collapsed) {
+  color: #ffffff !important;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+.accordion-item-custom .accordion-button:hover {
+  padding-left: 10px;
+  opacity: 0.8;
+}
+
+.accordion-item-custom .accordion-button:not(.collapsed) {
+  background: transparent !important;
+  color: white !important;
+}
+
+.accordion-item-custom .accordion-body {
+  padding: 0 0 2rem 0;
+
+  color: rgba(255,255,255,0.7);
+
+  font-size: 1rem;
+  line-height: 1.8;
+
+  max-width: 700px;
+}
+
+.custom-accordion .accordion-button::after {
+  filter: invert(1);
+  transform: scale(1.2);
+}
+
+.accordion-link {
+  color: white;
+  text-decoration: none;
+}
+
+.accordion-link:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+
+  .accordion-item-custom .accordion-button {
+
+    font-size: 1.2rem;
+
+    padding: 1.2rem 0;
+
+    align-items: flex-start;
+  }
+
+  .accordion-item-custom .accordion-body {
+
+    font-size: 0.92rem;
+
+    line-height: 1.6;
+  }
+}
+.sticky-services-section {
+  position: relative;
+  height: 560vh;
+  margin-bottom: 8rem;
+  padding-top: 130px;
+}
+
+.sticky-services-wrapper {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 5rem;
+  background: #ffffff;
+  box-shadow: 0 40px 120px rgba(16, 24, 40, 0.08);
+  border-radius: 40px;
+}
+
+.services-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.services-right {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-item {
+  padding: 2.5rem 2.5rem 2.2rem;
+  border-radius: 28px;
+  background: rgba(246, 248, 251, 0.9);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.07);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.service-item h2 {
+  font-size: clamp(2rem, 2.6vw, 3rem);
+  margin: 0;
+  color: #111;
+  transition: all 0.4s ease;
+  opacity: 0.65;
+}
+
+.service-item p {
+  margin-top: 1.25rem;
+  max-width: 620px;
+  line-height: 1.75;
+  color: rgba(31, 41, 55, 0.78);
+  font-size: 1.05rem;
+}
+.active-service h2 {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.active-service {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.12);
+}
+
+.service-image {
+  width: 100%;
+  max-width: 620px;
+  height: 560px;
+  object-fit: cover;
+  border-radius: 32px;
+  box-shadow: 0 30px 70px rgba(15, 23, 42, 0.12);
+}
+
+.service-marker {
+  height: 100vh;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+
+  .sticky-services-wrapper {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .services-left,
+  .services-right {
+    width: 100%;
+  }
+
+  .service-item h2 {
+    font-size: 1.8rem;
+  }
+
+  .service-image {
+    height: 350px;
+  }
+}
+.navbar {
+  z-index: 999;
+}

@@ -2,14 +2,13 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./SectionPortafolioStyles.css";
 import PortfolioTitle from './PortfolioTitle';
-import ServicesList from './ServicesList';
 import { Col, Container, Row } from 'react-bootstrap';
 import Button from "../Button/Button";
 import { BsArrowUpRight } from "react-icons/bs";
-import { motion, useAnimation } from "framer-motion";
+import { useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-
+import StickyServices from "./StickyServices";
 
 function SectionPortafolio() {
   const navigate = useNavigate();
@@ -36,29 +35,9 @@ function SectionPortafolio() {
 
       <Row className="img-table-container p-0">
         {/* FOTO ANIMADA */}
-        <Col md={6} className="p-0 img-wrapper">
-          <motion.div
-            className="img-component"
-            style={{
-              backgroundImage: 'url("/imgPortfolio/imagenservicios.webp")',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-            variants={{
-              hidden: { opacity: 0, x: -40 },
-              visible: {
-                opacity: 1,
-                x: 0,
-                transition: { duration: 0.8, ease: "easeOut" }
-              }
-            }}
-            initial="hidden"
-            animate={controls} 
-          />
-        </Col>
 
         {/* LISTA DE SERVICIOS */}
-        <ServicesList animateControls={controls} />
+        <StickyServices animateControls={controls} />
       </Row>
 
       <Row

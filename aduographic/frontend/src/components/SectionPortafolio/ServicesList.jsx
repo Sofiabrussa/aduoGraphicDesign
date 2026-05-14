@@ -1,58 +1,73 @@
 import { motion } from "framer-motion";
 import { Col } from 'react-bootstrap';
+import { Accordion } from "react-bootstrap";
 import { HashLink } from 'react-router-hash-link';
 
-const ServicesList = ({ animateControls }) => {
+const services = [
+  { id: "01",
+    title: "Branding",
+    content: "Creamos identidades visuales sólidas con sistemas coherentes que potencian el reconocimiento de tu marca en el mercado."
+  },
+  {
+    id: "02",
+    title: "Redes Sociales",
+    content: "Estrategia de contenido y diseño para que tu presencia digital sea consistente, atractiva y generadora de conexiones reales."
+  },
+  {
+    id: "03",
+    title: "Fotografía",
+    content: "Imágenes con estilo propio y composición estratégica, pensadas para potenciar tu narrativa visual y diferenciarte."
+  },
+  {
+    id: "04",
+    title: "Diseño Web",
+    content: "Experiencias digitales modernas, funcionales y orientadas a conversión. UX/UI pensado para que cada pixel cuente."
+  }
+];
 
-  const services = [
-    { label: "01. Branding", anchor: "#branding" },
-    { label: "02. Redes", anchor: "#sectionRedes" },
-    { label: "03. Fotografía", anchor: "#section-fotografia" },
-    { label: "04. Diseño Web", anchor: "#section-desarrollo" }
-  ];
+function ServicesList() {
+return (
+  <Col md={6} className="services-list-column p-0">
+      
+    <motion.div className="accordion-container w-100 h-100">
+      <Accordion defaultActiveKey="0" flush className="custom-accordion">
+        {services.map((service, index) => (
+          <Accordion.Item
+            eventKey={index.toString()}
+            key={index}
+            className="accordion-item-custom"
+          >
+            <Accordion.Header>
+              {service.title}
+            </Accordion.Header>
 
-  return (
-    <Col md={6} className="services-list-column p-0">
-      <div className="table-container h-100">
-        <table
-          className="table table-bordered portfolio-servicios-lista w-100 m-0"
-          style={{ borderWidth: "0.5px", borderColor: "black", borderStyle: "solid", height: "100%" }}
-        >
-          <tbody className="d-flex flex-column h-100 p-0 m-0">
+            <Accordion.Body>
 
-            {services.map((service, index) => (
-              <motion.tr
-                key={index}
-                className="d-flex flex-grow-1 w-100 service-item"
-                variants={{
-                  hidden: { opacity: 0, y: 20 },
-                  visible: {
-                    opacity: 1,
-                    y: 0,
-                    transition: { delay: 0.2 + index * 0.15, duration: 0.5 }
-                  }
-                }}
-                initial="hidden"
-                animate={animateControls}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.45 }}
               >
+                <p>
+                  {service.content}
+                </p>
                 <HashLink
                   smooth
                   to={`/servicios${service.anchor}`}
-                  className="d-flex align-items-center border-0 w-100 card-text text-decoration-none"
-                  style={{ color: "inherit" }}
+                  className="accordion-link"
                 >
-                  <td className="w-100 d-flex align-items-center">
-                    {service.label}
-                  </td>
+                  Ver más
                 </HashLink>
-              </motion.tr>
-            ))}
+              </motion.div>
 
-          </tbody>
-        </table>
-      </div>
-    </Col>
-  );
-};
+            </Accordion.Body>
+          </Accordion.Item>
+        ))}
+      </Accordion>
+    </motion.div>
+
+  </Col>
+);
+}
 
 export default ServicesList;

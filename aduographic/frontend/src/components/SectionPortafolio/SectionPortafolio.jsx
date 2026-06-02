@@ -11,49 +11,37 @@ import StickyServices from "./StickyServices";
 
 function SectionPortafolio() {
   const navigate = useNavigate();
-  // Un solo controls para todos los componentes
   const controls = useAnimation();
   const ref = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          controls.start("visible");
-        }
+        if (entry.isIntersecting) controls.start("visible");
       },
-      { threshold: 0.4 }
+      { threshold: 0.15 }
     );
-
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
   }, [controls]);
 
   return (
-    <Container ref={ref} fluid id="portfolio" className="d-flex flex-column m-0 p-0">
-      <Row className="img-table-container p-0">
-        {/* FOTO ANIMADA */}
+    <Container ref={ref} fluid id="portfolio" className="m-0 p-0">
+      <StickyServices animateControls={controls} />
 
-        {/* LISTA DE SERVICIOS */}
-        <StickyServices animateControls={controls} />
-      </Row>
-
-      <Row
-        className="text-center buttonSectionPortfolio align-items-center"
-      >
+      <Row className="text-center buttonSectionPortfolio align-items-center py-5">
         <Col>
           <Button
-              className="button-portfolio"
-              onClick={() => navigate("/portfolio")}
-              aria-label="Ir a la página Portfolio"
-            >
-              Portfolio
-              <BsArrowUpRight
-                className="arrow-icon"
-                aria-hidden="true"
-                style={{ color: "black" }}
-              />
-            </Button>
+            className="button-portfolio"
+            onClick={() => navigate("/portfolio")}
+            aria-label="Ir a la página Portfolio"
+          >
+            Portfolio
+            <BsArrowUpRight
+              className="arrow-icon"
+              aria-hidden="true"
+            />
+          </Button>
         </Col>
       </Row>
     </Container>

@@ -13,8 +13,8 @@ const PortfolioTitle = ({ animateControls }) => { // Recibe animateControls
           transition: { duration: 0.9, ease: "easeOut" }
         }
       }}
-      initial="hidden"
-      animate={animateControls} 
+      initial="visible"
+      animate={animateControls}
     >
       <Card className='sectionPortfolioText text-center border-0 shadow-0'>
         <Card.Title className='sectionportfoliotitle'>

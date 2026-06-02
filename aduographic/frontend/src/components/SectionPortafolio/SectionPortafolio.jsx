@@ -1,7 +1,6 @@
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./SectionPortafolioStyles.css";
-import PortfolioTitle from './PortfolioTitle';
 import { Col, Container, Row } from 'react-bootstrap';
 import Button from "../Button/Button";
 import { BsArrowUpRight } from "react-icons/bs";
@@ -19,7 +18,9 @@ function SectionPortafolio() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        controls.start(entry.isIntersecting ? "visible" : "hidden");
+        if (entry.isIntersecting) {
+          controls.start("visible");
+        }
       },
       { threshold: 0.4 }
     );
@@ -30,9 +31,6 @@ function SectionPortafolio() {
 
   return (
     <Container ref={ref} fluid id="portfolio" className="d-flex flex-column m-0 p-0">
-      {/* Pasa el mismo controls al hijo */}
-      <PortfolioTitle animateControls={controls} />
-
       <Row className="img-table-container p-0">
         {/* FOTO ANIMADA */}
 

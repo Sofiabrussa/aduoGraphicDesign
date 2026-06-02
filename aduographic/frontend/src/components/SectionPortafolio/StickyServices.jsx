@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import "./SectionPortafolioStyles.css";
+import PortfolioTitle from "./PortfolioTitle";
 
 const services = [
   {
@@ -37,7 +38,7 @@ const services = [
   },
 ];
 
-function StickyServices() {
+function StickyServices({ animateControls }) {
   const [active, setActive] = useState(0);
   const markersRef = useRef([]);
 
@@ -73,11 +74,14 @@ function StickyServices() {
     <section className="sticky-services-section">
 
       <div className="sticky-services-wrapper">
+        <div className="sticky-services-header">
+          <PortfolioTitle animateControls={animateControls} />
+        </div>
 
-        {/* IZQUIERDA */}
-        <div className="services-left">
+        <div className="sticky-services-body">
+          <div className="services-left">
 
-        {services.map((service, index) => (
+            {services.map((service, index) => (
             <motion.div
               key={service.id}
               className={`service-item ${
@@ -97,21 +101,22 @@ function StickyServices() {
 
         </motion.div>               
         ))}
-        </div>
+          </div>
 
-        {/* DERECHA */}
-        <div className="services-right">
+          {/* DERECHA */}
+          <div className="services-right">
 
-          <motion.img
-            key={services[active].image}
-            src={services[active].image}
-            alt={services[active].title}
-            className="service-image"
-            initial={{ opacity: 0, scale: 1.05 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
-          />
+            <motion.img
+              key={services[active].image}
+              src={services[active].image}
+              alt={services[active].title}
+              className="service-image"
+              initial={{ opacity: 0, scale: 1.05 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+            />
 
+          </div>
         </div>
 
       </div>

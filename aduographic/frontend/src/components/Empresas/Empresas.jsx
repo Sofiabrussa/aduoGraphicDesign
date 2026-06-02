@@ -1,12 +1,17 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaBriefcase, FaPalette, FaCamera, FaGlobe } from 'react-icons/fa';
 import './EmpresasStyles.css';
 
 const partners = [
-  { name: 'Empresa 1', icon: FaBriefcase },
-  { name: 'Empresa 2', icon: FaGlobe },
-  { name: 'Empresa 3', icon: FaPalette },
-  { name: 'Empresa 4', icon: FaCamera }
+  { name: 'Empresa 1', icon: 'https://res.cloudinary.com/dbbyng05e/image/upload/v1778608048/Sin_t%C3%ADtulo-3-01_ihakmo.png' },
+  { name: 'Empresa 2', icon: 'https://res.cloudinary.com/dbbyng05e/image/upload/v1778608048/Sin_t%C3%ADtulo-3-02_ghwejp.png' },
+  { name: 'Empresa 3', icon: 'https://res.cloudinary.com/dbbyng05e/image/upload/v1778608048/Sin_t%C3%ADtulo-3-07_gm2mbd.png' },
+  { name: 'Empresa 4', icon: 'https://res.cloudinary.com/dbbyng05e/image/upload/v1778608048/Sin_t%C3%ADtulo-3-09_eispwp.png' },
+  { name: 'Empresa 5', icon: 'https://res.cloudinary.com/dbbyng05e/image/upload/v1778608048/Sin_t%C3%ADtulo-3-10_maavy6.png' },
+  { name: 'Empresa 6', icon: 'https://res.cloudinary.com/dbbyng05e/image/upload/v1778608048/Sin_t%C3%ADtulo-3-04_nolhjv.png' },
+  { name: 'Empresa 7', icon: 'https://res.cloudinary.com/dbbyng05e/image/upload/v1778608048/Sin_t%C3%ADtulo-3-06_jfenpj.png' },
+  { name: 'Empresa 8', icon: 'https://res.cloudinary.com/dbbyng05e/image/upload/v1778608048/Sin_t%C3%ADtulo-3-08_hnygqi.png' },
+  { name: 'Empresa 9', icon: 'https://res.cloudinary.com/dbbyng05e/image/upload/v1778608047/Sin_t%C3%ADtulo-3-03_rk5hdd.png' },
+  { name: 'Empresa 10', icon: 'https://res.cloudinary.com/dbbyng05e/image/upload/v1778608047/Sin_t%C3%ADtulo-3-05_s3t5tg.png' },
   
 ];
 
@@ -22,16 +27,13 @@ const Empresas = () => {
         </Row>
 
         <Row className="justify-content-center g-5">
-          {partners.map((partner) => {
-            const IconComponent = partner.icon;
-            return (
-              <Col key={partner.name} xs={6} md={4} lg={2} className="text-center">
-                <div className="icon-wrapper">
-                  <IconComponent className="partner-icon" />
-                </div>
-              </Col>
-            );
-          })}
+          {partners.map((partner) => (
+            <Col key={partner.name} xs={6} md={4} lg={2} className="text-center">
+              <div className="icon-wrapper">
+                <img src={partner.icon} alt={partner.name} className="partner-icon" />
+              </div>
+            </Col>
+          ))}
         </Row>
       </Container>
     </div>

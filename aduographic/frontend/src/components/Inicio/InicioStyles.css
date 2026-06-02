@@ -1,127 +1,109 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lacquer&family=Permanent+Marker&family=Unbounded:wght@200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* CARROUSEL */
-#carouselExample {
-    max-height: 95vh;
-    overflow: hidden;
+.inicio-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;    
+  height: 100dvh;       
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.carousel-inner .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-}
-
-/* CARROUSEL TEXT */
 .carousel-fixed-text {
-    position: absolute; 
-    width: 100%;
-    text-align: left;
-    top: 20%; 
-    left: 55%;
-    transform: translateX(-50%);
-    padding: 0 10px;
-    z-index: 10; 
-    color: white; 
+  position: absolute;
+  z-index: 10;
+  color: white;
+  top: 22%;
+  left: 5%;             
+  transform: none;       
+  width: min(460px, 40%);
+  text-align: left;
+  padding: 0 0.5rem;
 }
 
-.carousel-h1  {
-    font-size: 3rem;
-    font-family: var( --font-title);
-    font-weight: 320; 
-    word-spacing: 0em;
-    line-height: 0.8;
+.carousel-h1 {
+  font-size: clamp(1.5rem, 4vw, 3.2rem);
+  font-family: var(--font-title);
+  font-weight: 320;
+  word-spacing: 0;
+  line-height: 0.85;
+  margin-bottom: 0.4em;
 }
 
 .carousel-h1 span {
-    font-family: var(--font-pastel);  
-    font-size: 6rem;
-    word-spacing: 0em;
+  font-family: var(--font-pastel);
+  font-size: clamp(2.4rem, 7vw, 6rem);
+  word-spacing: 0;
 }
 
-/* ICONOS */
+.carousel-subtitle {
+  font-size: clamp(0.8rem, 1.8vw, 1.1rem);
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+}
+
 .carousel-iconos {
-    position: fixed; 
-    top: 80vh; 
-    right: 5%; 
-    z-index: 999;
-    display: flex;
+  position: fixed;
+  bottom: 4vh;           
+  right: 3%;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0;               
+}
+
+.icono {
+  margin-right: -14px;   
 }
 
 .carousel-iconos img {
-    width: 9vw; 
-    height: auto; 
-    cursor: pointer; 
-    margin-right: -2vw;
+  width: clamp(36px, 7vw, 72px);  
+  height: auto;
+  cursor: pointer;
+  display: block;
+  transition: transform 0.2s ease;
 }
 
-.icono{
-    margin-right: -20px;
+.carousel-iconos img:hover {
+  transform: scale(1.1);
 }
 
-
-/* Media querys */ 
-@media (max-width: 768px) {
-    .carousel-fixed-text {
-        padding: 0 5%; }
-
-    .carousel-h1 {
-        font-size: 1.4rem; }
-
-    .carousel-h1 span {
-        font-size: 1.8rem; }
-    .carousel-iconos {
-        top: 32vh;
-        right: 6%;
-        gap: 1rem;
-    }
-    .carousel-iconos img {
-        width: 12vw;
-    }
-}
-
-/* TABLETS (770px - 1024px) — mantiene el diseño original */
-@media (min-width: 770px) and (max-width: 1024px) {
-
-  /* Mantener la posición EXACTA del diseño original */
+@media (max-width: 991px) {
   .carousel-fixed-text {
-    top: 18%;                /* leve ajuste para que nada se corte */
-    left: 55%;
-    transform: translateX(-50%);
-    width: 90%;              /* asegura que no se desborde */
-    text-align: left;        /* mantiene alineado a la izquierda */
+    top: 18%;
+    left: 5%;
+    transform: none;
+    width: min(380px, 52%);
+  }
+  .carousel-iconos {
+    bottom: 5vh;
+    right: 4%;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-fixed-text {
+    top: 14%;
+    left: 4%;
+    transform: none;
+    width: 82%;
+    padding: 0 0.75rem;
+    text-align: left;
   }
 
-  /* Ajustes finos de tipografías */
   .carousel-h1 {
-    font-size: 2.8rem;       /* apenas más chico */
     line-height: 0.9;
   }
 
-  .carousel-h1 span {
-    font-size: 4.8rem;       /* bajar un toque el pastel */
-  }
-
-  /* Ajuste del texto descriptivo */
-  .carousel-fixed-text p,
-  .carousel-fixed-text .card-text {
-    font-size: 1.2rem;
-  }
-
-  /* Botón */
-  .button-inicio {
-    transform: scale(0.9);   /* reduce un poco para que no se corte */
-    margin-top: 1rem;
-  }
-
-  /* Iconos flotantes */
   .carousel-iconos {
-    top: 70vh;               /* baja los iconos para que no invadan texto */
-    right: 4%;
+    bottom: 3vh;
+    right: 3%;
   }
 
-  .carousel-iconos img {
-    width: 8vw;
+  .icono {
+    margin-right: -10px;
   }
 }

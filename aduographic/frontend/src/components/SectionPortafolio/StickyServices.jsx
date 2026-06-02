@@ -21,7 +21,7 @@ const services = [
   },
   {
     id: "03",
-    title: "Fotografía",
+    title: "Creación de Contenido",
     content:
       "Imágenes con estilo propio y composición estratégica para potenciar tu narrativa visual.",
     image:
@@ -29,7 +29,7 @@ const services = [
   },
   {
     id: "04",
-    title: "Diseño Web",
+    title: "Paid Media",
     content:
       "Experiencias digitales modernas, funcionales y orientadas a conversión.",
     image:

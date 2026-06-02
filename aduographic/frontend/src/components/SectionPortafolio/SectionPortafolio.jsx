@@ -42,7 +42,6 @@ function SectionPortafolio() {
 
       <Row
         className="text-center buttonSectionPortfolio align-items-center"
-        style={{ height: "100px" }}
       >
         <Col>
           <Button

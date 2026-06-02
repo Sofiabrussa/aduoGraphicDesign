@@ -50,8 +50,8 @@
 
 /* Textos */
 .sectionPortfolioText {
-  padding: 3rem 0;
-  margin: 0 auto 3rem;
+  padding: 3rem 0 0 0;
+  margin: 0 auto;
   border: none;
   max-width: 900px;
 }
@@ -200,6 +200,7 @@
     line-height: 1.6;
   }
 }
+
 .sticky-services-section {
   position: relative;
   height: 560vh;

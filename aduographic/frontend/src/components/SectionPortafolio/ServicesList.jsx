@@ -15,12 +15,12 @@ const services = [
   },
   {
     id: "03",
-    title: "Fotografía",
+    title: "Creación de Contenido",
     content: "Imágenes con estilo propio y composición estratégica, pensadas para potenciar tu narrativa visual y diferenciarte."
   },
   {
     id: "04",
-    title: "Diseño Web",
+    title: "Paid Media",
     content: "Experiencias digitales modernas, funcionales y orientadas a conversión. UX/UI pensado para que cada pixel cuente."
   }
 ];

@@ -1,166 +1,191 @@
-/* Altura fija en desktop */
-.navbar {
+
+.navbar-custom {
     height: 80px;
-    padding: 0 !important;
+    background-color: var(--bs-body-bg, #fff);
+    position: relative;
 }
 
-/* Contenedor */
-.navbar .container-fluid {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    height: 100%;
-}
-
-/* Logo */
 .navbar-logo {
     max-width: 160px;
+    max-height: 160px;
     height: auto;
+    width: auto;
+    display: block;
 }
 
 .navbar-card-text {
     font-family: var(--font-text);
-    font-weight: 400;
+    font-weight: 500;
     color: black;
-    font-size: clamp(0.9rem, 1.2rem, 1.8rem);
+    font-size: clamp(1rem, 1.3vw, 1.3rem);
     line-height: 1.2;
     letter-spacing: 0.5px;
+    position: relative;
+    transition: opacity 0.2s ease;
+}
+
+.navbar-card-text::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: currentColor;
+    transition: width 0.25s ease;
+}
+
+.navbar-card-text:hover {
+    opacity: 0.7;
+}
+
+.navbar-card-text:hover::after {
+    width: 100%;
+}
+
+.nav-item-link {
+    margin-right: 1.5rem;
+}
+
+.nav-item-cta {
+    margin-left: 0.5rem;
+}
+
+@keyframes navSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar-menu-animated {
+}
+
+@media (max-width: 991.98px) {
+
+    .navbar-menu-animated.show {
+        animation: navSlideDown 0.28s ease forwards;
+    }
+    .navbar-menu-animated.collapse:not(.show) {
+        display: none;
+    }
+
+    .navbar-menu-animated.collapsing {
+        transition: height 0.28s ease;
+    }
 }
 
 
-/* --- MOBILE --- */
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
 
-  /* Navbar con altura REAL y consistente */
-  .navbar {
-      height: 70px !important;
-      display: flex;
-      align-items: center;
-  }
+    .navbar-custom {
+        height: 70px;
+    }
 
-  .navbar .container-fluid {
-      height: 100%;
-      padding: 0 12px !important;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-  }
+    .navbar-logo {
+        max-height: 52px;
+        max-width: 130px;
+    }
 
-  .navbar-logo {
-      max-height: 65px;
-      width: auto;
-      margin-left: 0 !important;
-  }
+    .navbar-toggler {
+        padding: 0.2rem 0.4rem;
+    }
+    .navbar-menu-animated.show {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 999;
+        padding: 1.2rem 0 1.8rem;
+        border-radius: 0 0 12px 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
 
-  /* Ícono hamburguesa */
-  .navbar-toggler {
-      height: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
+    .navbar-nav-custom {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1rem;
+        width: 100%;
+    }
 
-  /* Menú desplegable */
-  .navbar-collapse.show {
-      position: absolute;
-      top: 70px;
-      left: 0;
-      width: 100%;
-      background-color: #fff;
-      z-index: 999;
-      padding: 1rem 0;
-      border-radius: 0 0 10px 10px;
-  }
+    .nav-item-link {
+        margin-right: 0 !important;
+        text-align: center;
+    }
 
-  /* Alineación del menú */
-  .navbar-nav {
-      text-align: center;
-      width: 100%;
-  }
+    .nav-item-cta {
+        margin-left: 0 !important;
+        margin-top: 0.4rem;
+    }
 
-  .navbar-nav {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;   
-      align-items: center;       
-      gap: 1.2rem;               
-      padding-bottom: 1.5rem;
-  }
-
-  .navbar-nav .nav-item {
-      margin: 0 !important;
-  }
-
-  .navbar-card-text {
-      font-family: var(--font-text);
-      font-weight: 400;
-      color: black;
-      font-size: 0.9rem; 
-      letter-spacing: 0.3px;
-  }
-
-  .button-navBar {
-      display: flex;
-      justify-content: center;
-  }
-
+    .navbar-card-text {
+        font-size: 1rem;
+        letter-spacing: 0.3px;
+    }
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
 
-/* --- TABLET (768px – 1000px) --- */
-@media (min-width: 768px) and (max-width: 1000px) {
+    .navbar-custom {
+        height: 80px;
+    }
 
-  .navbar {
-      height: 80px;
-      display: flex;
-      align-items: center;
-      padding: 0 1rem !important;
-  }
+    .navbar-logo {
+        max-height: 62px;
+    }
 
-  .navbar .container-fluid {
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 1.2rem !important;
-  }
+    .navbar-menu-animated.show {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 999;
+        padding: 1.4rem 0 2rem;
+        border-radius: 0 0 14px 14px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+    }
 
-  .navbar-logo {
-      max-height: 70px;
-      width: auto;
-      margin-left: 0 !important;
-  }
+    .navbar-nav-custom {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1.2rem;
+        width: 100%;
+    }
 
-  .navbar-toggler {
-      height: 36px;
-      width: 36px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0 !important;
-  }
+    .nav-item-link {
+        margin-right: 0 !important;
+        text-align: center;
+    }
 
-  .navbar-collapse.show {
-      position: absolute;
-      top: 80px;
-      left: 0;
-      width: 100%;
-      background-color: #fff;
-      padding: 1.2rem 0;
-      z-index: 999;
-      border-radius: 0 0 12px 12px;
-  }
+    .nav-item-cta {
+        margin-left: 0 !important;
+        margin-top: 0.4rem;
+    }
 
-  .navbar-nav {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.2rem;
-  }
+    .navbar-card-text {
+        font-size: 1.05rem;
+    }
+}
 
-  .navbar-card-text {
-      font-size: 1rem;
-  }
+@media (min-width: 992px) {
 
+    .navbar-custom {
+        height: 80px;
+    }
+
+    .navbar-nav-custom {
+        flex-direction: row;
+        align-items: center;
+        gap: 0; 
+    }
+
+    .nav-item-link {
+        margin-right: 1.8rem;
+    }
 }

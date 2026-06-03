@@ -10,11 +10,11 @@ import { BsArrowUpRight } from "react-icons/bs";
 function Inicio() {
   const imagesCarouselInicio = [
     {
-      src: "https://res.cloudinary.com/dbbyng05e/image/upload/v1777306946/DSC04994_xay8fv.jpg",
+      src: "https://res.cloudinary.com/dbbyng05e/image/upload/v1780065562/ada-01_o82fat.jpg",
       alt: "IMAGEN1",
     },
     {
-      src: "https://res.cloudinary.com/dbbyng05e/image/upload/v1777306700/DSC04746_1_vc7cmg.jpg",
+      src: "https://res.cloudinary.com/dbbyng05e/image/upload/v1780065369/Sin_t%C3%ADtulo-1-01_tsuius.jpg",
       alt: "IMAGEN2",
     },
   ];

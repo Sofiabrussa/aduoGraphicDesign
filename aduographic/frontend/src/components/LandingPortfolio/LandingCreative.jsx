@@ -7,14 +7,14 @@ const projects = [
   {
     id: "aurora",
     title: "AURORA",
-    img: "/proyects/aurora/uno.webp",
+    img: "https://res.cloudinary.com/dbbyng05e/image/upload/v1780069738/3fdc6964-fded-4b4a-ac44-aa2766ad3a94_gi7drd.png",
     orientation: "horizontal",
     gallery: [
-    "/proyects/aurora/dos.webp",
-    "/proyects/aurora/tres.webp",
-    "/proyects/aurora/cuatro.webp",
-    "/proyects/aurora/cinco.webp",
-    "/proyects/aurora/seis.webp"],
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1780069739/bolsa_nkhq46.png",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1780070197/flyer_1_1_2_2_rt1il6.png",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1780069739/plain-clothing-price-tag-close-up_hkkdhq.png",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1780069740/stickers_2_ztasie.png",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1780069739/PAPEL_jqslvn.png"],
   
     description: `Nace desde un lugar profundamente personal y familiar: un nombre heredado, amado y elegido con convicción. Esa misma conexión emocional se convierte en el corazón de la marca: un espacio pensado para que cada mujer encuentre prendas que resalten su fuerza, su elegancia y su feminidad, sin renunciar a la comodidad ni a su propia esencia.
     \n La idea central es posicionar a Aurora como un universo sofisticado, donde cada prenda —desde lo cotidiano hasta lo íntimo— transmite seguridad, estilo y presencia. `
@@ -36,14 +36,13 @@ const projects = [
   {
     id: "esquinas",
     title: "4 ESQUINAS",
-    img: "/proyects/esquinas/esquina1.webp",
+    img: "https://res.cloudinary.com/dbbyng05e/image/upload/v1780070554/Banner_kdf8th.png",
     orientation: "horizontal",
     gallery: [
-    "/proyects/esquinas/esquina2.webp",
-    "/proyects/esquinas/esquina3.webp",
-    "/proyects/esquinas/esquina4.webp",
-    "/proyects/esquinas/esquina5.webp",
-    "/proyects/esquinas/papeleria.webp"],
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1780070558/Botella_1_oql4u0.png",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1780070556/cartel_1_tdliy9.png",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1780070555/Cat%C3%A1logo_ezlzuk.png",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1780070557/Tarjetas_personales_gcxx72.png"],
     description: ` Nace del valor simbólico y estratégico de ubicarse en una de las intersecciones más importantes de Manantiales 2. Su nombre refleja directamente ese punto donde la vida del barrio sucede y se conecta.
     Es un complejo comercial compuesto por 8 locales y 2 oficinas.
     \n La marca se imagina colorida, llamativa y vibrante, un espacio que invita a pasar, quedarse y volver. Su esencia combina practicidad y disfrute`
@@ -79,13 +78,13 @@ const projects = [
   {
     id: "boris",
     title: "BORIS",
-    img: "/proyects/boris/boris2.webp",
+    img: "https://res.cloudinary.com/dbbyng05e/image/upload/v1780069008/Copia_de_fachada_xf7vnk.png",
     orientation: "vertical",
     gallery: [
-    "/proyects/boris/boris1.webp",
-    "/proyects/boris/boris3.webp",
-    "/proyects/boris/boris4.webp",
-    "/proyects/boris/boris5.webp",],
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1780068433/Copia_de_Cartel_Calle_g5knxq.png",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1780068447/Copia_de_Redes_bhwvy4.jpg",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1780068447/Copia_de_Men%C3%BA_hz5ak3.jpg",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1780068432/Copia_de_Celular_qlc9od.png",],
     description: `Desarrollamos la identidad de BORIS, una marca de café inspirada en un conejo real y en todo lo que representa: lealtad, alegría y autenticidad.
     \n El proyecto integra dos mundos bajo una misma esencia: Boris Café de Especialidad, un espacio trendy, minimalista y chill; y Boris Estudio, un centro profesional dedicado a la formación, investigación y cultura del café.`
   },
@@ -104,15 +103,13 @@ const projects = [
   {
     id: "ABC",
     title: "ABC",
-    img: "/proyects/abc/abc1.webp",
+    img: "https://res.cloudinary.com/dbbyng05e/image/upload/v1780068299/Copia_de_5c004a68-8460-4cea-a0a0-4f6709691cc9_l7tien.png",
     orientation: "horizontal",
     gallery: [
-    "/proyects/abc/abc2.webp",
-    "/proyects/abc/abc3.webp",
-    "/proyects/abc/abc5.webp",
-    "/proyects/abc/abc6.webp",
-    "/proyects/abc/abc7.webp",
-    "/proyects/abc/abc4.webp",],
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1780068300/Copia_de_web_vnisj2.jpg",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1780068295/Copia_de_papeleria_ql6kqc.png",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1780068295/Copia_de_botella_zj5h88.png",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1780068300/Copia_de_cartel_m5bcyb.png",],
     description: `ABC Cripto se construye desde un propósito simple pero poderoso: hacer que el mundo cripto sea comprensible para todos, sin tecnicismos, sin miedos y sin barreras. La marca se posiciona como ese “primer paso” que todos necesitan para entrar a un universo que parece complejo, pero que, explicado con claridad, puede transformar realidades económicas.
  \n La idea central es convertir a ABC Cripto en el profesor confiable y cercano del mundo cripto, alguien que enseña desde cero, acompaña, traduce lo difícil en simple y crea comunidad. Un espacio donde aprender es fácil, accesible y seguro, y donde cualquier persona —sin importar su nivel— puede sentirse parte.`
   },

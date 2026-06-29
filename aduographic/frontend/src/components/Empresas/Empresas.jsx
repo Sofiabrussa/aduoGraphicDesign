@@ -21,8 +21,8 @@ const Empresas = () => {
       <Container fluid className="py-5 px-4 px-md-5">
         <Row className="justify-content-center mb-5">
           <Col xs={12} lg={8} className="text-center">
-            <p className="section-label">Confiaron en nosotras</p>
-            <h2 className="section-title">Empresas con las que trabajamos</h2>
+            <p className="section-label card-text">Confiaron en nosotras</p>
+            <h2 className="section-title card-title">Empresas con las que trabajamos</h2>
           </Col>
         </Row>
 

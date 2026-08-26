@@ -38,23 +38,25 @@
 
 /* ── Botón Portfolio ─────────────────────────────────────── */
 .button-portfolio {
-  background: transparent !important;
+  background: transparent;
   color: #111 !important;
   border: 1.5px solid rgba(17, 17, 17, 0.35) !important;
   border-radius: 100px !important;
   padding: 0.65rem 1.8rem !important;
-  font-size: 0.95rem !important;
+  font-size: 1.1rem !important;
   font-weight: 500 !important;
   letter-spacing: 0.01em !important;
   display: inline-flex !important;
   align-items: center !important;
   gap: 0.5rem !important;
-  transition: background 0.22s ease, border-color 0.22s ease, color 0.22s ease !important;
+  transition: border-color 0.22s ease, color 0.22s ease !important;
+  animation: portfolioBgPulse 3.6s ease-in-out infinite;
 }
 .button-portfolio:hover {
   background: #111 !important;
   border-color: #111 !important;
   color: #fff !important;
+  animation-play-state: paused;
 }
 .button-portfolio:hover .arrow-icon {
   color: #fff !important;
@@ -62,6 +64,18 @@
 .button-portfolio .arrow-icon {
   transition: color 0.22s ease;
   color: #111;
+}
+
+@keyframes portfolioBgPulse {
+  0%, 100% {
+    background-color: transparent;
+  }
+  33% {
+    background-color: rgba(220, 220, 220, 0.55);
+  }
+  66% {
+    background-color: rgba(160, 160, 160, 0.45);
+  }
 }
 
 /* ── Sección sticky-services ─────────────────────────────── */

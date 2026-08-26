@@ -15,12 +15,14 @@
 
 /* TEXTO  */
 .content-column {
+  position: relative;
   padding: 4rem;
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 1;
+  overflow: hidden;
 }
 
 .narrow-text {

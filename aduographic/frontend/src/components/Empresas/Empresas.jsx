@@ -1,10 +1,12 @@
+import { useRef } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import ConstellationBackground from './ConstellationBackground';
 import './EmpresasStyles.css';
 
 const partners = [
-  { name: 'Empresa 1', icon: 'https://res.cloudinary.com/dbbyng05e/image/upload/v1778608048/Sin_t%C3%ADtulo-3-01_ihakmo.png' },
+  { name: 'Empresa 1', icon: 'https://res.cloudinary.com/dbbyng05e/image/upload/v1778608048/Sin_t%C3%ADtulo-3-07_gm2mbd.png' },
   { name: 'Empresa 2', icon: 'https://res.cloudinary.com/dbbyng05e/image/upload/v1778608048/Sin_t%C3%ADtulo-3-02_ghwejp.png' },
-  { name: 'Empresa 3', icon: 'https://res.cloudinary.com/dbbyng05e/image/upload/v1778608048/Sin_t%C3%ADtulo-3-07_gm2mbd.png' },
+  { name: 'Empresa 3', icon: 'https://res.cloudinary.com/dbbyng05e/image/upload/v1778608048/Sin_t%C3%ADtulo-3-01_ihakmo.png' },
   { name: 'Empresa 4', icon: 'https://res.cloudinary.com/dbbyng05e/image/upload/v1778608048/Sin_t%C3%ADtulo-3-09_eispwp.png' },
   { name: 'Empresa 5', icon: 'https://res.cloudinary.com/dbbyng05e/image/upload/v1778608048/Sin_t%C3%ADtulo-3-10_maavy6.png' },
   { name: 'Empresa 6', icon: 'https://res.cloudinary.com/dbbyng05e/image/upload/v1778608048/Sin_t%C3%ADtulo-3-04_nolhjv.png' },
@@ -16,9 +18,13 @@ const partners = [
 ];
 
 const Empresas = () => {
+  const sectionRef = useRef(null);
+
   return (
-    <div id="empresas" className="section-empresas">
-      <Container fluid className="py-5 px-4 px-md-5">
+    <div id="empresas" className="section-empresas" ref={sectionRef}>
+      <ConstellationBackground containerRef={sectionRef} />
+
+      <Container fluid className="py-5 px-4 px-md-5 empresas-content">
         <Row className="justify-content-center mb-5">
           <Col xs={12} lg={8} className="text-center">
             <p className="section-label card-text">Confiaron en nosotras</p>
@@ -27,9 +33,12 @@ const Empresas = () => {
         </Row>
 
         <Row className="justify-content-center g-5">
-          {partners.map((partner) => (
+          {partners.map((partner, index) => (
             <Col key={partner.name} xs={6} md={4} lg={2} className="text-center">
-              <div className="icon-wrapper">
+              <div
+                className="icon-wrapper"
+                style={{ animationDelay: `${(index % 5) * 0.35}s` }}
+              >
                 <img src={partner.icon} alt={partner.name} className="partner-icon" />
               </div>
             </Col>

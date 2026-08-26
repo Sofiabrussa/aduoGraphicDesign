@@ -73,6 +73,7 @@ function Inicio() {
         <Carousel
           images={imagesCarouselInicio}
           customClass="carousel-home"
+          interval={5000}
         />
       </div>
       {showIcons && (

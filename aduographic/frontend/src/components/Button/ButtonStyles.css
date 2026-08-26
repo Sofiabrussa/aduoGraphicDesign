@@ -51,16 +51,27 @@
 /* Boton Inicio */
 .button-inicio {
     font-size: 1.7rem;
-    font-weight: 400; 
+    font-weight: 400;
     color: white;
     border-color: white;
     font-weight: 400;
     padding: 0.3rem 1.1rem;
+    animation: pulseBgInicio 3.5s ease-in-out infinite;
 }
 
 .button-inicio:hover  {
-    background-color: grey;
+    background-color: rgba(200, 200, 200, 0.65);
     box-shadow: none;
+    animation-play-state: paused;
+}
+
+@keyframes pulseBgInicio {
+    0%, 100% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: rgba(211, 211, 211, 0.3);
+    }
 }
 
 /* Boton portfolio */ 

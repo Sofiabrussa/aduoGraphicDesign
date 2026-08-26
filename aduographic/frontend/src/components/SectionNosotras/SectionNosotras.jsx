@@ -25,8 +25,7 @@ function SectionNosotras() {
       text: "No HAY dos sin TRES <br/> Somos tu mejor TEAM!" 
     },
   ];
-
-  // Referencia a la sección Nosotras para animación
+  
   const nosotrasRef = useRef(null);
 
   return (

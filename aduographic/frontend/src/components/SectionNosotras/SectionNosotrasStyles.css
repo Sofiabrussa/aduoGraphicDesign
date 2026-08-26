@@ -13,7 +13,7 @@
   align-items: stretch;
 }
 
-/* TEXT COLUMN */
+/* TEXTO  */
 .content-column {
   padding: 4rem;
   text-align: left;
@@ -50,7 +50,7 @@
   display: inline-block;
 }
 
-/* IMAGE COLUMN */
+/* IMAGEN */
 .image-column {
   flex: 1;
   max-height: 800px;
@@ -72,7 +72,6 @@
   border-radius: 10px;
 }
 
-/* CAROUSEL */
 .carousel-row {
   width: 100%;
   margin-top: 0;

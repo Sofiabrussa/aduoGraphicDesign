@@ -2,7 +2,7 @@ import { Card } from 'react-bootstrap';
 import { motion } from "framer-motion";
 import "./SectionPortafolioStyles.css";
 
-const PortfolioTitle = ({ animateControls }) => { // Recibe animateControls
+const PortfolioTitle = ({ animateControls }) => { 
   return (
     <motion.div
       variants={{

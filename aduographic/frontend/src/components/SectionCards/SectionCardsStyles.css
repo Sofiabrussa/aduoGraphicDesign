@@ -50,7 +50,6 @@
   transform: translateY(0);
 }
 
-/* SOLO afecta a los títulos dentro de SECTION CARDS */
 #SectionCards .card-title {
   font-size: 0.8rem !important;
   font-family: var(--font-title);

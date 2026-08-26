@@ -10,9 +10,9 @@ function CustomCard({ image, title, text, linkedin }) {
     <motion.div 
       className="card-wrapper"
       
-      initial={{ opacity: 0, y: 50 }}   // empieza oculto
-      whileInView={{ opacity: 1, y: 0 }} // aparece al scrollear
-      viewport={{ once: false, amount: 0.3 }}         // solo una vez
+      initial={{ opacity: 0, y: 50 }}   
+      whileInView={{ opacity: 1, y: 0 }} 
+      viewport={{ once: false, amount: 0.3 }}      
       
       whileHover={{ scale: 1.03 }}
       transition={{ duration: 1.5, ease: "easeOut" }}

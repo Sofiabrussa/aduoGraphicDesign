@@ -2,29 +2,16 @@ import { useEffect, useRef } from "react";
 import { useScroll, useSpring, useReducedMotion } from "framer-motion";
 import "./ScrollCurveStyles.css";
 
-/* ============================================================
-   CONFIG — todo lo que se suele querer tocar está acá:
-   color, grosor de línea, tamaño del blob y "velocidad"
-   (rigidez del suavizado).
-   ============================================================ */
 const CONFIG = {
   color: "var(--primary-violet)",
   strokeWidth: 10,
   opacity: 0.4,
   blobSize: 18,
   blobOpacity: 0.85,
-  // Punto del recorrido de scroll en el que el trazo ya está
-  // 100% dibujado (0 a 1). El blob viaja sobre la parte ya
-  // dibujada, así que llega a la punta del trazo en ese mismo punto.
   drawCompleteAt: 0.7,
-  // Suavizado del scroll (spring). Más "stiffness" = responde más
-  // rápido al scroll; más "damping" = frena antes, menos rebote.
   spring: { stiffness: 55, damping: 22, mass: 0.6 },
 };
 
-// Mismo número y orden de comandos "C" en ambos paths: así se puede
-// interpolar el atributo "d" número a número (esto produce la
-// deformación suave del trazo a medida que avanza el scroll).
 const PATH_START =
   "M -100 210 C 150 90, 320 300, 560 170 C 800 40, 980 260, 1220 130 C 1360 55, 1450 150, 1550 90";
 const PATH_END =
@@ -35,8 +22,6 @@ const PATH_MID =
 const lerp = (a, b, t) => a + (b - a) * t;
 const clamp = (v, min, max) => Math.min(max, Math.max(min, v));
 
-// Interpola dos strings de path SVG con la misma estructura,
-// reemplazando cada número por su valor interpolado.
 function interpolatePath(pathA, pathB, t) {
   const numsA = pathA.match(/-?[\d.]+/g).map(Number);
   const numsB = pathB.match(/-?[\d.]+/g).map(Number);
@@ -53,10 +38,6 @@ function ScrollCurve() {
   const svgRef = useRef(null);
   const pathRef = useRef(null);
   const blobRef = useRef(null);
-  // Este sitio scrollea adentro de <body> (html/body tienen height:100%
-  // + overflow-y:auto en App.css), no en la ventana — por eso hay que
-  // decirle explícitamente a useScroll cuál es el contenedor real,
-  // si no nunca detecta el progreso del scroll.
   const bodyRef = useRef(typeof document !== "undefined" ? document.body : null);
   const prefersReducedMotion = useReducedMotion();
 
@@ -66,14 +47,8 @@ function ScrollCurve() {
     offset: ["start end", "end start"],
   });
 
-  // Suaviza (lerp) el valor crudo del scroll para que el trazo y el
-  // blob no reaccionen de forma abrupta al gesto de la rueda/touchpad.
   const smoothProgress = useSpring(scrollYProgress, CONFIG.spring);
 
-  // Todo el trabajo (deformar el path, dibujarlo progresivamente y
-  // mover el blob) se hace acá, de forma imperativa vía refs, en
-  // lugar de props animadas de framer-motion: así queda explícito y
-  // fácil de debuggear qué se está tocando en el DOM en cada frame.
   useEffect(() => {
     const path = pathRef.current;
     const svg = svgRef.current;
@@ -81,18 +56,14 @@ function ScrollCurve() {
     if (!path || !svg) return;
 
     const render = (progress) => {
-      // 1) Deformación del trazo.
       const d = interpolatePath(PATH_START, PATH_END, progress);
       path.setAttribute("d", d);
 
-      // 2) Dibujado progresivo vía stroke-dasharray / stroke-dashoffset.
       const drawProgress = clamp(progress / CONFIG.drawCompleteAt, 0, 1);
       const length = path.getTotalLength();
       path.style.strokeDasharray = `${length}`;
       path.style.strokeDashoffset = `${length * (1 - drawProgress)}`;
 
-      // 3) Blob viajando sobre el trazo, movido con transform
-      //    (translate3d) para animarlo en la capa de composición.
       if (blob) {
         const point = path.getPointAtLength(length * drawProgress);
         const svgPoint = svg.createSVGPoint();

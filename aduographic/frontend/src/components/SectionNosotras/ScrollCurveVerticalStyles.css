@@ -1,0 +1,22 @@
+.scroll-curve-vertical-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+.scroll-curve-vertical-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.scroll-curve-vertical-blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  filter: blur(0.5px);
+  box-shadow: 0 0 16px 3px rgba(168, 140, 202, 0.45);
+  will-change: transform;
+}

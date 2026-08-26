@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useId, useRef } from "react";
 import PropTypes from "prop-types";
+import { Carousel as BsCarousel } from "bootstrap";
 import "./CarrouselStyles.css";
 
 function highlightUppercaseWords(text) {
@@ -22,13 +23,28 @@ function highlightUppercaseWords(text) {
 }
 
 const Carousel = ({ images, customClass, interval }) => {
+  const carouselRef = useRef(null);
+  const carouselId = `carousel-${useId()}`;
+
+  useEffect(() => {
+    if (!carouselRef.current) return;
+
+    const instance = BsCarousel.getOrCreateInstance(carouselRef.current, {
+      interval: interval || 2000,
+      ride: "carousel",
+      wrap: true,
+    });
+
+    return () => instance.dispose();
+  }, [interval, images]);
+
   if (!images || images.length === 0) return null;
 
   return (
     <div
-      id="carouselExampleSlidesOnly"
+      id={carouselId}
+      ref={carouselRef}
       className={`carousel slide ${customClass || ''}`}
-      data-bs-ride="carousel"
       data-bs-interval={interval || 2000}
     >
       <div className="carousel-inner">
@@ -61,7 +77,7 @@ const Carousel = ({ images, customClass, interval }) => {
           <button
             key={`indicator-${index}`}
             type="button"
-            data-bs-target="#carouselExampleSlidesOnly"
+            data-bs-target={`#${carouselId}`}
             data-bs-slide-to={index}
             className={index === 0 ? "active" : ""}
             aria-current={index === 0 ? "true" : "false"}

@@ -85,6 +85,27 @@
     background-color: black;
 }
 
+/* Boton Trabajemos juntos (Nosotras) */
+.button-nosotras {
+  animation: nosotrasBgPulse 4.2s ease-in-out infinite;
+}
+
+.button-nosotras:hover {
+  animation-play-state: paused;
+}
+
+@keyframes nosotrasBgPulse {
+  0%, 100% {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  33% {
+    background-color: rgba(200, 182, 214, 0.3);
+  }
+  66% {
+    background-color: rgba(117, 81, 150, 0.22);
+  }
+}
+
 /* Boton contacto */
 .button-formulario {
   background-color: var(--second-violet) !important;

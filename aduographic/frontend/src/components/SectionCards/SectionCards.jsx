@@ -12,7 +12,7 @@ function SectionCards() {
         { image: "https://res.cloudinary.com/dbbyng05e/image/upload/f_auto,q_auto/v1777306995/WhatsApp_Image_2026-04-21_at_1.53.10_PM_vdkiep.png", title: "GUADALUPE AYARZA", text: "Diseñadora Gráfica & <br/> Diseño de Social Media", linkedin: " https://www.linkedin.com/in/guadalupe-ayarza-romero-8bbb02233/  " },
         { image: "https://res.cloudinary.com/dbbyng05e/image/upload/v1777488776/Sin_t%C3%ADtulo-1_satvjd.jpg", title: "MARIA FERRONI", text: "Creadora de Contenido & <br/> Storytelling", linkedin: "https://www.linkedin.com/in/maria-ferroni-270877252/" },
         { image: "https://res.cloudinary.com/dbbyng05e/image/upload/f_auto,q_auto/v1777306816/DSC04835_1_qjamjp.jpg", title: "CAROLINA HERRERA", text: "Creadora de Contenido & <br/> Storytelling", linkedin: "https://www.linkedin.com/in/josefina" },
-        { image: "https://res.cloudinary.com/dbbyng05e/image/upload/v1782741960/Gemini_Generated_Image_36i8k336i8k336i8_ed6eim.png", title: "", text: "", linkedin: "" }, 
+        { image: "https://res.cloudinary.com/dbbyng05e/image/upload/v1782741960/Gemini_Generated_Image_36i8k336i8k336i8_ed6eim.png", title: "Selena Rojo", text: "Estratega de Cuenta (Marketing)", linkedin: "" }, 
     ];
 
     const topRow = cards.slice(0, 4);
@@ -20,16 +20,17 @@ function SectionCards() {
 
     return (
         <Container fluid id="SectionCards" className="cards-section">
+          <div className="cards-inner">
 
             {/* ===== FILA 1: 4 CARDS ===== */}
             <Row className="g-4 justify-content-center">
                 {topRow.map((card, index) => (
                     <Col
                         key={index}
-                        xs={12} sm={6} md={4} lg={3}  
+                        xs={12} sm={6} md={4} lg={3}
                         className="d-flex justify-content-center"
                     >
-                        <CustomCard {...card} />
+                        <CustomCard {...card} index={index} />
                     </Col>
                 ))}
             </Row>
@@ -43,11 +44,12 @@ function SectionCards() {
                         xs={12} sm={6} md={4} lg={3}
                         className="d-flex justify-content-center"
                     >
-                        <CustomCard {...card} />
+                        <CustomCard {...card} index={index + topRow.length} />
                     </Col>
                 ))}
             </Row>
 
+          </div>
         </Container>
     );
 }

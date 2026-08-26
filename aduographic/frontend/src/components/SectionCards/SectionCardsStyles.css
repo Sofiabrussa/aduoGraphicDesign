@@ -4,6 +4,11 @@
   padding: 4rem 2rem;
 }
 
+.cards-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 /* ===== CARD BASE ===== */
 .card-wrapper {
   width: 100%;
@@ -11,10 +16,11 @@
 }
 
 .custom-card-container {
-  border: none;
+  border: 3px solid rgba(168, 140, 202, 0.35);
   border-radius: 12px;
   overflow: hidden;
   position: relative;
+  aspect-ratio: 3 / 4;
 }
 
 /* Imagen */
@@ -38,7 +44,12 @@
   color: white;
   text-align: center;
   border-radius: 12px;
-  transition: opacity 0.3s ease;
+  clip-path: inset(100% 0 0 0);
+  transition: clip-path 0.4s ease;
+}
+
+.custom-card-container:hover .card-overlay {
+  clip-path: inset(0 0 0 0);
 }
 
 .card-text-wrapper {

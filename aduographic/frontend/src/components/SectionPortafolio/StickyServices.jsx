@@ -2,6 +2,7 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./SectionPortafolioStyles.css";
 import PortfolioTitle from "./PortfolioTitle";
+import ScrollCurve from "./ScrollCurve";
 
 const services = [
   {
@@ -10,7 +11,7 @@ const services = [
     content:
       "Creamos identidades visuales sólidas con sistemas coherentes que potencian el reconocimiento de tu marca en el mercado.",
     image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
+      "https://res.cloudinary.com/dbbyng05e/image/upload/v1780069738/3fdc6964-fded-4b4a-ac44-aa2766ad3a94_gi7drd.png",
   },
   {
     id: "02",
@@ -18,7 +19,7 @@ const services = [
     content:
       "Estrategia de contenido y diseño para que tu presencia digital sea consistente, atractiva y generadora de conexiones reales.",
     image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop",
+      "https://res.cloudinary.com/dbbyng05e/image/upload/v1780068447/Copia_de_Redes_bhwvy4.jpg",
   },
   {
     id: "03",
@@ -26,7 +27,7 @@ const services = [
     content:
       "Imágenes con estilo propio y composición estratégica, pensadas para potenciar tu narrativa visual y diferenciarte.",
     image:
-      "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1200&auto=format&fit=crop",
+      "https://res.cloudinary.com/dbbyng05e/image/upload/v1780070556/cartel_1_tdliy9.png",
   },
   {
     id: "04",
@@ -34,7 +35,7 @@ const services = [
     content:
       "Experiencias digitales modernas, funcionales y orientadas a conversión. UX/UI pensado para que cada pixel cuente.",
     image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
+      "https://res.cloudinary.com/dbbyng05e/image/upload/v1782743466/web_c1gzbn.png",
   },
 ];
 
@@ -71,17 +72,9 @@ function StickyServices({ animateControls }) {
       const container = listRef.current;
       if (!container) return;
 
-      const { scrollTop, scrollHeight, clientHeight } = container;
-      const atTop = scrollTop <= 0;
-      const atBottom = Math.ceil(scrollTop + clientHeight) >= scrollHeight;
-      const goingUp = e.deltaY < 0;
-      const goingDown = e.deltaY > 0;
-
-      if ((atTop && goingUp) || (atBottom && goingDown)) return;
-
       e.preventDefault();
       e.stopPropagation();
-      container.scrollBy({ top: e.deltaY, behavior: "auto" });
+      container.scrollBy({ top: e.deltaY * 0.4, behavior: "auto" });
     },
     []
   );
@@ -101,6 +94,7 @@ function StickyServices({ animateControls }) {
   return (
     <section className="sticky-services-section">
       <div className="sticky-services-wrapper">
+        <ScrollCurve />
 
         <div className="sticky-services-header">
           <PortfolioTitle animateControls={animateControls} />
@@ -117,6 +111,7 @@ function StickyServices({ animateControls }) {
                 key={service.id}
                 ref={(el) => (itemRefs.current[index] = el)}
                 data-index={index}
+                onMouseEnter={() => setActive(index)}
                 className={`service-item ${active === index ? "active-service" : ""}`}
               >
                 <h2>{service.title}</h2>
@@ -124,6 +119,7 @@ function StickyServices({ animateControls }) {
                   {active === index && (
                     <motion.p
                       key={`p-${service.id}`}
+                      className="card-text"
                       initial={{ opacity: 0, height: 0, marginTop: 0 }}
                       animate={{ opacity: 1, height: "auto", marginTop: "0.75rem" }}
                       exit={{ opacity: 0, height: 0, marginTop: 0 }}

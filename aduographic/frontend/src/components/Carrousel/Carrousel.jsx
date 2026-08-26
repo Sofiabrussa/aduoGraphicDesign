@@ -21,7 +21,7 @@ function highlightUppercaseWords(text) {
     });
 }
 
-const Carousel = ({ images, customClass }) => {
+const Carousel = ({ images, customClass, interval }) => {
   if (!images || images.length === 0) return null;
 
   return (
@@ -29,7 +29,7 @@ const Carousel = ({ images, customClass }) => {
       id="carouselExampleSlidesOnly"
       className={`carousel slide ${customClass || ''}`}
       data-bs-ride="carousel"
-      data-bs-interval="2000"
+      data-bs-interval={interval || 2000}
     >
       <div className="carousel-inner">
         {images.map((image, index) => (
@@ -81,7 +81,8 @@ Carousel.propTypes = {
       text: PropTypes.string
     })
   ).isRequired,
-  customClass: PropTypes.string
+  customClass: PropTypes.string,
+  interval: PropTypes.number
 };
 
 export default Carousel;

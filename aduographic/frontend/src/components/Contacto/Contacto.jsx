@@ -1,8 +1,22 @@
 import Button from '../Button/Button';
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Container, Row, Col, Form, Alert, Card } from 'react-bootstrap';
+import { motion, useAnimation } from 'framer-motion';
 import emailjs from 'emailjs-com';
 import './ContactoStyles.css';
+
+const contentVariants = {
+    hidden: {
+        opacity: 0,
+        x: -80,
+        transition: { duration: 0.5, ease: [0.4, 0, 1, 1] },
+    },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: { duration: 0.9, ease: [0.22, 1, 0.36, 1] },
+    },
+};
 
 function Contacto() {
     const [formData, setFormData] = useState({
@@ -16,6 +30,20 @@ function Contacto() {
     const [showAlert, setShowAlert] = useState(false);
     const [alertVariant, setAlertVariant] = useState('success');
     const [alertMessage, setAlertMessage] = useState('');
+
+    const sectionRef = useRef(null);
+    const controls = useAnimation();
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                controls.start(entry.isIntersecting ? "visible" : "hidden");
+            },
+            { threshold: 0.2 }
+        );
+        if (sectionRef.current) observer.observe(sectionRef.current);
+        return () => observer.disconnect();
+    }, [controls]);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -59,12 +87,13 @@ function Contacto() {
     };
 
     return (
-        <div id='contacto' className="section-contacto" style={{ backgroundImage: "url('/contacto/imagencontacto.webp')" }}>
+        <div id='contacto' className="section-contacto" ref={sectionRef} style={{ backgroundImage: "url('/contacto/imagencontacto.webp')" }}>
             <Container fluid className="py-5">
                 <Row className="justify-content-start mx-md-4">
                     <Col xs={12} md={8} lg={6} xl={5} className="px-4 py-3">
+                      <motion.div initial="hidden" animate={controls} variants={contentVariants}>
                         <div className="mb-4">
-                            <Card.Title className="text-start">
+                            <Card.Title className="text-start contacto-title">
                                 Nos inspiran las <span className="text-accent">historias </span> <br /> Contanos la tuya.
                             </Card.Title>
                         </div>
@@ -148,6 +177,7 @@ function Contacto() {
                                 </Button>
                             </div>
                         </Form>
+                      </motion.div>
                     </Col>
                 </Row>
             </Container>

@@ -63,10 +63,27 @@
 
 /* Reducir el tamaño de las imágenes */
 .auto-carousel .carousel-img {
-  max-height: 30vh; 
+  max-height: 30vh;
   width: 100%;
   width: auto;
   object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .section-carousel {
+    min-height: auto;
+    max-height: none;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  .auto-carousel {
+    padding: 0.5rem 0;
+  }
+
+  .auto-carousel .carousel-img {
+    max-height: 12vh;
+  }
 }
 
 

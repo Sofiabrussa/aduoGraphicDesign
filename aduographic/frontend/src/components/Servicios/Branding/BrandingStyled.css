@@ -1,13 +1,33 @@
 .branding-section {
-  padding: 4rem 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 2.8rem 0;
   width: 100%;
   overflow-x: hidden;
 }
+
+/* Achica el contenedor general: es lo que más reduce el tamaño visual de las imágenes */
+.branding-section .container {
+  width: 100%;
+  max-width: 1050px;
+}
+
+/* Achica los gutters/gaps de Bootstrap (g-4 / gap-4) solo dentro de esta sección */
+.branding-section .row.g-4 {
+  --bs-gutter-x: 1.05rem;
+  --bs-gutter-y: 1.05rem;
+}
+
+.branding-section .gap-4 {
+  gap: 1.05rem !important;
+}
+
 /* card  */
 .content-card {
   background-color: #f8f9fa;
   border-radius: 20px;
-  padding: 2rem;
+  padding: 1.4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,28 +37,36 @@
   transition: box-shadow 0.3s ease;
 }
 .content-card:hover {
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 22px 38px rgba(0, 0, 0, 0.22);
 }
 .title-span {
   color: var(--primary-violet);
 }
 
-/* Imagen card*/
+.branding-section .title-span {
+  font-size: 1.42rem;
+}
+
+.branding-section .card-text-servicios {
+  font-size: 1.1rem;
+}
+
+/* Imagen card: mismo ancho exacto que content-card (ambas al 100% del mismo contenedor) */
 .image-card {
   background-size: cover;
   background-position: center;
   border-radius: 20px;
-  padding-top: 75%; 
+  padding-top: 75%;
   width: 100%;
   position: relative;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .image-card:hover {
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 22px 38px rgba(0, 0, 0, 0.22);
 }
 
-/* Columna derecha */
+/* Columna derecha: sin padding propio, para arrancar en el mismo top que la izquierda */
 .right-image-container {
   height: 100%;
   display: flex;
@@ -53,14 +81,17 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.right-image-container:hover .rounded-custom {
+  box-shadow: 0 22px 38px rgba(0, 0, 0, 0.22);
+}
 
 /* Responsive */
 @media (max-width: 768px) {
   .branding-section {
-      padding: 3rem 0;
+      padding: 2.1rem 0;
   }
   .content-card {
-      padding: 1.3rem;
+      padding: 1rem;
   }
   .image-card {
       padding-top: 100%;
@@ -74,4 +105,3 @@
     width: 80%;
   }
 }
-

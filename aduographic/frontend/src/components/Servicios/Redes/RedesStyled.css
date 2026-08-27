@@ -1,11 +1,14 @@
 .social-media-section {
+  position: relative;
+  z-index: 0;
   width: 100%;
-  min-height: 80vh; /* Aseguramos que tenga suficiente altura */
+  min-height: 55vh;
   display: flex;
   justify-content: center; /* Centrado horizontal */
   align-items: center; /* Centrado vertical */
   background-color: #fff;
-  padding: 0;
+  padding: 3rem 0;
+  overflow: hidden;
 }
 
 .social-media-section .container {

@@ -30,6 +30,16 @@
   word-spacing: 0;
   line-height: 0.85;
   margin-bottom: 0.4em;
+  animation: floatTitle 4.5s ease-in-out infinite;
+}
+
+@keyframes floatTitle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .carousel-h1 span {

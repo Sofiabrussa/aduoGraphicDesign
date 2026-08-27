@@ -12,6 +12,7 @@ import SectionBarra from './components/Servicios/SectionBarra/SectionBarra';
 import SectionCarrousel from './components/SectionCarrousel/sectionCarrousel';
 import LandingCreative from './components/LandingPortfolio/LandingCreative';
 import Cursor from './lib/Cursor';
+import Preloader from './components/Preloader/Preloader';
 
 
 const GlobalStyle = createGlobalStyle`
@@ -35,6 +36,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
+      <Preloader />
       <Cursor />
       <Navbar />
       <div className="">

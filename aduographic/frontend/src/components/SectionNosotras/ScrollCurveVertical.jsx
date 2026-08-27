@@ -38,12 +38,10 @@ function ScrollCurveVertical() {
   const svgRef = useRef(null);
   const pathRef = useRef(null);
   const blobRef = useRef(null);
-  const bodyRef = useRef(typeof document !== "undefined" ? document.body : null);
   const prefersReducedMotion = useReducedMotion();
 
   const { scrollYProgress } = useScroll({
     target: wrapRef,
-    container: bodyRef,
     offset: ["start end", "end start"],
   });
 

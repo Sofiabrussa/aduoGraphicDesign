@@ -35,6 +35,16 @@
   margin-bottom: 1.5rem;
   line-height: 1.2;
   text-align: left;
+  animation: floatTitle 4.5s ease-in-out infinite;
+}
+
+@keyframes floatTitle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .text-violet {

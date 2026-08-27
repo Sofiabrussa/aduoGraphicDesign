@@ -23,13 +23,12 @@ const projects = [
   {
     id: "efe",
     title: "EFE ELECTRONICA",
-    img: "/proyects/efe/efe1.webp",
+    img: "https://res.cloudinary.com/dbbyng05e/image/upload/v1782743244/21st254_zb2hit.png",
     orientation: "horizontal",
     gallery: [
-    "/proyects/efe/efe2.webp",
-    "/proyects/efe/efe3.webp",
-    "/proyects/efe/efe4.webp",
-    "/proyects/efe/efe5.webp",],
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1782747968/9441070_wlm4ep.png",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1787795959/efe5_eay4vw.webp",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1787795968/efe2_jcmzzv.webp"],
     description: `Efe electrónica se posiciona como un servicio técnico automotriz especializado, liderado por el Ing. Electrónico Federico Navarro, con un enfoque profesional, preciso y totalmente orientado a la confianza del cliente.
     \n La marca combina conocimiento técnico, experiencia real en diagnóstico y reparación electrónica automotriz, y una atención cercana que explica, asesora y acompaña en cada caso.`
   },
@@ -50,27 +49,26 @@ const projects = [
   {
     id: "LIHUE",
     title: "LIHUE",
-    img: "/proyects/lalihue/lihue1.webp",
+    img: "https://res.cloudinary.com/dbbyng05e/image/upload/v1782746278/9_pzkqqv.jpg",
     orientation: "horizontal",
     gallery: [
-    "/proyects/lalihue/lihue2.webp",
-    "/proyects/lalihue/lihue3.webp",
-    "/proyects/lalihue/lihue4.webp",
-    "/proyects/lalihue/lihue5.webp",
-    "/proyects/lalihue/lihue6.webp"],
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1782746626/6_tnugf0.png",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1782746241/12_avlhbv.png",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1782746623/1_i50wbm.png",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1782746441/15_utl5xz.png",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1782746624/4_rthx6m.png"],
     description:  ` Partimos del significado profundo de La Lihue —tierra fértil— para construir una identidad que combina origen, tradición y una nueva mirada contemporánea.
     \n La idea se centra en transformar a La Lihue en un refugio urbano: un espacio tranquilo en medio del movimiento de la ciudad, donde comer algo rico se vuelve una pausa consciente. Un lugar con estética armoniosa, productos diseñados con sensibilidad y un clima que invita a quedarse: trabajar, descansar, compartir, crear.`  
   },
   {
     id: "sonora",
     title: "SONORA",
-    img: "/proyects/sonora/sonora1.png",
+    img: "https://res.cloudinary.com/dbbyng05e/image/upload/v1787796481/sonora4_vos52q.webp",
     orientation: "vertical",
     gallery: [
-    "/proyects/sonora/sonora1.webp",
-    "/proyects/sonora/sonora3.webp",
-    "/proyects/sonora/sonora4.webp",
-    "/proyects/sonora/sonora5.jpg",],
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1787796480/sonora1_yq7lxk.webp",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1787796481/sonora5_atubek.jpg",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1787796480/sonora3_qolmff.webp"],
     description: ` Es una marca de contenido y comunidad que combina finanzas, tecnología y sonido para explicar el mundo de las inversiones de forma clara, cercana y actual. A través de un podcast y plataformas digitales, transforma temas como bitcoin, cripto, mercados y crecimiento financiero en conversaciones accesibles, humanas y fáciles de entender.
     \n La esencia de Inversión Sonora está en hacer que el conocimiento suene: bajar lo complejo a un lenguaje simple, conectar ideas con experiencias reales y motivar a tomar acción en el presente. No habla solo de dinero, sino de mentalidad, aprendizaje y nuevas formas de invertir.
     `
@@ -91,13 +89,13 @@ const projects = [
   {
     id: "luz",
     title: "LUZ ALIGNERS",
-    img: "/proyects/luz/luz1.webp",
+    img: "https://res.cloudinary.com/dbbyng05e/image/upload/v1782743466/web_c1gzbn.png",
     orientation: "vertical",
     gallery: [
-    "/proyects/luz/luz2.webp",
-    "/proyects/luz/luz3.webp",
-    "/proyects/luz/luz4.webp",
-    "/proyects/luz/luz5.webp",],
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1782743914/carteleria_1_eyec8u.png",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1782743914/flyer_nrr9bq.png",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1782743466/uniforme_ppb2pj.png",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1782742370/story_realistic_mockup_ttt5yu.png",],
     description: `Desarrollamos la identidad visual del consultorio particular de Luz González, un espacio odontológico que busca transmitir calidez, humanidad y profesionalismo. La marca representa una atención cercana, empática y moderna, donde el paciente puede atenderse sin miedos y sentirse acompañado en cada paso. `
   },
   {
@@ -116,16 +114,13 @@ const projects = [
   {
     id: "lutz",
     title: "LUTZ",
-    img: "/proyects/lutz/lutz1.webp",
+    img: "https://res.cloudinary.com/dbbyng05e/image/upload/v1787796372/lutz1_mhelct.webp",
     orientation: "horizontal",
     gallery: [
-    "/proyects/lutz/lutz1.webp",
-    "/proyects/lutz/lutz2.webp",
-    "/proyects/lutz/lutz3.webp",
-    "/proyects/lutz/lutz4.webp",
-    "/proyects/lutz/lutz5.webp",
-    "/proyects/lutz/lutz7.webp",
-    "/proyects/lutz/lutz6.webp",],
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1787796372/lutz8_tctqyw.webp",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1787796371/lutz7_fberk1.webp",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1787796370/lutz5_lh2otx.webp",
+    "https://res.cloudinary.com/dbbyng05e/image/upload/v1787796370/lutz2_m7gcq2.webp"],
     description: `Lutz Ferrando es la óptica más antigua de Argentina, con un legado que inicia en 1878 cuando inmigrantes alemanes e italianos se unieron para crear el primer instituto óptico del país.   
     \n Su propuesta se basa en ofrecer soluciones ópticas de excelencia, combinando tecnología, salud visual, moda y una atención personalizada que potencia la autoestima y el estilo de cada cliente.   
     \n La personalidad de la marca es disciplinada, competitiva, segura y apasionada, transmitiendo tres pilares fundamentales: calidad, estilo y fortaleza.`

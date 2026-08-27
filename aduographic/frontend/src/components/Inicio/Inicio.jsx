@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useMemo, useState, useRef } from "react";
 import "./InicioStyles.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -7,17 +7,44 @@ import Button from "../Button/Button";
 import { Card } from "react-bootstrap";
 import { BsArrowUpRight } from "react-icons/bs";
 
+const desktopCarouselImages = [
+  {
+    src: "https://res.cloudinary.com/dbbyng05e/image/upload/v1780065562/ada-01_o82fat.jpg",
+    alt: "IMAGEN1",
+  },
+  {
+    src: "https://res.cloudinary.com/dbbyng05e/image/upload/v1780065369/Sin_t%C3%ADtulo-1-01_tsuius.jpg",
+    alt: "IMAGEN2",
+  },
+];
+
+const mobileCarouselImages = [
+  {
+    src: "https://res.cloudinary.com/dbbyng05e/image/upload/v1777306698/DSC04724_ord29y.jpg",
+    alt: "IMAGEN1",
+  },
+  {
+    src: "https://res.cloudinary.com/dbbyng05e/image/upload/v1777306947/DSC04648_ulsluz.jpg",
+    alt: "IMAGEN2",
+  },
+];
+
 function Inicio() {
-  const imagesCarouselInicio = [
-    {
-      src: "https://res.cloudinary.com/dbbyng05e/image/upload/v1780065562/ada-01_o82fat.jpg",
-      alt: "IMAGEN1",
-    },
-    {
-      src: "https://res.cloudinary.com/dbbyng05e/image/upload/v1780065369/Sin_t%C3%ADtulo-1-01_tsuius.jpg",
-      alt: "IMAGEN2",
-    },
-  ];
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return window.innerWidth <= 768;
+  });
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  const imagesCarouselInicio = useMemo(
+    () => (isMobile ? mobileCarouselImages : desktopCarouselImages),
+    [isMobile]
+  );
 
   const [showIcons, setShowIcons] = useState(true);
   const inicioRef = useRef(null);

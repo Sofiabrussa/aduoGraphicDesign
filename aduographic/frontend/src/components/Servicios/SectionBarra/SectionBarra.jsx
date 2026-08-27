@@ -10,7 +10,12 @@ function SectionBarra() {
     return (
         <>
             <div id="sectionBarra">
-                <div className="container">
+                <div className="section-barra-blobs" aria-hidden="true">
+                    <div className="section-barra-blob section-barra-blob--1" />
+                    <div className="section-barra-blob section-barra-blob--2" />
+                    <div className="section-barra-blob section-barra-blob--3" />
+                </div>
+                <div className="container section-barra-content">
                     <div className="row justify-content-center">
                     <div className="col-12 col-md-10 col-lg-8">
                         <div className="d-flex flex-column justify-content-center align-items-center">

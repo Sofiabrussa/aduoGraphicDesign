@@ -94,7 +94,7 @@ function Navbar() {
                                 rel="noopener noreferrer"
                                 onClick={closeMenu}
                             >
-                                <Button className="button-navBar">
+                                <Button className="button-navBar button-nosotras">
                                     Trabajemos juntos{' '}
                                     <BsArrowUpRight
                                         className="arrow-icon"

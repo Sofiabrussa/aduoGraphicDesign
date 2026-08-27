@@ -7,31 +7,14 @@ import { useState, useEffect, useMemo } from "react";
 const Fotografia = () => {
   const images = useMemo(
     () => [
-      "/fotografia/_DSC9874-Enhanced-NR.webp",
-      "/fotografia/_CIT6933.webp",
-      "/fotografia/DSC0313.webp",
-      "/fotografia/_CIT7429.webp",
-      "/fotografia/_CIT7464.webp",
-      "/fotografia/_DSC0430-Enhanced-NR.webp",
-      "/fotografia/_CIT7693.webp",
-      "/fotografia/CIT6759.webp",
-      "/fotografia/manu rojas-54.webp",
-      "/fotografia/_DSC0394.webp",
-      "/fotografia/CIT6664.webp",
-      "/fotografia/_DSC0465-Enhanced-NR.webp",
-      "/fotografia/_CIT7582.webp",
-      "/fotografia/_DSC9901-Enhanced-NR.webp",
-      "/fotografia/CIT7689.webp",
-      "/fotografia/CIT6512.webp",
-      "/fotografia/_DSC9979-Enhanced-NR.webp",
-      "/fotografia/_CIT7671.webp",
-      "/fotografia/CIT6502.webp",
-      "/fotografia/_DSC9805-Enhanced-NR.webp",
-      "/fotografia/DSC08496.webp",
-      "/fotografia/DSC9804.webp",
-      "/fotografia/DSC9819.webp",
-      "/fotografia/DSC08503.webp",
-      "/fotografia/DSC9885-Enhanced-NR.webp"
+      "https://res.cloudinary.com/dbbyng05e/image/upload/v1782824154/05_1_z6fndz.png",
+      "https://res.cloudinary.com/dbbyng05e/image/upload/v1782746441/15_utl5xz.png",
+      "https://res.cloudinary.com/dbbyng05e/image/upload/v1782746277/7_uokxzz.jpg",
+      "https://res.cloudinary.com/dbbyng05e/image/upload/v1782746277/3_yletal.jpg",
+      "https://res.cloudinary.com/dbbyng05e/image/upload/v1782743466/uniforme_ppb2pj.png",
+      "https://res.cloudinary.com/dbbyng05e/image/upload/v1780069740/stickers_2_ztasie.png",
+      "https://res.cloudinary.com/dbbyng05e/image/upload/v1780069739/bolsa_nkhq46.png",
+      "https://res.cloudinary.com/dbbyng05e/image/upload/v1780070558/Botella_1_oql4u0.png"
     ],
     []
   );
@@ -74,7 +57,7 @@ const Fotografia = () => {
       <div className="fotografia-content">
 
         {/* ===== TÍTULO ===== */}
-        <div className="text-center px-0">
+        <div className="text-center px-0 fotografia-header">
           <Card.Title className="tm-titulo">
             Contenido <span className="span-violeta"> y fotografía</span>
           </Card.Title>
@@ -85,13 +68,17 @@ const Fotografia = () => {
             <strong>¿Lo hacemos realidad?</strong>
           </Card.Text>
 
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <motion.div
+            className="fotografia-cta"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
             <a
               href="https://walink.co/9f29a0"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button>lo necesito!</Button>
+              <Button className="button-nosotras">lo necesito!</Button>
             </a>
           </motion.div>
         </div>

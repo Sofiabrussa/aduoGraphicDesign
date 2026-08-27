@@ -1,36 +1,39 @@
 /* SECTION */
 #section-desarrollo {
   width: 100%;
-  min-height: 100vh;
   display: flex;
-  justify-content: center;     
-  align-items: center;         
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   overflow: hidden;
+  padding: 3rem 0 5rem;
 }
 
-/* CONTIENE imagen + texto */
+/* CONTIENE el texto */
 .desarrollo-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   max-width: 1400px;
-  gap: 2rem;                 
+  gap: 2rem;
 }
 
-.desarrollo-header {
-  width: 100%;
+/* TÍTULO */
+.desarrollo-titulo {
+  animation: desarrolloFloatTitle 4.5s ease-in-out infinite;
 }
 
-.desarrollo-img {
-  width: 100%;                 
-  height: 40vh;                
-  object-fit: cover;
-  display: block;
+@keyframes desarrolloFloatTitle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
-/* TEXTO DEBAJO DE LA IMAGEN */
+/* TEXTO */
 .desarrollo-text {
   display: flex;
   flex-direction: column;

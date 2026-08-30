@@ -44,7 +44,17 @@
 }
 
 .branding-section .title-span {
-  font-size: 1.42rem;
+  font-size: 1.9rem;
+  animation: fotografiaFloatTitle 4.5s ease-in-out infinite;
+}
+
+@keyframes fotografiaFloatTitle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .branding-section .card-text-servicios {

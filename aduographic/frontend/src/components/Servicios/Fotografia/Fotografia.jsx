@@ -10,7 +10,6 @@ const Fotografia = () => {
       "https://res.cloudinary.com/dbbyng05e/image/upload/v1782824154/05_1_z6fndz.png",
       "https://res.cloudinary.com/dbbyng05e/image/upload/v1782746441/15_utl5xz.png",
       "https://res.cloudinary.com/dbbyng05e/image/upload/v1782746277/7_uokxzz.jpg",
-      "https://res.cloudinary.com/dbbyng05e/image/upload/v1782746277/3_yletal.jpg",
       "https://res.cloudinary.com/dbbyng05e/image/upload/v1782743466/uniforme_ppb2pj.png",
       "https://res.cloudinary.com/dbbyng05e/image/upload/v1780069740/stickers_2_ztasie.png",
       "https://res.cloudinary.com/dbbyng05e/image/upload/v1780069739/bolsa_nkhq46.png",

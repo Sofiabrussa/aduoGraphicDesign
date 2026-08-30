@@ -16,6 +16,10 @@
   animation: fotografiaFloatTitle 4.5s ease-in-out infinite;
 }
 
+#section-fotografia .card-text-servicios {
+  font-size: 1.1rem;
+}
+
 @keyframes fotografiaFloatTitle {
   0%, 100% {
     transform: translateY(0);
@@ -117,6 +121,10 @@
 }
 
 @media (max-width: 768px) {
+  .tm-titulo {
+    font-size: 1.9rem;
+  }
+
   .coverflow {
     display: none;
     height: 240px;

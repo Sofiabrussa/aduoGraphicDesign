@@ -1,12 +1,31 @@
 /* SECTION */
 #section-desarrollo {
+  position: relative;
+  z-index: 0;
   width: 100%;
+  min-height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fff;
   overflow: hidden;
   padding: 3rem 0 5rem;
+}
+
+.desarrollo-curve-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 180px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .desarrollo-curve-right {
+    width: 90px;
+  }
 }
 
 /* CONTIENE el texto */
@@ -43,9 +62,17 @@
   max-width: 750px;
 }
 
+#section-desarrollo .card-text-servicios {
+  font-size: 1.1rem;
+}
+
 /* Responsive suave */
 @media (max-width: 768px) {
   .desarrollo-wrapper {
     gap: 1.5rem;
+  }
+
+  .desarrollo-titulo {
+    font-size: 1.9rem;
   }
 }

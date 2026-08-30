@@ -2,10 +2,14 @@ import "./DesarrolloStyled.css";
 import { Card } from "react-bootstrap";
 import Button from "../../Button/Button";
 import { motion } from "framer-motion";
+import ScrollCurveVertical from "../../SectionNosotras/ScrollCurveVertical";
 
 function Desarrollo() {
     return (
         <section id="section-desarrollo">
+            <div className="desarrollo-curve-right">
+                <ScrollCurveVertical />
+            </div>
             <div className="desarrollo-wrapper">
 
                 <div className="desarrollo-text">

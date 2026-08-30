@@ -4,8 +4,8 @@
   width: 100%;
   min-height: 55vh;
   display: flex;
-  justify-content: center; /* Centrado horizontal */
-  align-items: center; /* Centrado vertical */
+  justify-content: center; 
+  align-items: center; 
   background-color: #fff;
   padding: 3rem 0;
   overflow: hidden;
@@ -13,24 +13,24 @@
 
 .social-media-section .container {
   width: 100%;
-  max-width: 1280px; /* Tamaño máximo de la pantalla */
+  max-width: 1050px; 
   margin: 0 auto;
   padding: 0 1rem;
 }
 
 .content-wrapper {
   display: flex;
-  gap: 2rem; /* Espaciado entre los dos divs */
-  flex-direction: row; /* Cambiado de columna a fila */
-  align-items: stretch; /* Alineamos los divs al mismo tamaño */
-  justify-content: center; /* Centrado horizontal */
+  gap: 1.05rem;
+  flex-direction: row; 
+  align-items: stretch; 
+  justify-content: center; 
   width: 100%;
 }
 
 .text-content,
 .image-content {
-  flex: 1; /* Aseguramos que ambos divs ocupen el mismo espacio */
-  min-height: 350px;
+  flex: 1; 
+  min-height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,11 +43,29 @@
   border-radius: 1.5rem;
   padding: 2rem;
   display: flex;
-  flex-direction: column;   
-  justify-content: center; 
-  align-items: center;     
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   min-height: 350px;
+}
+
+.social-media-section .title-span {
+  font-size: 1.9rem;
+  animation: fotografiaFloatTitle 4.5s ease-in-out infinite;
+}
+
+@keyframes fotografiaFloatTitle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.social-media-section .card-text-servicios {
+  font-size: 1.1rem;
 }
 
 
@@ -63,15 +81,15 @@
     min-height: auto;
     align-items: flex-start;
     justify-content: flex-start;
-    padding-top: 2rem; /* opcional, sino sacalo */
+    padding-top: 2rem;
   }
 
   .content-wrapper {
-    flex-direction: column; /* Cambiamos a columna en pantallas pequeñas */
+    flex-direction: column; 
   }
 
   .image-content {
     width: 100%;
-    min-height: 300px; /* Aseguramos que no se colapse */
+    min-height: 300px; 
   }
 }

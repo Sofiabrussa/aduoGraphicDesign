@@ -35,7 +35,14 @@ const Carousel = ({ images, customClass, interval }) => {
       wrap: true,
     });
 
-    return () => instance.dispose();
+    return () => {
+      // Al desmontar durante una transición en curso, forzamos que termine
+      // (pause dispara triggerTransitionEnd de forma síncrona) antes de
+      // destruir la instancia. Si no, el completeCallback de la transición
+      // llega tarde, ya con el elemento nulo, y explota con "Illegal invocation".
+      instance.pause();
+      instance.dispose();
+    };
   }, [interval, images]);
 
   if (!images || images.length === 0) return null;

@@ -16,7 +16,7 @@
     z-index: 1;
     border: none;
     margin-top: 0.5rem;
-    max-width: 100vw;
+    max-width: 100%;
 }
 
 .track {
@@ -40,7 +40,9 @@
 }
 
 .footer-logo {
-    max-height: 100px;
+    height: 3rem;
+    width: auto;
+    max-height: none;
 }
 
 @keyframes marquee-animation {
@@ -56,8 +58,8 @@
 @media (max-width: 768px) {
 
   .marquee {
-    width: 100vw;
-    max-width: 100vw;
+    width: 100%;
+    max-width: 100%;
     height: 40px;              
     overflow: hidden;
     padding: 0;
@@ -86,8 +88,9 @@
     line-height: 40px;         
   }
   #Footer .footer-logo {
-    max-height: 150px !important;  
-    margin: 0 auto !important;    
+    height: 3rem !important;
+    width: auto !important;
+    margin: 0 auto !important;
     display: block;
   }
 
